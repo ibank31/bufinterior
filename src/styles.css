@@ -41,25 +41,39 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  padding: 1rem clamp(1rem, 5vw, 5rem);
+  padding: 0.85rem clamp(1rem, 5vw, 5rem);
   background: rgba(251, 246, 238, 0.86);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
   line-height: 1.1;
 }
 
-.brand span {
+.brandLogo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.16rem;
+}
+
+.brandText strong {
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   letter-spacing: 0.08em;
 }
 
-.brand small {
+.brandText small {
   color: var(--muted);
   font-size: 0.78rem;
 }
@@ -382,39 +396,6 @@ nav a:hover {
   box-shadow: 0 16px 40px rgba(31, 143, 77, 0.32);
 }
 
-@media (max-width: 900px) {
-  .navbar {
-    align-items: flex-start;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hero,
-  .split,
-  .footer {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: auto;
-  }
-
-  .heroCard {
-    min-height: auto;
-  }
-
-  .grid,
-  .contactGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .pageHero p {
-    max-width: 100%;
-  }
-}
-
 .heroImage {
   width: 100%;
   min-height: 390px;
@@ -447,6 +428,64 @@ nav a:hover {
 }
 
 @media (max-width: 900px) {
+  .navbar {
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brandLogo {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+  }
+
+  .brandText strong {
+    font-size: 1.05rem;
+  }
+
+  .brandText small {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navCta {
+    padding: 0.68rem 0.9rem;
+    font-size: 0.88rem;
+  }
+
+  .hero,
+  .split,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .heroCard {
+    min-height: auto;
+  }
+
+  .grid,
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pageHero p {
+    max-width: 100%;
+  }
+
   .heroImage {
     height: 320px;
     min-height: 320px;
