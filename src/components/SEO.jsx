@@ -1,15 +1,20 @@
 import { Helmet } from "react-helmet-async";
-import { buildTitle } from "../utils/seo";
+import { buildCanonicalUrl, buildTitle } from "../utils/seo";
 
-export default function SEO({ title, description }) {
+export default function SEO({ title, description, path = "/" }) {
+  const pageTitle = buildTitle(title);
+  const canonicalUrl = buildCanonicalUrl(path);
+
   return (
     <Helmet>
-      <title>{buildTitle(title)}</title>
+      <html lang="id" />
+      <title>{pageTitle}</title>
       <meta name="description" content={description} />
-      <meta property="og:title" content={buildTitle(title)} />
+      <link rel="canonical" href={canonicalUrl} />
+      <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <html lang="id" />
+      <meta property="og:url" content={canonicalUrl} />
     </Helmet>
   );
 }
