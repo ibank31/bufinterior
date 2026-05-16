@@ -96,7 +96,7 @@ export default function Home() {
 
       <section className="section">
         <div className="sectionHead">
-          <p className="eyebrow">Portofolio</p>
+          <p className="eyebrow">Gallery</p>
           <h2>Contoh Desain & Pengerjaan Interior</h2>
         </div>
         <div className="grid portfolioGrid">
