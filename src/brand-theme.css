@@ -1,0 +1,103 @@
+:root {
+  --cream: #f7f3ec;
+  --paper: #ffffff;
+  --wood: #0b9fe3;
+  --wood-dark: #17212b;
+  --gold: #ef233c;
+  --muted: #667085;
+  --border: rgba(23, 33, 43, 0.1);
+  --shadow: 0 24px 80px rgba(23, 33, 43, 0.12);
+  --brand-blue: #0b9fe3;
+  --brand-blue-dark: #0879ad;
+  --brand-red: #ef233c;
+  --warm-sand: #f7f3ec;
+  --soft-card: #fffaf3;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(11, 159, 227, 0.13), transparent 30rem),
+    radial-gradient(circle at top right, rgba(239, 35, 60, 0.06), transparent 24rem),
+    var(--cream);
+}
+
+.navbar {
+  background: rgba(247, 243, 236, 0.9);
+}
+
+.brandLogo {
+  width: 52px;
+  height: 52px;
+}
+
+.brandText strong {
+  color: var(--wood-dark);
+}
+
+nav a.active,
+nav a:hover,
+.card a,
+.portfolioCard span,
+.portfolioCard small,
+.eyebrow {
+  color: var(--brand-blue) !important;
+}
+
+.navCta,
+.primaryBtn {
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark));
+  box-shadow: 0 16px 34px rgba(11, 159, 227, 0.24);
+}
+
+.navCta:hover,
+.primaryBtn:hover {
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+  color: var(--wood-dark);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.heroCard {
+  background:
+    linear-gradient(135deg, rgba(11, 159, 227, 0.22), rgba(239, 35, 60, 0.12)),
+    linear-gradient(135deg, #ffffff, #e9edf1);
+}
+
+.heroNote {
+  border-left: 4px solid var(--brand-red);
+}
+
+.check svg {
+  color: var(--brand-blue);
+}
+
+.step {
+  background: #17212b;
+}
+
+.step strong {
+  color: var(--brand-red);
+}
+
+.cta {
+  background:
+    radial-gradient(circle at top left, rgba(11, 159, 227, 0.35), transparent 28rem),
+    linear-gradient(135deg, #17212b, #0f1720);
+}
+
+.footer {
+  background: #101820;
+}
+
+.floatingWa {
+  background: #1f8f4d;
+}
+
+@media (max-width: 900px) {
+  .brandLogo {
+    width: 44px;
+    height: 44px;
+  }
+}
