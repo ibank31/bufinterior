@@ -1,6 +1,6 @@
-# BAF — Berkah Utami Furniture
+# BUF — Berkah Utami Furniture
 
-Website resmi BAF (Berkah Utami Furniture), jasa desain dan pengerjaan interior custom di Banyumas.
+Website resmi BUF (Berkah Utami Furniture), jasa desain dan pengerjaan interior custom di Banyumas.
 
 ## Fokus layanan
 
