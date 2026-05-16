@@ -5,16 +5,16 @@ export default function Portfolio() {
   return (
     <>
       <SEO
-        title="Portofolio Desain & Pengerjaan Interior"
-        description="Lihat contoh konsep desain dan pengerjaan interior, kitchen set, custom furniture, dan interior toko BAF di Banyumas."
+        title="Gallery Desain & Pengerjaan Interior"
+        description="Lihat contoh konsep desain dan pengerjaan interior, kitchen set, custom furniture, dan interior toko BUF di Banyumas."
         path="/portofolio"
       />
       <section className="pageHero">
-        <p className="eyebrow">Portofolio</p>
-        <h1>Contoh Desain & Pengerjaan Interior</h1>
+        <p className="eyebrow">Gallery</p>
+        <h1>Gallery Desain & Pengerjaan Interior</h1>
         <p>
-          Beberapa contoh konsep desain dan pengerjaan BAF untuk kebutuhan interior
-          rumah, toko, kitchen set, dan furniture custom.
+          Lihat beberapa contoh desain dan pengerjaan BUF untuk interior rumah,
+          toko, kitchen set, dan furniture custom.
         </p>
       </section>
 
