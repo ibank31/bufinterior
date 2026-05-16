@@ -9,16 +9,16 @@ export default function Home() {
     <>
       <SEO
         title="Jasa Interior Custom Banyumas"
-        description="BAF melayani desain dan pengerjaan interior rumah, kost, toko, kitchen set, dan custom furniture di Banyumas."
+        description="BUF melayani desain dan pengerjaan interior rumah, kost, toko, kitchen set, dan custom furniture di Banyumas."
         path="/"
       />
 
       <section className="hero">
         <div className="heroText">
-          <p className="eyebrow">BAF — Berkah Utami Furniture</p>
+          <p className="eyebrow">BUF — Berkah Utami Furniture</p>
           <h1>Jasa Desain & Pengerjaan Interior Custom di Banyumas</h1>
           <p>
-            BAF membantu pengerjaan interior rumah, kost, toko, kitchen set, dan
+            BUF membantu pengerjaan interior rumah, kost, toko, kitchen set, dan
             custom furniture dari tahap desain sampai pemasangan.
           </p>
           <div className="heroActions">
@@ -35,7 +35,7 @@ export default function Home() {
           <img
             className="heroImage"
             src={HERO_IMAGES.main}
-            alt="Jasa desain dan pengerjaan interior custom BAF Banyumas"
+            alt="Jasa desain dan pengerjaan interior custom BUF Banyumas"
           />
           <div className="heroNote">
             <strong>Desain + pengerjaan</strong>
@@ -49,7 +49,7 @@ export default function Home() {
         <h2>Bingung mulai dari mana untuk bikin interior?</h2>
         <p>
           Mulai dari ukuran ruang, pilihan material, desain, sampai estimasi biaya
-          sering bikin bingung. BAF membantu Anda merancang kebutuhan interior
+          sering bikin bingung. BUF membantu Anda merancang kebutuhan interior
           secara lebih terarah, menyesuaikan fungsi ruang, selera, dan budget.
         </p>
       </section>
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="section">
         <div className="sectionHead">
           <p className="eyebrow">Layanan</p>
-          <h2>Layanan Interior BAF</h2>
+          <h2>Layanan Interior BUF</h2>
         </div>
         <div className="grid">
           {SERVICES.map((service) => (
@@ -71,11 +71,11 @@ export default function Home() {
 
       <section className="section split">
         <div>
-          <p className="eyebrow">Kenapa BAF?</p>
+          <p className="eyebrow">Kenapa BUF?</p>
           <h2>Desain dan pengerjaan interior dalam satu jalur.</h2>
           <p>
             Calon klien tidak perlu memisahkan antara desain dan pengerjaan.
-            BAF membantu dari konsultasi, pengukuran, konsep, produksi, sampai
+            BUF membantu dari konsultasi, pengukuran, konsep, produksi, sampai
             pemasangan di lokasi.
           </p>
         </div>
@@ -138,7 +138,7 @@ export default function Home() {
         <p className="eyebrow">Area layanan</p>
         <h2>Banyumas dan sekitarnya</h2>
         <p>
-          BAF melayani kebutuhan desain dan pengerjaan interior di area{" "}
+          BUF melayani kebutuhan desain dan pengerjaan interior di area{" "}
           {SITE_DATA.serviceAreas.join(", ")}.
         </p>
       </section>
@@ -146,7 +146,7 @@ export default function Home() {
       <section className="cta">
         <h2>Mau konsultasi kebutuhan interior?</h2>
         <p>
-          Ceritakan kebutuhan ruang Anda. BAF siap membantu memberi arahan desain,
+          Ceritakan kebutuhan ruang Anda. BUF siap membantu memberi arahan desain,
           ukuran, material, dan estimasi pengerjaan.
         </p>
         <a className="primaryBtn" href={SITE_DATA.whatsappUrl} target="_blank" rel="noreferrer">
