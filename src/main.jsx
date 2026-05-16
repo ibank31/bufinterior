@@ -5,6 +5,7 @@ import { HelmetProvider } from "react-helmet-async";
 import App from "./App.jsx";
 import "./styles.css";
 import "./brand-theme.css";
+import "./navbar-premium.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
