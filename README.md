@@ -33,3 +33,4 @@ Banyumas dan sekitarnya.
 npm install
 npm run dev
 npm run build
+```
