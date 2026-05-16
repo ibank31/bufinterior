@@ -22,7 +22,14 @@ body {
 }
 
 .navbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
   background: rgba(247, 243, 236, 0.9);
+}
+
+.navbarTop {
+  display: contents;
 }
 
 .brandLogo {
@@ -89,108 +96,32 @@ nav a:hover,
 
 .footer {
   display: block;
-  padding: clamp(2.2rem, 6vw, 4.5rem) clamp(1rem, 5vw, 5rem) 1.5rem;
-  background:
-    radial-gradient(circle at top right, rgba(11, 159, 227, 0.2), transparent 24rem),
-    linear-gradient(135deg, #101820, #0b1117);
+  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 5vw, 5rem) 1.2rem;
+  background: #101820;
 }
 
-.footer h2,
-.footer h3,
+.footerSimple {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.9fr;
+  gap: 1.2rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.footer h2 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1.35rem, 3vw, 1.9rem);
+}
+
+.footer h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+}
+
 .footer p {
-  margin-top: 0;
-}
-
-.footerTop {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.95fr);
-  gap: 1rem;
-  align-items: stretch;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footerBrand,
-.footerCta,
-.footerGrid > div {
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  background: rgba(255, 255, 255, 0.045);
-  border-radius: 1.35rem;
-}
-
-.footerBrand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.1rem;
-}
-
-.footerLogoWrap {
-  display: grid;
-  place-items: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.footerLogoWrap img {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
-}
-
-.footerBrand h2 {
-  margin-bottom: 0.2rem;
-  font-size: 2rem;
-  letter-spacing: 0.08em;
-}
-
-.footerBrand p {
-  margin-bottom: 0;
-}
-
-.footerCta {
-  padding: 1.1rem;
-}
-
-.footerCta h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.4rem;
-}
-
-.footerCta a {
-  display: inline-flex;
-  margin-top: 0.65rem;
-  padding: 0.78rem 1rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark));
-  color: white;
-  font-weight: 900;
-}
-
-.footerGrid {
-  display: grid;
-  grid-template-columns: 1.25fr 0.7fr 0.9fr 0.9fr;
-  gap: 1rem;
-  padding: 1rem 0;
-}
-
-.footerGrid > div {
-  padding: 1.1rem;
-}
-
-.footerLinks {
-  display: grid;
-  gap: 0.65rem;
-}
-
-.footerLinks a {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.footerLinks a:hover {
-  color: white;
+  margin: 0 0 0.45rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .footerBottom {
@@ -198,8 +129,10 @@ nav a:hover,
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.75rem;
+  max-width: 1180px;
+  margin: 1.2rem auto 0;
   padding-top: 1rem;
-  color: rgba(255, 255, 255, 0.56);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -209,28 +142,64 @@ nav a:hover,
 }
 
 @media (max-width: 900px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .navbarTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
   .brandLogo {
     width: 44px;
     height: 44px;
+  }
+
+  nav {
+    display: flex;
+    gap: 0.45rem;
+    width: 100%;
+    overflow-x: auto;
+    padding: 0.2rem 0 0.1rem;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    padding: 0.52rem 0.72rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.62);
+    border: 1px solid var(--border);
+    font-size: 0.86rem;
+  }
+
+  nav a.active {
+    background: rgba(11, 159, 227, 0.12);
+    border-color: rgba(11, 159, 227, 0.26);
+  }
+
+  .navCta {
+    padding: 0.68rem 0.9rem;
+    font-size: 0.88rem;
   }
 
   .footer {
     padding: 2rem 1rem 1.2rem;
   }
 
-  .footerTop,
-  .footerGrid {
+  .footerSimple {
     grid-template-columns: 1fr;
-  }
-
-  .footerBrand,
-  .footerCta,
-  .footerGrid > div {
-    border-radius: 1.1rem;
-  }
-
-  .footerBrand {
-    align-items: center;
+    gap: 1rem;
   }
 
   .footerBottom {
