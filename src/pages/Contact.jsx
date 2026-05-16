@@ -7,6 +7,7 @@ export default function Contact() {
       <SEO
         title="Kontak BAF Banyumas"
         description="Hubungi BAF Berkah Utami Furniture untuk konsultasi desain dan pengerjaan interior custom di Banyumas."
+        path="/kontak"
       />
       <section className="pageHero">
         <p className="eyebrow">Kontak</p>
