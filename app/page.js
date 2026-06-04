@@ -55,7 +55,7 @@ export default function HomePage() {
             </div>
 
             <div className="rounded-[2.25rem] border border-stone-200 bg-paper p-4 shadow-[0_35px_90px_rgba(23,23,23,0.14)]">
-              <div className="relative min-h-[430px] overflow-hidden rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(23,23,23,0.15),rgba(8,121,173,0.06)),url('/assets/portfolio/backdrop-tv-ruang-keluarga-baf-banyumas.webp')] bg-cover bg-center">
+              <div className="relative min-h-[430px] overflow-hidden rounded-[1.75rem] bg-[linear-gradient(135deg,rgba(23,23,23,0.15),rgba(8,121,173,0.06)),url('/assets/hero/hero-interior-custom-baf-banyumas.webp')] bg-cover bg-center">
                 <div className="absolute inset-x-5 bottom-5 rounded-3xl bg-white/88 p-5 shadow-soft backdrop-blur">
                   <p className="text-xs font-black uppercase tracking-[0.18em] text-wood">Desain + pengerjaan</p>
                   <p className="mt-2 text-2xl font-black tracking-[-0.04em] text-charcoal">
