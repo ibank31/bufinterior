@@ -1,0 +1,31 @@
+export const routes = {
+  home: "/",
+  layanan: "/layanan",
+  kitchenSet: "/layanan/kitchen-set-banyumas",
+  customFurniture: "/layanan/custom-furniture-banyumas",
+  interiorRumah: "/layanan/interior-rumah-banyumas",
+  interiorToko: "/layanan/interior-toko-banyumas",
+  backdropTv: "/layanan/backdrop-tv-banyumas",
+  lemariCustom: "/layanan/lemari-custom-banyumas",
+  boothUsaha: "/layanan/booth-usaha-banyumas",
+  gallery: "/gallery",
+  kontak: "/kontak",
+  tentangKami: "/tentang-kami",
+  artikel: "/artikel",
+};
+
+export const sitemapRoutes = [
+  { path: routes.home, priority: 1.0 },
+  { path: routes.layanan, priority: 0.9 },
+  { path: routes.kitchenSet, priority: 0.9 },
+  { path: routes.customFurniture, priority: 0.88 },
+  { path: routes.interiorRumah, priority: 0.86 },
+  { path: routes.interiorToko, priority: 0.86 },
+  { path: routes.backdropTv, priority: 0.76 },
+  { path: routes.lemariCustom, priority: 0.76 },
+  { path: routes.boothUsaha, priority: 0.74 },
+  { path: routes.gallery, priority: 0.8 },
+  { path: routes.kontak, priority: 0.82 },
+  { path: routes.tentangKami, priority: 0.65 },
+  { path: routes.artikel, priority: 0.55 },
+];
