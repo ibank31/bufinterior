@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 import { routes } from "@/content/routes";
 import { serviceHighlights } from "@/content/services";
+import { articles } from "@/content/articles";
 import { serviceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 const whatsappNumber = "6285772208688";
@@ -44,6 +45,51 @@ const defaultFaqs = [
   },
 ];
 
+const relatedArticleSlugsByService = {
+  "kitchen-set-banyumas": [
+    "biaya-kitchen-set-custom",
+    "material-kitchen-set-yang-bagus",
+    "tips-memilih-jasa-interior-custom",
+  ],
+  "custom-furniture-banyumas": [
+    "lemari-custom-vs-lemari-jadi",
+    "tips-memilih-jasa-interior-custom",
+    "material-kitchen-set-yang-bagus",
+  ],
+  "interior-rumah-banyumas": [
+    "tips-memilih-jasa-interior-custom",
+    "material-kitchen-set-yang-bagus",
+    "lemari-custom-vs-lemari-jadi",
+  ],
+  "interior-toko-banyumas": [
+    "tips-memilih-jasa-interior-custom",
+    "biaya-kitchen-set-custom",
+    "lemari-custom-vs-lemari-jadi",
+  ],
+  "backdrop-tv-banyumas": [
+    "tips-memilih-jasa-interior-custom",
+    "lemari-custom-vs-lemari-jadi",
+    "material-kitchen-set-yang-bagus",
+  ],
+  "lemari-custom-banyumas": [
+    "lemari-custom-vs-lemari-jadi",
+    "tips-memilih-jasa-interior-custom",
+    "material-kitchen-set-yang-bagus",
+  ],
+  "booth-usaha-banyumas": [
+    "tips-memilih-jasa-interior-custom",
+    "biaya-kitchen-set-custom",
+    "lemari-custom-vs-lemari-jadi",
+  ],
+};
+
+function getRelatedArticlesForService(serviceSlug) {
+  const slugs = relatedArticleSlugsByService[serviceSlug] || [];
+  return slugs
+    .map((slug) => articles.find((article) => article.slug === slug))
+    .filter(Boolean);
+}
+
 function buildWhatsappHref(service) {
   const text = `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Saya ingin tanya apakah bisa custom sesuai ukuran ruang saya.`;
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
@@ -51,6 +97,7 @@ function buildWhatsappHref(service) {
 
 export default function ServiceDetailPage({ service }) {
   const whatsappHref = buildWhatsappHref(service);
+  const relatedArticles = getRelatedArticlesForService(service.slug);
 
   const schemas = [
     serviceSchema(service),
@@ -227,6 +274,44 @@ export default function ServiceDetailPage({ service }) {
                   {desc}
                 </p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fffaf2] px-4 py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
+                Panduan terkait
+              </p>
+              <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
+                Baca dulu sebelum menentukan desain, material, dan budget.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-base font-medium leading-7 text-muted lg:justify-self-end">
+              Beberapa pertanyaan biasanya lebih mudah dijawab setelah memahami faktor biaya, material, dan perbandingan custom furniture.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {relatedArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/artikel/${article.slug}`}
+                className="rounded-[2rem] border border-stone-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(23,23,23,0.14)]"
+              >
+                <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">
+                  {article.category} • {article.readingTime}
+                </p>
+                <h3 className="mt-4 text-2xl font-black leading-[1.12] tracking-[-0.02em] text-charcoal">
+                  {article.title}
+                </h3>
+                <p className="mt-3 line-clamp-3 text-sm font-medium leading-7 text-muted">
+                  {article.excerpt}
+                </p>
+              </Link>
             ))}
           </div>
         </div>

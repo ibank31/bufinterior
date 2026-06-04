@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { routes } from "@/content/routes";
+import { articles } from "@/content/articles";
 import { services, serviceHighlights } from "@/content/services";
 import { staticPageMetadata } from "@/content/static-pages";
 import { buildMetadata } from "@/lib/seo";
@@ -32,6 +33,7 @@ const processSteps = [
 ];
 
 export default function HomePage() {
+  const featuredArticles = articles.slice(0, 3);
   return (
     <main>
       <section className="wood-grain-bg relative overflow-hidden">
