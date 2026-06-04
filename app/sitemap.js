@@ -1,12 +1,21 @@
 import { sitemapRoutes } from "@/content/routes";
+import { articles } from "@/content/articles";
 import { absoluteSiteUrl } from "@/lib/url";
 
 export const dynamic = "force-static";
 
 export default function sitemap() {
-  return sitemapRoutes.map(({ path, priority }) => ({
+  const staticRoutes = sitemapRoutes.map(({ path, priority }) => ({
     url: absoluteSiteUrl(path),
     changeFrequency: "weekly",
     priority,
   }));
+
+  const articleRoutes = articles.map((article) => ({
+    url: absoluteSiteUrl(`/artikel/${article.slug}`),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...articleRoutes];
 }

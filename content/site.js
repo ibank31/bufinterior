@@ -12,7 +12,7 @@ export const siteConfig = {
   areaNote: "Luar kota by konfirmasi",
   workshops: ["Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
   positioning:
-    "Workshop interior dan custom furniture berbasis untuk area sekitar Banyumas yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
+    "Workshop interior dan custom furniture berbasis di Banyumas yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
   defaultTitle:
     "BUF — Jasa Interior Custom, Kitchen Set & Furniture Banyumas",
   defaultDescription:
