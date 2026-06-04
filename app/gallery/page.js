@@ -8,7 +8,7 @@ export default function GalleryPage() {
     <main className="section-pad">
       <div className="mx-auto max-w-7xl">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-brand-blue">Gallery</p>
-        <h1 className="mt-4 text-5xl font-black tracking-[-0.07em] text-charcoal sm:text-6xl">
+        <h1 className="mt-4 text-5xl font-black tracking-[-0.045em] text-charcoal sm:text-6xl">
           Gallery desain dan pengerjaan interior
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">

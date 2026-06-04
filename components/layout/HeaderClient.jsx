@@ -26,7 +26,7 @@ export default function HeaderClient() {
             <Image src="/assets/logo/logo-transparent-attempt.png" alt="Logo BUF" fill sizes="48px" className="object-contain p-1" priority />
           </span>
           <span className="min-w-0 leading-tight">
-            <span className="block text-xl font-black tracking-[-0.04em] text-charcoal">{siteConfig.name}</span>
+            <span className="block text-xl font-black tracking-[-0.02em] text-charcoal">{siteConfig.name}</span>
             <span className="block max-w-[210px] truncate text-[11px] font-black uppercase tracking-[0.16em] text-muted">
               {siteConfig.legalName}
             </span>

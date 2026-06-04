@@ -6,10 +6,10 @@ export const metadata = buildMetadata(staticPageMetadata.tentangKami);
 
 export default function TentangKamiPage() {
   return (
-    <main className="section-pad">
-      <div className="mx-auto max-w-4xl">
+    <main className="wood-grain-bg section-pad">
+      <div className="mx-auto max-w-4xl rounded-[2rem] border border-stone-200 bg-white/72 p-7 shadow-soft backdrop-blur">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-brand-blue">Tentang Kami</p>
-        <h1 className="mt-4 text-5xl font-black tracking-[-0.07em] text-charcoal sm:text-6xl">
+        <h1 className="mt-4 text-5xl font-black tracking-[-0.045em] text-charcoal sm:text-6xl">
           BUF — Berkah Utami Furniture
         </h1>
         <p className="mt-6 text-lg leading-8 text-muted">

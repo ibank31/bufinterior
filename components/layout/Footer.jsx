@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#121212] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-[1.25fr_0.75fr_0.9fr]">
         <div>
-          <p className="text-3xl font-black tracking-[-0.05em]">{siteConfig.name} — {siteConfig.legalName}</p>
+          <p className="text-3xl font-black tracking-[-0.025em]">{siteConfig.name} — {siteConfig.legalName}</p>
           <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-white/62">{siteConfig.positioning}</p>
           <Link href={routes.kontak} className="mt-6 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue">
             Konsultasi

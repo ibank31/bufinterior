@@ -50,3 +50,77 @@ a { text-decoration: none; }
 .section-pad {
   padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
 }
+
+/* BUF typography tuning */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Subtle wood-grain material background */
+.wood-grain-bg {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(135deg, #f7f0e6 0%, #efe4d5 48%, #fbf7ef 100%);
+}
+
+.wood-grain-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.72;
+  background:
+    radial-gradient(ellipse at 18% 12%, rgba(138, 90, 60, 0.13), transparent 28rem),
+    radial-gradient(ellipse at 82% 22%, rgba(8, 121, 173, 0.045), transparent 24rem),
+    repeating-linear-gradient(
+      96deg,
+      rgba(138, 90, 60, 0.000) 0px,
+      rgba(138, 90, 60, 0.000) 9px,
+      rgba(138, 90, 60, 0.040) 10px,
+      rgba(138, 90, 60, 0.018) 11px,
+      rgba(138, 90, 60, 0.000) 21px
+    ),
+    repeating-linear-gradient(
+      101deg,
+      rgba(80, 52, 35, 0.000) 0px,
+      rgba(80, 52, 35, 0.000) 26px,
+      rgba(80, 52, 35, 0.035) 27px,
+      rgba(80, 52, 35, 0.000) 34px
+    );
+}
+
+.wood-grain-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.38;
+  background:
+    radial-gradient(ellipse 70rem 14rem at 20% 28%, transparent 0%, transparent 45%, rgba(138, 90, 60, 0.08) 46%, transparent 49%),
+    radial-gradient(ellipse 58rem 12rem at 72% 68%, transparent 0%, transparent 42%, rgba(138, 90, 60, 0.075) 43%, transparent 47%),
+    radial-gradient(ellipse 42rem 9rem at 38% 82%, transparent 0%, transparent 40%, rgba(80, 52, 35, 0.06) 41%, transparent 45%);
+}
+
+.wood-grain-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.94), rgba(255, 250, 242, 0.88)),
+    repeating-linear-gradient(
+      96deg,
+      rgba(138, 90, 60, 0.000) 0px,
+      rgba(138, 90, 60, 0.000) 16px,
+      rgba(138, 90, 60, 0.028) 17px,
+      rgba(138, 90, 60, 0.000) 24px
+    );
+}
+
+

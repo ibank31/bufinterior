@@ -13,7 +13,7 @@ export default function NotFoundPage() {
         <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
           404
         </p>
-        <h1 className="mt-4 text-5xl font-black tracking-[-0.07em] text-charcoal">
+        <h1 className="mt-4 text-5xl font-black tracking-[-0.045em] text-charcoal">
           Halaman tidak ditemukan.
         </h1>
         <p className="mt-5 text-base font-medium leading-8 text-muted">
