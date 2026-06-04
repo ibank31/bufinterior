@@ -63,7 +63,7 @@ export default function KontakPage() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
-              Ceritakan kebutuhan interior atau custom furniture Anda. Mulai dari foto ruang, ukuran kasar, referensi desain, sampai gambaran budget. BUF berbasis di Banyumas dan proyek luar kota dapat dikonfirmasi terlebih dahulu.
+              Ceritakan kebutuhan interior atau custom furniture Anda. Mulai dari foto ruang, ukuran kasar, referensi desain, sampai gambaran budget. Lokasi proyek, survey, dan pemasangan dapat dikonfirmasi terlebih dahulu.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -182,7 +182,7 @@ export default function KontakPage() {
               BUF siap menerima konsultasi awal melalui WhatsApp.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/64">
-              Basis pengerjaan berada di sekitar Banyumas. Untuk proyek luar kota, kebutuhan survey, produksi, pengiriman, atau pemasangan dapat dikonfirmasi terlebih dahulu.
+              Kebutuhan survey, produksi, pengiriman, atau pemasangan dapat dikonfirmasi sesuai lokasi proyek.
             </p>
           </div>
 

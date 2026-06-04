@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs font-medium leading-6 text-white/38">
-        © {new Date().getFullYear()} {siteConfig.legalName}. Interior custom, kitchen set, dan furniture custom Banyumas.
+        © {new Date().getFullYear()} {siteConfig.legalName}. Interior custom, kitchen set, dan furniture custom.
       </div>
     </footer>
   );

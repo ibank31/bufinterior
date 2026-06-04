@@ -50,7 +50,7 @@ export default function LayananPage() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
-              BUF berbasis di Banyumas dan melayani konsultasi desain serta pengerjaan interior/custom furniture. Untuk luar kota, kebutuhan proyek bisa dikonfirmasi terlebih dahulu.
+              BUF melayani konsultasi desain serta pengerjaan interior/custom furniture sesuai kebutuhan ruang. Lokasi proyek, survey, dan pemasangan dapat dikonfirmasi terlebih dahulu.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

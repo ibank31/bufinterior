@@ -48,7 +48,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
-              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget. Berbasis di Banyumas, terbuka untuk konsultasi proyek luar kota by konfirmasi.
+              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget. Konsultasi proyek dapat dimulai dari WhatsApp dan lokasi pengerjaan bisa dikonfirmasi.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
@@ -86,7 +86,7 @@ export default function HomePage() {
               <div className="overflow-hidden rounded-[2rem] bg-white">
                 <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.03)),url('/assets/hero/hero-interior-custom-baf-banyumas.webp')] bg-cover bg-center sm:min-h-[430px] lg:min-h-[470px]" />
                 <div className="border-t border-stone-200 bg-[#171717] p-4 text-white lg:p-5">
-                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Banyumas • luar kota by konfirmasi</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Custom interior • by konfirmasi</p>
                   <p className="mt-2 text-xl font-black leading-[1.25] tracking-[-0.02em] sm:text-2xl">
                     Interior, furniture, dan ruang usaha custom.
                   </p>

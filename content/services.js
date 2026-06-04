@@ -6,7 +6,7 @@ export const services = [
     title: "Kitchen Set Banyumas",
     heroTitle: "Kitchen Set Custom untuk Dapur yang Rapi dan Fungsional",
     heroDescription:
-      "BUF membantu desain dan pengerjaan kitchen set sesuai ukuran ruang, kebutuhan penyimpanan, material pilihan, dan budget. Berbasis di Banyumas, terbuka untuk konsultasi proyek luar kota by konfirmasi.",
+      "BUF membantu desain dan pengerjaan kitchen set sesuai ukuran ruang, kebutuhan penyimpanan, material pilihan, dan budget. Konsultasi proyek dapat dimulai dari WhatsApp dan lokasi pengerjaan bisa dikonfirmasi.",
     shortTitle: "Kitchen Set",
     href: routes.kitchenSet,
     category: "Interior Hunian",
@@ -32,7 +32,7 @@ export const services = [
     title: "Interior Rumah Banyumas",
     heroTitle: "Interior Rumah yang Rapi, Hangat, dan Nyaman",
     heroDescription:
-      "BUF membantu konsep dan pengerjaan interior rumah agar ruang keluarga, dapur, kamar, dan area TV terasa lebih tertata. Berbasis di Banyumas, terbuka untuk konsultasi proyek luar kota by konfirmasi.",
+      "BUF membantu konsep dan pengerjaan interior rumah agar ruang keluarga, dapur, kamar, dan area TV terasa lebih tertata. Konsultasi proyek dapat dimulai dari WhatsApp dan lokasi pengerjaan bisa dikonfirmasi.",
     shortTitle: "Interior Rumah",
     href: routes.interiorRumah,
     category: "Interior Hunian",
@@ -100,5 +100,5 @@ export const serviceHighlights = [
   "Bisa desain sekaligus pengerjaan",
   "Material by request pelanggan",
   "Menyesuaikan kebutuhan dan budget",
-  "Survey area sekitar Banyumas",
+  "Survey / koordinasi lokasi by konfirmasi",
 ];

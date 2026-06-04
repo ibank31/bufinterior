@@ -15,7 +15,7 @@ const trustPoints = [
   ["Material by request", "Material dapat disesuaikan dengan kebutuhan, tampilan, fungsi, dan budget."],
   ["Desain + pengerjaan", "Pelanggan bisa mulai dari konsultasi konsep sampai pengerjaan."],
   ["Survey by konfirmasi", "Kebutuhan survey atau pengukuran dapat dikonfirmasi sesuai lokasi proyek."],
-  ["Luar kota by konfirmasi", "BUF berbasis di Banyumas dan terbuka untuk proyek luar kota sesuai konfirmasi."],
+  ["Lokasi by konfirmasi", "Kebutuhan survey, pengiriman, dan pemasangan dapat dikonfirmasi sesuai lokasi proyek."],
 ];
 
 const approach = [

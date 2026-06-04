@@ -38,9 +38,9 @@ const defaultFaqs = [
       "Material bersifat by request pelanggan dan dapat disesuaikan dengan kebutuhan, tampilan, fungsi ruang, serta budget pengerjaan.",
   },
   {
-    question: "Apakah BUF melayani survey area sekitar Banyumas?",
+    question: "Apakah BUF bisa survey atau koordinasi sesuai lokasi proyek?",
     answer:
-      "Ya, kebutuhan survey dapat dikonfirmasi melalui kontak BUF. Untuk sekitar Banyumas, koordinasi biasanya lebih mudah. Luar kota bisa dikonfirmasi terlebih dahulu.",
+      "Ya, kebutuhan survey atau koordinasi dapat dikonfirmasi melalui kontak BUF sesuai lokasi proyek.",
   },
 ];
 
