@@ -23,7 +23,7 @@ export default function KontakPage() {
           <div className="mt-5 grid gap-4 text-sm leading-7 text-muted">
             <p><strong className="text-charcoal">WhatsApp:</strong> {siteConfig.whatsappDisplay}</p>
             <p><strong className="text-charcoal">Jam:</strong> {siteConfig.operatingHours}</p>
-            <p><strong className="text-charcoal">Area:</strong> {siteConfig.areaFocus}. {siteConfig.areaNote}.</p>
+            <p><strong className="text-charcoal">Basis:</strong> {siteConfig.areaFocus}. {siteConfig.areaNote}.</p>
             <div>
               <strong className="text-charcoal">Workshop:</strong>
               <ul className="mt-2 grid gap-1">

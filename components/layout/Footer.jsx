@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
             <p>WhatsApp: {siteConfig.whatsappDisplay}</p>
             <p>Jam: {siteConfig.operatingHours}</p>
-            <p>Area: {siteConfig.areaFocus}</p>
+            <p>Basis: {siteConfig.areaFocus}</p>
             <p>{siteConfig.areaNote}</p>
             <Link href={routes.kontak} className="font-black text-white">Lihat kontak lengkap</Link>
           </div>

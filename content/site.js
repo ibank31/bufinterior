@@ -12,10 +12,10 @@ export const siteConfig = {
   areaNote: "Luar kota by konfirmasi",
   workshops: ["Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
   positioning:
-    "Workshop interior dan custom furniture di Banyumas yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
+    "Workshop interior dan custom furniture berbasis untuk area sekitar Banyumas yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
   defaultTitle:
     "BUF — Jasa Interior Custom, Kitchen Set & Furniture Banyumas",
   defaultDescription:
-    "BUF Berkah Utami Furniture melayani desain dan pengerjaan interior custom, kitchen set, backdrop TV, lemari custom, interior rumah, toko, kost, dan booth usaha di Banyumas.",
+    "BUF Berkah Utami Furniture melayani desain dan pengerjaan interior custom, kitchen set, backdrop TV, lemari custom, interior rumah, toko, kost, dan booth usaha di sekitar Banyumas. Luar kota dapat dikonfirmasi terlebih dahulu.",
   ogImage: "/assets/og/buf-interior-og.webp",
 };

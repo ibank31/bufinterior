@@ -26,7 +26,7 @@ const galleryPreview = [
 
 const processSteps = [
   ["01", "Konsultasi ruang", "Ceritakan kebutuhan, ukuran ruang, fungsi, dan gambaran budget."],
-  ["02", "Survey & ukur", "Untuk area Banyumas, kebutuhan survey dapat dikonfirmasi terlebih dahulu."],
+  ["02", "Survey & ukur", "Kebutuhan survey dapat dikonfirmasi terlebih dahulu."],
   ["03", "Desain & estimasi", "Konsep, material, finishing, dan estimasi disesuaikan dengan kebutuhan."],
   ["04", "Produksi & pasang", "Pengerjaan dilakukan dari workshop sampai pemasangan di lokasi."],
 ];
@@ -40,7 +40,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-7xl gap-8 px-6 py-9 sm:px-8 sm:py-12 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-4 lg:py-16">
           <div className="max-w-3xl">
             <p className="inline-flex rounded-full border border-stone-300/70 bg-white/65 px-4 py-2 text-[10px] font-black uppercase tracking-[0.20em] text-wood shadow-soft backdrop-blur sm:text-[11px] sm:tracking-[0.22em]">
-              Workshop interior custom Banyumas
+              Workshop interior & custom furniture
             </p>
 
             <h1 className="mt-6 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
@@ -48,7 +48,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
-              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget.
+              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget. Berbasis di Banyumas, terbuka untuk konsultasi proyek luar kota by konfirmasi.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
@@ -86,7 +86,7 @@ export default function HomePage() {
               <div className="overflow-hidden rounded-[2rem] bg-white">
                 <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.03)),url('/assets/hero/hero-interior-custom-baf-banyumas.webp')] bg-cover bg-center sm:min-h-[430px] lg:min-h-[470px]" />
                 <div className="border-t border-stone-200 bg-[#171717] p-4 text-white lg:p-5">
-                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Banyumas dan sekitarnya</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Banyumas • luar kota by konfirmasi</p>
                   <p className="mt-2 text-xl font-black leading-[1.25] tracking-[-0.02em] sm:text-2xl">
                     Interior, furniture, dan ruang usaha custom.
                   </p>
