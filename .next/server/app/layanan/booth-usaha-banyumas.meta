@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/layanan/layout,_N_T_/layanan/booth-usaha-banyumas/layout,_N_T_/layanan/booth-usaha-banyumas/page,_N_T_/layanan/booth-usaha-banyumas"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/layanan/booth-usaha-banyumas/__PAGE__",
+    "/layanan/booth-usaha-banyumas",
+    "/layanan",
+    "/_index",
+    "/_head"
+  ]
+}

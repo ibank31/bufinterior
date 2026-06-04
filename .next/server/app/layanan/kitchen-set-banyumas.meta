@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/layanan/layout,_N_T_/layanan/kitchen-set-banyumas/layout,_N_T_/layanan/kitchen-set-banyumas/page,_N_T_/layanan/kitchen-set-banyumas"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/layanan/kitchen-set-banyumas/__PAGE__",
+    "/layanan/kitchen-set-banyumas",
+    "/layanan",
+    "/_index",
+    "/_head"
+  ]
+}

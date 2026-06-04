@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/artikel",
+      "regex": "^/artikel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/artikel(?:/)?$"
+    },
+    {
+      "page": "/gallery",
+      "regex": "^/gallery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/gallery(?:/)?$"
+    },
+    {
+      "page": "/kontak",
+      "regex": "^/kontak(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kontak(?:/)?$"
+    },
+    {
+      "page": "/layanan",
+      "regex": "^/layanan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan(?:/)?$"
+    },
+    {
+      "page": "/layanan/backdrop-tv-banyumas",
+      "regex": "^/layanan/backdrop\\-tv\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/backdrop\\-tv\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/layanan/booth-usaha-banyumas",
+      "regex": "^/layanan/booth\\-usaha\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/booth\\-usaha\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/layanan/custom-furniture-banyumas",
+      "regex": "^/layanan/custom\\-furniture\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/custom\\-furniture\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/layanan/interior-rumah-banyumas",
+      "regex": "^/layanan/interior\\-rumah\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/interior\\-rumah\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/layanan/interior-toko-banyumas",
+      "regex": "^/layanan/interior\\-toko\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/interior\\-toko\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/layanan/kitchen-set-banyumas",
+      "regex": "^/layanan/kitchen\\-set\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/kitchen\\-set\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/layanan/lemari-custom-banyumas",
+      "regex": "^/layanan/lemari\\-custom\\-banyumas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/layanan/lemari\\-custom\\-banyumas(?:/)?$"
+    },
+    {
+      "page": "/robots.txt",
+      "regex": "^/robots\\.txt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/robots\\.txt(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/tentang-kami",
+      "regex": "^/tentang\\-kami(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tentang\\-kami(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

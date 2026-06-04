@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/layanan/layout,_N_T_/layanan/lemari-custom-banyumas/layout,_N_T_/layanan/lemari-custom-banyumas/page,_N_T_/layanan/lemari-custom-banyumas"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/layanan/lemari-custom-banyumas/__PAGE__",
+    "/layanan/lemari-custom-banyumas",
+    "/layanan",
+    "/_index",
+    "/_head"
+  ]
+}

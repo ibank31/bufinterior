@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/layanan/layout,_N_T_/layanan/interior-rumah-banyumas/layout,_N_T_/layanan/interior-rumah-banyumas/page,_N_T_/layanan/interior-rumah-banyumas"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/layanan/interior-rumah-banyumas/__PAGE__",
+    "/layanan/interior-rumah-banyumas",
+    "/layanan",
+    "/_index",
+    "/_head"
+  ]
+}
