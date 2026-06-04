@@ -5,7 +5,6 @@ import {
   galleryCategories,
   galleryItems,
   getGalleryCategoryLabel,
-  getGalleryItemsByCategory,
 } from "@/content/gallery";
 
 export const metadata = buildMetadata(staticPageMetadata.gallery);
@@ -17,15 +16,9 @@ function buildWhatsappHref(item) {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 }
 
-function buildCategoryHref(categoryId) {
-  return categoryId === "semua" ? "/gallery" : `/gallery?category=${categoryId}`;
-}
-
-export default async function GalleryPage({ searchParams }) {
-  const params = await searchParams;
-  const activeCategory = params?.category || "semua";
-  const activeItems = getGalleryItemsByCategory(activeCategory);
-  const activeCategoryLabel = getGalleryCategoryLabel(activeCategory);
+export default function GalleryPage() {
+  const activeItems = galleryItems;
+  const activeCategoryLabel = "Semua";
 
   return (
     <main>
@@ -50,20 +43,19 @@ export default async function GalleryPage({ searchParams }) {
         <div className="mx-auto max-w-7xl">
           <div className="flex gap-2 overflow-x-auto">
             {galleryCategories.map((category) => {
-              const isActive = category.id === activeCategory;
+              const isActive = category.id === "semua";
 
               return (
-                <Link
+                <span
                   key={category.id}
-                  href={buildCategoryHref(category.id)}
-                  className={`shrink-0 rounded-full px-5 py-3 text-xs font-black transition ${
+                  className={`shrink-0 rounded-full px-5 py-3 text-xs font-black ${
                     isActive
                       ? "bg-charcoal text-white shadow-soft"
-                      : "bg-white text-charcoal shadow-soft hover:bg-brand-blue hover:text-white"
+                      : "bg-white text-charcoal shadow-soft"
                   }`}
                 >
                   {category.label}
-                </Link>
+                </span>
               );
             })}
           </div>
@@ -92,12 +84,12 @@ export default async function GalleryPage({ searchParams }) {
                 <article
                   key={item.slug}
                   className={`group overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(23,23,23,0.14)] ${
-                    index === 0 && activeCategory === "semua" ? "lg:col-span-2" : ""
+                    index === 0 ? "lg:col-span-2" : ""
                   }`}
                 >
                   <div
                     className={`bg-cover bg-center transition duration-500 group-hover:scale-[1.03] ${
-                      index === 0 && activeCategory === "semua"
+                      index === 0
                         ? "min-h-[420px]"
                         : "min-h-[300px]"
                     }`}
