@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 const service = services.find((item) => item.slug === "custom-furniture-banyumas");
 
 export const metadata = buildMetadata({
-  title: "Custom Furniture Banyumas | Furniture Sesuai Ukuran — BUF",
+  title: "Custom Furniture | Furniture Sesuai Ukuran Ruang — BUF",
   description: service.description,
   path: service.href,
 });

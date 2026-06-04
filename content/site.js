@@ -14,7 +14,7 @@ export const siteConfig = {
   positioning:
     "Workshop interior dan custom furniture yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
   defaultTitle:
-    "BUF — Jasa Interior Custom, Kitchen Set & Custom Furniture",
+    "BUF — Interior Custom, Kitchen Set & Custom Furniture",
   defaultDescription:
     "BUF Berkah Utami Furniture melayani desain dan pengerjaan interior custom, kitchen set, backdrop TV, lemari custom, interior rumah, toko, kost, dan booth usaha. Lokasi proyek dapat dikonfirmasi terlebih dahulu.",
   ogImage: "/assets/og/buf-interior-og.webp",

@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 const service = services.find((item) => item.slug === "lemari-custom-banyumas");
 
 export const metadata = buildMetadata({
-  title: "Lemari Custom Banyumas | Lemari Sesuai Ukuran — BUF",
+  title: "Lemari Custom | Lemari Sesuai Ukuran Ruang — BUF",
   description: service.description,
   path: service.href,
 });
