@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --ivory: #f7f3ec;
+  --paper: #fffdf8;
+  --charcoal: #171717;
+  --muted: #6b625b;
+  --wood: #8a5a3c;
+  --brand-blue: #0879ad;
+  --brand-blue-dark: #075f88;
+  --brand-red: #d7263d;
+  --whatsapp: #25d366;
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-paper: var(--paper);
+  --color-charcoal: var(--charcoal);
+  --color-muted: var(--muted);
+  --color-wood: var(--wood);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-dark: var(--brand-blue-dark);
+  --color-brand-red: var(--brand-red);
+  --color-whatsapp: var(--whatsapp);
+  --shadow-soft: 0 18px 55px rgba(23, 23, 23, 0.08);
+  --shadow-blue: 0 16px 34px rgba(8, 121, 173, 0.2);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ivory);
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(138, 90, 60, 0.13), transparent 30rem),
+    radial-gradient(circle at top right, rgba(8, 121, 173, 0.08), transparent 24rem),
+    var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { text-decoration: none; }
+
+.section-pad {
+  padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
+}
