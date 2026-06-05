@@ -13,6 +13,7 @@ export const services = [
     primaryKeyword: "kitchen set Banyumas",
     description:
       "Desain dan pengerjaan kitchen set custom untuk dapur rumah, menyesuaikan ukuran ruang, kebutuhan penyimpanan, dan budget.",
+    image: "/assets/portfolio/kitchen-set-proyek-real-buf-01.webp",
   },
   {
     slug: "custom-furniture-banyumas",
@@ -26,6 +27,7 @@ export const services = [
     primaryKeyword: "custom furniture Banyumas",
     description:
       "Pengerjaan furniture custom seperti lemari, meja belajar, meja rias, kabinet, dan kebutuhan furniture sesuai ukuran ruang.",
+    image: "/assets/portfolio/wardrobe-meja-rias-custom-buf-01.webp",
   },
   {
     slug: "interior-rumah-banyumas",
@@ -39,6 +41,7 @@ export const services = [
     primaryKeyword: "interior rumah Banyumas",
     description:
       "Bantuan konsep desain dan pengerjaan interior rumah untuk ruang keluarga, dapur, kamar, area TV, dan kebutuhan custom lainnya.",
+    image: "/assets/portfolio/interior-rumah-backdrop-tangga-inspirasi-buf-01.webp",
   },
   {
     slug: "interior-toko-banyumas",
@@ -52,6 +55,7 @@ export const services = [
     primaryKeyword: "interior toko Banyumas",
     description:
       "Desain dan pengerjaan interior toko kecil, display produk, area kasir, rak custom, dan layout ruang usaha agar lebih rapi dan menarik.",
+    image: "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
   },
   {
     slug: "backdrop-tv-banyumas",
@@ -65,6 +69,7 @@ export const services = [
     primaryKeyword: "backdrop TV Banyumas",
     description:
       "Backdrop TV custom untuk ruang keluarga, kamar, atau area komersial dengan ukuran dan finishing menyesuaikan kebutuhan.",
+    image: "/assets/portfolio/backdrop-tv-proses-pasang-buf-01.webp",
   },
   {
     slug: "lemari-custom-banyumas",
@@ -78,6 +83,7 @@ export const services = [
     primaryKeyword: "lemari custom Banyumas",
     description:
       "Lemari custom untuk kamar, area penyimpanan, toko, atau kebutuhan khusus sesuai ukuran ruang dan model yang diinginkan.",
+    image: "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
   },
   {
     slug: "booth-usaha-banyumas",
@@ -91,6 +97,7 @@ export const services = [
     primaryKeyword: "booth usaha Banyumas",
     description:
       "Booth usaha custom untuk UMKM makanan/minuman, display jualan, dan kebutuhan usaha kecil dengan desain sesuai identitas brand.",
+    image: "/assets/portfolio/booth-pang-waffle-buf-01.webp",
   },
 ];
 

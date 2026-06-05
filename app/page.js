@@ -23,6 +23,21 @@ const galleryPreview = [
     category: "Interior Usaha",
     image: "/assets/portfolio/booth-pang-waffle-buf-01.webp",
   },
+  {
+    title: "Kitchen Set Proyek Real",
+    category: "Kitchen Set",
+    image: "/assets/portfolio/kitchen-set-proyek-real-buf-01.webp",
+  },
+  {
+    title: "Interior Toko Display",
+    category: "Interior Toko",
+    image: "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
+  },
+  {
+    title: "Backdrop Panel Custom",
+    category: "Backdrop TV",
+    image: "/assets/portfolio/backdrop-panel-proses-buf-01.webp",
+  },
 ];
 
 const processSteps = [
@@ -36,74 +51,85 @@ export default function HomePage() {
   const featuredArticles = articles.slice(0, 3);
   return (
     <main>
-      <section className="wood-grain-bg relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.55] bg-[radial-gradient(circle_at_12%_18%,rgba(138,90,60,0.18),transparent_28rem),radial-gradient(circle_at_88%_10%,rgba(8,121,173,0.11),transparent_25rem)]" />
+      {/* ═══ HERO — Full-width visual premium ═══ */}
+      <section className="relative min-h-[92vh] overflow-hidden lg:min-h-[94vh]">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/assets/portfolio/kitchen-set-showroom-buf-01.webp')" }}
+        />
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#171717] via-[#171717]/60 to-transparent" />
+        {/* Subtle warm accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(138,90,60,0.15),transparent_50%)]" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-8 px-6 py-9 sm:px-8 sm:py-12 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-4 lg:py-16">
-          <div className="max-w-3xl">
-            <p className="inline-flex rounded-full border border-stone-300/70 bg-white/65 px-4 py-2 text-[10px] font-black uppercase tracking-[0.20em] text-wood shadow-soft backdrop-blur sm:text-[11px] sm:tracking-[0.22em]">
+        <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-end px-6 pb-12 sm:px-8 lg:min-h-[94vh] lg:px-4 lg:pb-20">
+          {/* Floating badge top */}
+          <div className="absolute left-6 top-8 sm:left-8 lg:left-4 lg:top-12">
+            <p className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.20em] text-white/80 backdrop-blur-md sm:text-[11px]">
               Workshop interior & custom furniture
             </p>
+          </div>
 
-            <h1 className="mt-6 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
-              Ruang custom yang terasa rapi, hangat, dan fungsional.
-            </h1>
-
-            <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
-              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget. Konsultasi proyek dapat dimulai dari WhatsApp dan lokasi pengerjaan bisa dikonfirmasi.
-            </p>
-
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
-              <Link href={routes.kontak} className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)] lg:py-4">
-                Konsultasi Ruang
-              </Link>
-              <Link href={routes.gallery} className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur lg:py-4">
-                Lihat Gallery
-              </Link>
-            </div>
-
-            <div className="mt-7 grid max-w-xl grid-cols-3 divide-x divide-stone-300/80 rounded-[1.5rem] border border-stone-300/70 bg-white/55 p-3 shadow-soft backdrop-blur lg:mt-10 lg:p-4">
-              <div className="px-3">
-                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">7+</p>
-                <p className="mt-1 text-xs font-bold leading-5 text-muted">Layanan interior</p>
+          {/* Floating stats card — desktop only */}
+          <div className="absolute right-4 top-12 hidden rounded-[1.5rem] border border-white/15 bg-white/10 p-5 backdrop-blur-lg lg:block">
+            <div className="grid gap-4">
+              <div>
+                <p className="text-3xl font-black tracking-tight text-white">7+</p>
+                <p className="mt-1 text-xs font-semibold text-white/55">Layanan interior</p>
               </div>
-              <div className="px-3">
-                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">Custom</p>
-                <p className="mt-1 text-xs font-bold leading-5 text-muted">Sesuai ukuran ruang</p>
+              <div className="h-px bg-white/10" />
+              <div>
+                <p className="text-3xl font-black tracking-tight text-white">Custom</p>
+                <p className="mt-1 text-xs font-semibold text-white/55">Sesuai ukuran ruang</p>
               </div>
-              <div className="px-3">
-                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">BUF</p>
-                <p className="mt-1 text-xs font-bold leading-5 text-muted">Workshop sendiri</p>
+              <div className="h-px bg-white/10" />
+              <div>
+                <p className="text-3xl font-black tracking-tight text-white">BUF</p>
+                <p className="mt-1 text-xs font-semibold text-white/55">Workshop sendiri</p>
               </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute -left-5 top-8 z-10 hidden rounded-[1.5rem] border border-white/30 bg-white/80 p-4 shadow-soft backdrop-blur md:block">
-              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-brand-blue">Desain + pengerjaan</p>
-              <p className="mt-1 text-lg font-black tracking-[-0.02em] text-charcoal">Dari konsep sampai pasang</p>
-            </div>
+          {/* Main hero content */}
+          <div className="max-w-4xl animate-fade-in-up">
+            <h1 className="text-[2.5rem] font-black leading-[1.05] tracking-[-0.04em] text-white sm:text-6xl lg:text-[4.75rem] lg:leading-[0.95]">
+              Ruang custom yang terasa rapi, hangat, dan fungsional.
+            </h1>
 
-            <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.16)] backdrop-blur">
-              <div className="overflow-hidden rounded-[2rem] bg-white">
-                <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.03)),url('/assets/portfolio/kitchen-set-showroom-buf-01.webp')] bg-cover bg-center sm:min-h-[430px] lg:min-h-[470px]" />
-                <div className="border-t border-stone-200 bg-[#171717] p-4 text-white lg:p-5">
-                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Custom interior • by konfirmasi</p>
-                  <p className="mt-2 text-xl font-black leading-[1.25] tracking-[-0.02em] sm:text-2xl">
-                    Interior, furniture, dan ruang usaha custom.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/70 sm:text-lg sm:leading-8 lg:mt-7">
+              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget.
+            </p>
 
-            <div className="absolute -bottom-6 right-3 hidden rounded-[1.5rem] bg-brand-blue px-5 py-4 text-white shadow-blue md:block">
-              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/65">Material</p>
-              <p className="mt-1 text-lg font-black">By request pelanggan</p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
+              <Link href={routes.kontak} className="rounded-full bg-white px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-[0_18px_45px_rgba(0,0,0,0.3)] transition hover:bg-brand-blue hover:text-white lg:py-4">
+                Konsultasi Ruang
+              </Link>
+              <Link href={routes.gallery} className="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-center text-sm font-black text-white backdrop-blur transition hover:bg-white/20 lg:py-4">
+                Lihat Gallery
+              </Link>
+            </div>
+          </div>
+
+          {/* Mobile stats row */}
+          <div className="mt-8 grid grid-cols-3 divide-x divide-white/15 rounded-[1.25rem] border border-white/15 bg-white/10 p-3 backdrop-blur-md lg:hidden">
+            <div className="px-3 text-center">
+              <p className="text-lg font-black text-white sm:text-xl">7+</p>
+              <p className="mt-0.5 text-[10px] font-semibold text-white/50">Layanan</p>
+            </div>
+            <div className="px-3 text-center">
+              <p className="text-lg font-black text-white sm:text-xl">Custom</p>
+              <p className="mt-0.5 text-[10px] font-semibold text-white/50">Ukuran ruang</p>
+            </div>
+            <div className="px-3 text-center">
+              <p className="text-lg font-black text-white sm:text-xl">BUF</p>
+              <p className="mt-0.5 text-[10px] font-semibold text-white/50">Workshop</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ═══ LAYANAN — Cards with images, all 7 services ═══ */}
       <section className="wood-grain-bg relative overflow-hidden px-4 py-16 lg:py-24">
         <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_6%_20%,rgba(138,90,60,0.10),transparent_22rem),radial-gradient(circle_at_88%_15%,rgba(8,121,173,0.08),transparent_20rem)]" />
         <div className="relative mx-auto max-w-7xl">
@@ -122,28 +148,68 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {/* Top row: 4 cards */}
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {services.slice(0, 4).map((service, index) => (
               <Link
                 key={service.slug}
                 href={service.href}
-                className="wood-grain-card group relative overflow-hidden rounded-[2rem] border border-stone-200 p-5 shadow-[0_18px_55px_rgba(23,23,23,0.07)] transition hover:-translate-y-1 hover:border-brand-blue/25 hover:shadow-[0_26px_80px_rgba(23,23,23,0.13)]"
+                className="group relative overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(23,23,23,0.13)]"
               >
-                <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-wood via-brand-blue to-brand-red" />
-                <div className="absolute -right-5 -top-4 text-[5.4rem] font-black leading-none tracking-[-0.12em] text-stone-100 transition group-hover:text-brand-blue/10">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <div className="relative">
-                  <span className="inline-flex rounded-full bg-[#f5efe6] px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-wood">
+                {/* Image */}
+                <div className="relative h-44 overflow-hidden sm:h-48">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-[1.06]"
+                    style={{ backgroundImage: `url('${service.image}')` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute bottom-3 left-4 inline-flex rounded-full bg-white/90 px-3 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-wood backdrop-blur">
                     {service.category}
                   </span>
-                  <h3 className="mt-8 text-2xl font-black tracking-[-0.025em] text-charcoal">{service.shortTitle}</h3>
-                  <p className="mt-4 text-sm font-medium leading-7 text-muted">{service.description}</p>
+                </div>
 
-                  <div className="mt-7 flex items-center justify-between gap-3 border-t border-stone-200 pt-4">
-                    <span className="text-xs font-black uppercase tracking-[0.16em] text-muted">Custom</span>
-                    <span className="rounded-full bg-charcoal px-4 py-2 text-xs font-black text-white transition group-hover:bg-brand-blue">
+                {/* Content */}
+                <div className="p-5">
+                  <h3 className="text-xl font-black tracking-[-0.025em] text-charcoal">{service.shortTitle}</h3>
+                  <p className="mt-2 line-clamp-2 text-sm font-medium leading-6 text-muted">{service.description}</p>
+                  <div className="mt-4 flex items-center justify-between border-t border-stone-100 pt-3">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-muted">Custom</span>
+                    <span className="rounded-full bg-charcoal px-3.5 py-1.5 text-[11px] font-bold text-white transition group-hover:bg-brand-blue">
+                      Detail →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Bottom row: 3 cards */}
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {services.slice(4).map((service, index) => (
+              <Link
+                key={service.slug}
+                href={service.href}
+                className="group relative overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-[0_26px_80px_rgba(23,23,23,0.13)]"
+              >
+                {/* Image */}
+                <div className="relative h-44 overflow-hidden sm:h-48">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-[1.06]"
+                    style={{ backgroundImage: `url('${service.image}')` }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute bottom-3 left-4 inline-flex rounded-full bg-white/90 px-3 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-wood backdrop-blur">
+                    {service.category}
+                  </span>
+                </div>
+
+                {/* Content */}
+                <div className="p-5">
+                  <h3 className="text-xl font-black tracking-[-0.025em] text-charcoal">{service.shortTitle}</h3>
+                  <p className="mt-2 line-clamp-2 text-sm font-medium leading-6 text-muted">{service.description}</p>
+                  <div className="mt-4 flex items-center justify-between border-t border-stone-100 pt-3">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-muted">Custom</span>
+                    <span className="rounded-full bg-charcoal px-3.5 py-1.5 text-[11px] font-bold text-white transition group-hover:bg-brand-blue">
                       Detail →
                     </span>
                   </div>
@@ -154,29 +220,47 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ═══ GALLERY — Bento layout with 6 items ═══ */}
       <section className="bg-charcoal px-4 py-16 text-white lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-white/42">Gallery</p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
-                Contoh visual yang membantu calon pelanggan membayangkan ruangnya.
+                Proyek real BUF — dari konsep sampai terpasang.
               </h2>
             </div>
-            <Link href={routes.gallery} className="text-sm font-black text-white">
+            <Link href={routes.gallery} className="text-sm font-black text-white transition hover:text-brand-blue">
               Lihat semua gallery →
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          {/* Bento grid */}
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
             {galleryPreview.map((item, index) => (
-              <article key={item.title} className={`group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] ${index === 0 ? "md:row-span-2" : ""}`}>
-                <div className={`${index === 0 ? "min-h-[520px]" : "min-h-[250px]"} bg-cover bg-center transition duration-500 group-hover:scale-[1.03]`} style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.58)), url('${item.image}')` }}>
-                  <div className="flex h-full min-h-[inherit] items-end p-5">
+              <article
+                key={item.title}
+                className={`group relative overflow-hidden rounded-[1.75rem] border border-white/10 ${
+                  index === 0 ? "sm:row-span-2" : ""
+                }`}
+              >
+                <div
+                  className={`${
+                    index === 0 ? "min-h-[320px] sm:min-h-full sm:h-full" : "min-h-[220px] sm:min-h-[240px]"
+                  } relative bg-cover bg-center transition duration-500 group-hover:scale-[1.04]`}
+                  style={{
+                    backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.6)), url('${item.image}')`,
+                  }}
+                >
+                  <div className="absolute inset-0 flex items-end p-5">
                     <div>
-                      <p className="text-xs font-black uppercase tracking-[0.18em] text-white/50">{item.category}</p>
-                      <h3 className="mt-2 text-xl font-black leading-[1.25] tracking-[-0.02em] sm:text-2xl">{item.title}</h3>
+                      <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/50">{item.category}</p>
+                      <h3 className="mt-1.5 text-lg font-black leading-snug tracking-[-0.02em] sm:text-xl">{item.title}</h3>
                     </div>
+                  </div>
+                  {/* Proyek real badge */}
+                  <div className="absolute right-4 top-4 rounded-full bg-white/15 px-3 py-1 text-[9px] font-bold uppercase tracking-widest text-white/70 backdrop-blur-sm">
+                    Proyek real
                   </div>
                 </div>
               </article>
@@ -185,6 +269,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ═══ ESTIMASI BIAYA ═══ */}
       <section className="bg-[#fffaf2] px-4 py-16 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <div>
@@ -242,6 +327,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ═══ KENAPA BUF ═══ */}
       <section className="wood-grain-bg px-4 py-16 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
           <div className="relative overflow-hidden rounded-[2.25rem] bg-charcoal p-7 text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] lg:p-9">
@@ -283,6 +369,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ═══ ALUR KERJA ═══ */}
       <section className="relative overflow-hidden bg-[#fffaf2] px-4 py-16 lg:py-24">
         <div className="absolute left-0 top-0 h-full w-px bg-stone-200" />
         <div className="mx-auto max-w-7xl">
