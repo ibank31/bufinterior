@@ -86,31 +86,84 @@ export const articles = [
   },
   {
     slug: "material-kitchen-set-yang-bagus",
-    title: "Material Kitchen Set yang Bagus untuk Dapur Custom",
+    title: "Material Kitchen Set yang Bagus: Pilih Sesuai Kebutuhan Dapur",
     excerpt:
-      "Kenali pertimbangan memilih material kitchen set agar sesuai fungsi dapur, tampilan yang diinginkan, dan budget pengerjaan.",
+      "Panduan memilih material kitchen set custom agar tidak hanya terlihat bagus, tetapi juga sesuai pemakaian dapur, budget, finishing, dan kebiasaan memasak.",
     category: "Material",
     date: "2026-06-04",
-    readingTime: "4 menit baca",
+    readingTime: "7 menit baca",
     targetKeyword: "material kitchen set yang bagus",
     relatedServiceHref: routes.kitchenSet,
     relatedServiceLabel: "Kitchen Set",
     heroImage: "/assets/portfolio/backdrop-tv-minimalis-marmer-kayu-baf-banyumas.webp",
+    keyTakeaways: [
+      "Material kitchen set yang bagus bukan selalu yang paling mahal, tetapi yang sesuai dengan kebutuhan dapur dan cara pemakaian.",
+      "Dapur yang sering dipakai memasak butuh perhatian lebih pada area lembap, panas, noda, dan kemudahan dibersihkan.",
+      "Finishing, hardware, top table, dan detail penyimpanan ikut mempengaruhi kenyamanan kitchen set, bukan hanya material kabinet.",
+      "Sampaikan kebiasaan memasak, ukuran dapur, referensi desain, dan budget agar pilihan material lebih realistis.",
+    ],
     sections: [
       {
-        heading: "Material harus sesuai cara pakai dapur",
+        heading: "Material kitchen set yang bagus itu seperti apa?",
         body:
-          "Dapur yang sering dipakai memasak berat membutuhkan pertimbangan material yang berbeda dari dapur kering atau pantry. Karena itu, material sebaiknya dipilih berdasarkan fungsi ruang.",
+          "Material kitchen set yang bagus bukan hanya yang terlihat mewah di foto. Material yang baik harus sesuai dengan kondisi dapur, frekuensi pemakaian, kebutuhan penyimpanan, budget, dan tampilan yang diinginkan. Dapur yang sering dipakai memasak tentu punya kebutuhan berbeda dengan dapur yang lebih sering dipakai ringan.",
       },
       {
-        heading: "Tampilan dan perawatan",
+        heading: "Jangan memilih material hanya dari tampilan",
         body:
-          "Selain tampilan, pertimbangkan juga kemudahan perawatan. Finishing yang terlihat bagus belum tentu paling cocok jika area dapur sering terkena minyak, air, atau panas.",
+          "Banyak calon pelanggan tertarik pada warna, motif kayu, atau motif marmer. Itu wajar, karena kitchen set memang mempengaruhi tampilan ruang. Namun material juga perlu dilihat dari sisi fungsi: mudah dibersihkan, cukup kuat untuk pemakaian harian, cocok dengan area lembap, dan sesuai dengan budget pengerjaan.",
       },
       {
-        heading: "Sesuaikan dengan budget",
+        heading: "Area dapur yang perlu diperhatikan",
         body:
-          "Material kitchen set bisa disesuaikan dengan kebutuhan dan budget. Konsultasi awal membantu menentukan opsi yang paling realistis tanpa memaksakan satu pilihan.",
+          "Bagian dekat sink, kompor, dan top table biasanya perlu perhatian lebih karena lebih sering terkena air, panas, noda, dan aktivitas memasak. Karena itu, saat konsultasi kitchen set, jangan hanya menyebut warna atau model. Ceritakan juga bagaimana dapur akan dipakai sehari-hari.",
+      },
+      {
+        heading: "Finishing juga mempengaruhi hasil akhir",
+        body:
+          "Material kabinet dan finishing adalah dua hal yang saling berhubungan. Finishing bisa membuat kitchen set terlihat lebih hangat, modern, minimalis, atau elegan. Namun pilihan finishing juga perlu mempertimbangkan ketahanan, perawatan, dan budget. Tampilan bagus harus tetap realistis untuk pemakaian harian.",
+      },
+      {
+        heading: "Hardware dan aksesoris jangan dianggap sepele",
+        body:
+          "Engsel, rel laci, handle, rak piring, ambalan, dan aksesoris lain ikut mempengaruhi kenyamanan kitchen set. Kitchen set dengan material bagus tetapi hardware kurang sesuai bisa terasa kurang nyaman dipakai. Sebaliknya, kitchen set sederhana bisa terasa jauh lebih rapi jika pembagian fungsi dan hardware-nya tepat.",
+      },
+      {
+        heading: "Top table dan backsplash ikut menentukan budget",
+        body:
+          "Dalam kitchen set, biaya tidak hanya datang dari kabinet. Top table dan backsplash juga bisa mempengaruhi estimasi cukup besar. Pilihan material, ukuran, dan detail pemasangan pada bagian ini perlu dibahas sejak awal agar estimasi budget lebih jelas.",
+      },
+      {
+        heading: "Material terbaik tergantung kebutuhan dan budget",
+        body:
+          "Tidak semua dapur harus dibuat dengan spesifikasi paling tinggi. Untuk sebagian pelanggan, material dan finishing standar yang rapi sudah cukup. Untuk dapur yang lebih sering dipakai atau ingin tampilan lebih detail, spesifikasi bisa dinaikkan. Yang penting, pilihan material harus sesuai kebutuhan, bukan sekadar ikut tren.",
+      },
+      {
+        heading: "Apa yang perlu disampaikan saat konsultasi material?",
+        body:
+          "Agar arahan material lebih tepat, kirim foto dapur, ukuran kasar, referensi desain, kebiasaan memasak, kebutuhan penyimpanan, dan gambaran budget. Dari informasi itu, BUF bisa membantu memberi opsi material dan finishing yang lebih masuk akal untuk dapur Anda.",
+      },
+    ],
+    faq: [
+      {
+        question: "Apakah material kitchen set harus yang paling mahal?",
+        answer:
+          "Tidak selalu. Material yang tepat adalah yang sesuai dengan kebutuhan dapur, frekuensi pemakaian, tampilan yang diinginkan, dan budget pelanggan.",
+      },
+      {
+        question: "Apa yang paling mempengaruhi pilihan material kitchen set?",
+        answer:
+          "Kondisi dapur, area lembap, area kompor, kebutuhan penyimpanan, finishing, budget, dan kebiasaan memasak sangat mempengaruhi pilihan material.",
+      },
+      {
+        question: "Apakah finishing penting untuk kitchen set?",
+        answer:
+          "Penting. Finishing mempengaruhi tampilan akhir, nuansa ruang, perawatan, dan kesan rapi kitchen set.",
+      },
+      {
+        question: "Apakah bisa konsultasi material dulu sebelum menentukan desain?",
+        answer:
+          "Bisa. Justru konsultasi material sejak awal membantu desain dan estimasi biaya lebih realistis.",
       },
     ],
   },
