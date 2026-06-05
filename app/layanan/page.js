@@ -166,13 +166,18 @@ export default function LayananPage() {
 
           <div className="grid gap-3 sm:grid-cols-2">
             {audiences.map((item, index) => (
-              <div key={item} className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
-                <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/35">
+              <div key={item} className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
+                <div className="absolute -right-4 -top-3 text-[4.2rem] font-black leading-none tracking-[-0.12em] text-white/[0.06]">
                   {String(index + 1).padStart(2, "0")}
-                </p>
-                <p className="mt-4 text-xl font-black leading-snug tracking-[-0.02em]">
-                  {item}
-                </p>
+                </div>
+                <div className="relative">
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[11px] font-black text-charcoal">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-5 text-xl font-black leading-snug tracking-[-0.02em]">
+                    {item}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

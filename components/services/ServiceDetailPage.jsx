@@ -150,6 +150,12 @@ export default function ServiceDetailPage({ service }) {
               >
                 Lihat Contoh Pekerjaan
               </Link>
+              <Link
+                href={routes.estimasiBiaya}
+                className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur"
+              >
+                Cek Estimasi Biaya
+              </Link>
             </div>
 
             <div className="mt-8 rounded-[1.75rem] border border-stone-300/70 bg-white/62 p-5 shadow-soft backdrop-blur">
@@ -205,14 +211,17 @@ export default function ServiceDetailPage({ service }) {
             {userQuestions.map((item, index) => (
               <div
                 key={item}
-                className="rounded-[1.75rem] border border-stone-200 bg-white/82 p-5 shadow-soft backdrop-blur"
+                className="relative overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white/86 p-5 shadow-soft backdrop-blur"
               >
-                <p className="text-[11px] font-black uppercase tracking-[0.18em] text-muted">
-                  {String(index + 1).padStart(2, "0")}
-                </p>
-                <p className="mt-5 text-lg font-black leading-snug tracking-[-0.02em] text-charcoal">
-                  {item}
-                </p>
+                <span className="absolute inset-y-5 left-0 w-1 rounded-r-full bg-brand-blue" />
+                <div className="pl-3">
+                  <span className="inline-flex rounded-full bg-charcoal px-3 py-1 text-[11px] font-black uppercase tracking-[0.16em] text-white">
+                    Pertanyaan {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-5 text-lg font-black leading-snug tracking-[-0.02em] text-charcoal">
+                    {item}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -235,13 +244,18 @@ export default function ServiceDetailPage({ service }) {
 
           <div className="grid gap-3 sm:grid-cols-2">
             {serviceHighlights.map((item, index) => (
-              <div key={item} className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
-                <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/35">
+              <div key={item} className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
+                <div className="absolute -right-4 -top-3 text-[4.2rem] font-black leading-none tracking-[-0.12em] text-white/[0.06]">
                   {String(index + 1).padStart(2, "0")}
-                </p>
-                <p className="mt-4 text-xl font-black leading-snug tracking-[-0.02em]">
-                  {item}
-                </p>
+                </div>
+                <div className="relative">
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[11px] font-black text-charcoal">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-5 text-xl font-black leading-snug tracking-[-0.02em]">
+                    {item}
+                  </p>
+                </div>
               </div>
             ))}
           </div>

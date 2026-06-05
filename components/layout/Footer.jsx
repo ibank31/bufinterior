@@ -11,6 +11,7 @@ const priorityServices = [
 ];
 
 const guideLinks = [
+  ["Estimasi Biaya", routes.estimasiBiaya],
   ["Biaya Kitchen Set Custom", "/artikel/biaya-kitchen-set-custom"],
   ["Material Kitchen Set", "/artikel/material-kitchen-set-yang-bagus"],
   ["Tips Memilih Jasa Interior", "/artikel/tips-memilih-jasa-interior-custom"],

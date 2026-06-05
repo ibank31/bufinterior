@@ -23,6 +23,11 @@ export const staticPageMetadata = {
     description: "Hubungi BUF Berkah Utami Furniture untuk konsultasi desain dan pengerjaan interior custom, kitchen set, furniture, dan booth usaha. Lokasi proyek dapat dikonfirmasi terlebih dahulu.",
     path: routes.kontak,
   },
+  estimasiBiaya: {
+    title: "Estimasi Biaya Interior Custom, Kitchen Set & Furniture | BUF",
+    description: "Panduan estimasi biaya awal untuk kitchen set custom, lemari custom, backdrop TV, booth usaha, interior toko, dan custom furniture.",
+    path: routes.estimasiBiaya,
+  },
   tentangKami: {
     title: "Tentang BUF | Workshop Interior & Custom Furniture",
     description: "Profil BUF Berkah Utami Furniture, workshop interior dan custom furniture yang melayani desain sekaligus pengerjaan.",

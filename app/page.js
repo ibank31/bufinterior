@@ -185,6 +185,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-[#fffaf2] px-4 py-16 lg:py-24">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
+              Estimasi budget awal
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
+              Sudah punya ukuran kasar? Coba kira-kira budget sebelum konsultasi.
+            </h2>
+            <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted">
+              Kitchen set 3 meter, lemari 2 meter, atau backdrop TV 2,5 meter bisa mulai dihitung dari kisaran awal. Angka bukan harga final, tapi membantu Anda punya gambaran sebelum menghubungi BUF.
+            </p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link
+                href={routes.estimasiBiaya}
+                className="rounded-full bg-charcoal px-6 py-3 text-center text-sm font-black text-white shadow-soft"
+              >
+                Cek Estimasi Biaya
+              </Link>
+              <Link
+                href={routes.kontak}
+                className="rounded-full border border-stone-300 bg-white px-6 py-3 text-center text-sm font-black text-charcoal shadow-soft"
+              >
+                Minta Estimasi via WhatsApp
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3">
+            {[
+              ["Kitchen Set 3 m", "± Rp5,4–13,5 jt+"],
+              ["Lemari 2 m", "± Rp3–8 jt+"],
+              ["Backdrop 2,5 m", "± Rp3–8,75 jt+"],
+            ].map(([label, value]) => (
+              <Link
+                key={label}
+                href={routes.estimasiBiaya}
+                className="rounded-[1.75rem] border border-stone-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(23,23,23,0.12)]"
+              >
+                <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">
+                  Contoh hitung
+                </p>
+                <h3 className="mt-4 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
+                  {label}
+                </h3>
+                <p className="mt-3 text-2xl font-black tracking-[-0.03em] text-charcoal">
+                  {value}
+                </p>
+                <p className="mt-4 text-xs font-bold leading-6 text-muted">
+                  Kisaran awal, bukan harga final.
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="wood-grain-bg px-4 py-16 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
           <div className="relative overflow-hidden rounded-[2.25rem] bg-charcoal p-7 text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] lg:p-9">
@@ -215,9 +272,9 @@ export default function HomePage() {
               >
                 <span className="absolute inset-y-5 left-0 w-1 rounded-r-full bg-gradient-to-b from-wood via-brand-blue to-brand-red" />
                 <div className="pl-3">
-                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-muted">
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-charcoal text-[11px] font-black tracking-[0.08em] text-white shadow-soft">
                     {String(index + 1).padStart(2, "0")}
-                  </p>
+                  </span>
                   <p className="mt-5 text-xl font-black leading-snug tracking-[-0.02em]">{item}</p>
                 </div>
               </div>

@@ -10,6 +10,7 @@ export const routes = {
   boothUsaha: "/layanan/booth-usaha-banyumas",
   gallery: "/gallery",
   kontak: "/kontak",
+  estimasiBiaya: "/estimasi-biaya",
   tentangKami: "/tentang-kami",
   artikel: "/artikel",
 };
@@ -26,6 +27,7 @@ export const sitemapRoutes = [
   { path: routes.boothUsaha, priority: 0.74 },
   { path: routes.gallery, priority: 0.8 },
   { path: routes.kontak, priority: 0.82 },
+  { path: routes.estimasiBiaya, priority: 0.82 },
   { path: routes.tentangKami, priority: 0.65 },
   { path: routes.artikel, priority: 0.55 },
 ];
