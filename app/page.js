@@ -11,17 +11,17 @@ const galleryPreview = [
   {
     title: "Backdrop TV Ruang Keluarga",
     category: "Backdrop TV",
-    image: "/assets/portfolio/backdrop-tv-proses-pasang-buf-01.webp",
+    image: "/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp",
   },
   {
     title: "Wardrobe & Meja Rias Custom",
     category: "Custom Furniture",
-    image: "/assets/portfolio/wardrobe-meja-rias-custom-buf-01.webp",
+    image: "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
   },
   {
     title: "Booth Toko Roti",
     category: "Interior Usaha",
-    image: "/assets/portfolio/booth-pang-waffle-buf-01.webp",
+    image: "/assets/portfolio/booth-pang-waffle-custom-buf-01.webp",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function HomePage() {
 
             <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.16)] backdrop-blur">
               <div className="overflow-hidden rounded-[2rem] bg-white">
-                <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.03)),url('/assets/portfolio/kitchen-set-showroom-buf-01.webp')] bg-cover bg-center sm:min-h-[430px] lg:min-h-[470px]" />
+                <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.03)),url('/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp')] bg-cover bg-center sm:min-h-[430px] lg:min-h-[470px]" />
                 <div className="border-t border-stone-200 bg-[#171717] p-4 text-white lg:p-5">
                   <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Custom interior • by konfirmasi</p>
                   <p className="mt-2 text-xl font-black leading-[1.25] tracking-[-0.02em] sm:text-2xl">

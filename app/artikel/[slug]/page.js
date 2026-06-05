@@ -159,7 +159,7 @@ export default function ArticleDetailPage({ params }) {
                   Hubungi BUF
                 </Link>
               </div>
-              <div className="min-h-[200px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-proses-pasang-buf-01.webp')] bg-cover bg-center" />
+              <div className="min-h-[200px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp')] bg-cover bg-center" />
             </div>
           </article>
         </div>

@@ -205,7 +205,7 @@ export default function TentangKamiPage() {
               Konsultasi via WhatsApp
             </a>
           </div>
-          <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-putih-kayu-inspirasi-buf-01.webp')] bg-cover bg-center" />
+          <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp')] bg-cover bg-center" />
         </div>
       </section>
     </main>
