@@ -104,7 +104,7 @@ export default function ArtikelPage() {
                 Konsultasi via WhatsApp
               </Link>
             </div>
-            <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/meja-belajar-lemari-custom-baf-banyumas.webp')] bg-cover bg-center" />
+            <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/meja-kerja-custom-panel-buf-01.webp')] bg-cover bg-center" />
           </div>
         </div>
       </section>

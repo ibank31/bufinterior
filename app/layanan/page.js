@@ -10,13 +10,13 @@ const whatsappHref =
   "https://wa.me/6285772208688?text=Halo%20BUF%2C%20saya%20ingin%20konsultasi%20layanan%20interior%20atau%20custom%20furniture.";
 
 const serviceVisuals = {
-  "kitchen-set-banyumas": "/assets/hero/hero-interior-custom-baf-banyumas.webp",
-  "custom-furniture-banyumas": "/assets/portfolio/wardrobe-meja-rias-custom-baf-banyumas.webp",
-  "interior-rumah-banyumas": "/assets/portfolio/desain-kamar-tidur-modern-baf-banyumas.webp",
-  "interior-toko-banyumas": "/assets/portfolio/booth-toko-roti-custom-baf-banyumas.webp",
-  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-ruang-keluarga-baf-banyumas.webp",
-  "lemari-custom-banyumas": "/assets/portfolio/realisasi-lemari-meja-tv-custom-baf-banyumas.webp",
-  "booth-usaha-banyumas": "/assets/portfolio/booth-toko-roti-custom-baf-banyumas.webp",
+  "kitchen-set-banyumas": "/assets/portfolio/kitchen-set-showroom-buf-01.webp",
+  "custom-furniture-banyumas": "/assets/portfolio/wardrobe-meja-rias-custom-buf-01.webp",
+  "interior-rumah-banyumas": "/assets/portfolio/interior-rumah-backdrop-tangga-inspirasi-buf-01.webp",
+  "interior-toko-banyumas": "/assets/portfolio/booth-pang-waffle-buf-01.webp",
+  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-proses-pasang-buf-01.webp",
+  "lemari-custom-banyumas": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
+  "booth-usaha-banyumas": "/assets/portfolio/booth-pang-waffle-buf-01.webp",
 };
 
 const audiences = [
@@ -73,7 +73,7 @@ export default function LayananPage() {
 
           <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.14)] backdrop-blur">
             <div className="overflow-hidden rounded-[2rem] bg-white">
-              <div className="min-h-[420px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.04)),url('/assets/portfolio/backdrop-tv-ruang-keluarga-baf-banyumas.webp')] bg-cover bg-center" />
+              <div className="min-h-[420px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.04)),url('/assets/portfolio/backdrop-tv-proses-pasang-buf-01.webp')] bg-cover bg-center" />
               <div className="border-t border-stone-200 bg-charcoal p-5 text-white">
                 <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/45">
                   Custom sesuai ruang
@@ -116,7 +116,7 @@ export default function LayananPage() {
                 <div
                   className="min-h-[220px] bg-cover bg-center transition duration-500 group-hover:scale-[1.03]"
                   style={{
-                    backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.18)), url('${serviceVisuals[service.slug] || "/assets/hero/hero-interior-custom-baf-banyumas.webp"}')`,
+                    backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.18)), url('${serviceVisuals[service.slug] || "/assets/portfolio/kitchen-set-showroom-buf-01.webp"}')`,
                   }}
                 />
 
@@ -233,7 +233,7 @@ export default function LayananPage() {
                 Chat WhatsApp BUF
               </a>
             </div>
-            <div className="min-h-[240px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/meja-belajar-lemari-custom-baf-banyumas.webp')] bg-cover bg-center" />
+            <div className="min-h-[240px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/meja-kerja-custom-panel-buf-01.webp')] bg-cover bg-center" />
           </div>
         </div>
       </section>

@@ -234,7 +234,7 @@ export default function EstimasiBiayaPage() {
 
           <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.14)] backdrop-blur">
             <div className="overflow-hidden rounded-[2rem] bg-white">
-              <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.08)),url('/assets/portfolio/backdrop-tv-ruang-keluarga-baf-banyumas.webp')] bg-cover bg-center sm:min-h-[460px]" />
+              <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.08)),url('/assets/portfolio/backdrop-tv-proses-pasang-buf-01.webp')] bg-cover bg-center sm:min-h-[460px]" />
               <div className="border-t border-stone-200 bg-charcoal p-5 text-white">
                 <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/45">
                   Prinsip estimasi
@@ -508,7 +508,7 @@ export default function EstimasiBiayaPage() {
               Minta Estimasi via WhatsApp
             </a>
           </div>
-          <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/wardrobe-meja-rias-custom-baf-banyumas.webp')] bg-cover bg-center" />
+          <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/wardrobe-meja-rias-custom-buf-01.webp')] bg-cover bg-center" />
         </div>
       </section>
     </main>

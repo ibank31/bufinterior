@@ -12,7 +12,7 @@ export const articles = [
     targetKeyword: "biaya kitchen set custom",
     relatedServiceHref: routes.kitchenSet,
     relatedServiceLabel: "Kitchen Set",
-    heroImage: "/assets/hero/hero-interior-custom-baf-banyumas.webp",
+    heroImage: "/assets/portfolio/kitchen-set-showroom-buf-01.webp",
     keyTakeaways: [
       "Biaya kitchen set custom umumnya lebih mudah dipahami dari ukuran kasar dikali kisaran per meter lari.",
       "Kitchen set 3 meter belum tentu sama harganya, karena detail kabinet, finishing, top table, backsplash, dan aksesoris bisa berbeda.",
@@ -95,7 +95,7 @@ export const articles = [
     targetKeyword: "material kitchen set yang bagus",
     relatedServiceHref: routes.kitchenSet,
     relatedServiceLabel: "Kitchen Set",
-    heroImage: "/assets/portfolio/backdrop-tv-minimalis-marmer-kayu-baf-banyumas.webp",
+    heroImage: "/assets/portfolio/backdrop-tv-putih-kayu-inspirasi-buf-01.webp",
     keyTakeaways: [
       "Material kitchen set yang bagus bukan selalu yang paling mahal, tetapi yang sesuai dengan kebutuhan dapur dan cara pemakaian.",
       "Dapur yang sering dipakai memasak butuh perhatian lebih pada area lembap, panas, noda, dan kemudahan dibersihkan.",
@@ -178,7 +178,7 @@ export const articles = [
     targetKeyword: "tips memilih jasa interior custom",
     relatedServiceHref: routes.layanan,
     relatedServiceLabel: "Layanan Interior Custom",
-    heroImage: "/assets/portfolio/interior-bawah-tangga-custom-baf-banyumas.webp",
+    heroImage: "/assets/portfolio/backdrop-panel-proses-buf-01.webp",
     keyTakeaways: [
       "Jasa interior custom yang baik bukan hanya terlihat bagus, tetapi juga bisa membantu membaca kebutuhan ruang, fungsi, ukuran, dan budget.",
       "Perhatikan gallery pekerjaan, cara komunikasi, alur konsultasi, dan kejelasan estimasi sebelum menentukan vendor.",
@@ -261,7 +261,7 @@ export const articles = [
     targetKeyword: "lemari custom vs lemari jadi",
     relatedServiceHref: routes.lemariCustom,
     relatedServiceLabel: "Lemari Custom",
-    heroImage: "/assets/portfolio/wardrobe-meja-rias-custom-baf-banyumas.webp",
+    heroImage: "/assets/portfolio/wardrobe-meja-rias-custom-buf-01.webp",
     keyTakeaways: [
       "Lemari jadi cocok jika ukuran ruang standar, kebutuhan penyimpanan sederhana, dan ingin solusi cepat.",
       "Lemari custom lebih cocok jika ruang tidak standar, ingin tampilan rapi, atau butuh penyimpanan yang benar-benar menyesuaikan kebiasaan pemakai.",
