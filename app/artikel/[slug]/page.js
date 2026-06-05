@@ -80,9 +80,33 @@ export default function ArticleDetailPage({ params }) {
               <p className="mt-3 text-sm font-medium leading-7 text-muted">
                 Setelah membaca, Anda bisa langsung konsultasi sesuai kebutuhan ruang.
               </p>
-              <Link href={article.relatedServiceHref} className="mt-5 inline-flex rounded-full bg-charcoal px-5 py-3 text-sm font-black text-white">
-                Layanan {article.relatedServiceLabel}
-              </Link>
+
+              {article.keyTakeaways ? (
+                <div className="mt-5 grid gap-3">
+                  {article.keyTakeaways.map((item, index) => (
+                    <div key={item} className="relative overflow-hidden rounded-[1.35rem] border border-stone-200 bg-[#fffaf2] p-4">
+                      <span className="absolute inset-y-4 left-0 w-1 rounded-r-full bg-gradient-to-b from-wood via-brand-blue to-brand-red" />
+                      <div className="pl-3">
+                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-charcoal text-[10px] font-black tracking-[0.08em] text-white">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <p className="mt-3 text-sm font-black leading-6 text-charcoal">
+                          {item}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+
+              <div className="mt-5 grid gap-3">
+                <Link href={article.relatedServiceHref} className="inline-flex justify-center rounded-full bg-charcoal px-5 py-3 text-sm font-black text-white">
+                  Layanan {article.relatedServiceLabel}
+                </Link>
+                <Link href={routes.estimasiBiaya} className="inline-flex justify-center rounded-full border border-stone-300 bg-white px-5 py-3 text-sm font-black text-charcoal shadow-soft">
+                  Cek Estimasi Biaya
+                </Link>
+              </div>
             </div>
           </aside>
 
@@ -99,6 +123,29 @@ export default function ArticleDetailPage({ params }) {
                 </section>
               ))}
             </div>
+
+            {article.faq ? (
+              <div className="mt-10 rounded-[2rem] border border-stone-200 bg-[#fffaf2] p-5">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-brand-blue">
+                  FAQ
+                </p>
+                <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+                  Pertanyaan yang sering muncul.
+                </h2>
+                <div className="mt-6 grid gap-4 md:grid-cols-2">
+                  {article.faq.map((item) => (
+                    <div key={item.question} className="rounded-[1.5rem] border border-stone-200 bg-white p-5 shadow-soft">
+                      <h3 className="text-lg font-black leading-snug tracking-[-0.02em] text-charcoal">
+                        {item.question}
+                      </h3>
+                      <p className="mt-3 text-sm font-medium leading-7 text-muted">
+                        {item.answer}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
 
             <div className="mt-10 overflow-hidden rounded-[2rem] bg-charcoal text-white md:grid md:grid-cols-[1fr_0.42fr]">
               <div className="p-6">
