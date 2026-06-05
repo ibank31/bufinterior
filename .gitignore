@@ -8,3 +8,7 @@ dist
 .next
 out
 .vercel
+
+# Local photo sorting workspace
+_photo-inbox/
+_photo-review/
