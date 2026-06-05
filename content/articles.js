@@ -204,31 +204,84 @@ export const articles = [
   },
   {
     slug: "lemari-custom-vs-lemari-jadi",
-    title: "Lemari Custom vs Lemari Jadi: Mana yang Lebih Cocok?",
+    title: "Lemari Custom vs Lemari Jadi: Mana yang Lebih Cocok untuk Ruang Anda?",
     excerpt:
-      "Perbandingan sederhana antara lemari custom dan lemari jadi agar lebih mudah menentukan pilihan sesuai kebutuhan ruang.",
+      "Panduan membandingkan lemari custom dan lemari jadi dari sisi ukuran ruang, fungsi penyimpanan, tampilan, budget, dan kebutuhan jangka panjang.",
     category: "Custom Furniture",
     date: "2026-06-04",
-    readingTime: "4 menit baca",
+    readingTime: "7 menit baca",
     targetKeyword: "lemari custom vs lemari jadi",
     relatedServiceHref: routes.lemariCustom,
     relatedServiceLabel: "Lemari Custom",
     heroImage: "/assets/portfolio/wardrobe-meja-rias-custom-baf-banyumas.webp",
+    keyTakeaways: [
+      "Lemari jadi cocok jika ukuran ruang standar, kebutuhan penyimpanan sederhana, dan ingin solusi cepat.",
+      "Lemari custom lebih cocok jika ruang tidak standar, ingin tampilan rapi, atau butuh penyimpanan yang benar-benar menyesuaikan kebiasaan pemakai.",
+      "Lemari custom biasanya lebih fleksibel untuk dibuat sampai plafon, mengikuti sudut ruang, atau menyatu dengan meja rias dan area kerja.",
+      "Perbandingan terbaik bukan hanya harga awal, tetapi juga fungsi, kerapian ruang, kapasitas penyimpanan, dan pemakaian jangka panjang.",
+    ],
     sections: [
       {
-        heading: "Lemari jadi cocok untuk kebutuhan cepat",
+        heading: "Kenapa banyak orang bingung memilih lemari custom atau lemari jadi?",
         body:
-          "Lemari jadi biasanya cocok jika ukuran ruang standar, kebutuhan sederhana, dan ingin solusi yang cepat digunakan.",
+          "Saat ingin menata kamar, wardrobe, atau ruang penyimpanan, banyak orang bingung apakah lebih baik membeli lemari jadi atau membuat lemari custom. Lemari jadi terlihat praktis karena bisa langsung dibeli, sedangkan lemari custom perlu proses desain, ukuran, dan pengerjaan. Namun keputusan terbaik sangat tergantung pada ukuran ruang, kebutuhan penyimpanan, tampilan yang diinginkan, dan budget.",
       },
       {
-        heading: "Lemari custom cocok untuk ruang khusus",
+        heading: "Kapan lemari jadi sudah cukup?",
         body:
-          "Jika ukuran ruang tidak standar, butuh penyimpanan tertentu, atau ingin tampilan menyatu dengan interior, lemari custom biasanya lebih fleksibel.",
+          "Lemari jadi bisa menjadi pilihan jika ruang Anda ukurannya standar, tidak banyak sudut sulit, kebutuhan penyimpanan sederhana, dan Anda ingin solusi cepat. Untuk kamar sementara, ruang yang tidak terlalu penuh, atau kebutuhan penyimpanan dasar, lemari jadi bisa terasa cukup praktis.",
       },
       {
-        heading: "Pertimbangkan fungsi jangka panjang",
+        heading: "Kapan lemari custom lebih masuk akal?",
         body:
-          "Lemari bukan hanya soal tampilan. Pertimbangkan jumlah barang, akses penggunaan, tinggi ruang, dan kebiasaan pemakai sehari-hari.",
+          "Lemari custom lebih masuk akal jika ukuran ruang tidak standar, ingin memaksimalkan area sampai plafon, punya kebutuhan penyimpanan khusus, atau ingin tampilan lebih menyatu dengan kamar. Lemari custom juga cocok jika Anda ingin pembagian ruang yang lebih spesifik, seperti gantungan baju panjang, laci kecil, rak tas, area koper, atau kombinasi dengan meja rias.",
+      },
+      {
+        heading: "Perbedaan utama ada di ukuran dan fungsi",
+        body:
+          "Lemari jadi biasanya mengikuti ukuran pabrik. Jika ruang Anda lebih kecil, lebih besar, atau punya sudut tertentu, sering ada sisa ruang yang tidak terpakai. Lemari custom bisa dibuat mengikuti ukuran ruang, sehingga area kosong bisa dimanfaatkan lebih maksimal dan hasilnya terlihat lebih rapi.",
+      },
+      {
+        heading: "Tampilan ruang biasanya lebih rapi dengan custom",
+        body:
+          "Salah satu alasan orang memilih lemari custom adalah tampilan yang lebih menyatu dengan ruang. Warna, finishing, ukuran, tinggi, dan pembagian bidang bisa dibuat menyesuaikan konsep kamar. Ini penting untuk ruang kecil, kamar utama, kamar anak, atau area wardrobe yang ingin terlihat lebih bersih dan tertata.",
+      },
+      {
+        heading: "Bagaimana dengan harga lemari custom?",
+        body:
+          "Harga lemari custom biasanya tidak bisa disamakan untuk semua proyek. Estimasi dipengaruhi panjang lemari, tinggi, jumlah pintu, jumlah laci, sekat, rel, kaca, finishing, dan aksesoris. Karena itu, lemari custom sebaiknya dilihat sebagai solusi yang menyesuaikan ruang dan kebutuhan, bukan hanya dibandingkan dari harga awal dengan lemari jadi.",
+      },
+      {
+        heading: "Contoh sederhana: lemari 2 meter",
+        body:
+          "Jika Anda punya ruang sekitar 2 meter, lemari jadi mungkin bisa masuk tetapi belum tentu memanfaatkan tinggi dan lebar ruang secara maksimal. Lemari custom 2 meter bisa dibuat lebih sesuai kebutuhan, misalnya sebagian untuk gantungan, sebagian untuk lipatan, tambahan laci, atau dibuat sampai plafon agar penyimpanan lebih banyak.",
+      },
+      {
+        heading: "Apa yang perlu dikirim sebelum membuat lemari custom?",
+        body:
+          "Untuk estimasi awal, Anda bisa mengirim foto ruang, ukuran kasar panjang dan tinggi area lemari, kebutuhan penyimpanan, contoh model yang disukai, serta gambaran budget. Dari informasi itu, BUF bisa membantu memberi arahan apakah kebutuhan Anda lebih cocok dibuat sederhana, standar, detail custom, atau premium.",
+      },
+    ],
+    faq: [
+      {
+        question: "Apakah lemari custom selalu lebih mahal dari lemari jadi?",
+        answer:
+          "Tidak selalu bisa dibandingkan langsung. Lemari jadi punya ukuran dan spesifikasi tetap, sedangkan lemari custom menyesuaikan ukuran ruang, finishing, sekat, laci, pintu, dan aksesoris. Yang dibandingkan sebaiknya bukan hanya harga awal, tetapi juga fungsi dan kecocokan dengan ruang.",
+      },
+      {
+        question: "Apakah lemari custom cocok untuk kamar kecil?",
+        answer:
+          "Cocok. Justru kamar kecil sering terbantu dengan lemari custom karena ukuran bisa dibuat menyesuaikan ruang dan penyimpanan bisa dirancang lebih efisien.",
+      },
+      {
+        question: "Apakah lemari bisa dibuat sampai plafon?",
+        answer:
+          "Bisa, selama kondisi ruang memungkinkan. Lemari sampai plafon sering dipilih agar tampilan lebih rapi dan area penyimpanan lebih maksimal.",
+      },
+      {
+        question: "Kalau saya belum punya desain lemari, apakah bisa konsultasi dulu?",
+        answer:
+          "Bisa. Mulai dari foto ruang, ukuran kasar, kebutuhan penyimpanan, dan referensi desain. BUF bisa membantu memberi arahan awal sebelum masuk ke detail desain dan estimasi.",
       },
     ],
   },
