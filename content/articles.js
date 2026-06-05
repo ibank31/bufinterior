@@ -169,36 +169,84 @@ export const articles = [
   },
   {
     slug: "tips-memilih-jasa-interior-custom",
-    title: "Tips Memilih Jasa Interior dan Custom Furniture",
+    title: "Tips Memilih Jasa Interior Custom agar Tidak Salah Vendor",
     excerpt:
-      "Beberapa hal yang perlu diperhatikan sebelum memilih jasa interior atau custom furniture untuk rumah, toko, maupun ruang usaha.",
+      "Panduan memilih jasa interior custom dari sisi komunikasi, gallery pekerjaan, alur kerja, estimasi biaya, material, dan kejelasan kebutuhan sebelum produksi.",
     category: "Panduan",
     date: "2026-06-04",
-    readingTime: "5 menit baca",
+    readingTime: "7 menit baca",
     targetKeyword: "tips memilih jasa interior custom",
     relatedServiceHref: routes.layanan,
-    relatedServiceLabel: "Layanan BUF",
+    relatedServiceLabel: "Layanan Interior Custom",
     heroImage: "/assets/portfolio/interior-bawah-tangga-custom-baf-banyumas.webp",
+    keyTakeaways: [
+      "Jasa interior custom yang baik bukan hanya terlihat bagus, tetapi juga bisa membantu membaca kebutuhan ruang, fungsi, ukuran, dan budget.",
+      "Perhatikan gallery pekerjaan, cara komunikasi, alur konsultasi, dan kejelasan estimasi sebelum menentukan vendor.",
+      "Anda tidak harus punya desain final sebelum konsultasi. Foto ruang, ukuran kasar, referensi, dan gambaran budget sudah cukup untuk memulai.",
+      "Hindari memilih vendor hanya dari harga paling murah tanpa memahami material, finishing, detail pengerjaan, dan layanan yang didapat.",
+    ],
     sections: [
       {
-        heading: "Lihat contoh pekerjaan",
+        heading: "Kenapa memilih jasa interior custom tidak boleh asal?",
         body:
-          "Foto pekerjaan atau gallery membantu melihat gaya, kualitas visual, dan jenis proyek yang pernah dikerjakan. Ini penting sebelum mulai konsultasi lebih jauh.",
+          "Interior custom biasanya dibuat mengikuti ukuran ruang dan kebutuhan pemakai. Karena itu, memilih jasa interior custom tidak cukup hanya melihat harga atau foto yang terlihat menarik. Anda perlu memperhatikan cara vendor memahami ruang, memberi arahan desain, menjelaskan material, dan membantu menyesuaikan budget.",
       },
       {
-        heading: "Pastikan bisa custom sesuai ukuran",
+        heading: "Lihat apakah vendor memahami kebutuhan, bukan hanya menjual desain",
         body:
-          "Interior dan furniture custom sebaiknya tidak hanya mengikuti model, tapi juga menyesuaikan ukuran ruang, kebutuhan fungsi, dan kebiasaan pemakai.",
+          "Vendor yang baik akan bertanya tentang ukuran ruang, fungsi, kebiasaan pemakaian, kebutuhan penyimpanan, referensi desain, dan budget. Pertanyaan seperti ini penting karena hasil interior custom harus nyaman dipakai, bukan hanya bagus difoto.",
       },
       {
-        heading: "Diskusikan budget sejak awal",
+        heading: "Periksa gallery dan contoh pekerjaan",
         body:
-          "Budget bukan hal yang harus disembunyikan. Dengan gambaran budget, penyedia jasa bisa membantu memberi opsi material dan desain yang lebih realistis.",
+          "Gallery membantu calon pelanggan melihat gaya pengerjaan, jenis ruang yang pernah ditangani, dan kualitas visual secara umum. Tidak harus semua contoh sama persis dengan kebutuhan Anda, tetapi gallery bisa memberi gambaran apakah vendor terbiasa mengerjakan kitchen set, lemari custom, backdrop TV, interior toko, atau booth usaha.",
       },
       {
-        heading: "Perhatikan alur kerja",
+        heading: "Pastikan alur kerjanya jelas",
         body:
-          "Alur kerja yang jelas, mulai dari konsultasi, pengukuran, pemilihan material, produksi, sampai pemasangan, membantu mengurangi risiko miskomunikasi.",
+          "Alur kerja yang jelas membuat proses lebih aman. Mulai dari konsultasi, pengiriman foto dan ukuran, arahan desain, estimasi, pemilihan material, produksi, sampai pemasangan. Jika alurnya tidak jelas, pelanggan bisa bingung kapan harga dikonfirmasi, kapan revisi dibahas, dan apa saja yang termasuk dalam pengerjaan.",
+      },
+      {
+        heading: "Jangan hanya membandingkan dari harga paling murah",
+        body:
+          "Harga murah memang menarik, tetapi interior custom perlu dilihat dari material, finishing, hardware, detail desain, jumlah penyimpanan, dan kualitas komunikasi. Dua penawaran dengan harga berbeda belum tentu berisi spesifikasi yang sama. Karena itu, lebih aman memahami apa saja yang termasuk di dalam estimasi.",
+      },
+      {
+        heading: "Tanyakan material dan finishing sejak awal",
+        body:
+          "Material dan finishing akan mempengaruhi tampilan, ketahanan, perawatan, dan budget. Anda tidak harus langsung paham semua istilah teknis, tetapi vendor sebaiknya bisa menjelaskan pilihan secara sederhana dan mengarahkan opsi yang sesuai kebutuhan ruang.",
+      },
+      {
+        heading: "Komunikasi yang rapi adalah tanda penting",
+        body:
+          "Dalam proyek custom, komunikasi sangat penting. Vendor perlu bisa menerima referensi, membaca ukuran, menjelaskan batasan, memberi opsi, dan menyampaikan estimasi secara masuk akal. Komunikasi yang rapi membantu mengurangi salah paham sebelum produksi.",
+      },
+      {
+        heading: "Apa yang perlu disiapkan sebelum konsultasi?",
+        body:
+          "Sebelum menghubungi jasa interior custom, siapkan foto ruang dari beberapa sudut, ukuran kasar, jenis kebutuhan, referensi desain, dan gambaran budget. Data sederhana ini membantu vendor memberi arahan awal yang lebih realistis.",
+      },
+    ],
+    faq: [
+      {
+        question: "Apakah harus punya desain dulu sebelum menghubungi jasa interior custom?",
+        answer:
+          "Tidak harus. Anda bisa mulai dari foto ruang, ukuran kasar, referensi desain, kebutuhan fungsi, dan gambaran budget. Vendor bisa membantu memberi arahan awal.",
+      },
+      {
+        question: "Apa tanda jasa interior custom yang komunikasinya baik?",
+        answer:
+          "Biasanya mereka bertanya tentang ukuran ruang, fungsi, material, budget, dan referensi. Mereka juga menjelaskan proses serta estimasi dengan bahasa yang mudah dipahami.",
+      },
+      {
+        question: "Apakah harga paling murah selalu lebih baik?",
+        answer:
+          "Belum tentu. Harga perlu dibandingkan dengan material, finishing, hardware, detail pengerjaan, layanan, dan kualitas komunikasi.",
+      },
+      {
+        question: "Apa yang sebaiknya dikirim saat konsultasi pertama?",
+        answer:
+          "Kirim foto ruang, ukuran kasar, referensi desain, kebutuhan penyimpanan atau fungsi, lokasi proyek, dan gambaran budget.",
       },
     ],
   },
