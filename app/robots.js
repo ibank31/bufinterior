@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { absoluteSiteUrl } from "@/lib/url";
 
 export default function robots() {
