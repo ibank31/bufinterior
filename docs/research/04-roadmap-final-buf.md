@@ -1,93 +1,158 @@
 # Roadmap Final BUF
 
-Roadmap ini menjadi acuan rebuild website BUF menggunakan Next.js App Router, SEO lokal, gallery, dan Cloudflare.
+Roadmap ini menjadi acuan lanjutan website BUF menggunakan Next.js App Router, SEO service-first, conversion WhatsApp, gallery, artikel edukatif, dan Cloudflare.
 
 ## Keputusan Utama
 
-- Tetap pakai app/ root, bukan src/app.
+- Tetap pakai `app/` root, bukan `src/app`.
 - Tetap pakai JavaScript dulu, bukan TypeScript.
 - Tetap file-based content dulu, bukan CMS.
-- Pakai /gallery, bukan /portfolio.
-- Pakai /artikel, bukan /blog.
-- Area page dibuat nanti setelah ada konten unik.
-- Visual polish masuk awal karena bisnis interior dinilai dari visual.
-- Google Business Profile wajib masuk strategi lokal.
-- Testimoni dimulai dari section kecil dulu.
+- Pakai `/gallery`, bukan `/portfolio`.
+- Pakai `/artikel`, bukan `/blog`.
+- Pakai `/estimasi-biaya` untuk menangkap intent harga/biaya secara transparan.
+- Area page dibuat nanti hanya jika ada konten/proyek unik.
+- Visual polish penting karena bisnis interior dinilai dari visual.
+- Google Business Profile wajib untuk local SEO.
+- Testimoni dimulai dari section kecil dulu sebelum halaman khusus.
+- Keyword lokal dipakai sebagai pendukung, bukan seluruh positioning.
 
-## Batch A - Fondasi Stabil + Deploy + GBP
+## Status Pekerjaan Terbaru
 
-- Pastikan build sukses di Termux dengan next build --webpack.
-- Pastikan .next, out, dan .vercel masuk .gitignore.
-- Fix asset path hero dan gallery.
-- Buat app/not-found.js.
-- Rapikan metadata semua halaman.
-- Rapikan schema dasar.
-- Deploy ke Cloudflare Pages.
-- Setup Google Search Console setelah URL stabil.
+Sudah selesai:
+
+- Homepage dipoles dengan positioning service-first.
+- Halaman layanan dibuat lebih premium dan WhatsApp-focused.
+- Copy yang terlalu lokal-heavy sudah dikurangi.
+- Gallery scalable dibuat dengan `content/gallery.js`.
+- Kontak dibuat fokus ke WhatsApp.
+- Tentang Kami dibuat trust-focused.
+- Struktur artikel scalable dibuat.
+- Artikel masuk sitemap.
+- Metadata diselaraskan dengan strategi service-first.
+- Internal linking cluster diperkuat.
+- `/estimasi-biaya` dibuat sebagai landing page harga/biaya.
+- Artikel biaya kitchen set diperkuat.
+- Artikel material kitchen set diperkuat.
+- Artikel tips memilih jasa interior custom diperkuat.
+- Artikel lemari custom vs lemari jadi diperkuat.
+- Build terakhir valid dengan 22 route.
+
+## Batch A — Fondasi Stabil
+
+Status: selesai.
+
+- Next.js App Router sudah berjalan.
+- Build berhasil di Termux dengan `next build --webpack`.
+- Sitemap dan robots sudah ada.
+- Metadata halaman sudah dirapikan.
+- Schema dasar sudah tersedia.
+- 404 page sudah ada.
+- Artikel SSG menggunakan `generateStaticParams`.
+
+## Batch B — Visual Homepage + Gallery System
+
+Status: sebagian besar selesai.
+
+- Homepage sudah dipoles.
+- Gallery sudah photo-first dan scalable.
+- Gallery kategori sudah disiapkan.
+- Foto proyek asli masih perlu audit dan penggantian bertahap.
+- `/gallery/[slug]` belum dibuat karena data/foto belum cukup.
+
+## Batch C — Halaman Layanan + FAQ + Internal Link
+
+Status: selesai untuk fondasi.
+
+- Halaman layanan hub sudah dibuat.
+- Halaman detail layanan sudah dibuat.
+- CTA WhatsApp ada.
+- Internal link ke artikel, gallery, estimasi, dan kontak sudah diperkuat.
+- FAQ dasar sudah ada.
+- Ke depan bisa ditambah FAQ spesifik per layanan jika ada pertanyaan real dari pelanggan.
+
+## Batch D — Artikel SEO Service-first
+
+Status: artikel awal sudah diperkuat.
+
+Artikel yang sudah ada dan diperkuat:
+
+- `/artikel/biaya-kitchen-set-custom`
+- `/artikel/material-kitchen-set-yang-bagus`
+- `/artikel/tips-memilih-jasa-interior-custom`
+- `/artikel/lemari-custom-vs-lemari-jadi`
+
+Arah artikel:
+
+- Menjawab problem user.
+- Natural keyword, bukan keyword stuffing.
+- Mengarah ke layanan terkait.
+- Mengarah ke `/estimasi-biaya` jika relevan.
+- Mengarah ke konsultasi WhatsApp secara tidak memaksa.
+
+Artikel tambahan nanti:
+
+- Harga lemari custom: cara mengira-ngira budget.
+- Booth usaha custom: apa saja yang mempengaruhi biaya.
+- Backdrop TV custom: contoh ukuran dan estimasi.
+- Interior toko kecil: cara menata display agar rapi.
+- Checklist sebelum pesan custom furniture.
+
+## Batch E — Estimasi Biaya
+
+Status: selesai untuk versi awal.
+
+`/estimasi-biaya` dibuat untuk menangkap user yang mencari harga/biaya tanpa memberi janji harga pasti.
+
+Prinsip halaman estimasi:
+
+- Tampilkan range “mulai dari” atau “kisaran awal”.
+- Jelaskan faktor yang mempengaruhi harga.
+- Jangan janji harga pasti.
+- Dorong user mengirim foto, ukuran kasar, referensi desain, dan budget.
+- CTA utama: minta estimasi awal via WhatsApp.
+- Gunakan level Ekonomis, Standar, Detail Custom, Premium agar user bisa mengira-ngira posisinya sendiri.
+
+## Batch F — Trust Proof
+
+Status: belum dikerjakan.
+
+Prioritas berikutnya sebelum live final:
+
+- Tambah section testimoni sederhana.
+- Tambah bukti workshop/proses jika foto tersedia.
+- Tambah trust proof di homepage atau kontak.
+- Jangan membuat testimoni palsu.
+- Jika belum ada testimoni, gunakan trust proof berbasis proses, workshop, alur kerja, dan gallery.
+
+## Batch G — Launch + Monitoring
+
+Status: menunggu domain final dan asset gambar.
+
+Sebelum launch final:
+
+- Beli domain final.
+- Domain rencana: `bufinterior.com`.
+- Ganti `baseUrl` dan `domain` di `content/site.js`.
+- Audit semua path gambar.
+- Deploy Cloudflare Pages.
+- Cek sitemap live.
+- Setup Search Console.
 - Submit sitemap.
 - Setup Google Business Profile.
-- GA4 dipasang setelah URL production jelas.
-
-## Batch B - Visual Homepage + Gallery System
-
-- Polishing homepage.
-- Buat content/gallery.js.
-- Buat GalleryGrid dan GalleryCard.
-- Buat halaman /gallery dengan filter kategori.
-- Buat /gallery/[slug] setelah data cukup.
-- Optimasi gambar WebP dan next/image.
-- Link gallery ke layanan terkait.
-
-## Batch C - Enrich Halaman Layanan + FAQ
-
-- Tambah manfaat per layanan.
-- Tambah proses pengerjaan.
-- Tambah material by request.
-- Tambah FAQ minimal 4 sampai 5 pertanyaan per layanan.
-- Tambah gallery terkait.
-- Tambah CTA kontak.
-- Tambah internal link ke artikel.
-- Tambah Service schema, FAQPage schema, dan BreadcrumbList.
-
-## Batch D - Artikel SEO Lokal
-
-Artikel awal:
-- Biaya Kitchen Set di Banyumas 2026
-- Material Kitchen Set yang Bagus dan Tahan Lama
-- Tips Memilih Jasa Interior di Banyumas
-- Lemari Custom vs Lemari Jadi
-- Gaya Desain Interior Populer untuk Rumah di Purwokerto
-- Before-After Transformasi Dapur Sempit di Sokaraja
-
-## Batch E - Testimoni + Harga + Area Page Terbatas
-
-- Kumpulkan minimal 3 sampai 5 testimoni.
-- Buat section testimoni di homepage.
-- Buat halaman /testimoni setelah data cukup.
-- Buat halaman /harga atau /estimasi-biaya.
-- Harga ditulis sebagai range, bukan angka pasti.
-- Area page hanya dibuat jika ada konten unik.
-
-## Batch F - Launch + Monitoring + Marketing
-
-- Final QA.
-- Deploy final ke Cloudflare Pages.
-- Update link website di Google Business Profile.
-- Submit sitemap final ke Google Search Console.
-- Request indexing halaman penting.
-- Share website ke WhatsApp, Instagram, Facebook, dan GBP.
-- Minta review Google dari klien lama.
+- Tambahkan website ke GBP.
+- Minta review dari klien lama.
 - Monitor Search Console dan Analytics.
 
-## Prioritas 30 Hari Pertama
+## Prioritas Sebelum Online
 
-1. Stabilkan Next.js branch.
-2. Deploy staging Cloudflare.
-3. Rapikan homepage visual.
-4. Rapikan gallery dasar.
-5. Perkaya halaman kitchen set, custom furniture, interior rumah, dan interior toko.
-6. Setup Search Console.
-7. Setup Google Business Profile.
-8. Kumpulkan foto proyek dan testimoni.
-9. Buat artikel biaya kitchen set Banyumas.
-10. Submit sitemap dan halaman penting.
+1. Audit dan siapkan gambar yang lebih proper.
+2. Tambah trust proof/testimoni section.
+3. Ganti domain di config setelah domain dibeli.
+4. Final build.
+5. Deploy Cloudflare.
+6. Setup Google Business Profile.
+7. Submit sitemap ke Search Console.
+
+## Catatan Final
+
+Website tidak lagi diarahkan sebagai website lokal-heavy yang hanya mengejar keyword Banyumas. Arah utama adalah service-first: interior custom, kitchen set, custom furniture, estimasi biaya, material, dan trust. Local SEO tetap penting, tetapi diposisikan sebagai pendukung melalui metadata, slug, GBP, dan sebagian kecil konteks layanan.
