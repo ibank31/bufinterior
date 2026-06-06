@@ -15,6 +15,9 @@ Checklist ini wajib dijalankan sebelum bufinterior.com dipublikasikan sebagai do
 - [ ] Dropdown Portofolio mengarah ke /portfolio/*
 - [ ] Semua halaman P0 /jasa/* bisa dicapai maksimal 2 klik dari homepage
 - [ ] Semua /portfolio/* bukan 404
+- [ ] Semua local service punya serviceSlug valid ke content/services.js
+- [ ] Semua local service punya areaSlug valid ke content/areas.js
+- [ ] Tidak ada halaman area massal tanpa data nyata
 - [ ] Semua placeholder portofolio sudah diganti data real sebelum launch final
 - [ ] Tidak ada teks publik: Placeholder, Referensi Kategori, atau Dokumentasi real akan ditambahkan
 - [ ] Tidak ada istilah Gallery di UI publik
