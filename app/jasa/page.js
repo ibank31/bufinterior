@@ -7,7 +7,7 @@ export const metadata = buildMetadata({
   title: "Jasa Custom Interior, Furniture & Proyek Purwokerto | Berkah Utami Furniture",
   description:
     "Jasa custom interior, furniture, kitchen set, booth usaha, akrilik, aluminium, dan kanopi dari Berkah Utami Furniture di Berkoh, Purwokerto.",
-  path: "/jasa",
+  path: routes.jasa,
 });
 
 const hubHighlights = [
