@@ -9,7 +9,7 @@ export const metadata = buildMetadata(staticPageMetadata.home);
 
 const galleryPreview = [
   {
-    title: "Backdrop TV Ruang Keluarga",
+    title: "Proses Pemasangan Backdrop TV",
     category: "Backdrop TV",
     image: "/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp",
   },

@@ -17,11 +17,11 @@ export function getGalleryCategoryLabel(categoryId) {
 
 export const galleryItems = [
   {
-    slug: "kitchen-set-proyek-real",
-    title: "Kitchen Set Custom Terpasang",
+    slug: "kitchen-set-luxury-rak-display",
+    title: "Kitchen Set Luxury dengan Rak Display",
     category: "kitchen-set",
-    type: "Realisasi",
-    location: "Dapur rumah",
+    type: "Konsep",
+    location: "Area kitchen",
     image: "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
     serviceHref: routes.kitchenSet,
     serviceLabel: "Kitchen Set",
@@ -48,7 +48,7 @@ export const galleryItems = [
     category: "kitchen-set",
     type: "Display",
     location: "Area kitchen",
-    image: "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
+    image: "/assets/portfolio/kitchen-set-island-display-buf-01.webp",
     serviceHref: routes.kitchenSet,
     serviceLabel: "Kitchen Set",
     isFeatured: false,
