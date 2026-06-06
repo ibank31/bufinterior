@@ -1,12 +1,12 @@
 import { localServiceHref, routes } from "@/content/routes";
 
 export const localServiceRoutes = {
-  jasa: "/jasa",
-  kitchenSetPurwokerto: "/jasa/kitchen-set-purwokerto",
-  boothUsahaPurwokerto: "/jasa/booth-usaha-purwokerto",
-  akrilikCustomPurwokerto: "/jasa/akrilik-custom-purwokerto",
-  aluminiumPurwokerto: "/jasa/aluminium-purwokerto",
-  kanopiPurwokerto: "/jasa/kanopi-purwokerto",
+  jasa: routes.jasa,
+  kitchenSetPurwokerto: localServiceHref("kitchen-set-purwokerto"),
+  boothUsahaPurwokerto: localServiceHref("booth-usaha-purwokerto"),
+  akrilikCustomPurwokerto: localServiceHref("akrilik-custom-purwokerto"),
+  aluminiumPurwokerto: localServiceHref("aluminium-purwokerto"),
+  kanopiPurwokerto: localServiceHref("kanopi-purwokerto"),
 };
 
 export const localServices = [
