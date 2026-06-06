@@ -206,6 +206,7 @@ Sebelum bufinterior.com live:
 - [ ] Environment variable production sudah diset: `NEXT_PUBLIC_SITE_URL=https://bufinterior.com`
 - [ ] `siteConfig.baseUrl` menghasilkan `https://bufinterior.com`
 - [ ] `siteConfig.domain` menghasilkan `bufinterior.com`
+- [ ] Nomor WhatsApp/telepon final sudah diverifikasi di `content/site.js`
 - [ ] canonical semua halaman benar
 - [ ] sitemap aktif
 - [ ] robots.txt allow crawl
