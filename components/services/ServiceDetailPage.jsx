@@ -45,6 +45,26 @@ const defaultFaqs = [
   },
 ];
 
+const serviceHeroVisuals = {
+  "kitchen-set-banyumas": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
+  "custom-furniture-banyumas": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
+  "interior-rumah-banyumas": "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
+  "interior-toko-banyumas": "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
+  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
+  "lemari-custom-banyumas": "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
+  "booth-usaha-banyumas": "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
+};
+
+const serviceCtaVisuals = {
+  "kitchen-set-banyumas": "/assets/portfolio/kitchen-set-proses-pemasangan-buf-01.webp",
+  "custom-furniture-banyumas": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
+  "interior-rumah-banyumas": "/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp",
+  "interior-toko-banyumas": "/assets/portfolio/booth-travel-custom-moazzam-buf-01.webp",
+  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp",
+  "lemari-custom-banyumas": "/assets/portfolio/wardrobe-meja-rias-display-buf-01.webp",
+  "booth-usaha-banyumas": "/assets/portfolio/booth-pang-waffle-custom-buf-01.webp",
+};
+
 const relatedArticleSlugsByService = {
   "kitchen-set-banyumas": [
     "biaya-kitchen-set-custom",
@@ -98,6 +118,8 @@ function buildWhatsappHref(service) {
 export default function ServiceDetailPage({ service }) {
   const whatsappHref = buildWhatsappHref(service);
   const relatedArticles = getRelatedArticlesForService(service.slug);
+  const heroVisual = serviceHeroVisuals[service.slug] || "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp";
+  const ctaVisual = serviceCtaVisuals[service.slug] || heroVisual;
 
   const schemas = [
     serviceSchema(service),
@@ -174,7 +196,12 @@ export default function ServiceDetailPage({ service }) {
 
           <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.14)] backdrop-blur">
             <div className="overflow-hidden rounded-[2rem] bg-white">
-              <div className="min-h-[410px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.04)),url('/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp')] bg-cover bg-center sm:min-h-[460px]" />
+              <div
+                className="min-h-[410px] bg-cover bg-center sm:min-h-[460px]"
+                style={{
+                  backgroundImage: `linear-gradient(180deg, rgba(23,23,23,0.00), rgba(23,23,23,0.04)), url('${heroVisual}')`,
+                }}
+              />
               <div className="border-t border-stone-200 bg-charcoal p-5 text-white">
                 <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/45">
                   Custom sesuai ruang
@@ -378,7 +405,12 @@ export default function ServiceDetailPage({ service }) {
               Chat WhatsApp BUF
             </a>
           </div>
-          <div className="min-h-[240px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp')] bg-cover bg-center" />
+          <div
+            className="min-h-[240px] bg-cover bg-center"
+            style={{
+              backgroundImage: `linear-gradient(180deg, rgba(23,23,23,0.05), rgba(23,23,23,0.35)), url('${ctaVisual}')`,
+            }}
+          />
         </div>
       </section>
     </main>
