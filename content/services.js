@@ -10,6 +10,7 @@ export const services = [
     shortTitle: "Kitchen Set",
     href: routes.kitchenSet,
     category: "Interior Hunian",
+    group: "Custom Interior & Furniture",
     primaryKeyword: "kitchen set custom",
     description:
       "Desain dan pengerjaan kitchen set custom untuk dapur rumah, menyesuaikan ukuran ruang, kebutuhan penyimpanan, dan budget.",
@@ -23,6 +24,7 @@ export const services = [
     shortTitle: "Custom Furniture",
     href: routes.customFurniture,
     category: "Furniture Custom",
+    group: "Custom Interior & Furniture",
     primaryKeyword: "custom furniture",
     description:
       "Pengerjaan furniture custom seperti lemari, meja belajar, meja rias, kabinet, dan kebutuhan furniture sesuai ukuran ruang.",
@@ -36,6 +38,7 @@ export const services = [
     shortTitle: "Interior Rumah",
     href: routes.interiorRumah,
     category: "Interior Hunian",
+    group: "Custom Interior & Furniture",
     primaryKeyword: "interior rumah custom",
     description:
       "Bantuan konsep desain dan pengerjaan interior rumah untuk ruang keluarga, dapur, kamar, area TV, dan kebutuhan custom lainnya.",
@@ -49,6 +52,7 @@ export const services = [
     shortTitle: "Interior Toko",
     href: routes.interiorToko,
     category: "Interior Usaha",
+    group: "Commercial & Business Custom",
     primaryKeyword: "interior toko custom",
     description:
       "Desain dan pengerjaan interior toko kecil, display produk, area kasir, rak custom, dan layout ruang usaha agar lebih rapi dan menarik.",
@@ -62,6 +66,7 @@ export const services = [
     shortTitle: "Backdrop TV",
     href: routes.backdropTv,
     category: "Furniture Custom",
+    group: "Custom Interior & Furniture",
     primaryKeyword: "backdrop TV custom",
     description:
       "Backdrop TV custom untuk ruang keluarga, kamar, atau area komersial dengan ukuran dan finishing menyesuaikan kebutuhan.",
@@ -75,6 +80,7 @@ export const services = [
     shortTitle: "Lemari Custom",
     href: routes.lemariCustom,
     category: "Furniture Custom",
+    group: "Custom Interior & Furniture",
     primaryKeyword: "lemari custom",
     description:
       "Lemari custom untuk kamar, area penyimpanan, toko, atau kebutuhan khusus sesuai ukuran ruang dan model yang diinginkan.",
@@ -88,6 +94,7 @@ export const services = [
     shortTitle: "Booth Usaha",
     href: routes.boothUsaha,
     category: "Interior Usaha",
+    group: "Commercial & Business Custom",
     primaryKeyword: "booth usaha custom",
     description:
       "Booth usaha custom untuk UMKM makanan/minuman, display jualan, dan kebutuhan usaha kecil dengan desain sesuai identitas brand.",
@@ -101,6 +108,7 @@ export const services = [
     shortTitle: "Akrilik Custom",
     href: routes.akrilikCustom,
     category: "Commercial & Business Custom",
+    group: "Commercial & Business Custom",
     primaryKeyword: "akrilik custom",
     description:
       "Pengerjaan akrilik custom untuk display usaha, papan nama, plang, rak display, booth, interior toko, kantor, sekolah, dan kebutuhan custom lainnya.",
@@ -114,6 +122,7 @@ export const services = [
     shortTitle: "Aluminium",
     href: routes.aluminium,
     category: "Exterior & Building Support",
+    group: "Exterior & Building Support",
     primaryKeyword: "aluminium custom",
     description:
       "Pekerjaan aluminium custom seperti kusen, pintu, jendela, partisi, etalase, kaca aluminium, dan kebutuhan aluminium untuk rumah, toko, dan usaha.",
@@ -127,6 +136,7 @@ export const services = [
     shortTitle: "Kanopi",
     href: routes.kanopi,
     category: "Exterior & Building Support",
+    group: "Exterior & Building Support",
     primaryKeyword: "kanopi custom",
     description:
       "Pembuatan kanopi custom untuk teras, carport, toko, dan area usaha dengan ukuran, material, model, dan finishing menyesuaikan kebutuhan bangunan.",
