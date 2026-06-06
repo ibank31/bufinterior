@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { galleryCategories, getGalleryCategoryLabel } from "@/content/gallery";
+import { getGalleryCategoryLabel } from "@/content/gallery";
 
 const whatsappNumber = "6285772208688";
 
@@ -18,49 +18,25 @@ const mediaFilters = [
 ];
 
 export default function GalleryGridClient({ items }) {
-  const [activeCategory, setActiveCategory] = useState("semua");
   const [activeMedia, setActiveMedia] = useState("semua");
   const [selectedItem, setSelectedItem] = useState(null);
 
   const activeItems = useMemo(() => {
     return items.filter((item) => {
       const mediaType = item.mediaType || "photo";
-      const matchCategory = activeCategory === "semua" || item.category === activeCategory;
-      const matchMedia = activeMedia === "semua" || mediaType === activeMedia;
-
-      return matchCategory && matchMedia;
+      return activeMedia === "semua" || mediaType === activeMedia;
     });
-  }, [items, activeCategory, activeMedia]);
+  }, [items, activeMedia]);
 
-  const activeCategoryLabel = activeCategory === "semua" ? "Semua" : getGalleryCategoryLabel(activeCategory);
+  const activeCategoryLabel =
+    activeMedia === "video" ? "Video" : activeMedia === "photo" ? "Foto" : "Semua Karya";
   const selectedMediaType = selectedItem?.mediaType || "photo";
 
   return (
     <>
       <section className="sticky top-[73px] z-30 border-b border-stone-200 bg-[#fffaf2]/92 px-4 py-3 backdrop-blur-xl">
-        <div className="mx-auto grid max-w-7xl gap-3">
-          <div className="flex gap-2 overflow-x-auto">
-            {galleryCategories.map((category) => {
-              const isActive = category.id === activeCategory;
-
-              return (
-                <button
-                  key={category.id}
-                  type="button"
-                  onClick={() => setActiveCategory(category.id)}
-                  className={`shrink-0 rounded-full px-5 py-3 text-xs font-black ${
-                    isActive
-                      ? "bg-charcoal text-white shadow-soft"
-                      : "bg-white text-charcoal shadow-soft"
-                  }`}
-                >
-                  {category.label}
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="flex gap-2 overflow-x-auto">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-3 gap-2">
             {mediaFilters.map((filter) => {
               const isActive = filter.id === activeMedia;
 
@@ -69,9 +45,9 @@ export default function GalleryGridClient({ items }) {
                   key={filter.id}
                   type="button"
                   onClick={() => setActiveMedia(filter.id)}
-                  className={`shrink-0 rounded-full px-4 py-2 text-[11px] font-black ${
+                  className={`rounded-full px-4 py-3 text-xs font-black ${
                     isActive
-                      ? "bg-brand-blue text-white shadow-blue"
+                      ? "bg-charcoal text-white shadow-soft"
                       : "bg-white text-charcoal shadow-soft"
                   }`}
                 >
@@ -88,7 +64,7 @@ export default function GalleryGridClient({ items }) {
           <div className="mb-6 flex flex-col justify-between gap-3 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-brand-blue">
-                Kategori aktif
+                Tampilan aktif
               </p>
               <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] text-charcoal">
                 {activeCategoryLabel}
@@ -100,7 +76,7 @@ export default function GalleryGridClient({ items }) {
           </div>
 
           {activeItems.length ? (
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
               {activeItems.map((item, index) => {
                 const mediaType = item.mediaType || "photo";
                 const previewImage = item.thumbnail || item.poster || item.image;
@@ -108,16 +84,12 @@ export default function GalleryGridClient({ items }) {
                 return (
                   <article
                     key={item.slug}
-                    className={`group overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(23,23,23,0.14)] ${
-                      index === 0 ? "lg:col-span-2" : ""
-                    }`}
+                    className="group overflow-hidden rounded-[1.5rem] border border-stone-200 bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(23,23,23,0.14)] sm:rounded-[2rem]"
                   >
                     <button
                       type="button"
                       onClick={() => setSelectedItem(item)}
-                      className={`relative block w-full overflow-hidden bg-cover bg-center text-left transition duration-500 group-hover:scale-[1.03] ${
-                        index === 0 ? "min-h-[420px]" : "min-h-[300px]"
-                      }`}
+                      className="relative block min-h-[190px] w-full overflow-hidden bg-cover bg-center text-left transition duration-500 group-hover:scale-[1.03] sm:min-h-[300px]"
                       style={{
                         backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00), rgba(0,0,0,0.22)), url('${previewImage}')`,
                       }}
@@ -134,25 +106,25 @@ export default function GalleryGridClient({ items }) {
                       ) : null}
                     </button>
 
-                    <div className="p-5">
-                      <div className="flex items-center justify-between gap-3">
-                        <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">
+                    <div className="p-3 sm:p-5">
+                      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                        <p className="text-[10px] font-black uppercase tracking-[0.14em] text-wood sm:text-[11px]">
                           {getGalleryCategoryLabel(item.category)}
                         </p>
-                        <span className="rounded-full bg-[#f5efe6] px-3 py-1 text-[11px] font-black text-muted">
+                        <span className="w-fit rounded-full bg-[#f5efe6] px-2 py-1 text-[10px] font-black text-muted sm:px-3 sm:text-[11px]">
                           {item.type}
                         </span>
                       </div>
 
-                      <h3 className="mt-4 text-2xl font-black leading-[1.12] tracking-[-0.02em] text-charcoal">
+                      <h3 className="mt-3 text-base font-black leading-[1.15] tracking-[-0.02em] text-charcoal sm:mt-4 sm:text-2xl">
                         {item.title}
                       </h3>
 
-                      <p className="mt-3 line-clamp-2 text-sm font-medium leading-7 text-muted">
+                      <p className="mt-2 line-clamp-2 text-xs font-medium leading-5 text-muted sm:mt-3 sm:text-sm sm:leading-7">
                         {item.description}
                       </p>
 
-                      <div className="mt-5 flex items-center justify-between gap-3 border-t border-stone-200 pt-4">
+                      <div className="mt-4 flex flex-col gap-3 border-t border-stone-200 pt-3 sm:mt-5 sm:flex-row sm:items-center sm:justify-between sm:pt-4">
                         <Link
                           href={item.serviceHref}
                           className="text-xs font-black uppercase tracking-[0.16em] text-muted"
@@ -183,10 +155,7 @@ export default function GalleryGridClient({ items }) {
               </p>
               <button
                 type="button"
-                onClick={() => {
-                  setActiveCategory("semua");
-                  setActiveMedia("semua");
-                }}
+                onClick={() => setActiveMedia("semua")}
                 className="mt-6 inline-flex rounded-full bg-charcoal px-6 py-3 text-sm font-black text-white"
               >
                 Lihat semua gallery
