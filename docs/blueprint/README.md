@@ -45,3 +45,7 @@ Baca berurutan:
 4. `04-content-photo-whatsapp-sop.md`
 5. `05-roadmap-risk-register.md`
 6. `06-assistant-handoff.md`
+
+## Snapshot Terbaru
+
+- [Current State & Next Steps](./07-current-state-next-steps.md)
