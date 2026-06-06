@@ -1,60 +1,36 @@
 import { routes } from "@/content/routes";
+import { services } from "@/content/services";
 
-export const serviceNavigationGroups = [
-  {
-    label: "Custom Interior & Furniture",
-    items: [
-      { label: "Kitchen Set Custom", href: routes.kitchenSet },
-      { label: "Custom Furniture", href: routes.customFurniture },
-      { label: "Interior Rumah", href: routes.interiorRumah },
-      { label: "Backdrop TV", href: routes.backdropTv },
-      { label: "Lemari Custom", href: routes.lemariCustom },
-    ],
-  },
-  {
-    label: "Commercial & Business Custom",
-    items: [
-      { label: "Interior Toko", href: routes.interiorToko },
-      { label: "Booth Usaha", href: routes.boothUsaha },
-      { label: "Akrilik Custom", href: routes.akrilikCustom },
-    ],
-  },
-  {
-    label: "Exterior & Building Support",
-    items: [
-      { label: "Aluminium", href: routes.aluminium },
-      { label: "Kanopi", href: routes.kanopi },
-    ],
-  },
+export const serviceGroupOrder = [
+  "Custom Interior & Furniture",
+  "Commercial & Business Custom",
+  "Exterior & Building Support",
 ];
 
-export const portfolioNavigationGroups = [
-  {
-    label: "Custom Interior & Furniture",
-    items: [
-      { label: "Kitchen Set", href: `${routes.portfolio}/kitchen-set` },
-      { label: "Custom Furniture", href: `${routes.portfolio}/custom-furniture` },
-      { label: "Interior Rumah", href: `${routes.portfolio}/interior-rumah` },
-      { label: "Backdrop TV", href: `${routes.portfolio}/backdrop-tv` },
-      { label: "Lemari Custom", href: `${routes.portfolio}/lemari-custom` },
-    ],
-  },
-  {
-    label: "Commercial & Business Custom",
-    items: [
-      { label: "Interior Toko", href: `${routes.portfolio}/interior-toko` },
-      { label: "Booth Usaha", href: `${routes.portfolio}/booth-usaha` },
-      { label: "Akrilik Custom", href: `${routes.portfolio}/akrilik-custom` },
-    ],
-  },
-  {
-    label: "Exterior & Building Support",
-    items: [
-      { label: "Aluminium", href: `${routes.portfolio}/aluminium` },
-      { label: "Kanopi", href: `${routes.portfolio}/kanopi` },
-    ],
-  },
-];
+function buildServiceGroups(mapItem) {
+  return serviceGroupOrder
+    .map((groupLabel) => {
+      const items = services
+        .filter((service) => service.group === groupLabel)
+        .map(mapItem);
+
+      return {
+        label: groupLabel,
+        items,
+      };
+    })
+    .filter((group) => group.items.length);
+}
+
+export const serviceNavigationGroups = buildServiceGroups((service) => ({
+  label: service.title,
+  href: service.href,
+}));
+
+export const portfolioNavigationGroups = buildServiceGroups((service) => ({
+  label: service.shortTitle,
+  href: `${routes.portfolio}/${service.slug}`,
+}));
 
 export const mainNavigation = [
   { label: "Beranda", href: routes.home, exact: true },
