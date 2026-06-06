@@ -1,8 +1,13 @@
+const fallbackBaseUrl = "https://berkah-utami-furniture.pages.dev";
+const configuredBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || fallbackBaseUrl;
+const cleanBaseUrl = configuredBaseUrl.replace(/\/+$/, "");
+const cleanDomain = cleanBaseUrl.replace(/^https?:\/\//, "");
+
 export const siteConfig = {
   name: "BUF",
   legalName: "Berkah Utami Furniture",
-  baseUrl: "https://berkah-utami-furniture.pages.dev",
-  domain: "berkah-utami-furniture.pages.dev",
+  baseUrl: cleanBaseUrl,
+  domain: cleanDomain,
   language: "id-ID",
   locale: "id_ID",
   whatsappNumber: "6285772208688",

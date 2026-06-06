@@ -203,7 +203,9 @@ Karena calon pelanggan lokal banyak dari HP:
 
 Sebelum bufinterior.com live:
 
-- [ ] baseUrl sudah https://bufinterior.com
+- [ ] Environment variable production sudah diset: `NEXT_PUBLIC_SITE_URL=https://bufinterior.com`
+- [ ] `siteConfig.baseUrl` menghasilkan `https://bufinterior.com`
+- [ ] `siteConfig.domain` menghasilkan `bufinterior.com`
 - [ ] canonical semua halaman benar
 - [ ] sitemap aktif
 - [ ] robots.txt allow crawl
