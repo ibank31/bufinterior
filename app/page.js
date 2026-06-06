@@ -2,6 +2,7 @@ import Link from "next/link";
 import { routes } from "@/content/routes";
 import { articles } from "@/content/articles";
 import { services, serviceHighlights } from "@/content/services";
+import { localServices } from "@/content/local-services";
 import { staticPageMetadata } from "@/content/static-pages";
 import { buildMetadata } from "@/lib/seo";
 
@@ -42,7 +43,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-7xl gap-8 px-6 py-9 sm:px-8 sm:py-12 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-4 lg:py-16">
           <div className="max-w-3xl">
             <p className="inline-flex rounded-full border border-stone-300/70 bg-white/65 px-4 py-2 text-[10px] font-black uppercase tracking-[0.20em] text-wood shadow-soft backdrop-blur sm:text-[11px] sm:tracking-[0.22em]">
-              Workshop interior & custom furniture
+              Workshop custom di Berkoh, Purwokerto
             </p>
 
             <h1 className="mt-6 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
@@ -50,7 +51,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
-              BUF membantu desain dan pengerjaan interior rumah, toko, kitchen set, backdrop TV, lemari custom, dan booth usaha sesuai ukuran ruang, kebutuhan, serta budget. Konsultasi proyek dapat dimulai dari WhatsApp dan lokasi pengerjaan bisa dikonfirmasi.
+              Berkah Utami Furniture membantu pengerjaan kitchen set, custom furniture, interior rumah/toko, booth usaha, akrilik custom, aluminium, dan kanopi dari workshop di Berkoh, Purwokerto. Konsultasi proyek dapat dimulai dari WhatsApp dengan ukuran, kebutuhan, dan lokasi pengerjaan yang dikonfirmasi.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
@@ -150,6 +151,59 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fffaf2] px-4 py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 lg:grid-cols-[0.74fr_1.26fr] lg:items-end">
+            <div>
+              <div className="flex items-center gap-3">
+                <span className="h-px w-12 bg-wood/55" />
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
+                  Jasa area Purwokerto
+                </p>
+              </div>
+              <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
+                Halaman jasa utama yang langsung mengarah ke kebutuhan proyek.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
+              Untuk memudahkan calon pelanggan memilih layanan, halaman jasa prioritas dibuat mudah diakses dari homepage: kitchen set, booth usaha, akrilik custom, aluminium, dan kanopi di area Purwokerto.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+            {localServices.map((service, index) => (
+              <Link
+                key={service.slug}
+                href={service.href}
+                className="group relative overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-[0_24px_70px_rgba(23,23,23,0.12)]"
+              >
+                <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-wood via-brand-blue to-brand-red" />
+                <span className="inline-flex rounded-full bg-charcoal px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-white">
+                  Jasa {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3 className="mt-6 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
+                  {service.title}
+                </h3>
+                <p className="mt-4 text-sm font-medium leading-7 text-muted">
+                  {service.heroDescription}
+                </p>
+                <div className="mt-6 border-t border-stone-200 pt-4">
+                  <span className="inline-flex rounded-full bg-brand-blue px-4 py-2 text-xs font-black text-white shadow-blue transition group-hover:bg-charcoal">
+                    {service.ctaLabel || "Lihat Detail Jasa"} →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white/80 p-5 shadow-soft">
+            <p className="text-sm font-bold leading-7 text-muted">
+              Pilih layanan yang paling sesuai dengan kebutuhan proyek Anda. Jika belum yakin, mulai dari konsultasi WhatsApp agar kami bisa bantu arahkan opsi pengerjaan yang paling realistis.
+            </p>
           </div>
         </div>
       </section>

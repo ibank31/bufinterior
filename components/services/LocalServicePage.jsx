@@ -198,14 +198,28 @@ export default function LocalServicePage({ service }) {
             <p className="mx-auto mt-3 max-w-2xl text-sm font-medium leading-7 text-white/62">
               Klik WhatsApp dan kirim kebutuhan awal. BUF akan bantu arahkan opsi yang paling masuk akal sesuai ukuran, fungsi, dan budget.
             </p>
-            <a
-              href={whatsappHref}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex rounded-full bg-brand-blue px-7 py-3.5 text-sm font-black text-white shadow-blue"
-            >
-              {service.ctaLabel}
-            </a>
+            <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex rounded-full bg-brand-blue px-7 py-3.5 text-sm font-black text-white shadow-blue"
+              >
+                {service.ctaLabel}
+              </a>
+              <Link
+                href={routes.estimasiBiaya}
+                className="inline-flex rounded-full border border-white/15 bg-white/[0.06] px-7 py-3.5 text-sm font-black text-white backdrop-blur"
+              >
+                Cek Estimasi Biaya
+              </Link>
+              <Link
+                href={routes.kontak}
+                className="inline-flex rounded-full border border-white/15 bg-white/[0.06] px-7 py-3.5 text-sm font-black text-white backdrop-blur"
+              >
+                Lihat Kontak Lengkap
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 import { routes } from "@/content/routes";
 import { serviceHighlights } from "@/content/services";
+import { localServiceRoutes } from "@/content/local-services";
 import { articles } from "@/content/articles";
 import { serviceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 
@@ -65,6 +66,29 @@ const serviceCtaVisuals = {
   "booth-usaha": "/assets/portfolio/booth-pang-waffle-custom-buf-01.webp",
 };
 
+const localServiceCtaByService = {
+  "kitchen-set": {
+    href: localServiceRoutes.kitchenSetPurwokerto,
+    label: "Butuh Kitchen Set di Purwokerto?",
+  },
+  "booth-usaha": {
+    href: localServiceRoutes.boothUsahaPurwokerto,
+    label: "Butuh Booth Usaha di Purwokerto?",
+  },
+  "akrilik-custom": {
+    href: localServiceRoutes.akrilikCustomPurwokerto,
+    label: "Butuh Akrilik Custom di Purwokerto?",
+  },
+  aluminium: {
+    href: localServiceRoutes.aluminiumPurwokerto,
+    label: "Butuh Aluminium di Purwokerto?",
+  },
+  kanopi: {
+    href: localServiceRoutes.kanopiPurwokerto,
+    label: "Butuh Kanopi di Purwokerto?",
+  },
+};
+
 const relatedArticleSlugsByService = {
   "kitchen-set": [
     "biaya-kitchen-set-custom",
@@ -118,6 +142,7 @@ function buildWhatsappHref(service) {
 export default function ServiceDetailPage({ service }) {
   const whatsappHref = buildWhatsappHref(service);
   const relatedArticles = getRelatedArticlesForService(service.slug);
+  const localServiceCta = localServiceCtaByService[service.slug];
   const heroVisual = serviceHeroVisuals[service.slug] || "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp";
   const ctaVisual = serviceCtaVisuals[service.slug] || heroVisual;
 
@@ -172,6 +197,14 @@ export default function ServiceDetailPage({ service }) {
               >
                 Lihat Contoh Pekerjaan
               </Link>
+              {localServiceCta ? (
+                <Link
+                  href={localServiceCta.href}
+                  className="rounded-full border border-brand-blue/25 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-brand-blue shadow-soft backdrop-blur"
+                >
+                  {localServiceCta.label}
+                </Link>
+              ) : null}
               <Link
                 href={routes.estimasiBiaya}
                 className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur"
