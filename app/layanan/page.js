@@ -10,13 +10,13 @@ const whatsappHref =
   "https://wa.me/6285772208688?text=Halo%20BUF%2C%20saya%20ingin%20konsultasi%20layanan%20interior%20atau%20custom%20furniture.";
 
 const serviceVisuals = {
-  "kitchen-set-banyumas": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
-  "custom-furniture-banyumas": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
-  "interior-rumah-banyumas": "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
-  "interior-toko-banyumas": "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
-  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
-  "lemari-custom-banyumas": "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
-  "booth-usaha-banyumas": "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
+  "kitchen-set": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
+  "custom-furniture": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
+  "interior-rumah": "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
+  "interior-toko": "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
+  "backdrop-tv": "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
+  "lemari-custom": "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
+  "booth-usaha": "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
 };
 
 const audiences = [

@@ -2,10 +2,10 @@ import ServiceDetailPage from "@/components/services/ServiceDetailPage";
 import { services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo";
 
-const service = services.find((item) => item.slug === "lemari-custom-banyumas");
+const service = services.find((item) => item.slug === "booth-usaha");
 
 export const metadata = buildMetadata({
-  title: "Lemari Custom | Lemari Sesuai Ukuran Ruang — BUF",
+  title: "Booth Usaha Custom | Booth UMKM & Toko — BUF",
   description: service.description,
   path: service.href,
 });

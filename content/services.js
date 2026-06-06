@@ -2,7 +2,7 @@ import { routes } from "@/content/routes";
 
 export const services = [
   {
-    slug: "kitchen-set-banyumas",
+    slug: "kitchen-set",
     title: "Kitchen Set Banyumas",
     heroTitle: "Kitchen Set Custom untuk Dapur yang Rapi dan Fungsional",
     heroDescription:
@@ -15,7 +15,7 @@ export const services = [
       "Desain dan pengerjaan kitchen set custom untuk dapur rumah, menyesuaikan ukuran ruang, kebutuhan penyimpanan, dan budget.",
   },
   {
-    slug: "custom-furniture-banyumas",
+    slug: "custom-furniture",
     title: "Custom Furniture Banyumas",
     heroTitle: "Custom Furniture Sesuai Ukuran Ruang",
     heroDescription:
@@ -28,7 +28,7 @@ export const services = [
       "Pengerjaan furniture custom seperti lemari, meja belajar, meja rias, kabinet, dan kebutuhan furniture sesuai ukuran ruang.",
   },
   {
-    slug: "interior-rumah-banyumas",
+    slug: "interior-rumah",
     title: "Interior Rumah Banyumas",
     heroTitle: "Interior Rumah yang Rapi, Hangat, dan Nyaman",
     heroDescription:
@@ -41,7 +41,7 @@ export const services = [
       "Bantuan konsep desain dan pengerjaan interior rumah untuk ruang keluarga, dapur, kamar, area TV, dan kebutuhan custom lainnya.",
   },
   {
-    slug: "interior-toko-banyumas",
+    slug: "interior-toko",
     title: "Interior Toko Banyumas",
     heroTitle: "Interior Toko untuk Display yang Lebih Tertata",
     heroDescription:
@@ -54,7 +54,7 @@ export const services = [
       "Desain dan pengerjaan interior toko kecil, display produk, area kasir, rak custom, dan layout ruang usaha agar lebih rapi dan menarik.",
   },
   {
-    slug: "backdrop-tv-banyumas",
+    slug: "backdrop-tv",
     title: "Backdrop TV Banyumas",
     heroTitle: "Backdrop TV Custom untuk Ruang yang Lebih Hangat",
     heroDescription:
@@ -67,7 +67,7 @@ export const services = [
       "Backdrop TV custom untuk ruang keluarga, kamar, atau area komersial dengan ukuran dan finishing menyesuaikan kebutuhan.",
   },
   {
-    slug: "lemari-custom-banyumas",
+    slug: "lemari-custom",
     title: "Lemari Custom Banyumas",
     heroTitle: "Lemari Custom Sesuai Kebutuhan Penyimpanan",
     heroDescription:
@@ -80,7 +80,7 @@ export const services = [
       "Lemari custom untuk kamar, area penyimpanan, toko, atau kebutuhan khusus sesuai ukuran ruang dan model yang diinginkan.",
   },
   {
-    slug: "booth-usaha-banyumas",
+    slug: "booth-usaha",
     title: "Booth Usaha Banyumas",
     heroTitle: "Booth Usaha Custom untuk UMKM dan Toko",
     heroDescription:

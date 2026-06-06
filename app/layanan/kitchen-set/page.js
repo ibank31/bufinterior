@@ -2,10 +2,10 @@ import ServiceDetailPage from "@/components/services/ServiceDetailPage";
 import { services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo";
 
-const service = services.find((item) => item.slug === "backdrop-tv-banyumas");
+const service = services.find((item) => item.slug === "kitchen-set");
 
 export const metadata = buildMetadata({
-  title: "Backdrop TV Custom | Panel TV Sesuai Ruang — BUF",
+  title: "Kitchen Set Custom | Desain & Pengerjaan Sesuai Ukuran — BUF",
   description: service.description,
   path: service.href,
 });

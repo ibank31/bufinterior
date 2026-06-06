@@ -46,57 +46,57 @@ const defaultFaqs = [
 ];
 
 const serviceHeroVisuals = {
-  "kitchen-set-banyumas": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
-  "custom-furniture-banyumas": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
-  "interior-rumah-banyumas": "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
-  "interior-toko-banyumas": "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
-  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
-  "lemari-custom-banyumas": "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
-  "booth-usaha-banyumas": "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
+  "kitchen-set": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
+  "custom-furniture": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
+  "interior-rumah": "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
+  "interior-toko": "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
+  "backdrop-tv": "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
+  "lemari-custom": "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
+  "booth-usaha": "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
 };
 
 const serviceCtaVisuals = {
-  "kitchen-set-banyumas": "/assets/portfolio/kitchen-set-proses-pemasangan-buf-01.webp",
-  "custom-furniture-banyumas": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
-  "interior-rumah-banyumas": "/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp",
-  "interior-toko-banyumas": "/assets/portfolio/booth-travel-custom-moazzam-buf-01.webp",
-  "backdrop-tv-banyumas": "/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp",
-  "lemari-custom-banyumas": "/assets/portfolio/wardrobe-meja-rias-display-buf-01.webp",
-  "booth-usaha-banyumas": "/assets/portfolio/booth-pang-waffle-custom-buf-01.webp",
+  "kitchen-set": "/assets/portfolio/kitchen-set-proses-pemasangan-buf-01.webp",
+  "custom-furniture": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
+  "interior-rumah": "/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp",
+  "interior-toko": "/assets/portfolio/booth-travel-custom-moazzam-buf-01.webp",
+  "backdrop-tv": "/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp",
+  "lemari-custom": "/assets/portfolio/wardrobe-meja-rias-display-buf-01.webp",
+  "booth-usaha": "/assets/portfolio/booth-pang-waffle-custom-buf-01.webp",
 };
 
 const relatedArticleSlugsByService = {
-  "kitchen-set-banyumas": [
+  "kitchen-set": [
     "biaya-kitchen-set-custom",
     "material-kitchen-set-yang-bagus",
     "tips-memilih-jasa-interior-custom",
   ],
-  "custom-furniture-banyumas": [
+  "custom-furniture": [
     "lemari-custom-vs-lemari-jadi",
     "tips-memilih-jasa-interior-custom",
     "material-kitchen-set-yang-bagus",
   ],
-  "interior-rumah-banyumas": [
+  "interior-rumah": [
     "tips-memilih-jasa-interior-custom",
     "material-kitchen-set-yang-bagus",
     "lemari-custom-vs-lemari-jadi",
   ],
-  "interior-toko-banyumas": [
+  "interior-toko": [
     "tips-memilih-jasa-interior-custom",
     "biaya-kitchen-set-custom",
     "lemari-custom-vs-lemari-jadi",
   ],
-  "backdrop-tv-banyumas": [
+  "backdrop-tv": [
     "tips-memilih-jasa-interior-custom",
     "lemari-custom-vs-lemari-jadi",
     "material-kitchen-set-yang-bagus",
   ],
-  "lemari-custom-banyumas": [
+  "lemari-custom": [
     "lemari-custom-vs-lemari-jadi",
     "tips-memilih-jasa-interior-custom",
     "material-kitchen-set-yang-bagus",
   ],
-  "booth-usaha-banyumas": [
+  "booth-usaha": [
     "tips-memilih-jasa-interior-custom",
     "biaya-kitchen-set-custom",
     "lemari-custom-vs-lemari-jadi",

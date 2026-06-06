@@ -2,10 +2,10 @@ import ServiceDetailPage from "@/components/services/ServiceDetailPage";
 import { services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo";
 
-const service = services.find((item) => item.slug === "interior-toko-banyumas");
+const service = services.find((item) => item.slug === "interior-rumah");
 
 export const metadata = buildMetadata({
-  title: "Interior Toko Custom | Rak, Display & Booth — BUF",
+  title: "Interior Rumah Custom | Desain & Pengerjaan Ruang — BUF",
   description: service.description,
   path: service.href,
 });
