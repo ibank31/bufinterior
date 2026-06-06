@@ -50,3 +50,8 @@ export function articleHref(slug) {
 export function portfolioHref(serviceSlug) {
   return `${routes.portfolio}/${serviceSlug}`;
 }
+
+
+export function localServiceHref(slug) {
+  return `${routes.jasa}/${slug}`;
+}

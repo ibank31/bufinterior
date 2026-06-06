@@ -1,4 +1,4 @@
-import { routes } from "@/content/routes";
+import { localServiceHref, routes } from "@/content/routes";
 
 export const localServiceRoutes = {
   jasa: "/jasa",
