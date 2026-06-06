@@ -16,6 +16,7 @@ export const mainNavigation = [
     ],
   },
   { label: "Gallery", href: routes.gallery },
+  { label: "Artikel", href: routes.artikel },
   { label: "Tentang Kami", href: routes.tentangKami },
   { label: "Kontak", href: routes.kontak },
 ];
