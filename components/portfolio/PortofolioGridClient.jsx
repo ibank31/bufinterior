@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { getPortofolioCategoryLabel } from "@/content/portfolio";
 
-function buildWhatsappHref(item) {
+function buildPortfolioWhatsappHref(item) {
   return buildWhatsappUrl(
     `Halo BUF, saya tertarik dengan model ${item.title}. Bisa konsultasi untuk kebutuhan ruang saya?`
   );
@@ -133,7 +133,7 @@ export default function PortofolioGridClient({ items }) {
                           {item.serviceLabel}
                         </Link>
                         <a
-                          href={buildWhatsappHref(item)}
+                          href={buildPortfolioWhatsappHref(item)}
                           target="_blank"
                           rel="noreferrer"
                           className="rounded-full bg-charcoal px-4 py-2 text-xs font-black text-white transition hover:bg-brand-blue"
