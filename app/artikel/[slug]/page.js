@@ -10,8 +10,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const article = getArticleBySlug(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
 
   if (!article) {
     return buildMetadata({
@@ -28,8 +29,9 @@ export function generateMetadata({ params }) {
   });
 }
 
-export default function ArticleDetailPage({ params }) {
-  const article = getArticleBySlug(params.slug);
+export default async function ArticleDetailPage({ params }) {
+  const { slug } = await params;
+  const article = getArticleBySlug(slug);
 
   if (!article) {
     notFound();
@@ -159,7 +161,7 @@ export default function ArticleDetailPage({ params }) {
                   Hubungi BUF
                 </Link>
               </div>
-              <div className="min-h-[200px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-proses-pemasangan-buf-01.webp')] bg-cover bg-center" />
+              <div className="min-h-[200px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp')] bg-cover bg-center" />
             </div>
           </article>
         </div>
