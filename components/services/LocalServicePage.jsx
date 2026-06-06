@@ -13,6 +13,9 @@ function buildWhatsappHref(service) {
 
 export default function LocalServicePage({ service }) {
   const whatsappHref = buildWhatsappHref(service);
+  const painPoints = service.painPoints || [];
+  const bestFor = service.bestFor || [];
+  const prepareBeforeChat = service.prepareBeforeChat || [];
 
   const schemas = [
     localServiceSchema(service),
@@ -141,6 +144,56 @@ export default function LocalServicePage({ service }) {
                   <p className="mt-4 text-base font-bold leading-7 text-charcoal">{item}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-4 lg:grid-cols-3">
+            <div className="rounded-[2rem] border border-stone-200 bg-white/88 p-6 shadow-soft backdrop-blur">
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-brand-blue">
+                Masalah umum
+              </p>
+              <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.02em] text-charcoal">
+                Biasanya dicari karena kebutuhan seperti ini.
+              </h3>
+              <div className="mt-5 grid gap-3">
+                {painPoints.map((item) => (
+                  <p key={item} className="rounded-2xl bg-[#fffaf2] px-4 py-3 text-sm font-bold leading-6 text-charcoal">
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-stone-200 bg-white/88 p-6 shadow-soft backdrop-blur">
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-brand-blue">
+                Cocok untuk
+              </p>
+              <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.02em] text-charcoal">
+                Kebutuhan rumah, toko, atau usaha.
+              </h3>
+              <div className="mt-5 grid gap-3">
+                {bestFor.map((item) => (
+                  <p key={item} className="rounded-2xl bg-[#fffaf2] px-4 py-3 text-sm font-bold leading-6 text-charcoal">
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-stone-200 bg-white/88 p-6 shadow-soft backdrop-blur">
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-brand-blue">
+                Siapkan sebelum chat
+              </p>
+              <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.02em] text-charcoal">
+                Agar estimasi awal lebih mudah diarahkan.
+              </h3>
+              <div className="mt-5 grid gap-3">
+                {prepareBeforeChat.map((item) => (
+                  <p key={item} className="rounded-2xl bg-[#fffaf2] px-4 py-3 text-sm font-bold leading-6 text-charcoal">
+                    {item}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>

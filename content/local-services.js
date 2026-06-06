@@ -32,6 +32,25 @@ export const localServices = [
       "Berkah Utami Furniture melayani pembuatan kitchen set custom dari workshop di Berkoh, Purwokerto. Ukuran, desain, material, dan finishing bisa disesuaikan dengan kebutuhan ruang dan budget.",
     intro:
       "Halaman ini ditujukan untuk calon pelanggan di Purwokerto yang ingin membuat kitchen set custom, bukan membeli kitchen set rakitan jadi. Konsultasi awal bisa dilakukan via WhatsApp dengan mengirim ukuran ruang, foto dapur, dan referensi model.",
+    painPoints: [
+      "Dapur terasa penuh karena penyimpanan kurang tertata.",
+      "Ukuran dapur tidak cocok dengan kitchen set jadi.",
+      "Bingung memilih material dan finishing yang sesuai budget.",
+      "Ingin kitchen set rapi, tapi belum punya gambar desain final.",
+    ],
+    bestFor: [
+      "Pemilik rumah baru di Purwokerto dan Banyumas.",
+      "Dapur rumah yang butuh kabinet atas dan bawah.",
+      "Dapur kecil yang perlu penyimpanan lebih maksimal.",
+      "Kos, kontrakan, atau rumah tinggal yang ingin dibuat lebih rapi.",
+    ],
+    prepareBeforeChat: [
+      "Foto area dapur dari beberapa sudut.",
+      "Ukuran kasar panjang dinding atau area kitchen set.",
+      "Referensi model atau warna yang disukai.",
+      "Kebutuhan utama seperti kabinet atas, kabinet bawah, rak bumbu, atau area kompor/sink.",
+      "Gambaran budget agar opsi material bisa diarahkan sejak awal.",
+    ],
     ctaLabel: "Konsultasi Kitchen Set via WhatsApp",
     visual: "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
     serviceTypes: [
@@ -77,6 +96,25 @@ export const localServices = [
       "Berkah Utami Furniture melayani pembuatan booth usaha custom dari workshop di Berkoh, Purwokerto untuk kebutuhan UMKM, toko, event, promosi, display produk, dan branding usaha.",
     intro:
       "Booth usaha tidak harus mengikuti ukuran standar. Bentuk, fungsi display, area penyimpanan, material, warna, dan identitas brand bisa dibuat menyesuaikan kebutuhan jualan.",
+    painPoints: [
+      "Booth jualan terlihat kurang menarik untuk menarik perhatian pembeli.",
+      "Ukuran booth standar sering tidak cocok dengan area jualan.",
+      "Butuh booth yang kuat, rapi, dan sesuai identitas brand.",
+      "Bingung menentukan material, ukuran, dan layout display produk.",
+    ],
+    bestFor: [
+      "UMKM makanan dan minuman di Purwokerto.",
+      "Booth promosi untuk event, bazar, atau pameran.",
+      "Toko kecil yang butuh display produk lebih rapi.",
+      "Usaha baru yang ingin punya booth custom sesuai brand.",
+    ],
+    prepareBeforeChat: [
+      "Jenis usaha atau produk yang akan dijual.",
+      "Ukuran area booth atau lokasi penempatan.",
+      "Contoh booth/referensi desain yang disukai.",
+      "Kebutuhan display seperti rak, lampu, storage, roda, atau signage.",
+      "Rencana penggunaan: indoor, outdoor, portable, event, atau toko tetap.",
+    ],
     ctaLabel: "Konsultasi Booth via WhatsApp",
     visual: "/assets/portfolio/booth-pang-waffle-custom-buf-01.webp",
     serviceTypes: [
@@ -122,6 +160,25 @@ export const localServices = [
       "Berkah Utami Furniture melayani pengerjaan akrilik custom untuk kebutuhan display usaha, papan nama, plang, rak display, signage, booth, interior toko, kantor, sekolah, dan instansi.",
     intro:
       "BUF tidak memposisikan akrilik sebagai jual bahan eceran murah, tetapi sebagai pengerjaan custom untuk kebutuhan usaha, interior, display, signage, dan proyek yang membutuhkan ukuran khusus.",
+    painPoints: [
+      "Butuh display atau signage akrilik dengan ukuran khusus.",
+      "Tidak ingin hanya membeli bahan lembaran tanpa pengerjaan.",
+      "Butuh hasil yang rapi untuk toko, booth, kantor, sekolah, atau instansi.",
+      "Bingung menentukan tebal akrilik, bentuk, dan finishing yang sesuai fungsi.",
+    ],
+    bestFor: [
+      "Toko dan UMKM yang membutuhkan display akrilik.",
+      "Papan nama, plang ruang, atau signage usaha.",
+      "Kebutuhan booth, interior toko, kantor, sekolah, dan instansi.",
+      "Rak display atau holder produk custom.",
+    ],
+    prepareBeforeChat: [
+      "Contoh desain atau foto referensi produk akrilik.",
+      "Ukuran panjang, lebar, tinggi, atau area pemasangan.",
+      "Fungsi penggunaan: display, papan nama, plang, rak, atau signage.",
+      "Jumlah kebutuhan jika lebih dari satu item.",
+      "Lokasi penggunaan: indoor, outdoor, toko, kantor, sekolah, atau booth.",
+    ],
     ctaLabel: "Konsultasi Akrilik Custom via WhatsApp",
     visual: "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
     serviceTypes: [
@@ -167,6 +224,25 @@ export const localServices = [
       "Berkah Utami Furniture melayani pekerjaan aluminium custom untuk rumah, toko, kantor, dan usaha, mulai dari kusen, pintu, jendela, partisi, etalase, kaca aluminium, hingga kebutuhan custom lainnya.",
     intro:
       "Halaman ini menargetkan kebutuhan aluminium custom, bukan sekadar jual bahan. Pengerjaan dapat disesuaikan untuk rumah, toko, etalase, partisi, dan kebutuhan bangunan atau usaha.",
+    painPoints: [
+      "Butuh kusen, pintu, jendela, partisi, atau etalase dengan ukuran khusus.",
+      "Ukuran lokasi tidak cocok dengan produk jadi.",
+      "Ingin pekerjaan aluminium yang rapi untuk rumah, toko, atau kantor.",
+      "Bingung menentukan model, kaca, rangka, dan kebutuhan pemasangan.",
+    ],
+    bestFor: [
+      "Rumah tinggal yang membutuhkan kusen, pintu, atau jendela aluminium.",
+      "Toko yang membutuhkan etalase atau display aluminium.",
+      "Kantor atau ruang usaha yang membutuhkan partisi aluminium.",
+      "Pekerjaan kaca aluminium dan kebutuhan custom lain.",
+    ],
+    prepareBeforeChat: [
+      "Foto lokasi pemasangan dari beberapa sudut.",
+      "Ukuran kasar lebar dan tinggi area.",
+      "Jenis kebutuhan: kusen, pintu, jendela, partisi, etalase, atau kaca aluminium.",
+      "Model bukaan atau fungsi yang diinginkan.",
+      "Lokasi proyek agar jadwal survey atau koordinasi bisa dikonfirmasi.",
+    ],
     ctaLabel: "Konsultasi Aluminium via WhatsApp",
     visual: "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
     serviceTypes: [
@@ -212,6 +288,25 @@ export const localServices = [
       "Berkah Utami Furniture melayani pembuatan kanopi custom untuk rumah, toko, carport, teras, dan area usaha di Purwokerto. Ukuran, material, dan model dapat disesuaikan dengan kebutuhan bangunan.",
     intro:
       "Kanopi tidak hanya soal menutup area dari panas dan hujan, tetapi juga perlu menyesuaikan tampilan rumah atau tempat usaha. Karena itu, model dan material sebaiknya dibicarakan sejak awal.",
+    painPoints: [
+      "Area teras, carport, atau toko terlalu panas dan terkena hujan langsung.",
+      "Butuh kanopi yang ukurannya pas dengan bentuk bangunan.",
+      "Bingung memilih material atap dan rangka yang sesuai kebutuhan.",
+      "Ingin kanopi tetap rapi secara tampilan, bukan hanya asal tertutup.",
+    ],
+    bestFor: [
+      "Rumah tinggal yang membutuhkan kanopi teras atau carport.",
+      "Toko dan tempat usaha yang membutuhkan area depan lebih teduh.",
+      "Area servis, samping rumah, atau area tambahan yang perlu penutup.",
+      "Bangunan yang membutuhkan model kanopi menyesuaikan tampilan fasad.",
+    ],
+    prepareBeforeChat: [
+      "Foto area yang ingin dipasang kanopi.",
+      "Ukuran kasar panjang dan lebar area.",
+      "Jenis penggunaan: carport, teras, toko, area samping, atau area usaha.",
+      "Preferensi material seperti spandek, alderon, polycarbonate, atau opsi lain.",
+      "Kondisi lokasi, apakah menempel bangunan lama atau perlu struktur tambahan.",
+    ],
     ctaLabel: "Konsultasi Kanopi via WhatsApp",
     visual: "/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp",
     serviceTypes: [
