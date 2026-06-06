@@ -12,7 +12,7 @@ export const metadata = buildMetadata();
 export default function RootLayout({ children }) {
   return (
     <html lang={siteConfig.language}>
-      <body>
+      <body className="pb-20 sm:pb-0">
         <JsonLd data={sitewideSchemas()} />
         <Header />
         {children}
