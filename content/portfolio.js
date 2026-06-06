@@ -9,6 +9,9 @@ export const portfolioCategories = [
   { id: "interior-rumah", label: "Interior Rumah" },
   { id: "interior-toko", label: "Interior Toko" },
   { id: "custom-furniture", label: "Custom Furniture" },
+  { id: "akrilik-custom", label: "Akrilik Custom" },
+  { id: "aluminium", label: "Aluminium" },
+  { id: "kanopi", label: "Kanopi" },
 ];
 
 export function getPortofolioCategoryLabel(categoryId) {
@@ -222,6 +225,45 @@ export const portfolioItems = [
     isFeatured: false,
     description:
       "Furniture custom untuk area kerja kecil dengan panel dan meja yang menyesuaikan ukuran ruang.",
+  },
+  {
+    slug: "akrilik-custom-referensi-kebutuhan",
+    title: "Referensi Kebutuhan Akrilik Custom",
+    category: "akrilik-custom",
+    type: "Referensi Kategori",
+    location: "Kebutuhan usaha dan display",
+    image: "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
+    serviceHref: routes.akrilikCustom,
+    serviceLabel: "Akrilik Custom",
+    isFeatured: false,
+    description:
+      "Placeholder kategori untuk kebutuhan akrilik custom seperti display usaha, papan nama, signage, rak display, dan kebutuhan proyek. Dokumentasi real akan ditambahkan setelah data portofolio final disiapkan.",
+  },
+  {
+    slug: "aluminium-custom-referensi-kebutuhan",
+    title: "Referensi Kebutuhan Aluminium Custom",
+    category: "aluminium",
+    type: "Referensi Kategori",
+    location: "Rumah, toko, dan area usaha",
+    image: "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
+    serviceHref: routes.aluminium,
+    serviceLabel: "Aluminium",
+    isFeatured: false,
+    description:
+      "Placeholder kategori untuk kebutuhan aluminium custom seperti kusen, pintu, jendela, partisi, etalase, kaca aluminium, dan kebutuhan bangunan. Dokumentasi real akan ditambahkan setelah data portofolio final disiapkan.",
+  },
+  {
+    slug: "kanopi-custom-referensi-kebutuhan",
+    title: "Referensi Kebutuhan Kanopi Custom",
+    category: "kanopi",
+    type: "Referensi Kategori",
+    location: "Teras, carport, toko, dan area usaha",
+    image: "/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp",
+    serviceHref: routes.kanopi,
+    serviceLabel: "Kanopi",
+    isFeatured: false,
+    description:
+      "Placeholder kategori untuk kebutuhan kanopi custom seperti teras, carport, toko, dan area usaha. Dokumentasi real akan ditambahkan setelah data portofolio final disiapkan.",
   },
 ];
 
