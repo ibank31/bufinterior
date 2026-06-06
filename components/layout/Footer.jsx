@@ -5,9 +5,10 @@ import { routes } from "@/content/routes";
 const priorityServices = [
   ["Kitchen Set Custom", routes.kitchenSet],
   ["Custom Furniture", routes.customFurniture],
-  ["Backdrop TV Custom", routes.backdropTv],
-  ["Lemari Custom", routes.lemariCustom],
   ["Booth Usaha Custom", routes.boothUsaha],
+  ["Akrilik Custom", routes.akrilikCustom],
+  ["Aluminium", routes.aluminium],
+  ["Kanopi", routes.kanopi],
 ];
 
 const guideLinks = [
@@ -18,10 +19,18 @@ const guideLinks = [
   ["Lemari Custom vs Lemari Jadi", "/artikel/lemari-custom-vs-lemari-jadi"],
 ];
 
+const localServiceLinks = [
+  ["Kitchen Set Purwokerto", "/jasa/kitchen-set-purwokerto"],
+  ["Booth Usaha Purwokerto", "/jasa/booth-usaha-purwokerto"],
+  ["Akrilik Custom Purwokerto", "/jasa/akrilik-custom-purwokerto"],
+  ["Aluminium Purwokerto", "/jasa/aluminium-purwokerto"],
+  ["Kanopi Purwokerto", "/jasa/kanopi-purwokerto"],
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#121212] text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-2 lg:grid-cols-[1.25fr_0.8fr_0.85fr_0.85fr]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-2 lg:grid-cols-[1.15fr_0.75fr_0.8fr_0.85fr_0.85fr]">
         <div>
           <p className="text-3xl font-black tracking-[-0.025em]">
             {siteConfig.name} — {siteConfig.legalName}
@@ -52,6 +61,22 @@ export default function Footer() {
 
         <div>
           <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
+            Jasa Area
+          </p>
+          <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
+            {localServiceLinks.map(([label, href]) => (
+              <Link key={href} href={href} className="transition hover:text-white">
+                {label}
+              </Link>
+            ))}
+            <Link href={routes.jasa} className="font-black text-white">
+              Semua Jasa Area
+            </Link>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
             Panduan
           </p>
           <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
@@ -73,7 +98,8 @@ export default function Footer() {
           <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
             <p>WhatsApp: {siteConfig.whatsappDisplay}</p>
             <p>Jam: {siteConfig.operatingHours}</p>
-            <p>Basis: {siteConfig.areaFocus}</p>
+            <p>Workshop: Berkoh, Purwokerto</p>
+            <p>Area: {siteConfig.areaFocus}</p>
             <p>{siteConfig.areaNote}</p>
             <Link href={routes.gallery} className="font-black text-white">
               Lihat Gallery
@@ -86,7 +112,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs font-medium leading-6 text-white/38">
-        © {new Date().getFullYear()} {siteConfig.legalName}. Interior custom, kitchen set, dan furniture custom.
+        © {new Date().getFullYear()} {siteConfig.legalName}. Interior custom, furniture custom, dan fabrication di Purwokerto.
       </div>
     </footer>
   );
