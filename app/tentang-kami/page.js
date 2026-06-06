@@ -72,7 +72,7 @@ export default function TentangKamiPage() {
 
           <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.14)] backdrop-blur">
             <div className="overflow-hidden rounded-[2rem] bg-white">
-              <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.04)),url('/assets/portfolio/backdrop-panel-proses-buf-01.webp')] bg-cover bg-center sm:min-h-[460px]" />
+              <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.04)),url('/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp')] bg-cover bg-center sm:min-h-[460px]" />
               <div className="border-t border-stone-200 bg-charcoal p-5 text-white">
                 <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/45">
                   Prinsip BUF
@@ -205,7 +205,13 @@ export default function TentangKamiPage() {
               Konsultasi via WhatsApp
             </a>
           </div>
-          <div className="min-h-[220px] bg-[linear-gradient(180deg,rgba(23,23,23,0.05),rgba(23,23,23,0.35)),url('/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp')] bg-cover bg-center" />
+          <div className="bg-[#111]">
+              <img
+                src="/assets/portfolio/interior-rumah-open-space-backdrop-tv-buf-01.webp"
+                alt="Referensi interior rumah custom BUF"
+                className="h-full max-h-[360px] min-h-[220px] w-full object-contain md:object-cover"
+              />
+            </div>
         </div>
       </section>
     </main>
