@@ -12,3 +12,6 @@ out
 # Local photo sorting workspace
 _photo-inbox/
 _photo-review/
+
+# Local video sorting workspace
+_video-review/
