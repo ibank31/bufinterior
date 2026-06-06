@@ -97,54 +97,20 @@ export default function LocalServicePage({ service }) {
         </div>
       </section>
 
-      <section className="bg-[#fffaf2] px-4 py-14 lg:py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-          <div>
-            <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-              Fokus halaman
-            </p>
-            <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-              Dibuat khusus untuk kebutuhan {service.shortTitle.toLowerCase()}.
-            </h2>
-            <p className="mt-5 text-base font-medium leading-7 text-muted">
-              {service.intro}
-            </p>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-2">
-            {service.serviceTypes.map((item) => (
-              <div key={item} className="rounded-[1.75rem] border border-stone-200 bg-white p-5 shadow-soft">
-                <p className="text-lg font-black leading-snug tracking-[-0.02em] text-charcoal">
-                  {item}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="wood-grain-bg px-4 py-14 lg:py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 lg:grid-cols-[0.76fr_1.24fr] lg:items-start">
+          <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                Kenapa BUF
+                Sebelum konsultasi
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Vendor lokal dengan pengerjaan custom dari Purwokerto.
+                Biasanya pelanggan mulai dari masalah, ukuran, dan kebutuhan yang belum jelas.
               </h2>
             </div>
-
-            <div className="grid gap-4 md:grid-cols-2">
-              {service.reasons.map((item, index) => (
-                <div key={item} className="rounded-[1.75rem] border border-stone-200 bg-white/88 p-5 shadow-soft backdrop-blur">
-                  <span className="inline-flex rounded-full bg-charcoal px-3 py-1 text-[11px] font-black text-white">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="mt-4 text-base font-bold leading-7 text-charcoal">{item}</p>
-                </div>
-              ))}
-            </div>
+            <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
+              Karena setiap proyek custom berbeda, halaman ini membantu Anda memahami kebutuhan awal sebelum menentukan model, material, atau estimasi pengerjaan.
+            </p>
           </div>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-3">
@@ -196,6 +162,59 @@ export default function LocalServicePage({ service }) {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fffaf2] px-4 py-14 lg:py-20">
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
+              Fokus halaman
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
+              Dibuat khusus untuk kebutuhan {service.shortTitle.toLowerCase()}.
+            </h2>
+            <p className="mt-5 text-base font-medium leading-7 text-muted">
+              {service.intro}
+            </p>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {service.serviceTypes.map((item) => (
+              <div key={item} className="rounded-[1.75rem] border border-stone-200 bg-white p-5 shadow-soft">
+                <p className="text-lg font-black leading-snug tracking-[-0.02em] text-charcoal">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="wood-grain-bg px-4 py-14 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 lg:grid-cols-[0.76fr_1.24fr] lg:items-start">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
+                Kenapa BUF
+              </p>
+              <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
+                Vendor lokal dengan pengerjaan custom dari Purwokerto.
+              </h2>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              {service.reasons.map((item, index) => (
+                <div key={item} className="rounded-[1.75rem] border border-stone-200 bg-white/88 p-5 shadow-soft backdrop-blur">
+                  <span className="inline-flex rounded-full bg-charcoal px-3 py-1 text-[11px] font-black text-white">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <p className="mt-4 text-base font-bold leading-7 text-charcoal">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
 
