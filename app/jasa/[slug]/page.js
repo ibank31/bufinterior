@@ -18,7 +18,7 @@ export function generateMetadata({ params }) {
 
   return buildMetadata({
     title: `${service.title} | Berkah Utami Furniture`,
-    description: service.heroDescription,
+    description: service.metaDescription || service.heroDescription,
     path: service.href,
   });
 }

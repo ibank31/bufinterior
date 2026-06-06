@@ -30,6 +30,8 @@ export const localServices = [
     heroTitle: "Jasa Kitchen Set Custom di Purwokerto",
     heroDescription:
       "Berkah Utami Furniture melayani pembuatan kitchen set custom dari workshop di Berkoh, Purwokerto. Ukuran, desain, material, dan finishing bisa disesuaikan dengan kebutuhan ruang dan budget.",
+    metaDescription:
+      "Jasa kitchen set custom Purwokerto dari workshop Berkoh. Ukuran, material, finishing, dan budget bisa dikonsultasikan via WhatsApp.",
     intro:
       "Halaman ini ditujukan untuk calon pelanggan di Purwokerto yang ingin membuat kitchen set custom, bukan membeli kitchen set rakitan jadi. Konsultasi awal bisa dilakukan via WhatsApp dengan mengirim ukuran ruang, foto dapur, dan referensi model.",
     painPoints: [
@@ -94,6 +96,8 @@ export const localServices = [
     heroTitle: "Jasa Booth Usaha Custom di Purwokerto",
     heroDescription:
       "Berkah Utami Furniture melayani pembuatan booth usaha custom dari workshop di Berkoh, Purwokerto untuk kebutuhan UMKM, toko, event, promosi, display produk, dan branding usaha.",
+    metaDescription:
+      "Jasa booth usaha custom Purwokerto untuk UMKM, toko, event, display produk, dan branding. Konsultasi ukuran dan model via WhatsApp.",
     intro:
       "Booth usaha tidak harus mengikuti ukuran standar. Bentuk, fungsi display, area penyimpanan, material, warna, dan identitas brand bisa dibuat menyesuaikan kebutuhan jualan.",
     painPoints: [
@@ -158,6 +162,8 @@ export const localServices = [
     heroTitle: "Jasa Akrilik Custom di Purwokerto",
     heroDescription:
       "Berkah Utami Furniture melayani pengerjaan akrilik custom untuk kebutuhan display usaha, papan nama, plang, rak display, signage, booth, interior toko, kantor, sekolah, dan instansi.",
+    metaDescription:
+      "Jasa akrilik custom Purwokerto untuk display usaha, papan nama, plang, signage, rak display, booth, dan kebutuhan proyek.",
     intro:
       "BUF tidak memposisikan akrilik sebagai jual bahan eceran murah, tetapi sebagai pengerjaan custom untuk kebutuhan usaha, interior, display, signage, dan proyek yang membutuhkan ukuran khusus.",
     painPoints: [
@@ -222,6 +228,8 @@ export const localServices = [
     heroTitle: "Jasa Aluminium Custom di Purwokerto",
     heroDescription:
       "Berkah Utami Furniture melayani pekerjaan aluminium custom untuk rumah, toko, kantor, dan usaha, mulai dari kusen, pintu, jendela, partisi, etalase, kaca aluminium, hingga kebutuhan custom lainnya.",
+    metaDescription:
+      "Jasa aluminium custom Purwokerto untuk kusen, pintu, jendela, partisi, etalase, kaca aluminium, rumah, toko, dan usaha.",
     intro:
       "Halaman ini menargetkan kebutuhan aluminium custom, bukan sekadar jual bahan. Pengerjaan dapat disesuaikan untuk rumah, toko, etalase, partisi, dan kebutuhan bangunan atau usaha.",
     painPoints: [
@@ -286,6 +294,8 @@ export const localServices = [
     heroTitle: "Jasa Kanopi Custom di Purwokerto",
     heroDescription:
       "Berkah Utami Furniture melayani pembuatan kanopi custom untuk rumah, toko, carport, teras, dan area usaha di Purwokerto. Ukuran, material, dan model dapat disesuaikan dengan kebutuhan bangunan.",
+    metaDescription:
+      "Jasa kanopi Purwokerto untuk rumah, toko, carport, teras, dan area usaha. Ukuran, material, dan model bisa dikonsultasikan.",
     intro:
       "Kanopi tidak hanya soal menutup area dari panas dan hujan, tetapi juga perlu menyesuaikan tampilan rumah atau tempat usaha. Karena itu, model dan material sebaiknya dibicarakan sejak awal.",
     painPoints: [
