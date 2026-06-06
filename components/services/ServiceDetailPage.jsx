@@ -5,8 +5,7 @@ import { serviceHighlights } from "@/content/services";
 import { localServiceRoutes } from "@/content/local-services";
 import { articles } from "@/content/articles";
 import { serviceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
-
-const whatsappNumber = "6285772208688";
+import { buildWhatsappHref } from "@/lib/whatsapp";
 
 const processSteps = [
   ["01", "Konsultasi kebutuhan", "Ceritakan ukuran ruang, fungsi yang dibutuhkan, referensi desain, dan gambaran budget."],
@@ -134,13 +133,14 @@ function getRelatedArticlesForService(serviceSlug) {
     .filter(Boolean);
 }
 
-function buildWhatsappHref(service) {
-  const text = `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Saya ingin tanya apakah bisa custom sesuai ukuran ruang saya.`;
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+function buildServiceWhatsappHref(service) {
+  return buildWhatsappHref(
+    `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Saya ingin tanya apakah bisa custom sesuai ukuran ruang saya.`
+  );
 }
 
 export default function ServiceDetailPage({ service }) {
-  const whatsappHref = buildWhatsappHref(service);
+  const whatsappHref = buildServiceWhatsappHref(service);
   const relatedArticles = getRelatedArticlesForService(service.slug);
   const localServiceCta = localServiceCtaByService[service.slug];
   const heroVisual = serviceHeroVisuals[service.slug] || "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp";

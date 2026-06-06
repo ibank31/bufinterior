@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import JsonLd from "@/components/seo/JsonLd";
 import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/content/site";
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <JsonLd data={sitewideSchemas()} />
         <Header />
         {children}
+        <FloatingWhatsApp />
         <Footer />
       </body>
     </html>

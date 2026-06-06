@@ -3,16 +3,16 @@ import JsonLd from "@/components/seo/JsonLd";
 import { routes } from "@/content/routes";
 import { localServiceRoutes } from "@/content/local-services";
 import { breadcrumbSchema, faqSchema, localServiceSchema } from "@/lib/schema";
+import { buildWhatsappHref } from "@/lib/whatsapp";
 
-const whatsappNumber = "6285772208688";
-
-function buildWhatsappHref(service) {
-  const text = `Halo Berkah Utami Furniture, saya ingin konsultasi ${service.shortTitle}. Lokasi saya di ${service.area}.`;
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+function buildLocalServiceWhatsappHref(service) {
+  return buildWhatsappHref(
+    `Halo Berkah Utami Furniture, saya ingin konsultasi ${service.shortTitle}. Lokasi saya di ${service.area}.`
+  );
 }
 
 export default function LocalServicePage({ service }) {
-  const whatsappHref = buildWhatsappHref(service);
+  const whatsappHref = buildLocalServiceWhatsappHref(service);
   const painPoints = service.painPoints || [];
   const bestFor = service.bestFor || [];
   const prepareBeforeChat = service.prepareBeforeChat || [];
