@@ -4,7 +4,7 @@ Dokumen ini adalah snapshot kondisi repo terbaru setelah batch optimasi local SE
 
 ## Kondisi Website Saat Ini
 
-Website BUF sekarang sudah bergerak dari profil umum menjadi website lokal yang lebih kuat untuk akuisisi lead jasa custom di Purwokerto.
+Website BUF sekarang sudah bergerak dari profil umum menjadi website jasa custom yang lebih rapi untuk akuisisi lead, dengan struktur layanan, portofolio, cara kerja, dan landing page lokal yang siap dikembangkan.
 
 Fondasi utama yang sudah masuk ke repo:
 
@@ -52,7 +52,24 @@ Fondasi utama yang sudah masuk ke repo:
 7. **WhatsApp CTA**
    - Link WhatsApp sudah dipusatkan ke `lib/whatsapp.js`.
    - Floating WhatsApp global sudah aktif di layout.
-   - Floating CTA sudah disesuaikan agar tidak mengalahkan modal gallery.
+   - Floating CTA sudah disesuaikan agar tidak mengalahkan modal portofolio.
+
+## Struktur Navbar Final
+
+Navbar global yang disepakati:
+
+- Beranda
+- Layanan
+- Portofolio
+- Estimasi Biaya
+- Cara Kerja BUF
+- Tentang BUF
+
+Catatan:
+- Tidak ada menu `Jasa` di navbar global.
+- `/jasa/*` tetap dipakai sebagai landing page SEO dan lead generation.
+- Tidak ada menu `Gallery`; istilah publik yang dipakai adalah `Portofolio`.
+- Dropdown tidak memakai CTA. Dropdown hanya untuk navigasi.
 
 ## Prinsip Arah Website
 
@@ -96,7 +113,7 @@ Cek manual di HP untuk:
 - halaman `/jasa/*` tidak terasa terlalu panjang di atas fold,
 - tombol WhatsApp mudah terlihat,
 - card jasa tidak terlalu padat,
-- gallery tetap nyaman dibuka dengan modal.
+- portofolio tetap nyaman dibuka dengan modal.
 
 Output yang dicari: daftar masalah UI kecil, bukan redesign besar.
 
@@ -142,7 +159,7 @@ Setiap artikel cukup menautkan ke layanan yang relevan secara kontekstual.
 Perkuat halaman dengan bukti nyata:
 
 - foto proyek yang paling representatif,
-- kategori gallery yang lebih rapi,
+- kategori portofolio yang lebih rapi,
 - alt text yang spesifik,
 - copy singkat “contoh pengerjaan” jika sudah ada dokumentasi proyek.
 
