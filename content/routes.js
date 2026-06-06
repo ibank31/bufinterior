@@ -41,3 +41,12 @@ export const sitemapRoutes = [
   { path: routes.tentangKami, priority: 0.65 },
   { path: routes.artikel, priority: 0.55 },
 ];
+
+
+export function articleHref(slug) {
+  return `${routes.artikel}/${slug}`;
+}
+
+export function portfolioHref(serviceSlug) {
+  return `${routes.portfolio}/${serviceSlug}`;
+}

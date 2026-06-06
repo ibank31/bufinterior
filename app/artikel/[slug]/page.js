@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, getArticleBySlug, getRelatedArticles } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo";
-import { routes } from "@/content/routes";
+import { articleHref, routes } from "@/content/routes";
 
 export function generateStaticParams() {
   return articles.map((article) => ({
@@ -45,7 +45,7 @@ export default async function ArticleDetailPage({ params }) {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
           <div>
             <Link
-              href="/artikel"
+              href={routes.artikel}
               className="inline-flex rounded-full border border-stone-300/70 bg-white/65 px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-wood shadow-soft backdrop-blur sm:text-[11px]"
             >
               ← Semua artikel
@@ -174,7 +174,7 @@ export default async function ArticleDetailPage({ params }) {
           </p>
           <div className="mt-6 grid gap-5 md:grid-cols-3">
             {relatedArticles.map((item) => (
-              <Link key={item.slug} href={`/artikel/${item.slug}`} className="rounded-[2rem] border border-stone-200 bg-white/82 p-5 shadow-soft backdrop-blur transition hover:-translate-y-1">
+              <Link key={item.slug} href={articleHref(item.slug)} className="rounded-[2rem] border border-stone-200 bg-white/82 p-5 shadow-soft backdrop-blur transition hover:-translate-y-1">
                 <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">
                   {item.category}
                 </p>

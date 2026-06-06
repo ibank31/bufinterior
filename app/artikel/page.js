@@ -2,7 +2,7 @@ import Link from "next/link";
 import { staticPageMetadata } from "@/content/static-pages";
 import { buildMetadata } from "@/lib/seo";
 import { articles } from "@/content/articles";
-import { routes } from "@/content/routes";
+import { articleHref, routes } from "@/content/routes";
 
 export const metadata = buildMetadata(staticPageMetadata.artikel);
 
@@ -50,7 +50,7 @@ export default function ArtikelPage() {
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Link
-                  href={`/artikel/${featured.slug}`}
+                  href={articleHref(featured.slug)}
                   className="rounded-full bg-brand-blue px-6 py-3 text-center text-sm font-black text-white shadow-blue"
                 >
                   Baca Artikel
@@ -81,7 +81,7 @@ export default function ArtikelPage() {
                   <Link href={article.relatedServiceHref} className="text-xs font-black uppercase tracking-[0.16em] text-muted">
                     {article.relatedServiceLabel}
                   </Link>
-                  <Link href={`/artikel/${article.slug}`} className="rounded-full bg-charcoal px-4 py-2 text-xs font-black text-white transition hover:bg-brand-blue">
+                  <Link href={articleHref(article.slug)} className="rounded-full bg-charcoal px-4 py-2 text-xs font-black text-white transition hover:bg-brand-blue">
                     Baca →
                   </Link>
                 </div>

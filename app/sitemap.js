@@ -1,4 +1,4 @@
-import { routes, sitemapRoutes } from "@/content/routes";
+import { articleHref, portfolioHref, sitemapRoutes } from "@/content/routes";
 import { articles } from "@/content/articles";
 import { localServices } from "@/content/local-services";
 import { services } from "@/content/services";
@@ -20,13 +20,13 @@ export default function sitemap() {
   }));
 
   const portfolioServiceRoutes = services.map((service) => ({
-    url: absoluteSiteUrl(`${routes.portfolio}/${service.slug}`),
+    url: absoluteSiteUrl(portfolioHref(service.slug)),
     changeFrequency: "monthly",
     priority: 0.68,
   }));
 
   const articleRoutes = articles.map((article) => ({
-    url: absoluteSiteUrl(`/artikel/${article.slug}`),
+    url: absoluteSiteUrl(articleHref(article.slug)),
     changeFrequency: "monthly",
     priority: 0.6,
   }));

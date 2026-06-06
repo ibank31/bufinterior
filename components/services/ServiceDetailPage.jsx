@@ -1,6 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
-import { routes } from "@/content/routes";
+import { articleHref, routes } from "@/content/routes";
 import { serviceHighlights } from "@/content/services";
 import { localServiceRoutes } from "@/content/local-services";
 import { articles } from "@/content/articles";
@@ -373,7 +373,7 @@ export default function ServiceDetailPage({ service }) {
             {relatedArticles.map((article) => (
               <Link
                 key={article.slug}
-                href={`/artikel/${article.slug}`}
+                href={articleHref(article.slug)}
                 className="rounded-[2rem] border border-stone-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(23,23,23,0.14)]"
               >
                 <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">
