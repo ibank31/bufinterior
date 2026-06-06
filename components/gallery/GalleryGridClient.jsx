@@ -1,14 +1,15 @@
 "use client";
 
+import { buildWhatsappHref as buildWhatsappUrl } from "@/lib/whatsapp";
+
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { getGalleryCategoryLabel } from "@/content/gallery";
 
-const whatsappNumber = "6285772208688";
-
 function buildWhatsappHref(item) {
-  const text = `Halo BUF, saya tertarik dengan model ${item.title}. Bisa konsultasi untuk kebutuhan ruang saya?`;
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  return buildWhatsappUrl(
+    `Halo BUF, saya tertarik dengan model ${item.title}. Bisa konsultasi untuk kebutuhan ruang saya?`
+  );
 }
 
 const mediaFilters = [
@@ -175,7 +176,7 @@ export default function GalleryGridClient({ items }) {
                 Foto dan video gallery bisa jadi titik awal untuk diskusi desain, material, finishing, dan estimasi pengerjaan.
               </p>
               <a
-                href="https://wa.me/6285772208688?text=Halo%20BUF%2C%20saya%20ingin%20konsultasi%20desain%20berdasarkan%20contoh%20gallery."
+                href={buildWhatsappUrl("Halo BUF, saya ingin konsultasi desain berdasarkan contoh gallery.")}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"

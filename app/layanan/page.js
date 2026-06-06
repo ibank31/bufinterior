@@ -3,11 +3,13 @@ import { services } from "@/content/services";
 import { routes } from "@/content/routes";
 import { staticPageMetadata } from "@/content/static-pages";
 import { buildMetadata } from "@/lib/seo";
+import { buildWhatsappHref } from "@/lib/whatsapp";
 
 export const metadata = buildMetadata(staticPageMetadata.layanan);
 
-const whatsappHref =
-  "https://wa.me/6285772208688?text=Halo%20BUF%2C%20saya%20ingin%20konsultasi%20layanan%20interior%20atau%20custom%20furniture.";
+const whatsappHref = buildWhatsappHref(
+  "Halo BUF, saya ingin konsultasi layanan interior atau custom furniture."
+);
 
 const serviceVisuals = {
   "kitchen-set": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo";
 import { routes } from "@/content/routes";
+import { buildWhatsappHref } from "@/lib/whatsapp";
 
 export const metadata = buildMetadata({
   title: "Estimasi Biaya Interior Custom, Kitchen Set & Furniture | BUF",
@@ -9,10 +10,8 @@ export const metadata = buildMetadata({
   path: "/estimasi-biaya",
 });
 
-const whatsappNumber = "6285772208688";
-
 function whatsappHref(text) {
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  return buildWhatsappHref(text);
 }
 
 const estimationCards = [

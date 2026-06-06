@@ -3,10 +3,9 @@ import { siteConfig } from "@/content/site";
 import { staticPageMetadata } from "@/content/static-pages";
 import { buildMetadata } from "@/lib/seo";
 import { routes } from "@/content/routes";
+import { buildWhatsappHref } from "@/lib/whatsapp";
 
 export const metadata = buildMetadata(staticPageMetadata.kontak);
-
-const whatsappNumber = "6285772208688";
 
 const quickChats = [
   {
@@ -45,7 +44,7 @@ const checklist = [
 ];
 
 function whatsappHref(text) {
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  return buildWhatsappHref(text);
 }
 
 export default function KontakPage() {
