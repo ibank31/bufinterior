@@ -154,6 +154,22 @@ Setelah halaman jasa stabil, tambah artikel pendukung yang benar-benar menjawab 
 
 Setiap artikel cukup menautkan ke layanan yang relevan secara kontekstual.
 
+### P6 — Struktur ekspansi area
+
+Repo sekarang sudah memiliki `content/areas.js` sebagai registry area prioritas.
+
+Prinsip ekspansi:
+- Jangan membuat halaman area massal tanpa data nyata.
+- Area T0/T1 dipakai sebagai prioritas awal.
+- Area T2/T3 hanya dibuat jika ada alasan bisnis, portofolio, atau data permintaan yang cukup.
+- Landing page area harus dibuat dari data terstruktur, bukan file manual satu per satu.
+- Setiap halaman area harus punya konteks lokal, layanan relevan, dan bukti visual yang sesuai jika tersedia.
+
+Area expansion tidak boleh mengorbankan struktur utama:
+- `/layanan/*` tetap halaman layanan umum.
+- `/portfolio/*` tetap bukti pengerjaan per layanan.
+- `/jasa/*` tetap landing page komersial area.
+
 ### P5 — Bukti visual dan trust
 
 Perkuat halaman dengan bukti nyata:
