@@ -150,9 +150,10 @@ Perkuat halaman dengan bukti nyata:
 
 Batch terakhir yang sudah masuk:
 
-- `Add global floating WhatsApp CTA`
-- `Centralize WhatsApp links across pages`
+- `Document current website state and next steps`
 - `Adjust floating WhatsApp CTA layering`
+- `Centralize WhatsApp links across pages`
+- `Add global floating WhatsApp CTA`
 - `Optimize meta descriptions for local service pages`
 - `Refine structured data for local services`
 - `Prepare canonical URLs for production domain`
@@ -160,4 +161,3 @@ Batch terakhir yang sudah masuk:
 - `Strengthen local jasa hub page`
 - `Enrich local service pages with conversion-focused sections`
 - `Improve contextual internal links for local SEO`
-
