@@ -11,11 +11,11 @@ export const galleryCategories = [
   { id: "custom-furniture", label: "Custom Furniture" },
 ];
 
-export function getGalleryCategoryLabel(categoryId) {
+export function getPortofolioCategoryLabel(categoryId) {
   return galleryCategories.find((category) => category.id === categoryId)?.label || categoryId;
 }
 
-export const galleryItems = [
+export const portfolioItems = [
   {
     slug: "video-kitchen-set-hijau-realisasi",
     title: "Video Kitchen Set Hijau Custom",
@@ -225,14 +225,14 @@ export const galleryItems = [
   },
 ];
 
-export function getFeaturedGalleryItem() {
-  return galleryItems.find((item) => item.isFeatured) || galleryItems[0];
+export function getFeaturedPortofolioItem() {
+  return portfolioItems.find((item) => item.isFeatured) || portfolioItems[0];
 }
 
-export function getGalleryItemsByCategory(categoryId) {
+export function getPortofolioItemsByCategory(categoryId) {
   if (!categoryId || categoryId === "semua") {
-    return galleryItems;
+    return portfolioItems;
   }
 
-  return galleryItems.filter((item) => item.category === categoryId);
+  return portfolioItems.filter((item) => item.category === categoryId);
 }

@@ -101,8 +101,8 @@ export default function Footer() {
             <p>Workshop: Berkoh, Purwokerto</p>
             <p>Area: {siteConfig.areaFocus}</p>
             <p>{siteConfig.areaNote}</p>
-            <Link href={routes.gallery} className="font-black text-white">
-              Lihat Gallery
+            <Link href={routes.portfolio} className="font-black text-white">
+              Lihat Portofolio
             </Link>
             <Link href={routes.kontak} className="font-black text-white">
               Lihat Kontak Lengkap

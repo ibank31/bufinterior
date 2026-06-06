@@ -69,10 +69,10 @@ export default function LocalServicePage({ service }) {
                 Pelajari Layanan Umum
               </Link>
               <Link
-                href={routes.gallery}
+                href={routes.portfolio}
                 className="rounded-full border border-white/15 bg-white/[0.06] px-7 py-3.5 text-center text-sm font-black text-white backdrop-blur"
               >
-                Lihat Gallery
+                Lihat Portofolio
               </Link>
             </div>
 

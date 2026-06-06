@@ -65,7 +65,7 @@ export default function LayananPage() {
                 Konsultasi via WhatsApp
               </a>
               <Link
-                href={routes.gallery}
+                href={routes.portfolio}
                 className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur"
               >
                 Lihat Contoh Pekerjaan

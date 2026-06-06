@@ -58,8 +58,8 @@ export default function HomePage() {
               <Link href={routes.kontak} className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)] lg:py-4">
                 Konsultasi Ruang
               </Link>
-              <Link href={routes.gallery} className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur lg:py-4">
-                Lihat Gallery
+              <Link href={routes.portfolio} className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur lg:py-4">
+                Lihat Portofolio
               </Link>
             </div>
 
@@ -212,12 +212,12 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-white/42">Gallery</p>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-white/42">Portofolio</p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
                 Contoh visual yang membantu calon pelanggan membayangkan ruangnya.
               </h2>
             </div>
-            <Link href={routes.gallery} className="text-sm font-black text-white">
+            <Link href={routes.portfolio} className="text-sm font-black text-white">
               Lihat semua gallery →
             </Link>
           </div>

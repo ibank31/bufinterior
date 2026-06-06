@@ -12,9 +12,10 @@ export const routes = {
   akrilikCustom: "/layanan/akrilik-custom",
   aluminium: "/layanan/aluminium",
   kanopi: "/layanan/kanopi",
-  gallery: "/gallery",
+  portfolio: "/portfolio",
   kontak: "/kontak",
   estimasiBiaya: "/estimasi-biaya",
+  caraKerja: "/cara-kerja",
   tentangKami: "/tentang-kami",
   artikel: "/artikel",
 };
@@ -33,9 +34,10 @@ export const sitemapRoutes = [
   { path: routes.akrilikCustom, priority: 0.74 },
   { path: routes.aluminium, priority: 0.74 },
   { path: routes.kanopi, priority: 0.74 },
-  { path: routes.gallery, priority: 0.8 },
+  { path: routes.portfolio, priority: 0.8 },
   { path: routes.kontak, priority: 0.82 },
   { path: routes.estimasiBiaya, priority: 0.82 },
+  { path: routes.caraKerja, priority: 0.78 },
   { path: routes.tentangKami, priority: 0.65 },
   { path: routes.artikel, priority: 0.55 },
 ];

@@ -199,7 +199,7 @@ export const articles = [
       {
         heading: "Periksa gallery dan contoh pekerjaan",
         body:
-          "Gallery membantu calon pelanggan melihat gaya pengerjaan, jenis ruang yang pernah ditangani, dan kualitas visual secara umum. Tidak harus semua contoh sama persis dengan kebutuhan Anda, tetapi gallery bisa memberi gambaran apakah vendor terbiasa mengerjakan kitchen set, lemari custom, backdrop TV, interior toko, atau booth usaha.",
+          "Portofolio membantu calon pelanggan melihat gaya pengerjaan, jenis ruang yang pernah ditangani, dan kualitas visual secara umum. Tidak harus semua contoh sama persis dengan kebutuhan Anda, tetapi portofolio bisa memberi gambaran apakah vendor terbiasa mengerjakan kitchen set, lemari custom, backdrop TV, interior toko, atau booth usaha.",
       },
       {
         heading: "Pastikan alur kerjanya jelas",

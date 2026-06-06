@@ -13,10 +13,10 @@ export const staticPageMetadata = {
     description: "Layanan BUF untuk kitchen set, custom furniture, interior rumah/toko, booth usaha, akrilik, aluminium, dan kanopi custom.",
     path: routes.layanan,
   },
-  gallery: {
-    title: "Gallery Desain & Pengerjaan Interior | BUF",
-    description: "Lihat contoh desain, realisasi, dan proses pengerjaan interior custom, kitchen set, furniture, dan booth usaha BUF Berkah Utami Furniture.",
-    path: routes.gallery,
+  portfolio: {
+    title: "Portofolio Proyek Interior & Furniture | BUF",
+    description: "Lihat portofolio proyek interior, kitchen set, custom furniture, booth usaha, akrilik, aluminium, dan kanopi BUF.",
+    path: routes.portfolio,
   },
   kontak: {
     title: "Kontak BUF | Konsultasi Interior & Custom Furniture",
@@ -27,6 +27,11 @@ export const staticPageMetadata = {
     title: "Estimasi Biaya Interior Custom, Kitchen Set & Furniture | BUF",
     description: "Panduan estimasi biaya awal untuk kitchen set custom, lemari custom, backdrop TV, booth usaha, interior toko, dan custom furniture.",
     path: routes.estimasiBiaya,
+  },
+  caraKerja: {
+    title: "Cara Kerja BUF | Proses Konsultasi & Pengerjaan Custom",
+    description: "Pelajari alur kerja BUF dari konsultasi WhatsApp, pengukuran, diskusi material, estimasi, produksi, sampai pemasangan.",
+    path: routes.caraKerja,
   },
   tentangKami: {
     title: "Tentang BUF | Workshop Interior & Custom Furniture",

@@ -223,10 +223,10 @@ export default function EstimasiBiayaPage() {
                 Minta Estimasi Awal
               </a>
               <Link
-                href={routes.gallery}
+                href={routes.portfolio}
                 className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur"
               >
-                Lihat Referensi Gallery
+                Lihat Referensi Portofolio
               </Link>
             </div>
           </div>

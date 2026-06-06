@@ -4,7 +4,7 @@ import { buildWhatsappHref as buildWhatsappUrl } from "@/lib/whatsapp";
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { getGalleryCategoryLabel } from "@/content/gallery";
+import { getPortofolioCategoryLabel } from "@/content/portfolio";
 
 function buildWhatsappHref(item) {
   return buildWhatsappUrl(
@@ -18,7 +18,7 @@ const mediaFilters = [
   { id: "video", label: "Video" },
 ];
 
-export default function GalleryGridClient({ items }) {
+export default function PortofolioGridClient({ items }) {
   const [activeMedia, setActiveMedia] = useState("semua");
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -110,7 +110,7 @@ export default function GalleryGridClient({ items }) {
                     <div className="p-3 sm:p-5">
                       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                         <p className="text-[10px] font-black uppercase tracking-[0.14em] text-wood sm:text-[11px]">
-                          {getGalleryCategoryLabel(item.category)}
+                          {getPortofolioCategoryLabel(item.category)}
                         </p>
                         <span className="w-fit rounded-full bg-[#f5efe6] px-2 py-1 text-[10px] font-black text-muted sm:px-3 sm:text-[11px]">
                           {item.type}
@@ -225,7 +225,7 @@ export default function GalleryGridClient({ items }) {
 
             <div className="p-5">
               <p className="text-[11px] font-black uppercase tracking-[0.16em] text-brand-blue">
-                {selectedMediaType === "video" ? "Video" : "Foto"} • {getGalleryCategoryLabel(selectedItem.category)} • {selectedItem.type}
+                {selectedMediaType === "video" ? "Video" : "Foto"} • {getPortofolioCategoryLabel(selectedItem.category)} • {selectedItem.type}
               </p>
               <h2 className="mt-2 text-2xl font-black tracking-[-0.02em] text-charcoal">
                 {selectedItem.title}

@@ -14,6 +14,12 @@ function isActive(pathname, href, exact = false) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
+function navClassName(active) {
+  return `rounded-full px-4 py-2 text-sm font-black transition ${
+    active ? "bg-brand-blue text-white shadow-blue" : "text-muted hover:bg-white hover:text-charcoal"
+  }`;
+}
+
 export default function HeaderClient() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -34,27 +40,52 @@ export default function HeaderClient() {
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
-          {mainNavigation.map((item) => (
-            <Link
-              key={item.href || item.label}
-              href={item.href}
-              className={`rounded-full px-4 py-2 text-sm font-black transition ${
-                isActive(pathname, item.href, item.exact)
-                  ? "bg-brand-blue text-white shadow-blue"
-                  : "text-muted hover:bg-white hover:text-charcoal"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+          {mainNavigation.map((item) => {
+            const active = isActive(pathname, item.href, item.exact);
+            const hasDropdown = Boolean(item.groups?.length);
 
-        <Link
-          href={routes.kontak}
-          className="hidden rounded-full bg-charcoal px-5 py-2.5 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 md:inline-flex"
-        >
-          Konsultasi
-        </Link>
+            if (!hasDropdown) {
+              return (
+                <Link key={item.href || item.label} href={item.href} className={navClassName(active)}>
+                  {item.label}
+                </Link>
+              );
+            }
+
+            return (
+              <div key={item.href || item.label} className="group relative">
+                <Link href={item.href} className={navClassName(active)}>
+                  {item.label}
+                </Link>
+
+                <div className="invisible absolute left-0 top-full z-40 mt-3 w-[720px] max-w-[calc(100vw-2rem)] translate-y-2 rounded-[2rem] border border-stone-200 bg-white p-5 opacity-0 shadow-[0_28px_90px_rgba(23,23,23,0.14)] transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                  <div className="grid gap-4 md:grid-cols-3">
+                    {item.groups.map((group) => (
+                      <div key={group.label}>
+                        <p className="text-[11px] font-black uppercase tracking-[0.18em] text-brand-blue">
+                          {group.label}
+                        </p>
+                        <div className="mt-3 grid gap-1.5">
+                          {group.items.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className={`rounded-2xl px-3 py-2 text-sm font-black transition ${
+                                isActive(pathname, child.href) ? "bg-[#fffaf2] text-charcoal" : "text-muted hover:bg-[#fffaf2] hover:text-charcoal"
+                              }`}
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </nav>
 
         <button
           type="button"
@@ -73,27 +104,55 @@ export default function HeaderClient() {
       {isOpen ? (
         <div className="border-t border-stone-200/70 bg-ivory px-4 pb-4 lg:hidden">
           <nav className="mx-auto grid max-w-7xl gap-2 pt-3">
-            {mainNavigation.map((item) => (
-              <Link
-                key={item.href || item.label}
-                href={item.href}
-                className={`rounded-2xl border px-4 py-3 text-sm font-black ${
-                  isActive(pathname, item.href, item.exact)
-                    ? "border-brand-blue bg-brand-blue text-white"
-                    : "border-stone-200 bg-white text-charcoal"
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <Link
-              href={routes.kontak}
-              className="rounded-2xl bg-charcoal px-4 py-3 text-center text-sm font-black text-white"
-              onClick={() => setIsOpen(false)}
-            >
-              Konsultasi
-            </Link>
+            {mainNavigation.map((item) => {
+              const hasDropdown = Boolean(item.groups?.length);
+
+              if (!hasDropdown) {
+                return (
+                  <Link
+                    key={item.href || item.label}
+                    href={item.href}
+                    className={`rounded-2xl border px-4 py-3 text-sm font-black ${
+                      isActive(pathname, item.href, item.exact)
+                        ? "border-brand-blue bg-brand-blue text-white"
+                        : "border-stone-200 bg-white text-charcoal"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              }
+
+              return (
+                <details key={item.href || item.label} className="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+                  <summary className="cursor-pointer px-4 py-3 text-sm font-black text-charcoal">
+                    {item.label}
+                  </summary>
+                  <div className="grid gap-4 border-t border-stone-200 px-4 py-4">
+                    {item.groups.map((group) => (
+                      <div key={group.label}>
+                        <p className="text-[11px] font-black uppercase tracking-[0.18em] text-brand-blue">
+                          {group.label}
+                        </p>
+                        <div className="mt-2 grid gap-1">
+                          {group.items.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className="rounded-xl px-3 py-2 text-sm font-bold text-muted hover:bg-[#fffaf2] hover:text-charcoal"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </details>
+              );
+            })}
           </nav>
         </div>
       ) : null}
