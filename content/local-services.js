@@ -13,6 +13,7 @@ export const localServices = [
   {
     slug: "kitchen-set-purwokerto",
     serviceSlug: "kitchen-set",
+    areaSlug: "purwokerto",
     title: "Jasa Kitchen Set Custom Purwokerto",
     shortTitle: "Kitchen Set Purwokerto",
     area: "Purwokerto",
@@ -79,6 +80,7 @@ export const localServices = [
   {
     slug: "booth-usaha-purwokerto",
     serviceSlug: "booth-usaha",
+    areaSlug: "purwokerto",
     title: "Jasa Booth Usaha Custom Purwokerto",
     shortTitle: "Booth Usaha Purwokerto",
     area: "Purwokerto",
@@ -145,6 +147,7 @@ export const localServices = [
   {
     slug: "akrilik-custom-purwokerto",
     serviceSlug: "akrilik-custom",
+    areaSlug: "purwokerto",
     title: "Jasa Akrilik Custom Purwokerto",
     shortTitle: "Akrilik Custom Purwokerto",
     area: "Purwokerto",
@@ -211,6 +214,7 @@ export const localServices = [
   {
     slug: "aluminium-purwokerto",
     serviceSlug: "aluminium",
+    areaSlug: "purwokerto",
     title: "Jasa Aluminium Custom Purwokerto",
     shortTitle: "Aluminium Purwokerto",
     area: "Purwokerto",
@@ -277,6 +281,7 @@ export const localServices = [
   {
     slug: "kanopi-purwokerto",
     serviceSlug: "kanopi",
+    areaSlug: "purwokerto",
     title: "Jasa Kanopi Purwokerto",
     shortTitle: "Kanopi Purwokerto",
     area: "Purwokerto",
