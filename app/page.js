@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata(staticPageMetadata.home);
 
-const galleryPreview = [
+const portfolioPreview = [
   {
     title: "Proses Pemasangan Backdrop TV",
     category: "Backdrop TV",
@@ -218,12 +218,12 @@ export default function HomePage() {
               </h2>
             </div>
             <Link href={routes.portfolio} className="text-sm font-black text-white">
-              Lihat semua gallery →
+              Lihat semua portofolio →
             </Link>
           </div>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {galleryPreview.map((item, index) => (
+            {portfolioPreview.map((item, index) => (
               <article key={item.title} className={`group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] ${index === 0 ? "md:row-span-2" : ""}`}>
                 <div className={`${index === 0 ? "min-h-[520px]" : "min-h-[250px]"} bg-cover bg-center transition duration-500 group-hover:scale-[1.03]`} style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.58)), url('${item.image}')` }}>
                   <div className="flex h-full min-h-[inherit] items-end p-5">

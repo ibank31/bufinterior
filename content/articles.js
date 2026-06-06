@@ -171,7 +171,7 @@ export const articles = [
     slug: "tips-memilih-jasa-interior-custom",
     title: "Tips Memilih Jasa Interior Custom agar Tidak Salah Vendor",
     excerpt:
-      "Panduan memilih jasa interior custom dari sisi komunikasi, gallery pekerjaan, alur kerja, estimasi biaya, material, dan kejelasan kebutuhan sebelum produksi.",
+      "Panduan memilih jasa interior custom dari sisi komunikasi, portofolio pekerjaan, alur kerja, estimasi biaya, material, dan kejelasan kebutuhan sebelum produksi.",
     category: "Panduan",
     date: "2026-06-04",
     readingTime: "7 menit baca",
@@ -181,7 +181,7 @@ export const articles = [
     heroImage: "/assets/portfolio/backdrop-panel-proses-buf-01.webp",
     keyTakeaways: [
       "Jasa interior custom yang baik bukan hanya terlihat bagus, tetapi juga bisa membantu membaca kebutuhan ruang, fungsi, ukuran, dan budget.",
-      "Perhatikan gallery pekerjaan, cara komunikasi, alur konsultasi, dan kejelasan estimasi sebelum menentukan vendor.",
+      "Perhatikan portofolio pekerjaan, cara komunikasi, alur konsultasi, dan kejelasan estimasi sebelum menentukan vendor.",
       "Anda tidak harus punya desain final sebelum konsultasi. Foto ruang, ukuran kasar, referensi, dan gambaran budget sudah cukup untuk memulai.",
       "Hindari memilih vendor hanya dari harga paling murah tanpa memahami material, finishing, detail pengerjaan, dan layanan yang didapat.",
     ],
@@ -197,7 +197,7 @@ export const articles = [
           "Vendor yang baik akan bertanya tentang ukuran ruang, fungsi, kebiasaan pemakaian, kebutuhan penyimpanan, referensi desain, dan budget. Pertanyaan seperti ini penting karena hasil interior custom harus nyaman dipakai, bukan hanya bagus difoto.",
       },
       {
-        heading: "Periksa gallery dan contoh pekerjaan",
+        heading: "Periksa portofolio dan contoh pekerjaan",
         body:
           "Portofolio membantu calon pelanggan melihat gaya pengerjaan, jenis ruang yang pernah ditangani, dan kualitas visual secara umum. Tidak harus semua contoh sama persis dengan kebutuhan Anda, tetapi portofolio bisa memberi gambaran apakah vendor terbiasa mengerjakan kitchen set, lemari custom, backdrop TV, interior toko, atau booth usaha.",
       },

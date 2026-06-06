@@ -152,14 +152,14 @@ export default function PortofolioGridClient({ items }) {
                 Belum ada visual di filter ini.
               </h2>
               <p className="mt-3 text-sm font-medium leading-7 text-muted">
-                Foto dan video baru bisa ditambahkan kapan saja melalui data gallery.
+                Foto dan video baru bisa ditambahkan kapan saja melalui data portofolio.
               </p>
               <button
                 type="button"
                 onClick={() => setActiveMedia("semua")}
                 className="mt-6 inline-flex rounded-full bg-charcoal px-6 py-3 text-sm font-black text-white"
               >
-                Lihat semua gallery
+                Lihat semua portofolio
               </button>
             </div>
           )}
@@ -173,10 +173,10 @@ export default function PortofolioGridClient({ items }) {
                 Kirim model yang kamu suka. BUF bantu sesuaikan dengan ukuran ruang dan budget.
               </h2>
               <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-                Foto dan video gallery bisa jadi titik awal untuk diskusi desain, material, finishing, dan estimasi pengerjaan.
+                Foto dan video portofolio bisa jadi titik awal untuk diskusi desain, material, finishing, dan estimasi pengerjaan.
               </p>
               <a
-                href={buildWhatsappUrl("Halo BUF, saya ingin konsultasi desain berdasarkan contoh gallery.")}
+                href={buildWhatsappUrl("Halo BUF, saya ingin konsultasi desain berdasarkan contoh portofolio.")}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"
