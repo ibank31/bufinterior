@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/content/site";
-import { routes } from "@/content/routes";
+import { articleHref, routes } from "@/content/routes";
+import { localServices } from "@/content/local-services";
 
 const priorityServices = [
   ["Kitchen Set Custom", routes.kitchenSet],
@@ -13,19 +14,16 @@ const priorityServices = [
 
 const guideLinks = [
   ["Estimasi Biaya", routes.estimasiBiaya],
-  ["Biaya Kitchen Set Custom", "/artikel/biaya-kitchen-set-custom"],
-  ["Material Kitchen Set", "/artikel/material-kitchen-set-yang-bagus"],
-  ["Tips Memilih Jasa Interior", "/artikel/tips-memilih-jasa-interior-custom"],
-  ["Lemari Custom vs Lemari Jadi", "/artikel/lemari-custom-vs-lemari-jadi"],
+  ["Biaya Kitchen Set Custom", articleHref("biaya-kitchen-set-custom")],
+  ["Material Kitchen Set", articleHref("material-kitchen-set-yang-bagus")],
+  ["Tips Memilih Jasa Interior", articleHref("tips-memilih-jasa-interior-custom")],
+  ["Lemari Custom vs Lemari Jadi", articleHref("lemari-custom-vs-lemari-jadi")],
 ];
 
-const localServiceLinks = [
-  ["Kitchen Set Purwokerto", "/jasa/kitchen-set-purwokerto"],
-  ["Booth Usaha Purwokerto", "/jasa/booth-usaha-purwokerto"],
-  ["Akrilik Custom Purwokerto", "/jasa/akrilik-custom-purwokerto"],
-  ["Aluminium Purwokerto", "/jasa/aluminium-purwokerto"],
-  ["Kanopi Purwokerto", "/jasa/kanopi-purwokerto"],
-];
+const localServiceLinks = localServices.map((service) => [
+  service.shortTitle || service.title.replace("Jasa ", ""),
+  service.href,
+]);
 
 export default function Footer() {
   return (
@@ -61,7 +59,7 @@ export default function Footer() {
 
         <div>
           <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
-            Jasa Area
+            Area Layanan
           </p>
           <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
             {localServiceLinks.map(([label, href]) => (
@@ -70,7 +68,7 @@ export default function Footer() {
               </Link>
             ))}
             <Link href={routes.jasa} className="font-black text-white">
-              Semua Jasa Area
+              Semua Area Layanan
             </Link>
           </div>
         </div>
