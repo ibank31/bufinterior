@@ -1,0 +1,15 @@
+import ServiceDetailPage from "@/components/services/ServiceDetailPage";
+import { services } from "@/content/services";
+import { buildMetadata } from "@/lib/seo";
+
+const service = services.find((item) => item.slug === "kanopi");
+
+export const metadata = buildMetadata({
+  title: "Kanopi Custom | Rumah, Toko & Area Usaha — BUF",
+  description: service.description,
+  path: service.href,
+});
+
+export default function Page() {
+  return <ServiceDetailPage service={service} />;
+}
