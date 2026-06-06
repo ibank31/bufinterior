@@ -1,6 +1,6 @@
 import { routes } from "@/content/routes";
 
-export const galleryCategories = [
+export const portfolioCategories = [
   { id: "semua", label: "Semua" },
   { id: "kitchen-set", label: "Kitchen Set" },
   { id: "backdrop-tv", label: "Backdrop TV" },
@@ -12,7 +12,7 @@ export const galleryCategories = [
 ];
 
 export function getPortofolioCategoryLabel(categoryId) {
-  return galleryCategories.find((category) => category.id === categoryId)?.label || categoryId;
+  return portfolioCategories.find((category) => category.id === categoryId)?.label || categoryId;
 }
 
 export const portfolioItems = [

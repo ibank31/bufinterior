@@ -3,7 +3,7 @@ import { buildMetadata } from "@/lib/seo";
 import { portfolioItems } from "@/content/portfolio";
 import PortofolioGridClient from "@/components/portfolio/PortofolioGridClient";
 
-export const metadata = buildMetadata(staticPageMetadata.gallery);
+export const metadata = buildMetadata(staticPageMetadata.portfolio);
 
 export default function PortofolioPage() {
   return (

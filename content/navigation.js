@@ -28,13 +28,33 @@ export const serviceNavigationGroups = [
   },
 ];
 
-export const portfolioNavigationGroups = serviceNavigationGroups.map((group) => ({
-  label: group.label,
-  items: group.items.map((item) => ({
-    label: item.label.replace(" Custom", ""),
-    href: `${routes.portfolio}/${item.href.split("/").pop()}`,
-  })),
-}));
+export const portfolioNavigationGroups = [
+  {
+    label: "Custom Interior & Furniture",
+    items: [
+      { label: "Kitchen Set", href: `${routes.portfolio}/kitchen-set` },
+      { label: "Custom Furniture", href: `${routes.portfolio}/custom-furniture` },
+      { label: "Interior Rumah", href: `${routes.portfolio}/interior-rumah` },
+      { label: "Backdrop TV", href: `${routes.portfolio}/backdrop-tv` },
+      { label: "Lemari Custom", href: `${routes.portfolio}/lemari-custom` },
+    ],
+  },
+  {
+    label: "Commercial & Business Custom",
+    items: [
+      { label: "Interior Toko", href: `${routes.portfolio}/interior-toko` },
+      { label: "Booth Usaha", href: `${routes.portfolio}/booth-usaha` },
+      { label: "Akrilik Custom", href: `${routes.portfolio}/akrilik-custom` },
+    ],
+  },
+  {
+    label: "Exterior & Building Support",
+    items: [
+      { label: "Aluminium", href: `${routes.portfolio}/aluminium` },
+      { label: "Kanopi", href: `${routes.portfolio}/kanopi` },
+    ],
+  },
+];
 
 export const mainNavigation = [
   { label: "Beranda", href: routes.home, exact: true },
