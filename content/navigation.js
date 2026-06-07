@@ -7,7 +7,13 @@ export const serviceGroupOrder = [
   "Exterior & Building Support",
 ];
 
-function buildServiceGroups(mapItem) {
+const portfolioGroupLabelMap = {
+  "Custom Interior & Furniture": "Contoh Pengerjaan Hunian",
+  "Commercial & Business Custom": "Contoh Pengerjaan Usaha",
+  "Exterior & Building Support": "Contoh Pengerjaan Bangunan",
+};
+
+function buildServiceGroups(mapItem, groupLabelMap = {}) {
   return serviceGroupOrder
     .map((groupLabel) => {
       const items = services
@@ -15,7 +21,7 @@ function buildServiceGroups(mapItem) {
         .map(mapItem);
 
       return {
-        label: groupLabel,
+        label: groupLabelMap[groupLabel] || groupLabel,
         items,
       };
     })
@@ -27,10 +33,13 @@ export const serviceNavigationGroups = buildServiceGroups((service) => ({
   href: service.href,
 }));
 
-export const portfolioNavigationGroups = buildServiceGroups((service) => ({
-  label: service.shortTitle,
-  href: `${routes.portfolio}/${service.slug}`,
-}));
+export const portfolioNavigationGroups = buildServiceGroups(
+  (service) => ({
+    label: service.shortTitle,
+    href: `${routes.portfolio}/${service.slug}`,
+  }),
+  portfolioGroupLabelMap
+);
 
 export const mainNavigation = [
   { label: "Beranda", href: routes.home, exact: true },
