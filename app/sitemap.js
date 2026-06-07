@@ -1,5 +1,6 @@
 import { articleHref, portfolioHref, sitemapRoutes } from "@/content/routes";
 import { articles } from "@/content/articles";
+import { areaPages } from "@/content/area-pages";
 import { localServices } from "@/content/local-services";
 import { services } from "@/content/services";
 import { absoluteSiteUrl } from "@/lib/url";

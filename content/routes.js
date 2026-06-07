@@ -2,6 +2,7 @@ export const routes = {
   home: "/",
   layanan: "/layanan",
   jasa: "/jasa",
+  area: "/area",
   kitchenSet: "/layanan/kitchen-set",
   customFurniture: "/layanan/custom-furniture",
   interiorRumah: "/layanan/interior-rumah",
@@ -54,4 +55,9 @@ export function portfolioHref(serviceSlug) {
 
 export function localServiceHref(slug) {
   return `${routes.jasa}/${slug}`;
+}
+
+
+export function areaHref(slug) {
+  return `${routes.area}/${slug}`;
 }
