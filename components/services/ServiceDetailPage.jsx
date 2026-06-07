@@ -9,7 +9,7 @@ import { buildWhatsappHref } from "@/lib/whatsapp";
 
 const processSteps = [
   ["01", "Konsultasi kebutuhan", "Ceritakan ukuran ruang, fungsi yang dibutuhkan, referensi desain, dan gambaran budget."],
-  ["02", "Survey / ukur ruang", "Kebutuhan survey atau pengukuran bisa dikonfirmasi terlebih dahulu."],
+  ["02", "Survey / ukur ruang", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
   ["03", "Arahan desain & material", "BUF bantu arahkan bentuk, finishing, material, dan opsi pengerjaan yang paling masuk akal."],
   ["04", "Produksi & pemasangan", "Pengerjaan dilakukan dari workshop sampai pemasangan sesuai kesepakatan."],
 ];

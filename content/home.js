@@ -18,7 +18,7 @@ export const portfolioPreview = [
 
 export const processSteps = [
   ["01", "Konsultasi ruang", "Ceritakan kebutuhan, ukuran ruang, fungsi, dan gambaran budget."],
-  ["02", "Survey & ukur", "Kebutuhan survey dapat dikonfirmasi terlebih dahulu."],
+  ["02", "Survey & ukur", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak proyek."],
   ["03", "Desain & estimasi", "Konsep, material, finishing, dan estimasi disesuaikan dengan kebutuhan."],
   ["04", "Produksi & pasang", "Pengerjaan dilakukan dari workshop sampai pemasangan di lokasi."],
 ];

@@ -16,8 +16,8 @@ const trustPoints = [
   ["Custom ukuran ruang", "Furniture dan interior bisa menyesuaikan ukuran, fungsi, dan kondisi ruang."],
   ["Material by request", "Material dapat disesuaikan dengan kebutuhan, tampilan, fungsi, dan budget."],
   ["Desain + pengerjaan", "Pelanggan bisa mulai dari konsultasi konsep sampai pengerjaan."],
-  ["Survey by konfirmasi", "Kebutuhan survey atau pengukuran dapat dikonfirmasi sesuai lokasi proyek."],
-  ["Lokasi by konfirmasi", "Kebutuhan survey, pengiriman, dan pemasangan dapat dikonfirmasi sesuai lokasi proyek."],
+  ["Survey Banyumas gratis", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
+  ["Lokasi proyek jelas", "Survey area Banyumas gratis. Pengiriman dan pemasangan dikonfirmasi sesuai lokasi dan kebutuhan proyek."],
 ];
 
 const approach = [

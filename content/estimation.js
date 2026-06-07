@@ -150,7 +150,7 @@ export const factors = [
   ["Finishing", "Finishing polos, motif kayu, motif marmer, kombinasi warna, atau detail premium akan mempengaruhi estimasi."],
   ["Kabinet, laci, dan sekat", "Semakin banyak kompartemen, laci, pintu, dan penyimpanan khusus, semakin banyak detail produksi."],
   ["Hardware dan aksesoris", "Engsel, rel laci, handle, rak piring, lampu LED, kaca, roda, dan aksesoris lain bisa membuat estimasi berubah."],
-  ["Pemasangan dan lokasi proyek", "Kebutuhan survey, pengiriman, dan pemasangan dikonfirmasi sesuai lokasi proyek dan kondisi lapangan."],
+  ["Pemasangan dan lokasi proyek", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey, pengiriman, dan pemasangan dikonfirmasi sesuai jarak serta kondisi lapangan."],
 ];
 
 export const preparation = [
@@ -159,7 +159,7 @@ export const preparation = [
   "Jenis kebutuhan: kitchen set, lemari, backdrop, booth, atau interior toko",
   "Referensi desain yang disukai",
   "Gambaran budget awal",
-  "Lokasi proyek untuk konfirmasi survey, pengiriman, atau pemasangan",
+  "Lokasi proyek untuk cek area survey gratis Banyumas atau konfirmasi luar kota",
 ];
 
 export const commonQuestions = [

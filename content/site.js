@@ -15,6 +15,7 @@ export const siteConfig = {
   operatingHours: "08.00 – 16.00",
   areaFocus: "Berkoh, Purwokerto, Banyumas",
   areaNote: "Workshop/kantor berada di Berkoh, Purwokerto. Melayani Purwokerto, Banyumas, dan area sekitar dengan jadwal proyek by konfirmasi.",
+  surveyPolicy: "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek.",
   workshops: ["Berkoh, Purwokerto", "Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
   positioning:
     "Workshop interior, custom furniture, dan fabrication di Berkoh, Purwokerto untuk kebutuhan rumah, toko, dan usaha. Membantu desain, produksi, dan pengerjaan sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",

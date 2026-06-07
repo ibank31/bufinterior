@@ -21,7 +21,7 @@ export const workflowSteps = [
     number: "02",
     title: "Kirim foto, ukuran kasar, dan referensi",
     description:
-      "Foto lokasi, ukuran kasar, dan referensi model membantu estimasi awal lebih masuk akal sebelum masuk ke tahap survey atau pengukuran detail.",
+      "Foto lokasi, ukuran kasar, dan referensi model membantu estimasi awal lebih masuk akal sebelum masuk ke tahap survey atau pengukuran detail. Survey lokasi area Banyumas gratis.",
     details: [
       "Foto area dari beberapa sudut.",
       "Ukuran panjang, lebar, tinggi, atau area pemasangan.",
@@ -43,7 +43,7 @@ export const workflowSteps = [
     number: "04",
     title: "Survey atau ukur by konfirmasi",
     description:
-      "Jika pekerjaan membutuhkan ukuran detail atau pengecekan kondisi lokasi, kebutuhan survey dapat dikonfirmasi terlebih dahulu.",
+      "Jika pekerjaan membutuhkan ukuran detail atau pengecekan kondisi lokasi, survey area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek.",
     details: [
       "Tidak semua pekerjaan harus langsung survey.",
       "Survey bergantung pada jenis proyek, lokasi, dan kebutuhan teknis.",
