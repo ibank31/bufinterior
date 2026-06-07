@@ -4,44 +4,9 @@ import { staticPageMetadata } from "@/content/static-pages";
 import { buildMetadata } from "@/lib/seo";
 import { routes } from "@/content/routes";
 import { buildWhatsappHref } from "@/lib/whatsapp";
+import { contactChecklist, quickChats } from "@/content/contact";
 
 export const metadata = buildMetadata(staticPageMetadata.kontak);
-
-const quickChats = [
-  {
-    label: "Kitchen Set",
-    text: "Halo BUF, saya ingin konsultasi kitchen set custom. Saya ingin tanya estimasi dan prosesnya.",
-  },
-  {
-    label: "Backdrop TV",
-    text: "Halo BUF, saya ingin konsultasi backdrop TV custom untuk ruang saya.",
-  },
-  {
-    label: "Lemari Custom",
-    text: "Halo BUF, saya ingin konsultasi lemari custom sesuai ukuran ruang.",
-  },
-  {
-    label: "Booth Usaha",
-    text: "Halo BUF, saya ingin konsultasi booth usaha custom untuk kebutuhan jualan.",
-  },
-  {
-    label: "Interior Rumah",
-    text: "Halo BUF, saya ingin konsultasi desain dan pengerjaan interior rumah.",
-  },
-  {
-    label: "Interior Toko",
-    text: "Halo BUF, saya ingin konsultasi interior toko atau display produk.",
-  },
-];
-
-const checklist = [
-  "Foto ruang atau area yang ingin dikerjakan",
-  "Ukuran kasar panjang, lebar, dan tinggi",
-  "Kebutuhan utama: penyimpanan, display, meja, lemari, atau backdrop",
-  "Referensi desain jika ada",
-  "Gambaran budget agar opsi material lebih terarah",
-  "Lokasi proyek untuk konfirmasi survey atau koordinasi",
-];
 
 function whatsappHref(text) {
   return buildWhatsappHref(text);
@@ -157,7 +122,7 @@ export default function KontakPage() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
-            {checklist.map((item, index) => (
+            {contactChecklist.map((item, index) => (
               <div key={item} className="rounded-[1.75rem] border border-stone-200 bg-white/82 p-5 shadow-soft backdrop-blur">
                 <p className="text-[11px] font-black uppercase tracking-[0.18em] text-muted">
                   {String(index + 1).padStart(2, "0")}
