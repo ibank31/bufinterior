@@ -8,7 +8,7 @@ import { buildWhatsappHref } from "@/lib/whatsapp";
 export const metadata = buildMetadata(staticPageMetadata.tentangKami);
 
 const whatsappHref = buildWhatsappHref(
-  "Halo BUF, saya ingin konsultasi kebutuhan interior atau custom furniture."
+  "Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ..."
 );
 
 const trustPoints = [

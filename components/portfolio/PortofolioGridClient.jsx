@@ -8,7 +8,7 @@ import { getPortofolioCategoryLabel } from "@/content/portfolio";
 
 function buildPortfolioWhatsappHref(item) {
   return buildWhatsappUrl(
-    `Halo BUF, saya tertarik dengan model ${item.title}. Bisa konsultasi untuk kebutuhan ruang saya?`
+    `Halo BUF, saya tertarik dengan contoh portofolio ${item.title}. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Bisa konsultasi untuk kebutuhan ruang saya?`
   );
 }
 
@@ -176,7 +176,7 @@ export default function PortofolioGridClient({ items }) {
                 Foto dan video portofolio bisa jadi titik awal untuk diskusi desain, material, finishing, dan estimasi pengerjaan.
               </p>
               <a
-                href={buildWhatsappUrl("Halo BUF, saya ingin konsultasi desain berdasarkan contoh portofolio.")}
+                href={buildWhatsappUrl("Halo BUF, saya ingin konsultasi desain berdasarkan contoh portofolio. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ...")}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"

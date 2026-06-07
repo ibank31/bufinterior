@@ -32,7 +32,7 @@ export default function KontakPage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={whatsappHref("Halo BUF, saya ingin konsultasi kebutuhan interior atau custom furniture.")}
+                href={whatsappHref("Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ...")}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)]"
@@ -208,7 +208,7 @@ export default function KontakPage() {
               Konsultasi awal bisa dilakukan via WhatsApp sebelum menentukan survey, desain, material, atau pengerjaan.
             </p>
             <a
-              href={whatsappHref("Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Saya akan kirim foto ruang dan ukuran kasar.")}
+              href={whatsappHref("Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Saya akan kirim foto ruang dan referensi.")}
               target="_blank"
               rel="noreferrer"
               className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"

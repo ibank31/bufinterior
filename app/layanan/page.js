@@ -9,7 +9,7 @@ import { buildWhatsappHref } from "@/lib/whatsapp";
 export const metadata = buildMetadata(staticPageMetadata.layanan);
 
 const whatsappHref = buildWhatsappHref(
-  "Halo BUF, saya ingin konsultasi layanan interior atau custom furniture."
+  "Halo BUF, saya ingin konsultasi layanan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ..."
 );
 
 export default function LayananPage() {

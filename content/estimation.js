@@ -9,7 +9,7 @@ export const estimationCards = [
       "Kitchen set biasanya paling sering membuat calon pelanggan bingung karena detailnya bisa sangat berbeda. Kitchen set sederhana tentu berbeda dengan kitchen set lengkap yang memakai kabinet atas-bawah, top table, backsplash, banyak laci, rak piring, lampu, dan aksesoris tambahan.",
     href: routes.kitchenSet,
     waText:
-      "Halo BUF, saya ingin minta estimasi awal kitchen set custom. Ukuran kasar saya sekitar ... meter. Saya akan kirim foto ruang dan referensi desain.",
+      "Halo BUF, saya ingin minta estimasi awal kitchen set custom. Lokasi proyek: ... Ukuran/perkiraan kitchen set: ... meter. Kebutuhan: ... Gambaran budget: ... Saya akan kirim foto ruang dan referensi desain.",
     tiers: [
       {
         name: "Ekonomis",
@@ -49,7 +49,7 @@ export const estimationCards = [
       "Lemari custom terlihat sederhana, tetapi estimasinya bisa berubah karena tinggi lemari, jumlah pintu, sekat, laci, rel, kaca, finishing, dan apakah dibuat sampai plafon.",
     href: routes.lemariCustom,
     waText:
-      "Halo BUF, saya ingin minta estimasi awal lemari custom. Ukuran kasar saya sekitar ... meter. Saya akan kirim foto ruang dan kebutuhan penyimpanan.",
+      "Halo BUF, saya ingin minta estimasi awal lemari custom. Lokasi proyek: ... Ukuran/perkiraan lemari: ... meter. Kebutuhan penyimpanan: ... Gambaran budget: ... Saya akan kirim foto ruang.",
     tiers: [
       {
         name: "Ekonomis",
@@ -89,7 +89,7 @@ export const estimationCards = [
       "Backdrop TV bisa ringan jika hanya panel sederhana, tetapi bisa naik jika menyatu dengan kabinet bawah, rak display, ambalan, lampu LED, panel motif, atau storage tambahan.",
     href: routes.backdropTv,
     waText:
-      "Halo BUF, saya ingin minta estimasi awal backdrop TV custom. Ukuran kasar saya sekitar ... meter. Saya akan kirim foto ruang dan referensi desain.",
+      "Halo BUF, saya ingin minta estimasi awal backdrop TV custom. Lokasi proyek: ... Ukuran/perkiraan backdrop: ... meter. Kebutuhan: ... Gambaran budget: ... Saya akan kirim foto ruang dan referensi desain.",
     tiers: [
       {
         name: "Ekonomis",

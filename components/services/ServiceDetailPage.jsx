@@ -135,7 +135,7 @@ function getRelatedArticlesForService(serviceSlug) {
 
 function buildServiceWhatsappHref(service) {
   return buildWhatsappHref(
-    `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Saya ingin tanya apakah bisa custom sesuai ukuran ruang saya.`
+    `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Saya ingin tanya apakah bisa custom sesuai ukuran ruang saya.`
   );
 }
 
