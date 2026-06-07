@@ -2,6 +2,7 @@ import Link from "next/link";
 import { services } from "@/content/services";
 import { routes } from "@/content/routes";
 import { staticPageMetadata } from "@/content/static-pages";
+import { serviceAudiences, serviceProcess, serviceVisuals } from "@/content/service-page";
 import { buildMetadata } from "@/lib/seo";
 import { buildWhatsappHref } from "@/lib/whatsapp";
 
@@ -10,32 +11,6 @@ export const metadata = buildMetadata(staticPageMetadata.layanan);
 const whatsappHref = buildWhatsappHref(
   "Halo BUF, saya ingin konsultasi layanan interior atau custom furniture."
 );
-
-const serviceVisuals = {
-  "kitchen-set": "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
-  "custom-furniture": "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
-  "interior-rumah": "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
-  "interior-toko": "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
-  "backdrop-tv": "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
-  "lemari-custom": "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
-  "booth-usaha": "/assets/portfolio/booth-harmoni-silver-display-buf-01.webp",
-};
-
-const audiences = [
-  "Pemilik rumah baru",
-  "Pasangan muda",
-  "Pemilik toko kecil",
-  "Pemilik kost",
-  "UMKM makanan/minuman",
-  "Butuh furniture sesuai ukuran ruang",
-];
-
-const process = [
-  ["01", "Ceritakan kebutuhan", "Kirim kebutuhan ruang, ukuran kasar, foto lokasi, dan referensi desain."],
-  ["02", "Diskusi material & budget", "BUF bantu arahkan opsi desain, material, dan pengerjaan yang paling masuk akal."],
-  ["03", "Survey / ukur", "Kebutuhan survey bisa dikonfirmasi terlebih dahulu."],
-  ["04", "Produksi & pemasangan", "Pengerjaan dilakukan dari workshop sampai pemasangan di lokasi."],
-];
 
 export default function LayananPage() {
   return (
@@ -167,7 +142,7 @@ export default function LayananPage() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
-            {audiences.map((item, index) => (
+            {serviceAudiences.map((item, index) => (
               <div key={item} className="relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
                 <div className="absolute -right-4 -top-3 text-[4.2rem] font-black leading-none tracking-[-0.12em] text-white/[0.06]">
                   {String(index + 1).padStart(2, "0")}
@@ -200,7 +175,7 @@ export default function LayananPage() {
           </h2>
 
           <div className="mt-10 grid gap-4 md:grid-cols-4">
-            {process.map(([number, title, desc]) => (
+            {serviceProcess.map(([number, title, desc]) => (
               <div key={number} className="rounded-[1.75rem] border border-stone-200 bg-white/82 p-5 shadow-soft backdrop-blur">
                 <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-charcoal text-sm font-black text-white shadow-soft">
                   {number}
