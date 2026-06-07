@@ -1,116 +1,99 @@
 import Link from "next/link";
 import { siteConfig } from "@/content/site";
-import { articleHref, routes } from "@/content/routes";
-import { localServices } from "@/content/local-services";
+import { routes } from "@/content/routes";
 
-const priorityServices = [
-  ["Kitchen Set Custom", routes.kitchenSet],
+const serviceLinks = [
+  ["Kitchen Set", routes.kitchenSet],
   ["Custom Furniture", routes.customFurniture],
-  ["Booth Usaha Custom", routes.boothUsaha],
+  ["Interior Rumah", routes.interiorRumah],
+  ["Interior Toko", routes.interiorToko],
+  ["Booth Usaha", routes.boothUsaha],
   ["Akrilik Custom", routes.akrilikCustom],
   ["Aluminium", routes.aluminium],
   ["Kanopi", routes.kanopi],
 ];
 
-const guideLinks = [
+const navigationLinks = [
+  ["Portofolio", routes.portfolio],
   ["Estimasi Biaya", routes.estimasiBiaya],
-  ["Biaya Kitchen Set Custom", articleHref("biaya-kitchen-set-custom")],
-  ["Material Kitchen Set", articleHref("material-kitchen-set-yang-bagus")],
-  ["Tips Memilih Jasa Interior", articleHref("tips-memilih-jasa-interior-custom")],
-  ["Lemari Custom vs Lemari Jadi", articleHref("lemari-custom-vs-lemari-jadi")],
+  ["Cara Kerja BUF", routes.caraKerja],
+  ["Artikel", routes.artikel],
+  ["Tentang BUF", routes.tentangKami],
+  ["Kontak", routes.kontak],
 ];
-
-const localServiceLinks = localServices.map((service) => [
-  service.shortTitle || service.title.replace("Jasa ", ""),
-  service.href,
-]);
 
 export default function Footer() {
   return (
     <footer className="bg-[#121212] text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-2 lg:grid-cols-[1.15fr_0.75fr_0.8fr_0.85fr_0.85fr]">
-        <div>
-          <p className="text-3xl font-black tracking-[-0.025em]">
-            {siteConfig.name} — {siteConfig.legalName}
-          </p>
-          <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-white/62">
-            {siteConfig.positioning}
-          </p>
-          <Link
-            href={routes.kontak}
-            className="mt-6 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"
-          >
-            Konsultasi
-          </Link>
-        </div>
+      <div className="mx-auto max-w-7xl px-4 py-12 lg:py-14">
+        <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_28px_90px_rgba(0,0,0,0.22)] md:p-8">
+          <div className="grid gap-8 lg:grid-cols-[1.25fr_0.85fr_0.75fr_0.9fr]">
+            <div>
+              <p className="text-3xl font-black tracking-[-0.025em]">
+                {siteConfig.name} — {siteConfig.legalName}
+              </p>
+              <p className="mt-4 max-w-xl text-sm font-medium leading-7 text-white/62">
+                Workshop interior, custom furniture, dan fabrication di Berkoh, Purwokerto untuk kebutuhan rumah, toko, dan usaha.
+              </p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Link
+                  href={routes.kontak}
+                  className="rounded-full bg-brand-blue px-6 py-3 text-center text-sm font-black text-white shadow-blue"
+                >
+                  Konsultasi
+                </Link>
+                <Link
+                  href={routes.portfolio}
+                  className="rounded-full border border-white/12 bg-white/[0.06] px-6 py-3 text-center text-sm font-black text-white"
+                >
+                  Lihat Portofolio
+                </Link>
+              </div>
+            </div>
 
-        <div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
-            Layanan Prioritas
-          </p>
-          <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
-            {priorityServices.map(([label, href]) => (
-              <Link key={href} href={href} className="transition hover:text-white">
-                {label}
-              </Link>
-            ))}
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
+                Layanan
+              </p>
+              <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 text-sm font-medium leading-6 text-white/64 lg:grid-cols-1">
+                {serviceLinks.map(([label, href]) => (
+                  <Link key={href} href={href} className="transition hover:text-white">
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
+                Navigasi
+              </p>
+              <div className="mt-5 grid gap-3 text-sm font-medium leading-6 text-white/64">
+                {navigationLinks.map(([label, href]) => (
+                  <Link key={href} href={href} className="transition hover:text-white">
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
+                Kontak
+              </p>
+              <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
+                <p>WhatsApp: {siteConfig.whatsappDisplay}</p>
+                <p>Jam: {siteConfig.operatingHours}</p>
+                <p>Workshop: Berkoh, Purwokerto</p>
+                <p>Area: {siteConfig.areaFocus}</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
-            Area Layanan
-          </p>
-          <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
-            {localServiceLinks.map(([label, href]) => (
-              <Link key={href} href={href} className="transition hover:text-white">
-                {label}
-              </Link>
-            ))}
-            <Link href={routes.jasa} className="font-black text-white">
-              Semua Area Layanan
-            </Link>
-          </div>
+        <div className="mt-6 border-t border-white/10 pt-5 text-center text-xs font-medium leading-6 text-white/38">
+          © {new Date().getFullYear()} {siteConfig.legalName}. Interior custom, furniture custom, dan fabrication di Purwokerto.
         </div>
-
-        <div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
-            Panduan
-          </p>
-          <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
-            {guideLinks.map(([label, href]) => (
-              <Link key={href} href={href} className="transition hover:text-white">
-                {label}
-              </Link>
-            ))}
-            <Link href={routes.artikel} className="font-black text-white">
-              Semua Artikel
-            </Link>
-          </div>
-        </div>
-
-        <div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-white/38">
-            Kontak
-          </p>
-          <div className="mt-5 grid gap-3 text-sm font-medium leading-7 text-white/64">
-            <p>WhatsApp: {siteConfig.whatsappDisplay}</p>
-            <p>Jam: {siteConfig.operatingHours}</p>
-            <p>Workshop: Berkoh, Purwokerto</p>
-            <p>Area: {siteConfig.areaFocus}</p>
-            <p>{siteConfig.areaNote}</p>
-            <Link href={routes.portfolio} className="font-black text-white">
-              Lihat Portofolio
-            </Link>
-            <Link href={routes.kontak} className="font-black text-white">
-              Lihat Kontak Lengkap
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-white/10 px-4 py-4 text-center text-xs font-medium leading-6 text-white/38">
-        © {new Date().getFullYear()} {siteConfig.legalName}. Interior custom, furniture custom, dan fabrication di Purwokerto.
       </div>
     </footer>
   );
