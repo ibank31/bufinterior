@@ -11,7 +11,7 @@ Arah utama:
 - SEO lokal Purwokerto/Banyumas
 - Google Business Profile
 - Google Images
-- gallery portfolio
+- portofolio
 - konversi WhatsApp
 
 Website tidak boleh hanya menjadi company profile pasif.
@@ -60,7 +60,7 @@ Halaman ini harus mendapat prioritas:
 - metadata
 - schema
 - copywriting
-- gallery proof
+- bukti portofolio
 
 ## 5. Hasil Riset Manual Penting
 
@@ -88,7 +88,7 @@ Semua halaman uang harus bisa dicapai maksimal 3 klik dari homepage.
 
 Jangan ada orphan page.
 
-Homepage, header, footer, /layanan, /jasa, gallery, dan artikel harus saling menguatkan.
+Homepage, header, footer, /layanan, /jasa, portofolio, dan artikel harus saling menguatkan.
 
 ## 7. Yang Tidak Boleh Dilakukan
 

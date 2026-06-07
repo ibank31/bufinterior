@@ -1,13 +1,13 @@
 # Roadmap Final BUF
 
-Roadmap ini menjadi acuan lanjutan website BUF menggunakan Next.js App Router, SEO service-first, conversion WhatsApp, gallery, artikel edukatif, dan Cloudflare.
+Roadmap ini menjadi acuan lanjutan website BUF menggunakan Next.js App Router, SEO service-first, conversion WhatsApp, portofolio, artikel edukatif, dan Cloudflare.
 
 ## Keputusan Utama
 
 - Tetap pakai `app/` root, bukan `src/app`.
 - Tetap pakai JavaScript dulu, bukan TypeScript.
 - Tetap file-based content dulu, bukan CMS.
-- Pakai `/gallery`, bukan `/portfolio`.
+- Pakai `/portfolio`, bukan `/portfolio`.
 - Pakai `/artikel`, bukan `/blog`.
 - Pakai `/estimasi-biaya` untuk menangkap intent harga/biaya secara transparan.
 - Area page dibuat nanti hanya jika ada konten/proyek unik.
@@ -23,7 +23,7 @@ Sudah selesai:
 - Homepage dipoles dengan positioning service-first.
 - Halaman layanan dibuat lebih premium dan WhatsApp-focused.
 - Copy yang terlalu lokal-heavy sudah dikurangi.
-- Gallery scalable dibuat dengan `content/gallery.js`.
+- Portofolio scalable dibuat dengan `content/portfolio.js`.
 - Kontak dibuat fokus ke WhatsApp.
 - Tentang Kami dibuat trust-focused.
 - Struktur artikel scalable dibuat.
@@ -49,15 +49,15 @@ Status: selesai.
 - 404 page sudah ada.
 - Artikel SSG menggunakan `generateStaticParams`.
 
-## Batch B — Visual Homepage + Gallery System
+## Batch B — Visual Homepage + Portofolio System
 
 Status: sebagian besar selesai.
 
 - Homepage sudah dipoles.
-- Gallery sudah photo-first dan scalable.
-- Gallery kategori sudah disiapkan.
+- Portofolio sudah photo-first dan scalable.
+- Portofolio kategori sudah disiapkan.
 - Foto proyek asli masih perlu audit dan penggantian bertahap.
-- `/gallery/[slug]` belum dibuat karena data/foto belum cukup.
+- `/portfolio/[serviceSlug]` belum dibuat karena data/foto belum cukup.
 
 ## Batch C — Halaman Layanan + FAQ + Internal Link
 
@@ -66,7 +66,7 @@ Status: selesai untuk fondasi.
 - Halaman layanan hub sudah dibuat.
 - Halaman detail layanan sudah dibuat.
 - CTA WhatsApp ada.
-- Internal link ke artikel, gallery, estimasi, dan kontak sudah diperkuat.
+- Internal link ke artikel, portofolio, estimasi, dan kontak sudah diperkuat.
 - FAQ dasar sudah ada.
 - Ke depan bisa ditambah FAQ spesifik per layanan jika ada pertanyaan real dari pelanggan.
 
@@ -122,7 +122,7 @@ Prioritas berikutnya sebelum live final:
 - Tambah bukti workshop/proses jika foto tersedia.
 - Tambah trust proof di homepage atau kontak.
 - Jangan membuat testimoni palsu.
-- Jika belum ada testimoni, gunakan trust proof berbasis proses, workshop, alur kerja, dan gallery.
+- Jika belum ada testimoni, gunakan trust proof berbasis proses, workshop, alur kerja, dan portofolio.
 
 ## Batch G — Launch + Monitoring
 

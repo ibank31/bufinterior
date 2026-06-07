@@ -44,7 +44,7 @@ Checklist ini wajib dijalankan sebelum bufinterior.com dipublikasikan sebagai do
    grep -R 'Placeholder\|placeholder\|Referensi Kategori\|Dokumentasi real akan ditambahkan\|Gallery\|gallery' app components content lib --line-number || true
 
 5. Cek WhatsApp:
-   grep -R '6285772208688\|wa.me' app components content lib --line-number
+   grep -R '6285772208688\|085772208688\|6281215659884\|0812-1565-9884\|wa.me' app components content lib --line-number
 
 6. Cek domain fallback di output build:
    grep -R 'pages.dev' .next/server/app --include='*.html' --include='*.rsc' --include='*.body' --include='*.js' -n || true

@@ -47,12 +47,12 @@ Halaman P0:
 
 Fokus:
 - konten pendukung
-- gallery
+- portofolio
 - review
 - validasi data query
 
 Checklist:
-- tambah foto proyek ke gallery dengan caption
+- tambah foto proyek ke portofolio dengan caption
 - minta review pelanggan lama di Google Maps
 - posting rutin di Google Business Profile
 - buat artikel pendukung dari pertanyaan pelanggan

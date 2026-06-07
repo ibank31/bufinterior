@@ -1,4 +1,4 @@
-# 04 - Content, Foto Portfolio, Gallery, dan WhatsApp SOP
+# 04 - Content, Foto Portofolio, dan WhatsApp SOP
 
 ## 1. Prinsip Konten
 
@@ -22,7 +22,7 @@ Fungsi:
 - menonjolkan workshop Berkoh
 - memberi link cepat ke 5 halaman P0
 - memberi CTA WhatsApp
-- menampilkan gallery ringkas
+- menampilkan portofolio ringkas
 - mengarahkan ke Google trust signal
 
 ### /layanan/*
@@ -43,7 +43,7 @@ Fungsi:
 - menunjukkan bukti pekerjaan
 - mengarahkan ke WhatsApp
 
-### /gallery
+### /portfolio
 
 Fungsi:
 - bukti visual
@@ -68,12 +68,12 @@ Setiap halaman /jasa/* wajib memiliki:
 5. Solusi BUF.
 6. Jenis pengerjaan.
 7. Opsi material atau pengerjaan.
-8. Gallery atau proof.
+8. Portofolio atau proof.
 9. Proses pemesanan.
 10. Area layanan.
 11. FAQ.
 12. CTA akhir.
-13. Internal link ke /layanan/*, /gallery, /estimasi-biaya, /kontak.
+13. Internal link ke /layanan/*, /portfolio, /estimasi-biaya, /kontak.
 
 ## 4. SOP Foto Proyek
 

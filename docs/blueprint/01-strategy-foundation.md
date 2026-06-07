@@ -239,7 +239,7 @@ Masalah yang biasanya ditakutkan:
 Cara menjangkau:
 - Google Search
 - Google Maps
-- gallery hasil proyek
+- portofolio hasil proyek
 - artikel material dan estimasi
 - WhatsApp cepat
 
@@ -296,7 +296,7 @@ Cara menjangkau:
 - halaman akrilik
 - halaman aluminium
 - case study interior toko
-- gallery display usaha
+- portofolio display usaha
 
 CTA:
 - Konsultasi display dan kebutuhan toko.
@@ -333,7 +333,7 @@ CTA:
 2. Jangan terlihat seperti studio desain murni yang mahal.
 3. Jangan terlihat seperti tukang tanpa sistem.
 4. Harus terlihat sebagai workshop/vendor custom yang bisa produksi, konsultasi, dan pasang.
-5. Gallery harus membuktikan kemampuan.
+5. Portofolio harus membuktikan kemampuan.
 6. WhatsApp harus cepat dan terstruktur.
 7. Google Business Profile harus aktif.
 8. Konten harus membantu pelanggan memahami opsi, bukan hanya menjual.

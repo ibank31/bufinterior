@@ -15,17 +15,17 @@ Fondasi yang sudah ada:
 - Sitemap dan robots.
 - Schema JSON-LD dasar.
 - Halaman layanan detail.
-- Gallery scalable berbasis `content/gallery.js`.
+- Portofolio scalable berbasis `content/portfolio.js`.
 - Artikel SEO berbasis `content/articles.js`.
 - Halaman `/estimasi-biaya`.
-- Internal linking antar homepage, layanan, artikel, gallery, kontak, dan estimasi biaya.
+- Internal linking antar homepage, layanan, artikel, portofolio, kontak, dan estimasi biaya.
 - Build valid dengan `npm run build` memakai `next build --webpack`.
 
 ## Prinsip Migrasi
 
 - Branch `main` tetap aman sampai rebuild siap.
 - Struktur lama React/Vite tidak diteruskan sebagai fondasi utama.
-- Asset lama seperti logo dan foto gallery tetap dapat dipakai jika masih relevan.
+- Asset lama seperti logo dan foto portofolio tetap dapat dipakai jika masih relevan.
 - Tampilan BUF harus punya karakter interior sendiri, bukan meniru visual Radjaac.
 - Copy website tidak boleh terlalu mengunci BUF hanya sebagai bisnis lokal satu area.
 - Local SEO tetap dipakai sebagai pendukung, bukan seluruh positioning.
@@ -51,7 +51,7 @@ app/
 - not-found.js
 - estimasi-biaya/
 - layanan/
-- gallery/
+- portofolio/
 - kontak/
 - tentang-kami/
 - artikel/
@@ -62,7 +62,7 @@ content/
 - navigation.js
 - static-pages.js
 - services.js
-- gallery.js
+- portofolio.js
 - articles.js
 
 lib/
@@ -86,7 +86,7 @@ docs/
 - `/`
 - `/layanan`
 - `/estimasi-biaya`
-- `/gallery`
+- `/portfolio`
 - `/kontak`
 - `/tentang-kami`
 - `/artikel`
@@ -94,13 +94,13 @@ docs/
 - `/artikel/material-kitchen-set-yang-bagus`
 - `/artikel/tips-memilih-jasa-interior-custom`
 - `/artikel/lemari-custom-vs-lemari-jadi`
-- `/layanan/kitchen-set-banyumas`
-- `/layanan/custom-furniture-banyumas`
-- `/layanan/interior-rumah-banyumas`
-- `/layanan/interior-toko-banyumas`
-- `/layanan/backdrop-tv-banyumas`
-- `/layanan/lemari-custom-banyumas`
-- `/layanan/booth-usaha-banyumas`
+- `/layanan/kitchen-set`
+- `/layanan/custom-furniture`
+- `/layanan/interior-rumah`
+- `/layanan/interior-toko`
+- `/layanan/backdrop-tv`
+- `/layanan/lemari-custom`
+- `/layanan/booth-usaha`
 
 ## Arah Visual BUF
 

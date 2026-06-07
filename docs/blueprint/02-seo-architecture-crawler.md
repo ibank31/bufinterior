@@ -42,7 +42,7 @@ Halaman /jasa/* dipakai untuk:
 - landing page lead
 - trust signal lokal
 - CTA WhatsApp
-- gallery/proof
+- portofolio/proof
 - area layanan
 
 Contoh:
@@ -76,7 +76,7 @@ Halaman yang ada:
     /jasa/aluminium-purwokerto
     /jasa/kanopi-purwokerto
 
-    /gallery
+    /portfolio
     /estimasi-biaya
     /kontak
     /tentang-kami
@@ -100,7 +100,7 @@ Homepage harus punya link jelas ke:
 - /jasa/akrilik-custom-purwokerto
 - /jasa/aluminium-purwokerto
 - /jasa/kanopi-purwokerto
-- /gallery
+- /portfolio
 - /kontak
 
 ### Dari /layanan
@@ -126,14 +126,14 @@ Halaman /jasa harus menjadi hub lokal yang menampilkan 5 kartu P0.
 
 Setiap landing lokal harus link ke:
 - halaman /layanan/* terkait
-- /gallery
+- /portfolio
 - /estimasi-biaya
 - /kontak
 - artikel terkait jika ada
 
-### Dari /gallery
+### Dari /portfolio
 
-Setiap item gallery harus diarahkan ke halaman jasa atau layanan terkait.
+Setiap item portofolio harus diarahkan ke halaman jasa atau layanan terkait.
 
 ## 6. Sitemap
 

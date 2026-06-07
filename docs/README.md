@@ -5,7 +5,7 @@ Folder ini berisi dokumentasi arah besar website `bufinterior.com`.
 Tujuan dokumentasi ini:
 1. Menjaga arah website tetap konsisten.
 2. Membantu assistant/developer berikutnya memahami konteks tanpa mengulang riset dari nol.
-3. Menjadi pegangan sebelum perubahan SEO, konten, struktur URL, halaman jasa, gallery, dan Google Business Profile.
+3. Menjadi pegangan sebelum perubahan SEO, konten, struktur URL, halaman jasa, portofolio, dan Google Business Profile.
 4. Mencegah keputusan berbahaya seperti doorway page, keyword stuffing, halaman area massal, atau perubahan URL sembarangan.
 
 ## Dokumen Utama
@@ -23,7 +23,7 @@ Tujuan dokumentasi ini:
   Ringkasan hasil riset manual Google lokal dan prioritas halaman P0/P1.
 
 - `blueprint/04-content-photo-whatsapp-sop.md`  
-  SOP konten, foto portfolio, gallery, WhatsApp conversion, dan CTA.
+  SOP konten, foto portofolio, WhatsApp conversion, dan CTA.
 
 - `blueprint/05-roadmap-risk-register.md`  
   Roadmap 30/60/90 hari, risiko, mitigasi, dan keputusan go-live.
@@ -39,7 +39,7 @@ Fokus utama:
 - Google Search
 - Google Maps / Google Business Profile
 - Google Images
-- Gallery portfolio
+- Portofolio portfolio
 - Artikel SEO pendukung
 - Konversi WhatsApp
 

@@ -16,7 +16,7 @@ Target ekspansi nanti: **Sokaraja, Ajibarang, Baturraden, Wangon, Cilongok, Kemb
 `bufinterior.com` harus menjadi:
 1. Mesin akuisisi lead lokal.
 2. Penguat Google Business Profile.
-3. Bukti profesionalisme dan trust melalui gallery.
+3. Bukti profesionalisme dan trust melalui portofolio.
 4. Pusat informasi layanan Berkah Utami Furniture.
 5. Funnel WhatsApp untuk konsultasi dan estimasi.
 
