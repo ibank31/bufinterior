@@ -12,8 +12,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const service = services.find((item) => item.slug === params.serviceSlug);
+export async function generateMetadata({ params }) {
+  const { serviceSlug } = await params;
+  const service = services.find((item) => item.slug === serviceSlug);
 
   if (!service) {
     return {};
@@ -26,8 +27,9 @@ export function generateMetadata({ params }) {
   });
 }
 
-export default function PortfolioServicePage({ params }) {
-  const service = services.find((item) => item.slug === params.serviceSlug);
+export default async function PortfolioServicePage({ params }) {
+  const { serviceSlug } = await params;
+  const service = services.find((item) => item.slug === serviceSlug);
 
   if (!service) {
     notFound();
