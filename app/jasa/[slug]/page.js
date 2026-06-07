@@ -9,8 +9,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const service = getLocalServiceBySlug(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const service = getLocalServiceBySlug(slug);
 
   if (!service) {
     return {};
@@ -23,8 +24,9 @@ export function generateMetadata({ params }) {
   });
 }
 
-export default function Page({ params }) {
-  const service = getLocalServiceBySlug(params.slug);
+export default async function Page({ params }) {
+  const { slug } = await params;
+  const service = getLocalServiceBySlug(slug);
 
   if (!service) {
     notFound();
