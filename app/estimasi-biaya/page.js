@@ -28,21 +28,21 @@ export default function EstimasiBiayaPage() {
             </p>
 
             <h1 className="mt-5 max-w-4xl text-[2.65rem] font-black leading-[1.05] tracking-[-0.04em] text-charcoal sm:text-6xl lg:text-7xl">
-              Kira-kira budget interior custom mulai dari berapa?
+              Kira-kira biaya interior custom mulai dari berapa?
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
-              Kalau Anda sudah tahu ukuran kasar ruang, halaman ini bisa membantu mengira-ngira estimasi awal sebelum konsultasi. Angka di sini bukan harga final, tetapi gambaran awal agar Anda tidak mulai dari nol.
+              Kalau sudah punya ukuran kasar, halaman ini bisa dipakai untuk membaca kisaran awal. Angkanya bukan harga final, tapi cukup untuk tahu posisi biaya sebelum chat.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={whatsappHref("Halo BUF, saya ingin minta estimasi awal interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Gambaran budget: ... Saya akan kirim foto ruang dan referensi desain.")}
+                href={whatsappHref("Halo BUF, saya mau tanya estimasi interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruang dan contoh model.")}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)]"
               >
-                Minta Estimasi Awal
+                Tanya Estimasi Awal
               </a>
               <Link
                 href={routes.portfolio}
@@ -61,7 +61,7 @@ export default function EstimasiBiayaPage() {
                   Prinsip estimasi
                 </p>
                 <p className="mt-2 text-2xl font-black leading-[1.2] tracking-[-0.02em]">
-                  Ukuran x kisaran per meter = gambaran awal. Detail ruang menentukan estimasi akhir.
+                  Ukuran x kisaran per meter = hitungan awal. Detail ruang menentukan angka akhirnya.
                 </p>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function EstimasiBiayaPage() {
               Estimasi biaya tidak bisa disamakan untuk semua ruang.
             </h2>
             <p className="text-base font-medium leading-8 text-white/64">
-              Setiap proyek punya ukuran, kebutuhan, material, finishing, aksesoris, dan detail pengerjaan yang berbeda. BUF dapat memberi arahan estimasi awal setelah pelanggan mengirim foto ruang, ukuran kasar, referensi desain, dan gambaran budget.
+              Dua proyek dengan ukuran sama belum tentu biayanya sama. Jumlah laci, jenis bahan, finishing, top table, lampu, hardware, dan kondisi ruang ikut menentukan hitungan akhir.
             </p>
           </div>
         </div>
@@ -93,11 +93,11 @@ export default function EstimasiBiayaPage() {
                 Cara mengira-ngira
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Sudah tahu ukuran kasar? Cocokkan dulu dengan level spesifikasi.
+                Sudah tahu ukuran kasar? Cocokkan dulu dengan level pengerjaannya.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-7 text-muted lg:justify-self-end">
-              Contoh di bawah dibuat agar pelanggan awam bisa membayangkan budget awal. Pilih jenis pengerjaan, lalu cocokkan kebutuhan Anda dengan level Ekonomis, Standar, Detail Custom, atau Premium.
+              Contoh di bawah dibuat sebagai pegangan awal. Pilih jenis pekerjaan, lalu cocokkan dengan level Ekonomis, Standar, Detail Custom, atau Premium.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export default function EstimasiBiayaPage() {
                     ))}
                   </div>
                   <p className="mt-5 rounded-[1.5rem] border border-stone-200 bg-white p-5 text-sm font-medium leading-7 text-muted">
-                    Catatan: level ini bukan paket kaku. Fungsinya membantu Anda mengira-ngira posisi kebutuhan: sederhana, standar, banyak detail, atau premium. Estimasi akhir tetap menunggu ukuran, material, finishing, aksesoris, desain, dan kondisi ruang.
+                    Catatan: level ini bukan paket kaku. Fungsinya hanya untuk membaca posisi pekerjaan: sederhana, standar, banyak detail, atau premium. Estimasi akhir tetap mengikuti ukuran, bahan, finishing, aksesoris, desain, dan kondisi ruang.
                   </p>
                 </div>
               </article>
@@ -179,7 +179,7 @@ export default function EstimasiBiayaPage() {
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-7 text-muted lg:justify-self-end">
-              Beberapa kebutuhan seperti booth usaha, furniture satuan, dan display toko lebih sering dihitung dari ukuran, fungsi, jumlah item, dan detail desain.
+              Beberapa pekerjaan seperti booth usaha, furniture satuan, dan display toko lebih sering dihitung dari ukuran, fungsi, jumlah item, dan detail desain.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ export default function EstimasiBiayaPage() {
               Kirim info sederhana ini saat menghubungi BUF.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted">
-              Tidak harus lengkap sempurna. Ukuran kasar dan foto ruang sudah cukup untuk memulai obrolan estimasi awal.
+              Tidak harus lengkap sempurna. Perkiraan ukuran dan kondisi ruang sudah cukup untuk membuka hitungan awal.
             </p>
           </div>
 
@@ -315,13 +315,13 @@ export default function EstimasiBiayaPage() {
               Mulai dari ukuran kasar
             </p>
             <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-              Sudah punya ukuran? Kirim ke BUF dan minta estimasi awal.
+              Sudah punya ukuran? Kirim ke BUF untuk hitungan awal.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-              Contoh: “Kitchen set saya sekitar 3 meter, ingin kabinet atas-bawah, warna kayu, dan budget sekitar ...” Dari situ BUF bisa bantu arahkan opsi yang lebih realistis.
+              Contoh: “Kitchen set saya sekitar 3 meter, ingin kabinet atas-bawah, warna kayu, dan kisaran dana sekitar ...” Dari situ hitungan awal bisa lebih mudah dibaca.
             </p>
             <a
-              href={whatsappHref("Halo BUF, saya ingin minta estimasi awal. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Gambaran budget: ... Saya akan kirim foto ruang dan referensi desain.")}
+              href={whatsappHref("Halo BUF, saya mau tanya estimasi awal. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruang dan contoh model.")}
               target="_blank"
               rel="noreferrer"
               className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"

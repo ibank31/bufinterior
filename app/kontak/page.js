@@ -23,16 +23,16 @@ export default function KontakPage() {
             </p>
 
             <h1 className="mt-5 max-w-4xl text-[2.65rem] font-black leading-[1.05] tracking-[-0.04em] text-charcoal sm:text-6xl lg:text-7xl">
-              Konsultasi kebutuhan ruang lewat WhatsApp.
+              Mulai ngobrol dari foto ruang dulu.
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
-              Ceritakan kebutuhan interior atau custom furniture Anda. Mulai dari foto ruang, ukuran kasar, referensi desain, sampai gambaran budget. Lokasi proyek, survey, dan pemasangan dapat dikonfirmasi terlebih dahulu.
+              Tidak perlu langsung punya gambar final. Kirim foto ruang, ukuran kasar, dan contoh model kalau ada. Nanti kita bahas pelan-pelan: mau dibuat apa, bahannya apa, dan perlu survey atau tidak.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={whatsappHref("Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ...")}
+                href={whatsappHref("Halo BUF, saya mau tanya interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruangnya.")}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)]"
@@ -53,7 +53,7 @@ export default function KontakPage() {
               <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.04)),url('/assets/portfolio/lemari-custom-display-lighting-buf-01.webp')] bg-cover bg-center sm:min-h-[460px]" />
               <div className="border-t border-stone-200 bg-charcoal p-5 text-white">
                 <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/45">
-                  Mulai dari cerita kebutuhan
+                  Mulai dari cerita ruangnya
                 </p>
                 <p className="mt-2 text-2xl font-black leading-[1.2] tracking-[-0.02em]">
                   Tidak harus langsung punya desain final.
@@ -70,14 +70,14 @@ export default function KontakPage() {
             <div className="flex items-center gap-3">
               <span className="h-px w-12 bg-wood/55" />
               <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                Pilih kebutuhan
+                Pilih topik chat
               </p>
             </div>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
               Biar lebih mudah mulai chat, pilih topik konsultasi.
             </h2>
             <p className="mt-5 text-base font-medium leading-7 text-muted">
-              Tombol di bawah akan membuka WhatsApp dengan pesan awal sesuai kebutuhan. Anda bisa edit pesannya sebelum dikirim.
+              Tombol di bawah akan membuka WhatsApp dengan pesan awal sesuai topik. Pesannya tetap bisa Anda edit sebelum dikirim.
             </p>
           </div>
 
@@ -111,13 +111,13 @@ export default function KontakPage() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-              Sebelum menghubungi
+              Sebelum chat
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-              Siapkan info sederhana agar konsultasi lebih cepat jelas.
+              Siapkan info sederhana supaya obrolannya cepat nyambung.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted">
-              Tidak wajib lengkap semua. Semakin jelas informasi awalnya, semakin mudah BUF memberi arahan desain, material, proses, dan estimasi.
+              Tidak wajib lengkap semua. Foto dari beberapa sudut saja biasanya sudah cukup untuk mulai membaca kondisi ruang.
             </p>
           </div>
 
@@ -143,10 +143,10 @@ export default function KontakPage() {
               Informasi kontak
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] sm:text-5xl">
-              BUF siap menerima konsultasi awal melalui WhatsApp.
+              WhatsApp jadi jalur paling cepat untuk mulai.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/64">
-              Kebutuhan survey, produksi, pengiriman, atau pemasangan dapat dikonfirmasi sesuai lokasi proyek.
+              Survey, produksi, pengiriman, dan pemasangan dibicarakan sesuai lokasi serta jenis pekerjaannya.
             </p>
           </div>
 
@@ -202,13 +202,13 @@ export default function KontakPage() {
               Mulai sekarang
             </p>
             <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-              Kirim foto ruang dan kebutuhanmu. BUF bantu arahkan langkah awalnya.
+              Kirim foto ruang dan ceritakan mau dibuat seperti apa.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-              Konsultasi awal bisa dilakukan via WhatsApp sebelum menentukan survey, desain, material, atau pengerjaan.
+              Chat awal bisa lewat WhatsApp sebelum menentukan perlu survey, gambar, bahan, atau langsung hitung estimasi.
             </p>
             <a
-              href={whatsappHref("Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Saya akan kirim foto ruang dan referensi.")}
+              href={whatsappHref("Halo BUF, saya mau tanya interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruang dan referensi.")}
               target="_blank"
               rel="noreferrer"
               className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"

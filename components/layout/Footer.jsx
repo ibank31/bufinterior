@@ -33,7 +33,7 @@ export default function Footer() {
                 {siteConfig.name} — {siteConfig.legalName}
               </p>
               <p className="mt-4 max-w-xl text-sm font-medium leading-7 text-white/62">
-                Workshop interior, custom furniture, dan fabrication di Berkoh, Purwokerto untuk kebutuhan rumah, toko, dan usaha.
+                Workshop interior, custom furniture, dan fabrication di Berkoh, Purwokerto untuk rumah, toko, dan usaha.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Link

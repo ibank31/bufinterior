@@ -35,15 +35,15 @@ export const localServices = [
     ],
     heroTitle: "Jasa Kitchen Set Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pembuatan kitchen set custom dari workshop di Berkoh, Purwokerto. Ukuran, desain, material, dan finishing bisa disesuaikan dengan kebutuhan ruang dan budget.",
+      "Berkah Utami Furniture mengerjakan kitchen set custom dari workshop di Berkoh, Purwokerto. Mulainya bisa dari foto dapur, ukuran kasar, lalu bahas kabinet atas-bawah, area sink, kompor, bahan, dan finishing.",
     metaDescription:
-      "Jasa kitchen set custom Purwokerto dari workshop Berkoh. Ukuran, material, finishing, dan budget bisa dikonsultasikan via WhatsApp.",
+      "Jasa kitchen set custom Purwokerto dari workshop Berkoh. Kirim foto dapur dan ukuran kasar untuk mulai bahas layout, bahan, finishing, dan estimasi awal.",
     intro:
-      "Halaman ini ditujukan untuk calon pelanggan di Purwokerto yang ingin membuat kitchen set custom, bukan membeli kitchen set rakitan jadi. Konsultasi awal bisa dilakukan via WhatsApp dengan mengirim ukuran ruang, foto dapur, dan referensi model.",
+      "Halaman ini untuk Anda yang ingin membuat kitchen set sesuai ukuran dapur, bukan membeli rakitan jadi. Kirim foto dapur, ukuran kasar, dan contoh model yang disukai. Dari situ layout awalnya bisa mulai dibaca.",
     painPoints: [
       "Dapur terasa penuh karena penyimpanan kurang tertata.",
       "Ukuran dapur tidak cocok dengan kitchen set jadi.",
-      "Bingung memilih material dan finishing yang sesuai budget.",
+      "Belum yakin pilih HPL, plywood, top table, atau finishing apa.",
       "Ingin kitchen set rapi, tapi belum punya gambar desain final.",
     ],
     bestFor: [
@@ -57,7 +57,7 @@ export const localServices = [
       "Ukuran kasar panjang dinding atau area kitchen set.",
       "Referensi model atau warna yang disukai.",
       "Kebutuhan utama seperti kabinet atas, kabinet bawah, rak bumbu, atau area kompor/sink.",
-      "Gambaran budget agar opsi material bisa diarahkan sejak awal.",
+      "Kisaran dana yang ingin dijaga, kalau mau dibahas dari awal.",
     ],
     ctaLabel: "Konsultasi Kitchen Set via WhatsApp",
     visual: "/assets/portfolio/kitchen-set-luxury-rak-display-buf-01.webp",
@@ -71,15 +71,15 @@ export const localServices = [
     ],
     reasons: [
       "Workshop/kantor berada di Berkoh, Purwokerto.",
-      "Pengerjaan bisa custom mengikuti ukuran ruang.",
-      "Material dan finishing dapat menyesuaikan kebutuhan serta budget.",
-      "Cocok untuk pelanggan yang ingin konsultasi dulu sebelum menentukan model.",
+      "Ukuran dibuat mengikuti kondisi dapur.",
+      "Bahan dan finishing dibahas sebelum produksi.",
+      "Cocok kalau masih ingin membandingkan model sebelum produksi.",
     ],
     faqs: [
-      ["Berapa harga kitchen set custom di Purwokerto?", "Estimasi biaya kitchen set menyesuaikan ukuran, material, finishing, dan tingkat kesulitan. Konsultasi awal bisa dilakukan via WhatsApp untuk menghitung kebutuhan ruang."],
-      ["Apakah kitchen set bisa dibuat sesuai ukuran dapur?", "Bisa. Kitchen set dibuat custom mengikuti ukuran ruang dan kebutuhan penyimpanan."],
-      ["Apakah bisa pilih material dan finishing?", "Bisa. Material dan finishing dapat didiskusikan sesuai kebutuhan, tampilan yang diinginkan, dan budget."],
-      ["Apakah bisa konsultasi dulu via WhatsApp?", "Bisa. Kirim foto ruang, ukuran kasar, dan referensi model agar kebutuhan awal bisa dipahami."],
+      ["Berapa harga kitchen set custom di Purwokerto?", "Estimasi kitchen set dihitung dari panjang dapur, jumlah kabinet, bahan, finishing, top table, dan detail seperti laci atau rak tambahan. Kirim foto dan ukuran kasar dulu untuk hitungan awal."],
+      ["Apakah kitchen set bisa dibuat sesuai ukuran dapur?", "Bisa. Kitchen set dibuat mengikuti ukuran dapur dan pembagian penyimpanan yang dibutuhkan."],
+      ["Apakah bisa pilih material dan finishing?", "Bisa. Bahan, warna, finishing, top table, dan hardware dibahas sebelum produksi."],
+      ["Apakah bisa konsultasi dulu via WhatsApp?", "Bisa. Kirim foto dapur, ukuran kasar, dan referensi model agar layout awalnya lebih mudah dibaca."],
     ],
   },
   {
@@ -102,11 +102,11 @@ export const localServices = [
     ],
     heroTitle: "Jasa Booth Usaha Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pembuatan booth usaha custom dari workshop di Berkoh, Purwokerto untuk kebutuhan UMKM, toko, event, promosi, display produk, dan branding usaha.",
+      "Berkah Utami Furniture mengerjakan booth usaha custom dari workshop di Berkoh, Purwokerto. Cocok untuk UMKM, toko, event, promosi, display produk, atau booth jualan yang perlu tampil rapi.",
     metaDescription:
       "Jasa booth usaha custom Purwokerto untuk UMKM, toko, event, display produk, dan branding. Konsultasi ukuran dan model via WhatsApp.",
     intro:
-      "Booth usaha tidak harus mengikuti ukuran standar. Bentuk, fungsi display, area penyimpanan, material, warna, dan identitas brand bisa dibuat menyesuaikan kebutuhan jualan.",
+      "Booth usaha tidak harus ikut ukuran standar. Bentuknya bisa dibuat dari cara jualannya: perlu meja layanan, rak display, storage, roda, lampu, signage, atau warna brand tertentu.",
     painPoints: [
       "Booth jualan terlihat kurang menarik untuk menarik perhatian pembeli.",
       "Ukuran booth standar sering tidak cocok dengan area jualan.",
@@ -117,7 +117,7 @@ export const localServices = [
       "UMKM makanan dan minuman di Purwokerto.",
       "Booth promosi untuk event, bazar, atau pameran.",
       "Toko kecil yang butuh display produk lebih rapi.",
-      "Usaha baru yang ingin punya booth custom sesuai brand.",
+      "Usaha baru yang ingin punya booth dengan warna dan tampilan brand sendiri.",
     ],
     prepareBeforeChat: [
       "Jenis usaha atau produk yang akan dijual.",
@@ -132,21 +132,21 @@ export const localServices = [
       "Booth jualan",
       "Booth portable",
       "Booth promosi",
-      "Booth container jika sesuai kebutuhan",
+      "Booth container jika memang cocok dengan lokasi",
       "Stand branding",
       "Display usaha dan rak display",
     ],
     reasons: [
-      "Cocok untuk UMKM, toko kecil, dan kebutuhan promosi lokal.",
+      "Cocok untuk UMKM, toko kecil, bazar, dan promosi lokal.",
       "Model booth bisa disesuaikan dengan jenis produk yang dijual.",
-      "Bisa dikombinasikan dengan akrilik, display, signage, dan kebutuhan interior toko.",
-      "Konsultasi awal bisa dimulai dari konsep jualan dan ukuran area.",
+      "Bisa digabung dengan akrilik, signage, rak display, atau bagian interior toko.",
+      "Mulai dari jenis jualan, ukuran area, dan contoh booth yang disukai.",
     ],
     faqs: [
-      ["Apakah bisa membuat booth sesuai ukuran dan desain?", "Bisa. Booth dapat dibuat custom sesuai ukuran area, konsep jualan, dan kebutuhan display produk."],
-      ["Apakah bisa membuat booth portable?", "Bisa didiskusikan sesuai kebutuhan penggunaan, ukuran, material, dan sistem bongkar-pasang yang diinginkan."],
-      ["Apakah melayani booth untuk UMKM dan event?", "Ya. Booth usaha bisa digunakan untuk UMKM, promosi, toko kecil, event, atau kebutuhan display produk."],
-      ["Apakah bisa bantu estimasi biaya dulu?", "Bisa. Estimasi awal dapat dibantu setelah ukuran, model, material, dan kebutuhan display lebih jelas."],
+      ["Apakah bisa membuat booth sesuai ukuran dan desain?", "Bisa. Booth dibuat dari ukuran area, cara jualan, dan barang yang perlu dipajang."],
+      ["Apakah bisa membuat booth portable?", "Bisa dibahas dari awal: mau portable, pakai roda, bongkar-pasang, atau dipakai tetap di satu lokasi."],
+      ["Apakah melayani booth untuk UMKM dan event?", "Ya. Booth bisa dipakai untuk UMKM, promosi, toko kecil, event, atau display produk."],
+      ["Apakah bisa bantu estimasi biaya dulu?", "Bisa. Estimasi awal lebih enak dihitung setelah ada ukuran, model, bahan, dan detail display."],
     ],
   },
   {
@@ -169,11 +169,11 @@ export const localServices = [
     ],
     heroTitle: "Jasa Akrilik Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pengerjaan akrilik custom untuk kebutuhan display usaha, papan nama, plang, rak display, signage, booth, interior toko, kantor, sekolah, dan instansi.",
+      "Berkah Utami Furniture mengerjakan akrilik custom untuk display usaha, papan nama, plang, rak display, signage, booth, interior toko, kantor, sekolah, dan instansi.",
     metaDescription:
-      "Jasa akrilik custom Purwokerto untuk display usaha, papan nama, plang, signage, rak display, booth, dan kebutuhan proyek.",
+      "Jasa akrilik custom Purwokerto untuk display usaha, papan nama, plang, signage, rak display, booth, dan proyek.",
     intro:
-      "BUF tidak memposisikan akrilik sebagai jual bahan eceran murah, tetapi sebagai pengerjaan custom untuk kebutuhan usaha, interior, display, signage, dan proyek yang membutuhkan ukuran khusus.",
+      "Akrilik di sini bukan sekadar jual lembaran bahan. Fokusnya pengerjaan custom: display, signage, plang, holder, rak, atau bagian booth yang perlu ukuran khusus.",
     painPoints: [
       "Butuh display atau signage akrilik dengan ukuran khusus.",
       "Tidak ingin hanya membeli bahan lembaran tanpa pengerjaan.",
@@ -183,14 +183,14 @@ export const localServices = [
     bestFor: [
       "Toko dan UMKM yang membutuhkan display akrilik.",
       "Papan nama, plang ruang, atau signage usaha.",
-      "Kebutuhan booth, interior toko, kantor, sekolah, dan instansi.",
+      "Booth, interior toko, kantor, sekolah, dan instansi.",
       "Rak display atau holder produk custom.",
     ],
     prepareBeforeChat: [
       "Contoh desain atau foto referensi produk akrilik.",
       "Ukuran panjang, lebar, tinggi, atau area pemasangan.",
       "Fungsi penggunaan: display, papan nama, plang, rak, atau signage.",
-      "Jumlah kebutuhan jika lebih dari satu item.",
+      "Jumlah item kalau pesannya lebih dari satu.",
       "Lokasi penggunaan: indoor, outdoor, toko, kantor, sekolah, atau booth.",
     ],
     ctaLabel: "Konsultasi Akrilik Custom via WhatsApp",
@@ -200,20 +200,20 @@ export const localServices = [
       "Rak display",
       "Papan nama akrilik",
       "Plang akrilik",
-      "Kebutuhan booth dan interior toko",
-      "Kebutuhan kantor, sekolah, dan instansi",
+      "Booth dan interior toko",
+      "Kantor, sekolah, dan instansi",
     ],
     reasons: [
-      "Pengerjaan dapat menyesuaikan ukuran dan fungsi.",
-      "Cocok untuk kebutuhan display usaha dan branding toko.",
+      "Ukuran dan bentuk dibuat sesuai fungsi barangnya.",
+      "Cocok untuk display produk dan identitas toko.",
       "Bisa dikombinasikan dengan furniture, booth, aluminium, dan interior toko.",
-      "Konsultasi awal bisa dimulai dari contoh desain atau kebutuhan penggunaan.",
+      "Mulai dari contoh desain, ukuran, dan tempat pemakaian.",
     ],
     faqs: [
-      ["Apakah bisa membuat akrilik sesuai desain sendiri?", "Bisa. Kebutuhan desain, ukuran, dan fungsi dapat dikonsultasikan terlebih dahulu."],
-      ["Apakah melayani display akrilik untuk toko?", "Ya. Display akrilik untuk toko, rak display, booth, dan kebutuhan usaha dapat didiskusikan."],
-      ["Apakah bisa pesan satuan atau harus banyak?", "Tergantung jenis pekerjaan dan tingkat kesulitan. Silakan konsultasikan kebutuhan awal via WhatsApp."],
-      ["Berapa lama pengerjaan akrilik custom?", "Waktu pengerjaan menyesuaikan desain, ukuran, jumlah, dan tingkat detail pekerjaan."],
+      ["Apakah bisa membuat akrilik sesuai desain sendiri?", "Bisa. Kirim contoh desain, ukuran, dan fungsi barang yang ingin dibuat."],
+      ["Apakah melayani display akrilik untuk toko?", "Ya. Display akrilik untuk toko, rak display, booth, dan perlengkapan usaha bisa dibahas dari ukuran dan bentuknya."],
+      ["Apakah bisa pesan satuan atau harus banyak?", "Tergantung jenis barang dan tingkat detailnya. Kirim contoh atau sketsa dulu lewat WhatsApp."],
+      ["Berapa lama pengerjaan akrilik custom?", "Waktu pengerjaan tergantung desain, ukuran, jumlah, dan detail potongannya."],
     ],
   },
   {
@@ -236,27 +236,27 @@ export const localServices = [
     ],
     heroTitle: "Jasa Aluminium Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pekerjaan aluminium custom untuk rumah, toko, kantor, dan usaha, mulai dari kusen, pintu, jendela, partisi, etalase, kaca aluminium, hingga kebutuhan custom lainnya.",
+      "Berkah Utami Furniture mengerjakan aluminium custom untuk rumah, toko, kantor, dan usaha. Pekerjaannya bisa berupa kusen, pintu, jendela, partisi, etalase, atau kaca aluminium.",
     metaDescription:
-      "Jasa aluminium custom Purwokerto untuk kusen, pintu, jendela, partisi, etalase, kaca aluminium, rumah, toko, dan usaha.",
+      "Jasa aluminium custom Purwokerto untuk kusen, pintu, jendela, partisi, etalase, dan kaca aluminium rumah atau toko.",
     intro:
-      "Halaman ini menargetkan kebutuhan aluminium custom, bukan sekadar jual bahan. Pengerjaan dapat disesuaikan untuk rumah, toko, etalase, partisi, dan kebutuhan bangunan atau usaha.",
+      "Halaman ini untuk pekerjaan aluminium custom, bukan sekadar jual batang aluminium. Ukuran bukaan, jenis kaca, arah pintu, rel, dan kondisi lokasi perlu dilihat dulu.",
     painPoints: [
       "Butuh kusen, pintu, jendela, partisi, atau etalase dengan ukuran khusus.",
       "Ukuran lokasi tidak cocok dengan produk jadi.",
       "Ingin pekerjaan aluminium yang rapi untuk rumah, toko, atau kantor.",
-      "Bingung menentukan model, kaca, rangka, dan kebutuhan pemasangan.",
+      "Belum yakin memilih model bukaan, jenis kaca, rangka, atau cara pasangnya.",
     ],
     bestFor: [
       "Rumah tinggal yang membutuhkan kusen, pintu, atau jendela aluminium.",
       "Toko yang membutuhkan etalase atau display aluminium.",
       "Kantor atau ruang usaha yang membutuhkan partisi aluminium.",
-      "Pekerjaan kaca aluminium dan kebutuhan custom lain.",
+      "Pekerjaan kaca aluminium dan bagian custom lain.",
     ],
     prepareBeforeChat: [
       "Foto lokasi pemasangan dari beberapa sudut.",
       "Ukuran kasar lebar dan tinggi area.",
-      "Jenis kebutuhan: kusen, pintu, jendela, partisi, etalase, atau kaca aluminium.",
+      "Jenis pekerjaan: kusen, pintu, jendela, partisi, etalase, atau kaca aluminium.",
       "Model bukaan atau fungsi yang diinginkan.",
       "Lokasi proyek agar jadwal survey atau koordinasi bisa dikonfirmasi.",
     ],
@@ -271,16 +271,16 @@ export const localServices = [
       "Kaca aluminium dan pekerjaan custom lain",
     ],
     reasons: [
-      "Cocok untuk kebutuhan rumah, toko, dan usaha.",
-      "Pekerjaan bisa menyesuaikan ukuran, fungsi, dan kondisi lokasi.",
+      "Cocok untuk rumah, toko, kantor kecil, dan tempat usaha.",
+      "Ukuran dan sistem bukaan dibuat mengikuti kondisi lokasi.",
       "Bisa dikombinasikan dengan interior, display, booth, kaca, dan akrilik.",
-      "Konsultasi awal membantu menentukan model yang paling masuk akal.",
+      "Foto dan ukuran awal membuat pilihan model lebih mudah dibaca.",
     ],
     faqs: [
-      ["Apakah bisa membuat kusen aluminium sesuai ukuran?", "Bisa. Kusen aluminium dapat dikerjakan menyesuaikan ukuran dan kebutuhan lokasi."],
-      ["Apakah melayani pintu dan jendela aluminium?", "Ya. Pintu, jendela, partisi, etalase, dan kebutuhan aluminium lain dapat dikonsultasikan."],
-      ["Apakah bisa membuat etalase aluminium untuk toko?", "Bisa. Etalase aluminium untuk toko atau usaha dapat dibuat sesuai ukuran dan kebutuhan display."],
-      ["Apakah bisa konsultasi estimasi biaya dulu?", "Bisa. Estimasi awal dapat dibantu setelah ukuran, model, dan kebutuhan material lebih jelas."],
+      ["Apakah bisa membuat kusen aluminium sesuai ukuran?", "Bisa. Kusen dibuat mengikuti ukuran bukaan dan kondisi dinding di lokasi."],
+      ["Apakah melayani pintu dan jendela aluminium?", "Ya. Pintu, jendela, partisi, etalase, dan pekerjaan aluminium lain bisa dibahas lewat foto lokasi."],
+      ["Apakah bisa membuat etalase aluminium untuk toko?", "Bisa. Etalase dibuat dari ukuran area toko dan barang yang ingin dipajang."],
+      ["Apakah bisa konsultasi estimasi biaya dulu?", "Bisa. Estimasi awal lebih mudah dihitung setelah ada ukuran, model, jenis kaca, dan foto lokasi."],
     ],
   },
   {
@@ -303,22 +303,22 @@ export const localServices = [
     ],
     heroTitle: "Jasa Kanopi Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pembuatan kanopi custom untuk rumah, toko, carport, teras, dan area usaha di Purwokerto. Ukuran, material, dan model dapat disesuaikan dengan kebutuhan bangunan.",
+      "Berkah Utami Furniture mengerjakan kanopi custom untuk rumah, toko, carport, teras, dan area usaha di Purwokerto. Ukuran area, arah jatuh air, rangka, dan pilihan atap dibahas dari kondisi bangunannya.",
     metaDescription:
       "Jasa kanopi Purwokerto untuk rumah, toko, carport, teras, dan area usaha. Ukuran, material, dan model bisa dikonsultasikan.",
     intro:
-      "Kanopi tidak hanya soal menutup area dari panas dan hujan, tetapi juga perlu menyesuaikan tampilan rumah atau tempat usaha. Karena itu, model dan material sebaiknya dibicarakan sejak awal.",
+      "Kanopi bukan cuma soal menutup area dari panas dan hujan. Modelnya juga perlu nyambung dengan tampilan rumah atau toko, jadi rangka dan material sebaiknya dibahas dari awal.",
     painPoints: [
       "Area teras, carport, atau toko terlalu panas dan terkena hujan langsung.",
       "Butuh kanopi yang ukurannya pas dengan bentuk bangunan.",
-      "Bingung memilih material atap dan rangka yang sesuai kebutuhan.",
+      "Belum yakin memilih material atap, rangka, dan bentuk kemiringannya.",
       "Ingin kanopi tetap rapi secara tampilan, bukan hanya asal tertutup.",
     ],
     bestFor: [
       "Rumah tinggal yang membutuhkan kanopi teras atau carport.",
       "Toko dan tempat usaha yang membutuhkan area depan lebih teduh.",
       "Area servis, samping rumah, atau area tambahan yang perlu penutup.",
-      "Bangunan yang membutuhkan model kanopi menyesuaikan tampilan fasad.",
+      "Bangunan yang butuh kanopi tetap rapi dilihat dari depan.",
     ],
     prepareBeforeChat: [
       "Foto area yang ingin dipasang kanopi.",
@@ -335,19 +335,19 @@ export const localServices = [
       "Kanopi carport",
       "Kanopi teras",
       "Kanopi baja ringan",
-      "Kanopi spandek, alderon, polycarbonate, atau material lain sesuai kebutuhan",
+      "Kanopi spandek, alderon, polycarbonate, atau material lain yang cocok dengan lokasi",
     ],
     reasons: [
-      "Model kanopi dapat disesuaikan dengan bentuk bangunan.",
+      "Model kanopi dibuat mengikuti bentuk bangunan.",
       "Cocok untuk rumah, toko, carport, dan area usaha.",
-      "Material dan ukuran bisa dikonsultasikan mengikuti kebutuhan lapangan.",
-      "Konsultasi awal bisa dilakukan sebelum menentukan model final.",
+      "Ukuran, rangka, dan atap dibahas dari kondisi lapangan.",
+      "Chat awal bisa dilakukan sebelum menentukan model final.",
     ],
     faqs: [
-      ["Apakah bisa membuat kanopi sesuai ukuran lokasi?", "Bisa. Ukuran kanopi menyesuaikan area yang ingin ditutup dan kondisi bangunan."],
+      ["Apakah bisa membuat kanopi sesuai ukuran lokasi?", "Bisa. Ukuran kanopi dibuat dari area yang ingin ditutup dan kondisi bangunannya."],
       ["Apakah melayani kanopi untuk rumah dan toko?", "Ya. Kanopi dapat dikerjakan untuk rumah, toko, carport, teras, atau area usaha."],
-      ["Material kanopi apa saja yang bisa dipilih?", "Material dapat disesuaikan kebutuhan, misalnya baja ringan, hollow, spandek, alderon, polycarbonate, atau opsi lain yang relevan."],
-      ["Apakah bisa konsultasi estimasi biaya dulu?", "Bisa. Estimasi awal dapat dibantu setelah ukuran area, model, dan material lebih jelas."],
+      ["Material kanopi apa saja yang bisa dipilih?", "Material bisa dibahas dari lokasi dan cara pakai, misalnya baja ringan, hollow, spandek, alderon, polycarbonate, atau opsi lain yang relevan."],
+      ["Apakah bisa konsultasi estimasi biaya dulu?", "Bisa. Estimasi awal lebih mudah dihitung setelah ada ukuran area, model, material, dan foto lokasi."],
     ],
   },
   {
@@ -369,18 +369,18 @@ export const localServices = [
     ],
     heroTitle: "Jasa Custom Furniture di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pembuatan furniture custom dari workshop di Berkoh, Purwokerto. Ukuran, fungsi, model, dan finishing bisa disesuaikan dengan kebutuhan ruang rumah, toko, kantor, atau usaha.",
+      "Berkah Utami Furniture mengerjakan furniture custom dari workshop di Berkoh, Purwokerto. Bisa untuk meja, rak, kabinet, lemari, display, atau furniture lain yang ukurannya perlu dibuat khusus.",
     metaDescription:
-      "Jasa custom furniture Purwokerto untuk meja, lemari, rak, kabinet, display, dan kebutuhan furniture sesuai ukuran ruang. Survey area Banyumas gratis.",
+      "Jasa custom furniture Purwokerto untuk meja, lemari, rak, kabinet, display, dan furniture yang perlu ukuran khusus. Survey area Banyumas gratis.",
     intro:
-      "Custom furniture cocok untuk ruang yang tidak pas memakai furniture jadi. BUF membantu menyesuaikan ukuran, fungsi penyimpanan, material, finishing, dan tampilan agar furniture lebih menyatu dengan kebutuhan ruang.",
+      "Custom furniture cocok untuk ruang yang tidak pas memakai barang jadi. Ukuran, pembagian fungsi, bahan, finishing, dan tampilannya bisa dibuat lebih nyambung dengan ruang.",
     visual: "/assets/portfolio/meja-kerja-custom-panel-buf-01.webp",
     ctaLabel: "Konsultasi Custom Furniture via WhatsApp",
     painPoints: [
       "Ukuran ruang tidak cocok dengan furniture jadi",
       "Butuh meja, rak, kabinet, atau lemari dengan fungsi khusus",
       "Ingin furniture lebih rapi dan menyatu dengan interior",
-      "Butuh material dan finishing yang menyesuaikan budget",
+      "Perlu bahan dan finishing yang sesuai kisaran biaya",
     ],
     bestFor: [
       "Rumah dan kamar",
@@ -391,7 +391,7 @@ export const localServices = [
     prepareBeforeChat: [
       "Foto area yang ingin dibuat furniture",
       "Ukuran kasar panjang, lebar, dan tinggi",
-      "Kebutuhan fungsi: simpan barang, display, meja kerja, atau kabinet",
+      "Fungsi utama: simpan barang, display, meja kerja, atau kabinet",
       "Referensi desain atau warna finishing jika ada",
     ],
     serviceTypes: [
@@ -401,15 +401,15 @@ export const localServices = [
       "Furniture display usaha",
     ],
     reasons: [
-      "Dibuat sesuai ukuran ruang",
-      "Bisa menyesuaikan fungsi dan kebiasaan pemakai",
+      "Dibuat dari ukuran ruang",
+      "Bisa mengikuti cara pakai sehari-hari",
       "Material dan finishing dapat dibahas sejak awal",
       "Survey lokasi area Banyumas gratis",
     ],
     faqs: [
-      ["Apakah bisa membuat furniture dari contoh gambar?", "Bisa. Kirim referensi gambar, ukuran ruang, dan kebutuhan fungsi agar BUF bisa bantu arahkan model dan estimasinya."],
-      ["Apakah survey area Purwokerto gratis?", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
-      ["Apakah bisa hanya konsultasi dulu?", "Bisa. Konsultasi awal bisa dimulai lewat WhatsApp dengan foto ruang dan ukuran kasar."],
+      ["Apakah bisa membuat furniture dari contoh gambar?", "Bisa. Kirim referensi gambar, ukuran ruang, dan fungsi barang yang ingin dibuat agar model dan estimasinya lebih mudah dibaca."],
+      ["Apakah survey area Purwokerto gratis?", "Survey area Banyumas gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
+      ["Apakah bisa hanya konsultasi dulu?", "Bisa. Chat awal bisa dimulai lewat WhatsApp dengan foto ruang dan ukuran kasar."],
     ],
   },
   {
@@ -431,15 +431,15 @@ export const localServices = [
     ],
     heroTitle: "Jasa Interior Rumah di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture membantu desain dan pengerjaan interior rumah custom di Purwokerto, mulai dari ruang keluarga, dapur, kamar, backdrop TV, storage, sampai furniture sesuai ukuran ruang.",
+      "Berkah Utami Furniture mengerjakan interior rumah custom di Purwokerto, mulai dari ruang keluarga, dapur, kamar, backdrop TV, storage, sampai furniture yang dibuat mengikuti ukuran ruang.",
     metaDescription:
       "Jasa interior rumah Purwokerto untuk ruang keluarga, dapur, kamar, backdrop TV, storage, dan furniture custom. Survey area Banyumas gratis.",
     intro:
-      "Interior rumah yang baik tidak hanya terlihat rapi, tetapi juga membantu aktivitas harian lebih nyaman. BUF membantu menyesuaikan desain, furniture, material, dan pengerjaan dengan kebutuhan penghuni serta kondisi ruang.",
+      "Interior rumah yang enak bukan cuma bagus difoto. Ruang harus mudah dipakai setiap hari: barang punya tempat, area gerak tidak sempit, dan furniture tidak terasa memaksa ruang.",
     visual: "/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp",
     ctaLabel: "Konsultasi Interior Rumah via WhatsApp",
     painPoints: [
-      "Ruang rumah terasa kurang rapi atau kurang fungsional",
+      "Ruang rumah terasa penuh, kosong, atau kurang tertata",
       "Butuh storage dan furniture sesuai ukuran ruang",
       "Ingin tampilan rumah lebih hangat dan menyatu",
       "Belum yakin material dan model yang cocok",
@@ -453,25 +453,25 @@ export const localServices = [
     prepareBeforeChat: [
       "Foto ruang yang ingin dikerjakan",
       "Ukuran kasar area",
-      "Kebutuhan utama ruang",
+      "Bagian utama yang ingin dibereskan",
       "Referensi desain atau suasana yang diinginkan",
     ],
     serviceTypes: [
       "Interior ruang keluarga",
       "Backdrop TV dan storage",
       "Furniture rumah custom",
-      "Penataan interior sesuai kebutuhan ruang",
+      "Penataan interior dari kondisi ruang",
     ],
     reasons: [
       "Desain dan pengerjaan bisa dibahas dari awal",
-      "Furniture menyesuaikan ukuran ruang",
-      "Cocok untuk kebutuhan rumah baru atau renovasi",
+      "Furniture dibuat mengikuti ukuran ruang",
+      "Cocok untuk rumah baru atau renovasi",
       "Survey lokasi area Banyumas gratis",
     ],
     faqs: [
-      ["Apakah harus sudah punya desain final?", "Tidak harus. Konsultasi bisa dimulai dari foto ruang, ukuran kasar, dan kebutuhan fungsi."],
-      ["Apakah bisa pengerjaan sebagian ruangan saja?", "Bisa. Pengerjaan bisa dimulai dari area prioritas seperti ruang TV, dapur, kamar, atau storage."],
-      ["Apakah survey area Banyumas gratis?", "Ya, survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
+      ["Apakah harus sudah punya desain final?", "Tidak harus. Chat awal bisa dimulai dari foto ruang, ukuran kasar, dan bagian yang ingin dibereskan."],
+      ["Apakah bisa pengerjaan sebagian ruangan saja?", "Bisa. Pengerjaan bisa dimulai dari area yang paling penting dulu, misalnya ruang TV, dapur, kamar, atau storage."],
+      ["Apakah survey area Banyumas gratis?", "Ya, survey area Banyumas gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
     ],
   },
   {
@@ -493,11 +493,11 @@ export const localServices = [
     ],
     heroTitle: "Jasa Interior Toko di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pengerjaan interior toko custom di Purwokerto untuk display produk, rak, meja kasir, booth, storage, dan kebutuhan ruang usaha agar lebih tertata.",
+      "Berkah Utami Furniture mengerjakan interior toko custom di Purwokerto untuk display produk, rak, meja kasir, booth, storage, dan area jualan yang perlu ditata ulang.",
     metaDescription:
       "Jasa interior toko Purwokerto untuk display produk, rak custom, meja kasir, booth, dan penataan ruang usaha. Survey area Banyumas gratis.",
     intro:
-      "Interior toko perlu membantu produk terlihat rapi, mudah dilihat, dan nyaman untuk pelanggan. BUF membantu membuat display, rak, meja kasir, dan furniture toko yang menyesuaikan ukuran ruang serta jenis usaha.",
+      "Interior toko harus membuat produk mudah dilihat. Rak, meja kasir, display, dan storage dibuat dari ukuran ruang serta jenis barang yang dijual.",
     visual: "/assets/portfolio/interior-toko-display-silver-buf-01.webp",
     ctaLabel: "Konsultasi Interior Toko via WhatsApp",
     painPoints: [
@@ -516,7 +516,7 @@ export const localServices = [
       "Foto toko atau area usaha",
       "Ukuran kasar ruang",
       "Jenis produk yang dijual",
-      "Kebutuhan display, rak, kasir, atau storage",
+      "Bagian yang dibutuhkan: display, rak, kasir, atau storage",
     ],
     serviceTypes: [
       "Rak display custom",
@@ -525,15 +525,15 @@ export const localServices = [
       "Furniture display usaha",
     ],
     reasons: [
-      "Layout disesuaikan dengan jenis produk",
-      "Display bisa dibuat sesuai ukuran ruang",
+      "Layout dibuat dari jenis produk",
+      "Display dibuat mengikuti ukuran ruang",
       "Cocok untuk toko kecil dan UMKM",
       "Survey lokasi area Banyumas gratis",
     ],
     faqs: [
       ["Apakah bisa untuk toko kecil?", "Bisa. Interior toko custom justru cocok untuk ruang kecil agar display dan storage lebih tertata."],
-      ["Apakah bisa menyesuaikan warna brand?", "Bisa. Warna, finishing, dan tampilan bisa dibahas sesuai kebutuhan brand atau usaha."],
-      ["Apakah survey Purwokerto gratis?", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
+      ["Apakah warna bisa mengikuti brand toko?", "Bisa. Warna, finishing, dan tampilan bisa dibahas mengikuti arah brand atau suasana toko."],
+      ["Apakah survey Purwokerto gratis?", "Survey area Banyumas gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
     ],
   },
   {
@@ -555,18 +555,18 @@ export const localServices = [
     ],
     heroTitle: "Jasa Backdrop TV Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pembuatan backdrop TV custom di Purwokerto untuk ruang keluarga, kamar, ruang tamu, atau area TV dengan ukuran, model, dan storage sesuai kebutuhan.",
+      "Berkah Utami Furniture mengerjakan backdrop TV custom di Purwokerto untuk ruang keluarga, kamar, ruang tamu, atau area TV yang ingin dibuat lebih rapi.",
     metaDescription:
       "Jasa backdrop TV custom Purwokerto untuk panel TV, rak TV, kabinet bawah, storage, dan dekorasi ruang keluarga. Survey area Banyumas gratis.",
     intro:
-      "Backdrop TV membantu area menonton terlihat lebih rapi dan menyatu dengan ruangan. Model bisa dibuat sederhana, modern, memakai kabinet bawah, ambalan, lighting, atau storage tambahan sesuai kebutuhan.",
+      "Backdrop TV bisa merapikan area nonton: kabel lebih tersembunyi, dinding tidak kosong, dan barang kecil punya tempat. Modelnya bisa sederhana, pakai kabinet bawah, ambalan, lighting, atau storage tambahan.",
     visual: "/assets/portfolio/backdrop-tv-bawah-tangga-modern-buf-01.webp",
     ctaLabel: "Konsultasi Backdrop TV via WhatsApp",
     painPoints: [
       "Area TV terlihat kosong atau berantakan",
       "Kabel dan perangkat belum tertata rapi",
       "Butuh kabinet bawah atau storage tambahan",
-      "Ingin backdrop menyesuaikan ukuran dinding",
+      "Ingin backdrop mengikuti ukuran dinding",
     ],
     bestFor: [
       "Ruang keluarga",
@@ -587,15 +587,15 @@ export const localServices = [
       "Backdrop TV dengan storage",
     ],
     reasons: [
-      "Ukuran menyesuaikan dinding",
+      "Ukuran dibuat dari bidang dinding",
       "Bisa dibuat dengan storage tambahan",
       "Model dan finishing bisa dibahas sejak awal",
       "Survey lokasi area Banyumas gratis",
     ],
     faqs: [
-      ["Apakah bisa dibuat untuk ruang kecil?", "Bisa. Backdrop TV custom bisa disesuaikan dengan ukuran dinding dan kebutuhan storage."],
-      ["Apakah bisa sekaligus kabinet bawah?", "Bisa. Kabinet bawah, ambalan, rak display, dan storage bisa dibahas sesuai kebutuhan."],
-      ["Apakah survey area Banyumas gratis?", "Ya, survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
+      ["Apakah bisa dibuat untuk ruang kecil?", "Bisa. Backdrop dibuat dari ukuran dinding dan storage yang ingin ditambahkan."],
+      ["Apakah bisa sekaligus kabinet bawah?", "Bisa. Kabinet bawah, ambalan, rak display, dan storage bisa dibahas dari fungsi ruang."],
+      ["Apakah survey area Banyumas gratis?", "Ya, survey area Banyumas gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
     ],
   },
   {
@@ -617,18 +617,18 @@ export const localServices = [
     ],
     heroTitle: "Jasa Lemari Custom di Purwokerto",
     heroDescription:
-      "Berkah Utami Furniture melayani pembuatan lemari custom di Purwokerto untuk kamar, wardrobe, penyimpanan rumah, bawah tangga, atau kebutuhan storage sesuai ukuran ruang.",
+      "Berkah Utami Furniture mengerjakan lemari custom di Purwokerto untuk kamar, wardrobe, storage rumah, bawah tangga, atau area sempit yang butuh ukuran khusus.",
     metaDescription:
-      "Jasa lemari custom Purwokerto untuk lemari pakaian, wardrobe, storage kamar, lemari bawah tangga, dan kebutuhan penyimpanan. Survey area Banyumas gratis.",
+      "Jasa lemari custom Purwokerto untuk lemari pakaian, wardrobe, storage kamar, lemari bawah tangga, dan penyimpanan rumah. Survey area Banyumas gratis.",
     intro:
-      "Lemari custom membantu ruang penyimpanan lebih maksimal karena ukuran, sekat, pintu, laci, gantungan, dan finishing bisa disesuaikan dengan kebutuhan pemakai serta kondisi ruang.",
+      "Lemari custom dibuat supaya isi lemari lebih jelas dari awal: bagian gantungan, laci, sekat lipatan, rak tas, area koper, pintu, dan finishing.",
     visual: "/assets/portfolio/lemari-custom-display-lighting-buf-01.webp",
     ctaLabel: "Konsultasi Lemari Custom via WhatsApp",
     painPoints: [
       "Lemari jadi tidak pas dengan ukuran ruang",
       "Butuh penyimpanan lebih rapi",
       "Ruang kamar terbatas",
-      "Ingin lemari sampai plafon atau sesuai kebutuhan khusus",
+      "Ingin lemari sampai plafon atau punya pembagian khusus",
     ],
     bestFor: [
       "Kamar tidur",
@@ -639,7 +639,7 @@ export const localServices = [
     prepareBeforeChat: [
       "Foto area lemari",
       "Ukuran kasar panjang, lebar, dan tinggi",
-      "Kebutuhan isi lemari: gantungan, laci, sekat, atau rak",
+      "Isi lemari: gantungan, laci, sekat, rak, atau area koper",
       "Referensi model dan warna finishing",
     ],
     serviceTypes: [
@@ -649,15 +649,15 @@ export const localServices = [
       "Lemari bawah tangga",
     ],
     reasons: [
-      "Ukuran dan sekat menyesuaikan kebutuhan",
+      "Ukuran dan sekat dibahas dari barang yang disimpan",
       "Cocok untuk ruang sempit atau ukuran khusus",
       "Material dan finishing bisa dibahas dari awal",
       "Survey lokasi area Banyumas gratis",
     ],
     faqs: [
-      ["Apakah bisa lemari sampai plafon?", "Bisa. Ukuran lemari bisa menyesuaikan tinggi ruang dan kebutuhan penyimpanan."],
+      ["Apakah bisa lemari sampai plafon?", "Bisa. Ukuran lemari bisa dibuat sampai plafon jika kondisi ruangnya memungkinkan."],
       ["Apakah bisa menentukan jumlah laci dan sekat?", "Bisa. Layout bagian dalam lemari bisa dibahas berdasarkan barang yang akan disimpan."],
-      ["Apakah survey Banyumas gratis?", "Ya, survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
+      ["Apakah survey Banyumas gratis?", "Ya, survey area Banyumas gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
     ],
   },
 

@@ -1,7 +1,7 @@
 import { buildWhatsappHref } from "@/lib/whatsapp";
 
 const message =
-  "Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Saya ingin tanya proses dan estimasinya.";
+  "Halo BUF, saya mau tanya interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya ingin tanya proses dan estimasinya.";
 
 export default function FloatingWhatsApp() {
   return (

@@ -7,7 +7,7 @@ import { buildWhatsappHref } from "@/lib/whatsapp";
 
 function buildLocalServiceWhatsappHref(service) {
   return buildWhatsappHref(
-    `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Lokasi proyek saya di ${service.area}. Ukuran/perkiraan: ... Kebutuhan: ...`
+    `Halo BUF, saya mau tanya ${service.shortTitle}. Lokasi proyek saya di ${service.area}. Ukuran kira-kira: ... Saya akan kirim foto lokasinya.`
   );
 }
 
@@ -66,7 +66,7 @@ export default function LocalServicePage({ service }) {
                 href={service.serviceHref}
                 className="rounded-full border border-white/15 bg-white/[0.06] px-7 py-3.5 text-center text-sm font-black text-white backdrop-blur"
               >
-                Pelajari Layanan Umum
+                Lihat Layanan Umum
               </Link>
               <Link
                 href={routes.portfolio}
@@ -78,10 +78,10 @@ export default function LocalServicePage({ service }) {
 
             <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-white/45">
-                Sinyal lokal
+                Lokasi workshop
               </p>
               <p className="mt-3 text-sm font-medium leading-7 text-white/68">
-                Workshop/kantor Berkah Utami Furniture berada di Berkoh, Purwokerto. Area pengerjaan dapat dikonfirmasi melalui WhatsApp untuk wilayah Purwokerto, Banyumas, dan sekitar.
+                Workshop Berkah Utami Furniture ada di Berkoh, Purwokerto. Untuk area Purwokerto, Banyumas, dan sekitar, jadwal survey atau pemasangan bisa dibicarakan lewat WhatsApp.
               </p>
             </div>
           </div>
@@ -102,24 +102,24 @@ export default function LocalServicePage({ service }) {
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                Sebelum konsultasi
+                Sebelum chat
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Biasanya pelanggan mulai dari masalah, ukuran, dan kebutuhan yang belum jelas.
+                Biasanya mulai dari masalah ruang yang belum rapi.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
-              Karena setiap proyek custom berbeda, halaman ini membantu Anda memahami kebutuhan awal sebelum menentukan model, material, atau estimasi pengerjaan.
+              Tidak harus langsung tahu model final. Yang penting ada foto lokasi, ukuran kasar, dan cerita singkat tentang bagian yang ingin dibuat.
             </p>
           </div>
 
           <div className="mt-10 grid gap-4 lg:grid-cols-3">
             <div className="rounded-[2rem] border border-stone-200 bg-white/88 p-6 shadow-soft backdrop-blur">
               <p className="text-xs font-black uppercase tracking-[0.2em] text-brand-blue">
-                Masalah umum
+                Masalah yang sering muncul
               </p>
               <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.02em] text-charcoal">
-                Biasanya dicari karena kebutuhan seperti ini.
+                Biasanya orang mencari jasa ini karena hal-hal seperti ini.
               </h3>
               <div className="mt-5 grid gap-3">
                 {painPoints.map((item) => (
@@ -132,10 +132,10 @@ export default function LocalServicePage({ service }) {
 
             <div className="rounded-[2rem] border border-stone-200 bg-white/88 p-6 shadow-soft backdrop-blur">
               <p className="text-xs font-black uppercase tracking-[0.2em] text-brand-blue">
-                Cocok untuk
+                Biasa dipakai untuk
               </p>
               <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.02em] text-charcoal">
-                Kebutuhan rumah, toko, atau usaha.
+                Rumah, toko, booth, atau area usaha kecil.
               </h3>
               <div className="mt-5 grid gap-3">
                 {bestFor.map((item) => (
@@ -151,7 +151,7 @@ export default function LocalServicePage({ service }) {
                 Siapkan sebelum chat
               </p>
               <h3 className="mt-3 text-2xl font-black leading-tight tracking-[-0.02em] text-charcoal">
-                Agar estimasi awal lebih mudah diarahkan.
+                Supaya obrolan awal tidak muter-muter.
               </h3>
               <div className="mt-5 grid gap-3">
                 {prepareBeforeChat.map((item) => (
@@ -169,10 +169,10 @@ export default function LocalServicePage({ service }) {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-              Fokus halaman
+              Fokus pekerjaan
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-              Dibuat khusus untuk kebutuhan {service.shortTitle.toLowerCase()}.
+              Bagian ini khusus membahas {service.shortTitle.toLowerCase()}.
             </h2>
             <p className="mt-5 text-base font-medium leading-7 text-muted">
               {service.intro}
@@ -196,10 +196,10 @@ export default function LocalServicePage({ service }) {
           <div className="grid gap-8 lg:grid-cols-[0.76fr_1.24fr] lg:items-start">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                Kenapa BUF
+                Kenapa pilih BUF
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Vendor lokal dengan pengerjaan custom dari Purwokerto.
+                Workshop lokal di Berkoh, Purwokerto.
               </h2>
             </div>
 
@@ -225,15 +225,15 @@ export default function LocalServicePage({ service }) {
               Cara mulai
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] sm:text-5xl">
-              Konsultasi awal bisa dari foto ruang, ukuran kasar, dan kebutuhan fungsi.
+              Mulai dari foto lokasi dan ukuran kasar dulu.
             </h2>
             <p className="mt-5 text-base font-medium leading-7 text-white/62">
-              Tidak harus langsung deal. Kirim kebutuhan awal melalui WhatsApp agar BUF bisa memahami ukuran, fungsi, material, dan perkiraan arah pengerjaan.
+              Tidak harus langsung deal. Kirim foto, ukuran kasar, dan contoh model kalau ada. Dari situ baru dibahas bahan, ukuran, dan perkiraan biayanya.
             </p>
           </div>
 
           <div className="grid gap-3">
-            {["Kirim foto/referensi", "Ceritakan ukuran dan kebutuhan", "Diskusi material dan model", "Konfirmasi survey atau pengerjaan"].map((item, index) => (
+            {["Kirim foto atau referensi", "Ceritakan ukuran kasar", "Bahas bahan dan model", "Atur survey atau jadwal kerja"].map((item, index) => (
               <div key={item} className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-brand-blue">
                   Langkah {String(index + 1).padStart(2, "0")}
@@ -251,7 +251,7 @@ export default function LocalServicePage({ service }) {
             FAQ
           </p>
           <h2 className="mt-4 text-center text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-            Pertanyaan umum sebelum konsultasi.
+            Pertanyaan yang sering muncul sebelum chat.
           </h2>
 
           <div className="mt-8 grid gap-4">
@@ -268,7 +268,7 @@ export default function LocalServicePage({ service }) {
               Mau konsultasi {service.shortTitle.toLowerCase()}?
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-sm font-medium leading-7 text-white/62">
-              Klik WhatsApp dan kirim kebutuhan awal. BUF akan bantu arahkan opsi yang paling masuk akal sesuai ukuran, fungsi, dan budget.
+              Klik WhatsApp, kirim foto lokasi, lalu ceritakan mau dibuat seperti apa. Nanti kami cek dulu ukuran, bahan, dan cara pengerjaannya.
             </p>
             <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
               <a

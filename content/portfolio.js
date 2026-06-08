@@ -34,7 +34,7 @@ export const portfolioItems = [
     serviceLabel: "Kitchen Set",
     isFeatured: false,
     description:
-      "Video singkat kitchen set hijau custom untuk melihat detail kabinet, area meja, dan finishing secara lebih nyata.",
+      "Video singkat kitchen set hijau untuk melihat bukaan kabinet, area meja, dan finishing dari dekat.",
   },
   {
     slug: "video-kitchen-set-modern-lighting",
@@ -51,7 +51,7 @@ export const portfolioItems = [
     serviceLabel: "Kitchen Set",
     isFeatured: false,
     description:
-      "Video kitchen set modern dengan lighting untuk menampilkan detail kabinet atas, kabinet bawah, dan area kerja dapur.",
+      "Video kitchen set modern dengan lighting, kabinet atas-bawah, dan area kerja dapur yang terlihat lebih jelas.",
   },
   {
     slug: "video-backdrop-tv-marmer-lighting",
@@ -68,7 +68,7 @@ export const portfolioItems = [
     serviceLabel: "Backdrop TV",
     isFeatured: false,
     description:
-      "Video backdrop TV motif marmer dengan lighting untuk melihat tampilan panel, rak samping, dan pencahayaan.",
+      "Video backdrop TV motif marmer dengan lighting, panel utama, rak samping, dan pencahayaan ruang.",
   },
   {
     slug: "kitchen-set-luxury-rak-display",
@@ -81,7 +81,7 @@ export const portfolioItems = [
     serviceLabel: "Kitchen Set",
     isFeatured: true,
     description:
-      "Kitchen set custom yang dibuat menyesuaikan ukuran dapur, kebutuhan penyimpanan, dan alur aktivitas harian.",
+      "Kitchen set dibuat mengikuti ukuran dapur, alur masak, dan pembagian kabinet yang dipakai sehari-hari.",
   },
   {
     slug: "kitchen-set-proses-pasang",
@@ -107,7 +107,7 @@ export const portfolioItems = [
     serviceLabel: "Kitchen Set",
     isFeatured: false,
     description:
-      "Referensi kitchen set dengan area island untuk kebutuhan penyimpanan, persiapan makanan, dan tampilan dapur yang lebih rapi.",
+      "Referensi kitchen set dengan island untuk area persiapan makanan, kabinet tambahan, dan tampilan dapur yang lebih tertata.",
   },
   {
     slug: "booth-harmoni-silver",
@@ -120,7 +120,7 @@ export const portfolioItems = [
     serviceLabel: "Booth Usaha",
     isFeatured: false,
     description:
-      "Booth usaha custom untuk kebutuhan display produk, identitas brand, dan tampilan toko yang lebih rapi.",
+      "Booth usaha dengan area display produk, warna brand, dan tampilan toko yang lebih mudah dikenali.",
   },
   {
     slug: "booth-pang-waffle",
@@ -159,7 +159,7 @@ export const portfolioItems = [
     serviceLabel: "Booth Usaha",
     isFeatured: false,
     description:
-      "Booth custom untuk area layanan usaha dengan kebutuhan branding, meja pelayanan, dan display informasi.",
+      "Booth untuk area layanan usaha, lengkap dengan branding, meja pelayanan, dan display informasi.",
   },
   {
     slug: "interior-toko-display-silver",
@@ -172,7 +172,7 @@ export const portfolioItems = [
     serviceLabel: "Interior Toko",
     isFeatured: false,
     description:
-      "Interior toko dengan display produk yang dibuat agar barang terlihat rapi, mudah dilihat, dan tetap sesuai identitas usaha.",
+      "Interior toko dengan display produk yang membuat barang lebih mudah dilihat dan area jualan terasa lebih tertata.",
   },
   {
     slug: "backdrop-tv-proses-pasang",
@@ -198,7 +198,7 @@ export const portfolioItems = [
     serviceLabel: "Interior Rumah",
     isFeatured: false,
     description:
-      "Proses pengerjaan panel interior untuk membuat area rumah lebih tertata dan memiliki aksen visual yang rapi.",
+      "Proses pengerjaan panel interior untuk memberi aksen visual dan merapikan bidang dinding.",
   },
   {
     slug: "wardrobe-meja-rias-custom",
@@ -211,7 +211,7 @@ export const portfolioItems = [
     serviceLabel: "Lemari Custom",
     isFeatured: false,
     description:
-      "Wardrobe dan meja rias custom yang dibuat menyatu agar ruang kamar lebih efisien dan rapi.",
+      "Wardrobe dan meja rias dibuat menyatu supaya area kamar tidak banyak terpotong furniture terpisah.",
   },
   {
     slug: "meja-kerja-custom-panel",
@@ -224,11 +224,11 @@ export const portfolioItems = [
     serviceLabel: "Custom Furniture",
     isFeatured: false,
     description:
-      "Furniture custom untuk area kerja kecil dengan panel dan meja yang menyesuaikan ukuran ruang.",
+      "Furniture custom untuk area kerja kecil, memakai panel dan meja yang dibuat mengikuti ukuran ruang.",
   },
   {
-    slug: "akrilik-custom-referensi-kebutuhan",
-    title: "Referensi Kebutuhan Akrilik Custom",
+    slug: "akrilik-custom-referensi-proyek",
+    title: "Referensi Proyek Akrilik Custom",
     category: "akrilik-custom",
     type: "Referensi Awal",
     location: "Kebutuhan usaha dan display",
@@ -237,11 +237,11 @@ export const portfolioItems = [
     serviceLabel: "Akrilik Custom",
     isFeatured: false,
     description:
-      "Referensi awal untuk kebutuhan akrilik custom seperti display usaha, papan nama, signage, rak display, dan kebutuhan proyek. Dokumentasi portofolio final akan diperbarui setelah data visual siap.",
+      "Referensi awal untuk akrilik custom seperti display usaha, papan nama, signage, rak display, dan proyek. Dokumentasi portofolio final akan diperbarui setelah data visual siap.",
   },
   {
-    slug: "aluminium-custom-referensi-kebutuhan",
-    title: "Referensi Kebutuhan Aluminium Custom",
+    slug: "aluminium-custom-referensi-proyek",
+    title: "Referensi Proyek Aluminium Custom",
     category: "aluminium",
     type: "Referensi Awal",
     location: "Rumah, toko, dan area usaha",
@@ -250,11 +250,11 @@ export const portfolioItems = [
     serviceLabel: "Aluminium",
     isFeatured: false,
     description:
-      "Referensi awal untuk kebutuhan aluminium custom seperti kusen, pintu, jendela, partisi, etalase, kaca aluminium, dan kebutuhan bangunan. Dokumentasi portofolio final akan diperbarui setelah data visual siap.",
+      "Referensi awal untuk aluminium custom seperti kusen, pintu, jendela, partisi, etalase, kaca aluminium, dan pekerjaan bangunan. Dokumentasi portofolio final akan diperbarui setelah data visual siap.",
   },
   {
-    slug: "kanopi-custom-referensi-kebutuhan",
-    title: "Referensi Kebutuhan Kanopi Custom",
+    slug: "kanopi-custom-referensi-proyek",
+    title: "Referensi Proyek Kanopi Custom",
     category: "kanopi",
     type: "Referensi Awal",
     location: "Teras, carport, toko, dan area usaha",
@@ -263,7 +263,7 @@ export const portfolioItems = [
     serviceLabel: "Kanopi",
     isFeatured: false,
     description:
-      "Referensi awal untuk kebutuhan kanopi custom seperti teras, carport, toko, dan area usaha. Dokumentasi portofolio final akan diperbarui setelah data visual siap.",
+      "Referensi awal untuk kanopi custom seperti teras, carport, toko, dan area usaha. Dokumentasi portofolio final akan diperbarui setelah data visual siap.",
   },
 ];
 

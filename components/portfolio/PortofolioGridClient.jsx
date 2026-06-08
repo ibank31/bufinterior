@@ -8,7 +8,7 @@ import { getPortofolioCategoryLabel } from "@/content/portfolio";
 
 function buildPortfolioWhatsappHref(item) {
   return buildWhatsappUrl(
-    `Halo BUF, saya tertarik dengan contoh portofolio ${item.title}. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Bisa konsultasi untuk kebutuhan ruang saya?`
+    `Halo BUF, saya tertarik dengan contoh portofolio ${item.title}. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruangnya.`
   );
 }
 
@@ -170,7 +170,7 @@ export default function PortofolioGridClient({ items }) {
                 Sudah ada referensi?
               </p>
               <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-                Kirim model yang kamu suka. BUF bantu sesuaikan dengan ukuran ruang dan budget.
+                Kirim model yang kamu suka. Nanti kita cek ukuran ruang dan kisaran biayanya.
               </h2>
               <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
                 Foto dan video portofolio bisa jadi titik awal untuk diskusi desain, material, finishing, dan estimasi pengerjaan.

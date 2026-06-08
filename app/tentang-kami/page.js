@@ -8,31 +8,31 @@ import { buildWhatsappHref } from "@/lib/whatsapp";
 export const metadata = buildMetadata(staticPageMetadata.tentangKami);
 
 const whatsappHref = buildWhatsappHref(
-  "Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ..."
+  "Halo BUF, saya mau tanya interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruangnya."
 );
 
 const trustPoints = [
-  ["Workshop sendiri", "Pengerjaan lebih terarah karena produksi dikerjakan dari workshop BUF."],
-  ["Custom ukuran ruang", "Furniture dan interior bisa menyesuaikan ukuran, fungsi, dan kondisi ruang."],
-  ["Material by request", "Material dapat disesuaikan dengan kebutuhan, tampilan, fungsi, dan budget."],
-  ["Desain + pengerjaan", "Pelanggan bisa mulai dari konsultasi konsep sampai pengerjaan."],
-  ["Survey Banyumas gratis", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
-  ["Lokasi proyek jelas", "Survey area Banyumas gratis. Pengiriman dan pemasangan dikonfirmasi sesuai lokasi dan kebutuhan proyek."],
+  ["Workshop di Berkoh", "Produksi dikerjakan dari workshop BUF, bukan sekadar ambil barang jadi."],
+  ["Ukur dulu sebelum produksi", "Furniture dan interior dibuat setelah ukuran, fungsi, dan kondisi ruang dibaca."],
+  ["Bahan dibahas di awal", "Pilihan bahan, finishing, warna, dan hardware dibicarakan sebelum produksi."],
+  ["Gambar arah, lalu kerjakan", "Bisa mulai dari cerita ruang, contoh model, lalu masuk ke ukuran dan produksi."],
+  ["Survey Banyumas gratis", "Survey area Banyumas gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
+  ["Lokasi proyek jelas", "Survey area Banyumas gratis. Pengiriman dan pemasangan dibicarakan sesuai lokasi proyek."],
 ];
 
 const approach = [
-  ["01", "Pahami ruang", "Mulai dari ukuran, foto lokasi, fungsi ruang, dan masalah yang ingin diselesaikan."],
-  ["02", "Arahkan desain", "Konsep dibuat agar selaras dengan kebutuhan, tampilan, dan budget pelanggan."],
-  ["03", "Pilih material", "Material dan finishing disesuaikan dengan fungsi ruang dan preferensi pemakaian."],
-  ["04", "Produksi terarah", "Pengerjaan dilakukan bertahap dari workshop sampai pemasangan."],
+  ["01", "Baca ruangnya dulu", "Mulai dari foto lokasi, ukuran kasar, fungsi ruang, dan bagian yang paling mengganggu."],
+  ["02", "Bahas arah model", "Model dibuat dari fungsi ruang, tampilan yang diinginkan, dan kisaran biaya yang ingin dijaga."],
+  ["03", "Pilih material", "Bahan dan finishing dipilih dari cara pakai ruang dan tampilan yang diinginkan."],
+  ["04", "Produksi di workshop", "Pengerjaan dilakukan bertahap dari workshop sampai pemasangan."],
 ];
 
 const customerNeeds = [
   "Dapur ingin lebih rapi dengan kitchen set custom",
   "Ruang TV ingin punya backdrop dan penyimpanan menyatu",
-  "Kamar butuh lemari custom sesuai ukuran",
+  "Kamar butuh lemari sampai ukuran pas",
   "Toko butuh display produk yang lebih tertata",
-  "UMKM butuh booth usaha yang sesuai brand",
+  "UMKM butuh booth jualan yang kelihatan siap pakai",
   "Ruang kecil ingin dimaksimalkan tanpa memaksa furniture jadi",
 ];
 
@@ -47,11 +47,11 @@ export default function TentangKamiPage() {
             </p>
 
             <h1 className="mt-5 max-w-4xl text-[2.65rem] font-black leading-[1.05] tracking-[-0.04em] text-charcoal sm:text-6xl lg:text-7xl">
-              Workshop interior dan custom furniture untuk ruang yang lebih rapi.
+              Workshop interior dan furniture custom di Berkoh, Purwokerto.
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
-              {siteConfig.positioning} BUF membantu pelanggan yang membutuhkan interior dan furniture custom sesuai ukuran ruang, fungsi, material pilihan, dan budget.
+              {siteConfig.positioning} Biasanya pelanggan datang karena dapur, kamar, ruang TV, toko, atau area usahanya tidak cocok pakai furniture jadi.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -61,7 +61,7 @@ export default function TentangKamiPage() {
                 rel="noreferrer"
                 className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)]"
               >
-                Konsultasi dengan BUF
+                Chat WhatsApp BUF
               </a>
               <Link
                 href={routes.portfolio}
@@ -92,13 +92,13 @@ export default function TentangKamiPage() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.22em] text-white/42">
-              Kenapa bisa dipercaya?
+              Kenapa pilih BUF?
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] sm:text-5xl">
-              BUF dibangun untuk kebutuhan ruang yang tidak selalu bisa diselesaikan dengan furniture jadi.
+              BUF dibangun untuk ruang yang tidak selalu selesai dengan furniture jadi.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/64">
-              Banyak pelanggan datang bukan karena ingin sekadar membeli furniture, tapi karena ruangnya butuh solusi: lebih rapi, lebih fungsional, lebih sesuai ukuran, dan tetap masuk budget.
+              Banyak orang datang karena ruangnya tanggung: dapur kurang storage, kamar butuh lemari pas ukuran, toko perlu display, atau booth ingin tampil lebih niat.
             </p>
           </div>
 
@@ -130,10 +130,10 @@ export default function TentangKamiPage() {
               </p>
             </div>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-              Setiap proyek dimulai dari memahami ruang dan kebutuhan pemakai.
+              Setiap proyek dimulai dari membaca ruang dan cara pakainya.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted">
-              BUF tidak langsung mendorong satu desain untuk semua orang. Kebutuhan ruang, kebiasaan pemakai, ukuran, dan budget menjadi dasar sebelum menentukan bentuk dan material.
+              BUF tidak mendorong satu desain untuk semua orang. Ukuran, kebiasaan pemakai, dan kisaran biaya dibaca dulu sebelum menentukan bentuk dan bahan.
             </p>
           </div>
 
@@ -160,14 +160,14 @@ export default function TentangKamiPage() {
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                Kebutuhan pelanggan
+                Alasan pelanggan datang
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Biasanya pelanggan menghubungi BUF karena ruangnya butuh solusi custom.
+                Biasanya pelanggan datang karena ada bagian ruang yang ingin dibereskan.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-7 text-muted lg:justify-self-end">
-              Mulai dari rumah, toko, kost, sampai booth usaha. Konsultasi bisa dimulai dari cerita kebutuhan, foto ruang, dan ukuran kasar.
+              Mulai dari rumah, toko, kost, sampai booth usaha. Chat awal bisa dimulai dari cerita singkat, foto ruang, dan ukuran kasar.
             </p>
           </div>
 
@@ -190,13 +190,13 @@ export default function TentangKamiPage() {
         <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-charcoal text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] md:grid md:grid-cols-[1fr_0.5fr]">
           <div className="p-7 md:p-8">
             <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">
-              Mulai dari konsultasi
+              Mulai dari ngobrol dulu
             </p>
             <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-              Ceritakan kebutuhan ruangmu. BUF bantu arahkan desain, material, dan opsi pengerjaan.
+              Ceritakan ruangnya mau dibuat seperti apa. Nanti kita bahas model, bahan, dan cara pengerjaannya.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-              Tidak harus langsung punya desain final. Kirim foto ruang, ukuran kasar, referensi, atau kebutuhan fungsi yang ingin diselesaikan.
+              Tidak harus langsung punya gambar final. Kirim foto ruang, ukuran kasar, dan contoh model kalau ada.
             </p>
             <a
               href={whatsappHref}
@@ -204,7 +204,7 @@ export default function TentangKamiPage() {
               rel="noreferrer"
               className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"
             >
-              Konsultasi via WhatsApp
+              Chat WhatsApp BUF
             </a>
           </div>
           <div className="bg-[#111]">

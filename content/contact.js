@@ -1,35 +1,35 @@
 export const quickChats = [
   {
     label: "Kitchen Set",
-    text: "Halo BUF, saya ingin konsultasi kitchen set custom. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Saya ingin tanya estimasi dan prosesnya.",
+    text: "Halo BUF, saya mau tanya kitchen set. Lokasi proyek: ... Panjang dapur kira-kira: ... Saya akan kirim foto dapurnya.",
   },
   {
     label: "Backdrop TV",
-    text: "Halo BUF, saya ingin konsultasi backdrop TV custom. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ...",
+    text: "Halo BUF, saya mau tanya backdrop TV. Lokasi proyek: ... Ukuran dinding kira-kira: ... Saya akan kirim foto area TV.",
   },
   {
     label: "Lemari Custom",
-    text: "Halo BUF, saya ingin konsultasi lemari custom. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan penyimpanan: ...",
+    text: "Halo BUF, saya mau tanya lemari custom. Lokasi proyek: ... Ukuran area kira-kira: ... Saya butuh lemari untuk: ...",
   },
   {
     label: "Booth Usaha",
-    text: "Halo BUF, saya ingin konsultasi booth usaha custom. Lokasi proyek: ... Ukuran/perkiraan: ... Jenis usaha/kebutuhan display: ...",
+    text: "Halo BUF, saya mau tanya booth usaha. Lokasi proyek: ... Jenis usaha: ... Ukuran booth kira-kira: ...",
   },
   {
     label: "Interior Rumah",
-    text: "Halo BUF, saya ingin konsultasi desain dan pengerjaan interior rumah. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan ruang: ...",
+    text: "Halo BUF, saya mau tanya pengerjaan interior rumah. Lokasi proyek: ... Ruang yang ingin dikerjakan: ... Saya akan kirim foto ruangnya.",
   },
   {
     label: "Interior Toko",
-    text: "Halo BUF, saya ingin konsultasi interior toko/display produk. Lokasi proyek: ... Ukuran/perkiraan: ... Jenis produk/kebutuhan display: ...",
+    text: "Halo BUF, saya mau tanya interior toko atau rak display. Lokasi proyek: ... Jenis produk yang dijual: ... Saya akan kirim foto tokonya.",
   },
 ];
 
 export const contactChecklist = [
-  "Foto ruang atau area yang ingin dikerjakan",
+  "Foto area dari beberapa sudut",
   "Ukuran kasar panjang, lebar, dan tinggi",
-  "Kebutuhan utama: penyimpanan, display, meja, lemari, atau backdrop",
-  "Referensi desain jika ada",
-  "Gambaran budget agar opsi material lebih terarah",
-  "Lokasi proyek untuk konfirmasi survey atau koordinasi",
+  "Bagian yang ingin dibuat: kitchen set, lemari, booth, rak, backdrop, atau lainnya",
+  "Contoh model atau warna kalau sudah ada",
+  "Kisaran dana yang ingin dijaga, kalau mau dibahas dari awal",
+  "Lokasi proyek untuk cek jadwal survey atau pemasangan",
 ];

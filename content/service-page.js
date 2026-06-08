@@ -9,17 +9,17 @@ export const serviceVisuals = {
 };
 
 export const serviceAudiences = [
-  "Pemilik rumah baru",
-  "Pasangan muda",
-  "Pemilik toko kecil",
-  "Pemilik kost",
-  "UMKM makanan/minuman",
-  "Butuh furniture sesuai ukuran ruang",
+  "Rumah baru yang mulai diisi furniture",
+  "Dapur lama yang ingin dibuat lebih rapi",
+  "Kamar yang butuh lemari pas ukuran",
+  "Toko kecil yang perlu display produk",
+  "UMKM makanan atau minuman",
+  "Ruang kerja, kost, dan area usaha kecil",
 ];
 
 export const serviceProcess = [
-  ["01", "Ceritakan kebutuhan", "Kirim kebutuhan ruang, ukuran kasar, foto lokasi, dan referensi desain."],
-  ["02", "Diskusi material & budget", "BUF bantu arahkan opsi desain, material, dan pengerjaan yang paling masuk akal."],
-  ["03", "Survey / ukur", "Kebutuhan survey bisa dikonfirmasi terlebih dahulu."],
-  ["04", "Produksi & pemasangan", "Pengerjaan dilakukan dari workshop sampai pemasangan di lokasi."],
+  ["01", "Ceritakan rencana", "Mulai dari ruang mana yang ingin dibuat dulu."],
+  ["02", "Bahas ukuran dan fungsi", "Ceritakan barang apa yang mau disimpan, dipajang, atau dipakai setiap hari."],
+  ["03", "Pilih bahan dan arah model", "Finishing, warna, hardware, dan detail kerja dibicarakan sebelum produksi."],
+  ["04", "Produksi lalu pasang", "Barang dikerjakan di workshop, lalu dipasang sesuai jadwal yang disepakati."],
 ];

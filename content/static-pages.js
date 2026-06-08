@@ -20,7 +20,7 @@ export const staticPageMetadata = {
   },
   kontak: {
     title: "Kontak BUF | Konsultasi Interior & Custom Furniture",
-    description: "Hubungi BUF untuk konsultasi kitchen set, custom furniture, interior, booth usaha, dan kebutuhan custom rumah atau usaha.",
+    description: "Hubungi BUF untuk konsultasi kitchen set, custom furniture, interior, booth usaha, dan pekerjaan custom rumah atau usaha.",
     path: routes.kontak,
   },
   estimasiBiaya: {

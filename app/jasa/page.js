@@ -6,22 +6,22 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Jasa Custom Interior, Furniture & Proyek Purwokerto | Berkah Utami Furniture",
   description:
-    "Jasa custom interior, furniture, kitchen set, booth usaha, akrilik, aluminium, dan kanopi dari Berkah Utami Furniture di Berkoh, Purwokerto.",
+    "Jasa interior custom, furniture, kitchen set, booth usaha, akrilik, aluminium, dan kanopi dari workshop Berkah Utami Furniture di Berkoh, Purwokerto.",
   path: routes.jasa,
 });
 
 const hubHighlights = [
   "Workshop/kantor di Berkoh, Purwokerto",
   "Konsultasi awal bisa lewat WhatsApp",
-  "Pengerjaan menyesuaikan ukuran dan kebutuhan",
+  "Ukuran dibuat dari kondisi lokasi",
   "Layanan untuk rumah, toko, UMKM, kantor, dan usaha",
 ];
 
 const projectSteps = [
-  ["01", "Pilih kebutuhan jasa", "Mulai dari kitchen set, booth usaha, akrilik custom, aluminium, atau kanopi."],
-  ["02", "Kirim ukuran dan foto lokasi", "Foto lokasi, ukuran kasar, dan referensi model membantu estimasi awal lebih terarah."],
-  ["03", "Diskusi material dan model", "BUF bantu arahkan opsi pengerjaan yang sesuai fungsi, tampilan, dan budget."],
-  ["04", "Konfirmasi survey atau pengerjaan", "Jika diperlukan, survey atau koordinasi lokasi dapat dikonfirmasi melalui WhatsApp."],
+  ["01", "Pilih jenis pekerjaan", "Mulai dari kitchen set, booth usaha, akrilik custom, aluminium, atau kanopi."],
+  ["02", "Kirim ukuran dan foto lokasi", "Foto lokasi, ukuran kasar, dan referensi model membuat estimasi awal lebih mudah dihitung."],
+  ["03", "Diskusi material dan model", "Model, bahan, dan cara pengerjaan dibahas dari fungsi ruang dan kisaran biaya."],
+  ["04", "Atur survey atau jadwal kerja", "Kalau perlu cek lokasi, jadwal survey bisa dibicarakan lewat WhatsApp."],
 ];
 
 export default function JasaPage() {
@@ -39,7 +39,7 @@ export default function JasaPage() {
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/64 sm:text-lg sm:leading-8">
-              Berkah Utami Furniture membantu pengerjaan kitchen set, booth usaha, akrilik custom, aluminium, dan kanopi dari workshop di Berkoh, Purwokerto. Halaman ini mengarahkan Anda ke layanan jasa yang paling sesuai dengan kebutuhan proyek.
+              Berkah Utami Furniture mengerjakan kitchen set, booth usaha, akrilik custom, aluminium, dan kanopi dari workshop di Berkoh, Purwokerto. Halaman ini dibuat supaya Anda bisa langsung memilih jenis pekerjaan yang paling dekat dengan rencana proyek.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -47,7 +47,7 @@ export default function JasaPage() {
                 href={routes.kontak}
                 className="rounded-full bg-brand-blue px-7 py-3.5 text-center text-sm font-black text-white shadow-blue"
               >
-                Konsultasi via WhatsApp
+                Chat WhatsApp BUF
               </Link>
               <Link
                 href={routes.portfolio}
@@ -66,10 +66,10 @@ export default function JasaPage() {
 
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur">
             <p className="text-xs font-black uppercase tracking-[0.2em] text-white/42">
-              Kenapa halaman ini dibuat
+              Supaya tidak salah pilih layanan
             </p>
             <p className="mt-4 text-2xl font-black leading-snug tracking-[-0.02em] text-white">
-              Agar calon pelanggan bisa langsung memilih jalur jasa yang tepat tanpa bingung membedakan layanan umum dan landing page area.
+              Kadang orang sudah tahu mau bikin kitchen set, booth, kanopi, atau aluminium, tapi belum tahu masuk halaman mana. Dari sini bisa langsung pilih jalurnya.
             </p>
 
             <div className="mt-6 grid gap-3">
@@ -91,11 +91,11 @@ export default function JasaPage() {
                 Pilih jasa
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Mulai dari kebutuhan yang paling dekat dengan proyek Anda.
+                Mulai dari pekerjaan yang paling dekat dengan rencanamu.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
-              Setiap halaman jasa berisi penjelasan kebutuhan, jenis pengerjaan, masalah umum pelanggan, hal yang perlu disiapkan sebelum chat, FAQ, dan CTA WhatsApp yang lebih spesifik.
+              Setiap halaman berisi contoh masalah, jenis pekerjaan, hal yang perlu disiapkan sebelum chat, FAQ, dan tombol WhatsApp yang sudah sesuai jasa tersebut.
             </p>
           </div>
 
@@ -144,7 +144,7 @@ export default function JasaPage() {
               Tidak harus langsung punya gambar final.
             </h2>
             <p className="mt-5 text-base font-medium leading-8 text-muted">
-              Untuk konsultasi awal, cukup mulai dari kebutuhan, ukuran kasar, foto lokasi, dan referensi model. Dari situ, opsi pengerjaan bisa diarahkan lebih realistis.
+              Untuk chat awal, cukup kirim foto lokasi, ukuran kasar, dan contoh model kalau ada. Dari situ baru dibahas bahan, ukuran, dan estimasi awalnya.
             </p>
           </div>
 
@@ -174,10 +174,10 @@ export default function JasaPage() {
                 Belum yakin pilih jasa yang mana?
               </p>
               <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-                Kirim kebutuhan awal lewat WhatsApp, nanti diarahkan ke layanan yang paling sesuai.
+                Kirim foto atau cerita singkat dulu, nanti kami bantu pilihkan jalur jasanya.
               </h2>
               <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-                Cocok untuk calon pelanggan yang belum tahu apakah kebutuhannya masuk kitchen set, furniture custom, akrilik, aluminium, booth, atau kanopi.
+                Cocok kalau Anda belum yakin rencananya masuk kitchen set, furniture custom, akrilik, aluminium, booth, atau kanopi.
               </p>
             </div>
 
@@ -185,7 +185,7 @@ export default function JasaPage() {
               href={routes.kontak}
               className="rounded-full bg-brand-blue px-7 py-3.5 text-center text-sm font-black text-white shadow-blue"
             >
-              Konsultasi Sekarang
+              Chat Sekarang
             </Link>
           </div>
         </div>

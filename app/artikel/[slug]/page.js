@@ -80,7 +80,7 @@ export default async function ArticleDetailPage({ params }) {
                 Cocok dibaca sebelum konsultasi.
               </h2>
               <p className="mt-3 text-sm font-medium leading-7 text-muted">
-                Setelah membaca, Anda bisa langsung konsultasi sesuai kebutuhan ruang.
+                Setelah membaca, Anda bisa mulai chat dari foto ruang dan ukuran kasar.
               </p>
 
               {article.keyTakeaways ? (
@@ -152,10 +152,10 @@ export default async function ArticleDetailPage({ params }) {
             <div className="mt-10 overflow-hidden rounded-[2rem] bg-charcoal text-white md:grid md:grid-cols-[1fr_0.42fr]">
               <div className="p-6">
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">
-                  Konsultasi
+                  Chat awal
                 </p>
                 <h2 className="mt-3 text-2xl font-black leading-[1.12] tracking-[-0.02em]">
-                  Punya kebutuhan serupa? Mulai dari foto ruang dan ukuran kasar dulu.
+                  Punya rencana serupa? Mulai dari foto ruang dan ukuran kasar dulu.
                 </h2>
                 <Link href={routes.kontak} className="mt-6 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue">
                   Hubungi BUF

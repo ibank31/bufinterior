@@ -8,40 +8,40 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { buildWhatsappHref } from "@/lib/whatsapp";
 
 const processSteps = [
-  ["01", "Konsultasi kebutuhan", "Ceritakan ukuran ruang, fungsi yang dibutuhkan, referensi desain, dan gambaran budget."],
-  ["02", "Survey / ukur ruang", "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek."],
-  ["03", "Arahan desain & material", "BUF bantu arahkan bentuk, finishing, material, dan opsi pengerjaan yang paling masuk akal."],
-  ["04", "Produksi & pemasangan", "Pengerjaan dilakukan dari workshop sampai pemasangan sesuai kesepakatan."],
+  ["01", "Kirim foto ruang", "Mulai dari foto, ukuran kasar, dan bagian yang ingin dibuat."],
+  ["02", "Cek ukuran", "Untuk area Banyumas, survey lokasi gratis. Luar Banyumas dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
+  ["03", "Bahas bahan dan model", "Finishing, warna, hardware, dan detail kerja dibahas sebelum produksi."],
+  ["04", "Produksi lalu pasang", "Barang dibuat di workshop, lalu dipasang sesuai jadwal yang disepakati."],
 ];
 
 const userQuestions = [
-  "Ruang saya ukurannya tidak standar, bisa dibuat custom?",
-  "Saya belum punya desain, apakah bisa dibantu konsepnya?",
-  "Material bisa menyesuaikan budget?",
-  "Bisa survey atau koordinasi sesuai lokasi proyek?",
-  "Kalau hanya ingin konsultasi dulu boleh?",
+  "Ukuran ruang saya tanggung, masih bisa dibuatkan?",
+  "Saya belum punya gambar final, bisa mulai dari foto dulu?",
+  "Bahan dan finishing-nya bisa dibahas dari awal?",
+  "Area saya bisa disurvey dulu atau cukup dari foto?",
+  "Kalau baru tanya-tanya dulu boleh?",
 ];
 
 const defaultFaqs = [
   {
-    question: "Apakah layanan BUF bisa custom sesuai ukuran ruang?",
+    question: "Apakah bisa dibuat mengikuti ukuran ruang saya?",
     answer:
-      "Bisa. BUF mengerjakan interior dan furniture custom dengan menyesuaikan ukuran ruang, fungsi yang dibutuhkan, material, dan budget pelanggan.",
+      "Bisa. Pekerjaan dibuat setelah ukuran, fungsi, bahan, dan detail pemakaian dibahas lebih dulu.",
   },
   {
-    question: "Apakah harus sudah punya desain sebelum konsultasi?",
+    question: "Apakah harus punya desain final dulu?",
     answer:
-      "Tidak harus. Pelanggan bisa mulai dari foto ruang, ukuran kasar, referensi desain, atau kebutuhan fungsi. BUF dapat membantu memberi arahan awal.",
+      "Tidak harus. Mulai dari foto ruang, ukuran kasar, dan contoh model juga sudah cukup untuk ngobrol awal.",
   },
   {
-    question: "Apakah material bisa dipilih sendiri?",
+    question: "Apakah bahan dan finishing bisa dipilih?",
     answer:
-      "Material bersifat by request pelanggan dan dapat disesuaikan dengan kebutuhan, tampilan, fungsi ruang, serta budget pengerjaan.",
+      "Bisa. Pilihan bahan, warna, finishing, dan hardware dibicarakan sebelum produksi supaya tidak asal jalan.",
   },
   {
-    question: "Apakah BUF bisa survey atau koordinasi sesuai lokasi proyek?",
+    question: "Apakah bisa survey lokasi?",
     answer:
-      "Ya, kebutuhan survey atau koordinasi dapat dikonfirmasi melalui kontak BUF sesuai lokasi proyek.",
+      "Bisa dibicarakan. Untuk area Banyumas, survey lokasi gratis. Di luar Banyumas, biaya survey dihitung dari jarak dan jenis pekerjaannya.",
   },
 ];
 
@@ -135,7 +135,7 @@ function getRelatedArticlesForService(serviceSlug) {
 
 function buildServiceWhatsappHref(service) {
   return buildWhatsappHref(
-    `Halo BUF, saya ingin konsultasi ${service.shortTitle}. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ... Saya ingin tanya apakah bisa custom sesuai ukuran ruang saya.`
+    `Halo BUF, saya mau tanya ${service.shortTitle}. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruangnya.`
   );
 }
 
@@ -189,13 +189,13 @@ export default function ServiceDetailPage({ service }) {
                 rel="noreferrer"
                 className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)]"
               >
-                Konsultasi via WhatsApp
+                Chat WhatsApp BUF
               </a>
               <Link
                 href={routes.portfolio}
                 className="rounded-full border border-stone-300 bg-white/80 px-7 py-3.5 text-center text-sm font-black text-charcoal shadow-soft backdrop-blur"
               >
-                Lihat Contoh Pekerjaan
+                Lihat Portofolio
               </Link>
               {localServiceCta ? (
                 <Link
@@ -215,7 +215,7 @@ export default function ServiceDetailPage({ service }) {
 
             <div className="mt-8 rounded-[1.75rem] border border-stone-300/70 bg-white/62 p-5 shadow-soft backdrop-blur">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">
-                Cocok jika Anda bertanya:
+                Biasanya orang tanya begini:
               </p>
               <div className="mt-4 grid gap-2">
                 {userQuestions.slice(0, 3).map((item) => (
@@ -240,7 +240,7 @@ export default function ServiceDetailPage({ service }) {
                   Custom sesuai ruang
                 </p>
                 <p className="mt-2 text-2xl font-black leading-[1.2] tracking-[-0.02em]">
-                  Ukuran, material, dan finishing bisa disesuaikan kebutuhan.
+                  Ukuran, bahan, dan finishing dibahas sebelum produksi.
                 </p>
               </div>
             </div>
@@ -255,15 +255,15 @@ export default function ServiceDetailPage({ service }) {
               <div className="flex items-center gap-3">
                 <span className="h-px w-12 bg-wood/55" />
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                  Yang biasanya dipikirkan pelanggan
+                  Yang biasanya ditanyakan
                 </p>
               </div>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Sebelum membuat {service.shortTitle.toLowerCase()}, biasanya orang ingin jelas dulu soal ukuran, material, dan budget.
+                Sebelum membuat {service.shortTitle.toLowerCase()}, biasanya orang ingin tahu dulu ukuran, bahan, dan kisaran biayanya.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-7 text-muted lg:justify-self-end">
-              Karena itu, konsultasi awal tidak harus langsung deal. Tujuannya memahami kebutuhan ruang dan melihat opsi yang paling realistis untuk dikerjakan.
+              Jadi obrolan awal tidak harus langsung deal. Kirim foto dan ukuran kasar dulu, nanti kita lihat bagian mana yang perlu dibuat dan mana yang bisa disederhanakan.
             </p>
           </div>
 
@@ -295,10 +295,10 @@ export default function ServiceDetailPage({ service }) {
               Kenapa konsultasi dulu?
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] sm:text-5xl">
-              Hasil custom yang rapi dimulai dari ukuran dan kebutuhan yang jelas.
+              Hasil yang rapi biasanya dimulai dari ukuran yang benar.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/64">
-              Setiap ruang punya kondisi berbeda. Ada yang butuh banyak penyimpanan, ada yang mengejar tampilan, ada juga yang harus menyesuaikan budget. Konsultasi membantu menentukan prioritas sebelum produksi.
+              Setiap ruang punya masalah sendiri. Ada yang kurang tempat simpan, ada yang kabelnya berantakan, ada juga yang ukurannya tanggung. Dari situ baru ditentukan detail yang perlu masuk produksi.
             </p>
           </div>
 
@@ -361,7 +361,7 @@ export default function ServiceDetailPage({ service }) {
                 Panduan terkait
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Baca dulu sebelum menentukan desain, material, dan budget.
+                Baca dulu sebelum memilih model, bahan, dan kisaran biaya.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-7 text-muted lg:justify-self-end">
@@ -424,10 +424,10 @@ export default function ServiceDetailPage({ service }) {
               Mulai dari konsultasi
             </p>
             <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-              Kirim foto ruang dan kebutuhan {service.shortTitle.toLowerCase()}. BUF bantu arahkan opsi pengerjaan.
+              Kirim foto ruang dan rencana {service.shortTitle.toLowerCase()} yang ingin dibuat.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-              Ceritakan ukuran ruang, kebutuhan fungsi, referensi model, dan budget. Tidak harus langsung punya desain final.
+              Ceritakan ukuran ruang, fungsi yang dibutuhkan, dan contoh model kalau ada. Tidak harus punya gambar final.
             </p>
             <a
               href={whatsappHref}

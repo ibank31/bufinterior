@@ -6,38 +6,38 @@ export const estimationCards = [
     unit: "per meter lari",
     range: "Mulai ± Rp1,8 juta / meter lari",
     description:
-      "Kitchen set biasanya paling sering membuat calon pelanggan bingung karena detailnya bisa sangat berbeda. Kitchen set sederhana tentu berbeda dengan kitchen set lengkap yang memakai kabinet atas-bawah, top table, backsplash, banyak laci, rak piring, lampu, dan aksesoris tambahan.",
+      "Kitchen set sering bikin bingung karena panjangnya sama belum tentu biayanya sama. Kabinet bawah saja beda dengan kabinet atas-bawah, apalagi kalau sudah ada top table, backsplash, banyak laci, rak piring, lampu, dan aksesoris tambahan.",
     href: routes.kitchenSet,
     waText:
-      "Halo BUF, saya ingin minta estimasi awal kitchen set custom. Lokasi proyek: ... Ukuran/perkiraan kitchen set: ... meter. Kebutuhan: ... Gambaran budget: ... Saya akan kirim foto ruang dan referensi desain.",
+      "Halo BUF, saya mau tanya estimasi kitchen set. Lokasi proyek: ... Panjang dapur kira-kira: ... Saya akan kirim foto dapur dan contoh model.",
     tiers: [
       {
         name: "Ekonomis",
         price: "± Rp1,8 – 2,5 jt/m",
         example: "3 m: ± Rp5,4 – 7,5 jt",
         cocok:
-          "Cocok jika fokus utama adalah fungsi dasar, kabinet sederhana, detail minim, dan ingin budget lebih ringan.",
+          "Cocok kalau yang penting dapur punya kabinet dasar dulu, detail tidak terlalu banyak, dan biaya ingin dijaga.",
       },
       {
         name: "Standar",
         price: "± Rp2,5 – 3,5 jt/m",
         example: "3 m: ± Rp7,5 – 10,5 jt",
         cocok:
-          "Cocok untuk kitchen set yang lebih rapi dan fungsional, umumnya dengan penyimpanan lebih tertata dan finishing lebih matang.",
+          "Cocok untuk dapur harian yang ingin kabinetnya lebih tertata, finishing lebih rapi, dan pembagian simpanannya lebih jelas.",
       },
       {
         name: "Detail Custom",
         price: "± Rp3,5 – 4,5 jt/m",
         example: "3 m: ± Rp10,5 – 13,5 jt",
         cocok:
-          "Cocok jika ingin lebih banyak laci, aksesoris, kabinet atas-bawah, top table/backplash tertentu, dan detail desain lebih rapi.",
+          "Cocok kalau ingin lebih banyak laci, kabinet atas-bawah, top table, backsplash, rak piring, atau detail tambahan lain.",
       },
       {
         name: "Premium",
         price: "± Rp4,5 jt+/m",
         example: "3 m: mulai ± Rp13,5 jt+",
         cocok:
-          "Cocok untuk desain lebih kompleks, finishing/material lebih tinggi, detail dekoratif, aksesoris lengkap, atau kebutuhan khusus.",
+          "Cocok untuk dapur yang ingin tampil lebih detail, memakai bahan/finishing lebih tinggi, aksesoris lebih lengkap, atau bentuk ruangnya cukup rumit.",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const estimationCards = [
       "Lemari custom terlihat sederhana, tetapi estimasinya bisa berubah karena tinggi lemari, jumlah pintu, sekat, laci, rel, kaca, finishing, dan apakah dibuat sampai plafon.",
     href: routes.lemariCustom,
     waText:
-      "Halo BUF, saya ingin minta estimasi awal lemari custom. Lokasi proyek: ... Ukuran/perkiraan lemari: ... meter. Kebutuhan penyimpanan: ... Gambaran budget: ... Saya akan kirim foto ruang.",
+      "Halo BUF, saya mau tanya estimasi lemari custom. Lokasi proyek: ... Panjang lemari kira-kira: ... Saya akan kirim foto area dan rencana isi lemarinya.",
     tiers: [
       {
         name: "Ekonomis",
@@ -70,7 +70,7 @@ export const estimationCards = [
         price: "± Rp3 – 4 jt/m",
         example: "2 m: ± Rp6 – 8 jt",
         cocok:
-          "Cocok jika butuh banyak sekat, laci, pintu tertentu, kombinasi kaca, atau lemari dibuat menyesuaikan kebiasaan pemakai.",
+          "Cocok kalau perlu banyak sekat, laci, pintu tertentu, kombinasi kaca, atau pembagian dalam lemari yang mengikuti cara pakai sehari-hari.",
       },
       {
         name: "Premium",
@@ -89,7 +89,7 @@ export const estimationCards = [
       "Backdrop TV bisa ringan jika hanya panel sederhana, tetapi bisa naik jika menyatu dengan kabinet bawah, rak display, ambalan, lampu LED, panel motif, atau storage tambahan.",
     href: routes.backdropTv,
     waText:
-      "Halo BUF, saya ingin minta estimasi awal backdrop TV custom. Lokasi proyek: ... Ukuran/perkiraan backdrop: ... meter. Kebutuhan: ... Gambaran budget: ... Saya akan kirim foto ruang dan referensi desain.",
+      "Halo BUF, saya mau tanya estimasi backdrop TV. Lokasi proyek: ... Panjang dinding kira-kira: ... Saya akan kirim foto area TV dan contoh model.",
     tiers: [
       {
         name: "Ekonomis",
@@ -110,14 +110,14 @@ export const estimationCards = [
         price: "± Rp2,8 – 3,5 jt/m",
         example: "2,5 m: ± Rp7 – 8,75 jt",
         cocok:
-          "Cocok jika ingin kabinet, rak display, lampu LED, panel dekoratif, storage tambahan, atau desain lebih menyatu dengan ruang.",
+          "Cocok kalau ingin ada kabinet bawah, rak display, lampu LED, panel dekoratif, atau storage tambahan.",
       },
       {
         name: "Premium",
         price: "± Rp3,5 jt+/m",
         example: "2,5 m: mulai ± Rp8,75 jt+",
         cocok:
-          "Cocok untuk detail visual lebih kuat, finishing/material lebih tinggi, aksen dekoratif, lighting, dan desain kompleks.",
+          "Cocok untuk backdrop dengan tampilan lebih kuat, finishing lebih tinggi, lighting, aksen dekoratif, atau bentuk dinding yang cukup rumit.",
       },
     ],
   },
@@ -139,14 +139,14 @@ export const otherEstimates = [
   {
     title: "Interior Toko / Display",
     range: "± Rp2 juta – Rp8 juta+ untuk area kecil",
-    desc: "Untuk rak display, meja kasir, area produk, booth display, atau kebutuhan toko kecil. Estimasi bisa naik jika area lebih luas dan detail brand lebih kompleks.",
+    desc: "Untuk rak display, meja kasir, area produk, booth display, atau toko kecil. Biaya bisa naik kalau area lebih luas, jumlah rak banyak, atau detail brand perlu dibuat lebih khusus.",
     href: routes.interiorToko,
   },
 ];
 
 export const factors = [
   ["Ukuran dan bentuk ruang", "Ruang lurus, bentuk L, sudut, tinggi plafon, dan kondisi lokasi bisa mempengaruhi jumlah material serta detail pengerjaan."],
-  ["Material utama", "Pilihan material menyesuaikan kebutuhan fungsi, tampilan, durabilitas, dan budget."],
+  ["Bahan utama", "Bahan dipilih dari cara pakai, tampilan yang diinginkan, ketahanan, dan kisaran biaya yang ingin dijaga."],
   ["Finishing", "Finishing polos, motif kayu, motif marmer, kombinasi warna, atau detail premium akan mempengaruhi estimasi."],
   ["Kabinet, laci, dan sekat", "Semakin banyak kompartemen, laci, pintu, dan penyimpanan khusus, semakin banyak detail produksi."],
   ["Hardware dan aksesoris", "Engsel, rel laci, handle, rak piring, lampu LED, kaca, roda, dan aksesoris lain bisa membuat estimasi berubah."],
@@ -156,24 +156,24 @@ export const factors = [
 export const preparation = [
   "Foto ruang dari beberapa sudut",
   "Ukuran kasar panjang, tinggi, dan lebar ruang",
-  "Jenis kebutuhan: kitchen set, lemari, backdrop, booth, atau interior toko",
+  "Jenis pekerjaan: kitchen set, lemari, backdrop, booth, atau interior toko",
   "Referensi desain yang disukai",
-  "Gambaran budget awal",
+  "Kisaran dana awal",
   "Lokasi proyek untuk cek area survey gratis Banyumas atau konfirmasi luar kota",
 ];
 
 export const commonQuestions = [
   {
     q: "Apakah angka di halaman ini harga final?",
-    a: "Bukan. Angka ini adalah kisaran estimasi awal untuk membantu Anda menyiapkan gambaran budget. Harga final tetap menunggu detail ukuran, material, finishing, aksesoris, dan kondisi ruang.",
+    a: "Bukan. Angka ini hanya kisaran awal supaya Anda tidak mulai dari nol. Harga final tetap mengikuti ukuran, bahan, finishing, aksesoris, dan kondisi ruang.",
   },
   {
     q: "Kalau ukuran saya belum presisi, apakah tetap bisa minta estimasi?",
     a: "Bisa. Kirim ukuran kasar dulu, misalnya panjang dinding 3 meter atau area TV 2,5 meter. BUF bisa bantu memberi arahan awal sebelum pengukuran lebih detail.",
   },
   {
-    q: "Apakah bisa menyesuaikan budget?",
-    a: "Bisa dibahas. Dengan mengetahui budget awal, BUF bisa membantu memberi opsi desain, material, atau prioritas pengerjaan yang lebih realistis.",
+    q: "Apakah bisa dibahas dari kisaran dana tertentu?",
+    a: "Bisa. Kalau kisaran dana disampaikan dari awal, pilihan bahan, detail, dan urutan pekerjaan bisa dibuat lebih masuk akal.",
   },
   {
     q: "Kenapa harga kitchen set bisa berbeda jauh?",

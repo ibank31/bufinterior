@@ -14,14 +14,14 @@ export const siteConfig = {
   whatsappDisplay: "0812-1565-9884",
   operatingHours: "08.00 – 16.00",
   areaFocus: "Berkoh, Purwokerto, Banyumas",
-  areaNote: "Workshop/kantor berada di Berkoh, Purwokerto. Melayani Purwokerto, Banyumas, dan area sekitar dengan jadwal proyek by konfirmasi.",
-  surveyPolicy: "Survey lokasi area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek.",
+  areaNote: "Workshop ada di Berkoh, Purwokerto. Pengerjaan bisa untuk area Purwokerto, Banyumas, dan sekitar. Jadwal survey atau pemasangan dibicarakan dulu lewat WhatsApp.",
+  surveyPolicy: "Untuk area Banyumas, survey lokasi gratis. Kalau di luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaannya.",
   workshops: ["Berkoh, Purwokerto", "Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
   positioning:
-    "Workshop interior, custom furniture, dan fabrication di Berkoh, Purwokerto untuk kebutuhan rumah, toko, dan usaha. Membantu desain, produksi, dan pengerjaan sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
+    "Workshop interior, furniture custom, dan fabrikasi di Berkoh, Purwokerto. Biasa mengerjakan kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, kanopi, dan pekerjaan custom untuk rumah atau tempat usaha.",
   defaultTitle:
     "BUF — Interior Custom, Kitchen Set & Custom Furniture",
   defaultDescription:
-    "BUF Berkah Utami Furniture adalah workshop interior, custom furniture, dan fabrication di Berkoh, Purwokerto. Melayani kitchen set, booth usaha, akrilik, aluminium, kanopi, interior rumah, toko, dan kebutuhan custom lainnya.",
+    "BUF Berkah Utami Furniture adalah workshop interior, furniture custom, dan fabrikasi di Berkoh, Purwokerto. Mengerjakan kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, kanopi, interior rumah, interior toko, dan pekerjaan custom lainnya.",
   ogImage: "/assets/og/buf-interior-og.webp",
 };

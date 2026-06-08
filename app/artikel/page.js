@@ -24,7 +24,7 @@ export default function ArtikelPage() {
           </div>
 
           <p className="max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
-            Artikel ini membantu memahami biaya, material, proses, dan pertimbangan sebelum membuat interior atau furniture custom.
+            Artikel ini membahas biaya, bahan, proses, dan hal yang perlu dicek sebelum membuat interior atau furniture custom.
           </p>
         </div>
       </section>
@@ -95,13 +95,13 @@ export default function ArtikelPage() {
                 Butuh arahan langsung?
               </p>
               <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-                Artikel bisa membantu, tapi ukuran dan kebutuhan ruang tetap perlu dikonsultasikan.
+                Artikel bisa jadi pegangan awal, tapi ukuran ruang tetap perlu dilihat dari foto atau pengukuran.
               </h2>
               <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-                Kirim foto ruang, ukuran kasar, dan kebutuhan. BUF bantu arahkan opsi desain, material, dan pengerjaan.
+                Kirim foto ruang, ukuran kasar, dan contoh model kalau ada. Nanti kita bahas bahan, desain, dan cara pengerjaannya.
               </p>
               <Link href={routes.kontak} className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue">
-                Konsultasi via WhatsApp
+                Chat WhatsApp BUF
               </Link>
             </div>
             <div className="bg-[#111]">

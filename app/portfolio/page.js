@@ -15,12 +15,12 @@ export default function PortofolioPage() {
               Portofolio BUF
             </p>
             <h1 className="mt-5 max-w-4xl text-[2.55rem] font-black leading-[1.06] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              Pilih referensi visual yang paling mendekati kebutuhan ruangmu.
+              Pilih referensi visual yang paling dekat dengan rencana ruangmu.
             </h1>
           </div>
 
           <p className="max-w-2xl text-base font-medium leading-7 text-white/64 sm:text-lg sm:leading-8">
-            Lihat contoh foto dan video proyek BUF, mulai dari kitchen set, backdrop TV, custom furniture, booth usaha, interior rumah, sampai kebutuhan ruang lainnya.
+            Lihat contoh foto dan video proyek BUF: kitchen set, backdrop TV, custom furniture, booth usaha, interior rumah, toko, dan pekerjaan custom lain.
           </p>
         </div>
       </section>

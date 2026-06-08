@@ -20,15 +20,15 @@ export const areaPages = activeAreaSlugs.map((slug) => {
     shortTitle: `Jasa Custom ${area.name}`,
     heroTitle: `Jasa interior, furniture custom, dan pengerjaan custom di ${area.name}.`,
     heroDescription:
-      `BUF Berkah Utami Furniture melayani kebutuhan interior, custom furniture, kitchen set, booth usaha, akrilik, aluminium, kanopi, dan pengerjaan custom di ${area.name}. ${siteConfig.surveyPolicy}`,
+      `BUF Berkah Utami Furniture mengerjakan interior, furniture custom, kitchen set, booth usaha, akrilik, aluminium, kanopi, dan pekerjaan custom di ${area.name}. ${siteConfig.surveyPolicy}`,
     metaDescription:
-      `Jasa interior, custom furniture, kitchen set, booth usaha, akrilik, aluminium, dan kanopi di ${area.name}. ${siteConfig.surveyPolicy}`,
+      `Jasa interior, furniture custom, kitchen set, booth usaha, akrilik, aluminium, dan kanopi di ${area.name}. ${siteConfig.surveyPolicy}`,
     intro:
-      `${area.name} menjadi area utama layanan BUF karena dekat dengan workshop/kantor di Berkoh, Purwokerto. Pelanggan bisa mulai konsultasi dari foto ruang, ukuran kasar, kebutuhan fungsi, dan gambaran budget.`,
+      `${area.name} jadi area utama BUF karena dekat dengan workshop di Berkoh, Purwokerto. Mulainya bisa dari foto ruang, ukuran kasar, dan bagian yang ingin dibuat.`,
     services: areaServices,
     popularNeeds: [
       "Kitchen set custom untuk dapur rumah",
-      "Lemari dan furniture custom sesuai ukuran ruang",
+      "Lemari dan furniture yang dibuat mengikuti ukuran ruang",
       "Backdrop TV dan storage ruang keluarga",
       "Interior toko, booth usaha, dan display produk",
       "Akrilik custom, aluminium, dan kanopi",
@@ -37,23 +37,23 @@ export const areaPages = activeAreaSlugs.map((slug) => {
       "Pemilik rumah di Purwokerto",
       "Pemilik toko dan UMKM",
       "Kost, kontrakan, kantor kecil, dan ruang usaha",
-      "Pelanggan yang butuh ukuran custom, bukan furniture jadi",
+      "Pelanggan yang ruangnya tidak cocok pakai furniture jadi",
     ],
     steps: [
-      ["01", "Kirim kebutuhan awal", "Ceritakan jenis ruang, kebutuhan, ukuran kasar, dan lokasi proyek."],
-      ["02", "Diskusi arah desain", "BUF bantu arahkan opsi desain, material, finishing, dan perkiraan pengerjaan."],
+      ["01", "Kirim foto awal", "Ceritakan ruang yang ingin dibuat, ukuran kasar, dan lokasi proyek."],
+      ["02", "Bahas arah model", "Model, bahan, finishing, dan perkiraan biaya dibahas dari data awal."],
       ["03", "Survey area Banyumas gratis", siteConfig.surveyPolicy],
-      ["04", "Produksi dan pemasangan", "Pengerjaan dilakukan bertahap dari workshop sampai pemasangan sesuai kesepakatan."],
+      ["04", "Produksi dan pemasangan", "Barang dikerjakan dari workshop, lalu dipasang sesuai jadwal yang disepakati."],
     ],
     faqs: [
       [`Apakah BUF melayani area ${area.name}?`, `Ya, BUF melayani area ${area.name} dan Banyumas. Konsultasi bisa dimulai lewat WhatsApp dengan foto ruang dan ukuran kasar.`],
       ["Apakah survey lokasi gratis?", siteConfig.surveyPolicy],
-      ["Apakah harus langsung survey?", "Tidak harus. Konsultasi awal bisa dimulai dari WhatsApp agar kebutuhan, ukuran, dan gambaran budget lebih jelas."],
-      ["Layanan apa saja yang tersedia?", "BUF melayani interior rumah/toko, kitchen set, custom furniture, backdrop TV, lemari custom, booth usaha, akrilik, aluminium, kanopi, dan kebutuhan custom lainnya."],
+      ["Apakah harus langsung survey?", "Tidak harus. Chat awal bisa dimulai dari foto ruang dan ukuran kasar dulu."],
+      ["Layanan apa saja yang tersedia?", "BUF mengerjakan interior rumah/toko, kitchen set, furniture custom, backdrop TV, lemari custom, booth usaha, akrilik, aluminium, kanopi, dan pekerjaan custom lain."],
     ],
     ctaLabel: `Konsultasi Jasa Custom di ${area.name}`,
     ctaText:
-      `Halo BUF, saya ingin konsultasi kebutuhan interior/custom furniture di ${area.name}. Lokasi proyek: ... Ukuran/perkiraan: ... Kebutuhan: ...`,
+      `Halo BUF, saya mau tanya interior atau furniture custom di ${area.name}. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruangnya.`,
     fallbackHref: routes.kontak,
   };
 });

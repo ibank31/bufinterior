@@ -23,11 +23,11 @@ export default function HomePage() {
             </p>
 
             <h1 className="mt-6 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
-              Ruang custom yang terasa rapi, hangat, dan fungsional.
+              Kitchen set, lemari, booth, dan interior yang dibuat sesuai ruangnya.
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
-              Berkah Utami Furniture membantu pengerjaan kitchen set, custom furniture, interior rumah/toko, booth usaha, akrilik custom, aluminium, dan kanopi dari workshop di Berkoh, Purwokerto. Konsultasi proyek dapat dimulai dari WhatsApp dengan ukuran, kebutuhan, dan lokasi pengerjaan yang dikonfirmasi.
+              Berkah Utami Furniture adalah workshop di Berkoh, Purwokerto. Kami biasa mengerjakan kitchen set, lemari, backdrop TV, interior toko, booth usaha, akrilik, aluminium, dan kanopi. Banyak pelanggan mulai dari cerita sederhana: ruangnya seperti apa, mau dibuat apa.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
@@ -57,25 +57,25 @@ export default function HomePage() {
 
           <div className="relative">
             <div className="absolute -left-5 top-8 z-10 hidden rounded-[1.5rem] border border-white/30 bg-white/80 p-4 shadow-soft backdrop-blur md:block">
-              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-brand-blue">Desain + pengerjaan</p>
-              <p className="mt-1 text-lg font-black tracking-[-0.02em] text-charcoal">Dari konsep sampai pasang</p>
+              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-brand-blue">Dari gambar ke barang jadi</p>
+              <p className="mt-1 text-lg font-black tracking-[-0.02em] text-charcoal">Diukur, dibuat, lalu dipasang</p>
             </div>
 
             <div className="rounded-[2.5rem] border border-white/70 bg-white/45 p-3 shadow-[0_35px_100px_rgba(23,23,23,0.16)] backdrop-blur">
               <div className="overflow-hidden rounded-[2rem] bg-white">
                 <div className="min-h-[390px] bg-[linear-gradient(180deg,rgba(23,23,23,0.00),rgba(23,23,23,0.03)),url('/assets/portfolio/interior-rumah-luxury-panel-kayu-buf-01.webp')] bg-cover bg-center sm:min-h-[430px] lg:min-h-[470px]" />
                 <div className="border-t border-stone-200 bg-[#171717] p-4 text-white lg:p-5">
-                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Custom interior • by konfirmasi</p>
+                  <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/50">Interior custom • dari workshop BUF</p>
                   <p className="mt-2 text-xl font-black leading-[1.25] tracking-[-0.02em] sm:text-2xl">
-                    Interior, furniture, dan ruang usaha custom.
+                    Kitchen set, lemari, booth, dan interior usaha.
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="absolute -bottom-6 right-3 hidden rounded-[1.5rem] bg-brand-blue px-5 py-4 text-white shadow-blue md:block">
-              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/65">Material</p>
-              <p className="mt-1 text-lg font-black">By request pelanggan</p>
+              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-white/65">Bahan</p>
+              <p className="mt-1 text-lg font-black">Dibahas sebelum produksi</p>
             </div>
           </div>
         </div>
@@ -88,14 +88,14 @@ export default function HomePage() {
             <div>
               <div className="flex items-center gap-3">
                 <span className="h-px w-12 bg-wood/55" />
-                <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">Layanan utama</p>
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">Yang sering dikerjakan</p>
               </div>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
-                Dibuat sesuai ruang, fungsi, dan karakter pemiliknya.
+                Bukan barang jadi. Ukur dulu, baru dibuat.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
-              Fokus BUF adalah interior dan furniture custom untuk kebutuhan nyata: dapur yang rapi, ruang TV yang lebih hangat, toko yang tertata, dan furniture yang pas dengan ukuran ruang.
+              Pekerjaan BUF biasanya berangkat dari masalah sederhana: dapur kurang tempat simpan, area TV masih berantakan, toko butuh display, atau ruang kecil yang tidak cocok pakai furniture jadi.
             </p>
           </div>
 
@@ -138,15 +138,15 @@ export default function HomePage() {
               <div className="flex items-center gap-3">
                 <span className="h-px w-12 bg-wood/55" />
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-                  Jasa area Purwokerto
+                  Jasa custom area Purwokerto
                 </p>
               </div>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
-                Halaman jasa utama yang langsung mengarah ke kebutuhan proyek.
+                Pilih dari pekerjaan yang paling dekat dengan rencanamu.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
-              Untuk memudahkan calon pelanggan memilih layanan, halaman jasa prioritas dibuat mudah diakses dari homepage: kitchen set, booth usaha, akrilik custom, aluminium, dan kanopi di area Purwokerto.
+              Kalau sudah tahu mau bikin apa, langsung buka halaman jasanya. Ada kitchen set, booth usaha, akrilik, aluminium, kanopi, dan beberapa pekerjaan custom lain di area Purwokerto.
             </p>
           </div>
 
@@ -178,7 +178,7 @@ export default function HomePage() {
 
           <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white/80 p-5 shadow-soft">
             <p className="text-sm font-bold leading-7 text-muted">
-              Pilih layanan yang paling sesuai dengan kebutuhan proyek Anda. Jika belum yakin, mulai dari konsultasi WhatsApp agar kami bisa bantu arahkan opsi pengerjaan yang paling realistis.
+              Belum yakin masuk layanan yang mana? Kirim foto atau ceritakan dulu lewat WhatsApp. Nanti kami bantu urutkan dari pekerjaan yang paling perlu dikerjakan dulu.
             </p>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function HomePage() {
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-white/42">Portofolio</p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
-                Contoh visual yang membantu calon pelanggan membayangkan ruangnya.
+                Lihat contoh hasil dan proses, biar lebih gampang membayangkan bentuk akhirnya.
               </h2>
             </div>
             <Link href={routes.portfolio} className="text-sm font-black text-white">
@@ -219,13 +219,13 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
-              Estimasi budget awal
+              Perkiraan biaya awal
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-              Sudah punya ukuran kasar? Coba kira-kira budget sebelum konsultasi.
+              Sudah punya perkiraan ukuran? Hitungan awal bisa mulai dari situ.
             </h2>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted">
-              Kitchen set 3 meter, lemari 2 meter, atau backdrop TV 2,5 meter bisa mulai dihitung dari kisaran awal. Angka bukan harga final, tapi membantu Anda punya gambaran sebelum menghubungi BUF.
+              Kitchen set 3 meter, lemari 2 meter, atau backdrop 2,5 meter belum tentu sama biayanya. Tapi ukuran kasar cukup untuk membuka obrolan awal sebelum dihitung lebih detail.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
@@ -238,7 +238,7 @@ export default function HomePage() {
                 href={routes.kontak}
                 className="rounded-full border border-stone-300 bg-white px-6 py-3 text-center text-sm font-black text-charcoal shadow-soft"
               >
-                Minta Estimasi via WhatsApp
+                Tanya Estimasi via WhatsApp
               </Link>
             </div>
           </div>
@@ -277,18 +277,18 @@ export default function HomePage() {
           <div className="relative overflow-hidden rounded-[2.25rem] bg-charcoal p-7 text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] lg:p-9">
             <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_20%,rgba(8,121,173,0.55),transparent_18rem),radial-gradient(circle_at_88%_78%,rgba(138,90,60,0.55),transparent_18rem)]" />
             <div className="relative">
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">Kenapa BUF?</p>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">Cara kerja BUF</p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
-                Workshop sendiri, pengerjaan lebih terarah.
+                Dikerjakan dari workshop di Berkoh.
               </h2>
               <p className="mt-6 text-base font-medium leading-8 text-white/68">
-                BUF bukan sekadar menjual furniture jadi. Setiap pekerjaan disesuaikan dengan ukuran ruang, kebutuhan fungsi, material pilihan, dan budget pelanggan.
+                Kami bukan toko furniture jadi. Barang dibuat setelah ukuran, fungsi, bahan, dan detailnya jelas. Jadi hasilnya lebih pas dengan ruang yang ada.
               </p>
 
               <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
-                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/38">Prinsip kerja</p>
+                <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/38">Prinsip sederhana</p>
                 <p className="mt-3 text-2xl font-black tracking-[-0.025em]">
-                  Ukur dulu, sesuaikan desain, lalu produksi lebih terarah.
+                  Jangan buru-buru produksi sebelum ukuran dan fungsi jelas.
                 </p>
               </div>
             </div>
@@ -321,7 +321,7 @@ export default function HomePage() {
             <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">Alur kerja</p>
           </div>
           <h2 className="mt-4 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
-            Proses dibuat jelas agar hasilnya sesuai ukuran, fungsi, dan budget.
+            Alurnya dibuat pelan-pelan supaya tidak salah ukuran dan tidak salah bahan.
           </h2>
 
           <div className="mt-10 grid gap-4 md:grid-cols-4">
@@ -343,15 +343,15 @@ export default function HomePage() {
 
           <div className="mt-10 overflow-hidden rounded-[2rem] bg-charcoal text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] md:grid md:grid-cols-[1fr_0.58fr]">
             <div className="p-7 md:p-8">
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">Siap diskusi?</p>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">Mau ngobrol dulu?</p>
               <h3 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.025em] md:text-4xl">
-                Mulai dari ukuran ruang dan kebutuhanmu dulu.
+                Mulai dari cerita ruangnya dulu.
               </h3>
               <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
-                Kirim foto ruang, ukuran kasar, dan referensi desain. BUF bantu arahkan opsi desain dan pengerjaan yang paling masuk akal.
+                Kirim contoh model kalau ada. Dari situ kita lihat bagian mana yang perlu dibuat penuh, dan mana yang bisa disederhanakan.
               </p>
               <Link href={routes.kontak} className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue">
-                Konsultasi dengan BUF
+                Chat BUF
               </Link>
             </div>
             <div className="bg-[#111]">

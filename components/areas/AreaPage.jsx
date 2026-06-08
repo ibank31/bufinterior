@@ -46,7 +46,7 @@ export default function AreaPage({ area }) {
                 Layanan di {area.name}
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Pilih kebutuhan pengerjaan yang paling sesuai.
+                Pilih jenis pekerjaan yang paling dekat dengan rencana Anda.
               </h2>
             </div>
             <p className="max-w-2xl text-base font-medium leading-8 text-muted lg:justify-self-end">
@@ -118,7 +118,7 @@ export default function AreaPage({ area }) {
                 Cara mulai
               </p>
               <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
-                Mulai dari foto ruang, ukuran kasar, dan kebutuhan utama.
+                Mulai dari foto ruang, ukuran kasar, dan bagian yang ingin dibuat.
               </h2>
             </div>
             <div className="grid gap-4 md:grid-cols-2">

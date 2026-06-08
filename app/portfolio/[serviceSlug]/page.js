@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
 
   return buildMetadata({
     title: `Portofolio ${service.title} | Berkah Utami Furniture`,
-    description: `Lihat contoh portofolio ${service.title.toLowerCase()} BUF untuk referensi pengerjaan custom sesuai kebutuhan ruang, fungsi, dan budget.`,
+    description: `Lihat contoh portofolio ${service.title.toLowerCase()} BUF sebagai referensi model, bahan, dan hasil pengerjaan custom.`,
     path: `${routes.portfolio}/${service.slug}`,
   });
 }
@@ -58,7 +58,7 @@ export default async function PortfolioServicePage({ params }) {
           </div>
 
           <p className="max-w-2xl text-base font-medium leading-8 text-white/64 sm:text-lg">
-            Lihat contoh pengerjaan {service.title.toLowerCase()} BUF sebagai referensi awal sebelum konsultasi kebutuhan ruang, ukuran, material, dan budget.
+            Lihat contoh pengerjaan {service.title.toLowerCase()} BUF sebagai referensi awal sebelum membahas ukuran, bahan, dan estimasi.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default async function PortfolioServicePage({ params }) {
                 Butuh pengerjaan serupa?
               </p>
               <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-                Pelajari layanan {service.title.toLowerCase()} atau konsultasikan kebutuhan lewat WhatsApp.
+                Pelajari layanan {service.title.toLowerCase()} atau mulai chat lewat WhatsApp.
               </h2>
             </div>
             <Link

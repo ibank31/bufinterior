@@ -25,7 +25,7 @@ export const areaTiers = [
   {
     tier: "T1",
     label: "Banyumas Priority Expansion",
-    description: "Area prioritas dekat Purwokerto untuk ekspansi landing page setelah data proyek/portofolio siap.",
+    description: "Area dekat Purwokerto untuk pengembangan landing page setelah data proyek dan portofolio siap.",
     areas: [
       {
         slug: "sokaraja",

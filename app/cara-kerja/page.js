@@ -60,7 +60,7 @@ export default function CaraKerjaPage() {
               Catatan penting
             </p>
             <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] sm:text-5xl">
-              Estimasi custom harus berdasarkan kebutuhan nyata.
+              Estimasi custom harus berdasarkan kondisi ruang yang nyata.
             </h2>
           </div>
 
@@ -80,7 +80,7 @@ export default function CaraKerjaPage() {
                 Siap mulai konsultasi?
               </p>
               <h2 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-                Kirim foto, ukuran kasar, dan kebutuhan ruang melalui WhatsApp.
+                Kirim foto, ukuran kasar, dan bagian ruang yang ingin dibuat melalui WhatsApp.
               </h2>
             </div>
             <Link

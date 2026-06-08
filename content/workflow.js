@@ -1,104 +1,104 @@
 export const workflowIntro = {
   eyebrow: "Cara Kerja BUF",
-  title: "Proses pengerjaan custom dimulai dari kebutuhan ruang, bukan template jadi.",
+  title: "Mulainya dari ruang yang mau dibereskan.",
   description:
-    "Setiap proyek interior, furniture, booth, akrilik, aluminium, dan kanopi bisa berbeda ukuran, fungsi, material, dan kondisi lokasinya. Karena itu, BUF memakai alur kerja bertahap agar konsultasi, estimasi, produksi, dan pemasangan lebih terarah.",
+    "Pekerjaan custom tidak bisa disamakan satu harga untuk semua orang. Dapur, lemari, booth, akrilik, aluminium, sampai kanopi punya ukuran dan kondisi lapangan yang beda. Karena itu alurnya dibuat bertahap: lihat dulu ruangnya, bahas fungsi, baru masuk ke estimasi dan produksi.",
 };
 
 export const workflowSteps = [
   {
     number: "01",
-    title: "Konsultasi awal via WhatsApp",
+    title: "Chat dulu lewat WhatsApp",
     description:
-      "Pelanggan bisa mulai dari cerita kebutuhan, jenis ruang, masalah yang ingin diselesaikan, lokasi proyek, dan gambaran budget awal.",
+      "Ceritakan mau bikin apa: kitchen set, lemari, backdrop TV, booth, akrilik, aluminium, kanopi, atau interior toko. Tidak perlu langsung rapi bahasanya, yang penting masalah ruangnya jelas dulu.",
     details: [
-      "Tidak harus langsung punya desain final.",
-      "Bisa mulai dari foto ruang atau referensi model.",
-      "Pesan awal membantu BUF memahami jenis pekerjaan yang dibutuhkan.",
+      "Belum punya desain final tidak masalah.",
+      "Bisa mulai dari foto ruang atau contoh model.",
+      "Kalau sudah ada ukuran kasar, kirim sekalian.",
     ],
   },
   {
     number: "02",
-    title: "Kirim foto, ukuran kasar, dan referensi",
+    title: "Kirim foto dan ukuran kasar",
     description:
-      "Foto lokasi, ukuran kasar, dan referensi model membantu estimasi awal lebih masuk akal sebelum masuk ke tahap survey atau pengukuran detail. Survey lokasi area Banyumas gratis.",
+      "Foto dari beberapa sudut membuat posisi dinding, sudut ruang, tinggi plafon, pintu, jendela, stop kontak, dan bagian penting lain lebih mudah dibaca.",
     details: [
-      "Foto area dari beberapa sudut.",
+      "Foto area dari dekat dan agak jauh.",
       "Ukuran panjang, lebar, tinggi, atau area pemasangan.",
       "Referensi warna, bentuk, layout, atau fungsi yang diinginkan.",
     ],
   },
   {
     number: "03",
-    title: "Diskusi fungsi, material, dan budget",
+    title: "Bahas fungsi, bahan, dan kisaran biaya",
     description:
-      "BUF membantu mengarahkan opsi pengerjaan berdasarkan fungsi ruang, pilihan material, finishing, tingkat detail, dan batas budget pelanggan.",
+      "Di tahap ini mulai dipilah: mana yang wajib, mana yang hanya tambahan. Misalnya kabinet atas-bawah, jumlah laci, top table, lampu, roda booth, jenis kaca, atau material atap kanopi.",
     details: [
-      "Material menyesuaikan kebutuhan dan budget.",
-      "Desain diarahkan agar tetap fungsional.",
-      "Estimasi awal bisa berubah jika ukuran/detail berubah.",
+      "Bahan dipilih sesuai cara pakai dan tampilan yang diinginkan.",
+      "Detail yang rumit biasanya ikut mempengaruhi biaya.",
+      "Estimasi awal bisa berubah kalau ukuran atau spesifikasi berubah.",
     ],
   },
   {
     number: "04",
-    title: "Survey atau ukur by konfirmasi",
+    title: "Survey atau ukur lokasi",
     description:
-      "Jika pekerjaan membutuhkan ukuran detail atau pengecekan kondisi lokasi, survey area Banyumas gratis. Untuk luar kota, biaya survey dapat dikonfirmasi sesuai jarak dan kebutuhan proyek.",
+      "Kalau pekerjaan perlu ukuran presisi, kami cek lokasi dulu. Untuk area Banyumas, survey gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan.",
     details: [
       "Tidak semua pekerjaan harus langsung survey.",
-      "Survey bergantung pada jenis proyek, lokasi, dan kebutuhan teknis.",
-      "Koordinasi jadwal dilakukan melalui WhatsApp.",
+      "Survey tergantung jenis proyek dan kondisi lokasi.",
+      "Jadwal survey dikoordinasikan lewat WhatsApp.",
     ],
   },
   {
     number: "05",
-    title: "Estimasi dan arah pengerjaan",
+    title: "Rapikan estimasi dan arah pengerjaan",
     description:
-      "Setelah kebutuhan lebih jelas, BUF dapat mengarahkan estimasi biaya, model pengerjaan, material, dan tahapan produksi yang paling masuk akal.",
+      "Setelah data lebih lengkap, estimasi dibuat lebih jelas. Di sini bisa dibahas ulang soal model, bahan, finishing, aksesoris, dan urutan pengerjaan sebelum produksi dimulai.",
     details: [
-      "Estimasi bukan harga final jika data belum lengkap.",
-      "Detail pekerjaan menentukan biaya dan durasi.",
-      "Perubahan desain/material bisa mengubah estimasi.",
+      "Estimasi belum final kalau data ukuran belum lengkap.",
+      "Detail pekerjaan menentukan biaya dan lama pengerjaan.",
+      "Perubahan desain atau bahan bisa mengubah estimasi.",
     ],
   },
   {
     number: "06",
     title: "Produksi di workshop",
     description:
-      "Pengerjaan dilakukan dari workshop BUF sesuai ukuran, model, material, dan kesepakatan kebutuhan proyek.",
+      "Pekerjaan dibuat di workshop BUF sesuai ukuran dan detail yang sudah disepakati. Untuk item custom, proses produksi mengikuti tingkat kesulitan dan antrian pekerjaan.",
     details: [
-      "Produksi mengikuti detail yang sudah disepakati.",
-      "Pekerjaan custom membutuhkan waktu sesuai tingkat kesulitan.",
-      "Koordinasi dilakukan jika ada penyesuaian teknis.",
+      "Produksi mengikuti detail yang sudah dibahas.",
+      "Waktu kerja tergantung ukuran dan tingkat detail.",
+      "Kalau ada penyesuaian teknis, kami komunikasikan.",
     ],
   },
   {
     number: "07",
-    title: "Pengiriman dan pemasangan",
+    title: "Kirim dan pasang di lokasi",
     description:
-      "Untuk pekerjaan yang membutuhkan pemasangan di lokasi, jadwal pengiriman dan pemasangan dikonfirmasi sesuai kesiapan produksi dan lokasi proyek.",
+      "Untuk pekerjaan yang perlu pemasangan, jadwal kirim dan pasang disesuaikan dengan kesiapan barang dan kondisi lokasi. Area kerja sebaiknya sudah dikosongkan agar proses lebih lancar.",
     details: [
-      "Pemasangan menyesuaikan kondisi lapangan.",
-      "Area kerja perlu disiapkan agar proses lebih lancar.",
-      "Tim melakukan pengecekan hasil akhir setelah pemasangan.",
+      "Pemasangan mengikuti kondisi lapangan.",
+      "Area kerja yang siap membuat proses lebih cepat.",
+      "Hasil pemasangan dicek sebelum ditinggal.",
     ],
   },
   {
     number: "08",
-    title: "Final check dan penyesuaian",
+    title: "Cek hasil akhir",
     description:
-      "Setelah pemasangan, hasil pekerjaan dicek agar fungsi utama, kerapian, dan kebutuhan penggunaan sudah sesuai arah pengerjaan.",
+      "Setelah terpasang, bagian utama dicek lagi: bukaan pintu, laci, posisi kabinet, kekuatan rangka, kerapian panel, dan fungsi yang memang dibutuhkan sejak awal.",
     details: [
-      "Pengecekan dilakukan berdasarkan kesepakatan pekerjaan.",
-      "Catatan kecil dapat dikomunikasikan setelah pemasangan.",
-      "Tujuan akhirnya adalah hasil custom yang rapi dan bisa dipakai.",
+      "Pengecekan mengikuti lingkup pekerjaan yang disepakati.",
+      "Catatan kecil bisa disampaikan setelah pemasangan.",
+      "Targetnya sederhana: hasilnya rapi dan enak dipakai.",
     ],
   },
 ];
 
 export const workflowNotes = [
-  "Pekerjaan custom tidak selalu bisa dihitung akurat tanpa ukuran dan detail.",
-  "Harga bisa berbeda karena material, finishing, aksesoris, tingkat detail, dan kondisi lokasi.",
-  "Survey, pengukuran, pengiriman, dan pemasangan dilakukan by konfirmasi.",
-  "Semakin lengkap data awal yang dikirim, semakin mudah estimasi awal diarahkan.",
+  "Pekerjaan custom lebih akurat dihitung setelah ada ukuran dan detail.",
+  "Harga bisa berubah karena bahan, finishing, hardware, aksesoris, dan kondisi lokasi.",
+  "Survey, pengukuran, pengiriman, dan pemasangan dibicarakan dulu lewat WhatsApp.",
+  "Semakin jelas foto dan ukuran awal, semakin mudah kami memberi arahan.",
 ];
