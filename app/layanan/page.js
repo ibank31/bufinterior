@@ -196,7 +196,7 @@ export default function LayananPage() {
                 Mau tanya dulu?
               </p>
               <h3 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.02em] md:text-4xl">
-                Kirim foto ruang, ukuran kasar, dan contoh model kalau ada.
+                Bawa contoh model kalau ada.
               </h3>
               <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
                 Kami cek dulu jenis pekerjaannya, lalu bahas bahan, ukuran, dan estimasi awalnya.

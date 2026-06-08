@@ -8,7 +8,7 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { buildWhatsappHref } from "@/lib/whatsapp";
 
 const processSteps = [
-  ["01", "Kirim foto ruang", "Mulai dari foto, ukuran kasar, dan bagian yang ingin dibuat."],
+  ["01", "Cek area dapur", "Mulai dari bentuk dapur, panjang dinding, dan bagian yang ingin dibuat."],
   ["02", "Cek ukuran", "Untuk area Banyumas, survey lokasi gratis. Luar Banyumas dibicarakan dulu sesuai jarak dan jenis pekerjaan."],
   ["03", "Bahas bahan dan model", "Finishing, warna, hardware, dan detail kerja dibahas sebelum produksi."],
   ["04", "Produksi lalu pasang", "Barang dibuat di workshop, lalu dipasang sesuai jadwal yang disepakati."],
