@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://berkah-utami-furniture.vercel.app/sitemap.xml
