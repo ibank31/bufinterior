@@ -43,4 +43,14 @@ export const staticPageMetadata = {
     description: "Panduan interior dan furniture custom BUF: kitchen set, lemari, booth usaha, estimasi biaya, material, dan tips memilih jasa di Purwokerto.",
     path: routes.artikel,
   },
+  kebijakanPrivasi: {
+    title: "Kebijakan Privasi | BUF",
+    description: "Penjelasan singkat tentang data yang dibagikan saat menghubungi BUF melalui website dan WhatsApp, serta cara data tersebut digunakan.",
+    path: routes.kebijakanPrivasi,
+  },
+  syaratKetentuan: {
+    title: "Syarat & Ketentuan | BUF",
+    description: "Ringkasan syarat dan ketentuan penggunaan website BUF, konsultasi awal, estimasi, perubahan pekerjaan, dan pelaksanaan proyek custom.",
+    path: routes.syaratKetentuan,
+  },
 };

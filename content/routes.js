@@ -19,6 +19,8 @@ export const routes = {
   caraKerja: "/cara-kerja",
   tentangKami: "/tentang-kami",
   artikel: "/artikel",
+  kebijakanPrivasi: "/kebijakan-privasi",
+  syaratKetentuan: "/syarat-ketentuan",
 };
 
 export const sitemapRoutes = [
@@ -41,8 +43,9 @@ export const sitemapRoutes = [
   { path: routes.caraKerja, priority: 0.78 },
   { path: routes.tentangKami, priority: 0.65 },
   { path: routes.artikel, priority: 0.55 },
+  { path: routes.kebijakanPrivasi, priority: 0.22 },
+  { path: routes.syaratKetentuan, priority: 0.22 },
 ];
-
 
 export function articleHref(slug) {
   return `${routes.artikel}/${slug}`;
@@ -52,11 +55,9 @@ export function portfolioHref(serviceSlug) {
   return `${routes.portfolio}/${serviceSlug}`;
 }
 
-
 export function localServiceHref(slug) {
   return `${routes.jasa}/${slug}`;
 }
-
 
 export function areaHref(slug) {
   return `${routes.area}/${slug}`;

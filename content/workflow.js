@@ -2,7 +2,7 @@ export const workflowIntro = {
   eyebrow: "Cara Kerja BUF",
   title: "Mulainya dari ruang yang mau dibereskan.",
   description:
-    "Pekerjaan custom tidak bisa disamakan satu harga untuk semua orang. Dapur, lemari, booth, akrilik, aluminium, sampai kanopi punya ukuran dan kondisi lapangan yang beda. Karena itu alurnya dibuat bertahap: lihat dulu ruangnya, bahas fungsi, baru masuk ke estimasi dan produksi.",
+    "Pekerjaan custom tidak bisa disamakan satu harga untuk semua orang. Kitchen set, lemari, booth, akrilik, aluminium, sampai kanopi punya ukuran, detail, dan kondisi lapangan yang beda. Karena itu alurnya dibuat bertahap: lihat dulu ruangnya, bahas fungsi, baru masuk ke estimasi dan produksi.",
 };
 
 export const workflowSteps = [
@@ -10,7 +10,7 @@ export const workflowSteps = [
     number: "01",
     title: "Chat dulu lewat WhatsApp",
     description:
-      "Ceritakan mau bikin apa: kitchen set, lemari, backdrop TV, booth, akrilik, aluminium, kanopi, atau interior toko. Tidak perlu langsung rapi bahasanya, yang penting masalah ruangnya jelas dulu.",
+      "Mulai dari kebutuhan paling dasar: mau bikin kitchen set, lemari, backdrop TV, booth, akrilik, aluminium, kanopi, atau interior toko. Tidak perlu langsung rapi bahasanya. Yang penting masalah ruangnya jelas dulu.",
     details: [
       "Belum punya desain final tidak masalah.",
       "Bisa mulai dari foto ruang atau contoh model.",
@@ -21,7 +21,7 @@ export const workflowSteps = [
     number: "02",
     title: "Kirim foto dan ukuran kasar",
     description:
-      "Foto dari beberapa sudut membuat posisi dinding, sudut ruang, tinggi plafon, pintu, jendela, stop kontak, dan bagian penting lain lebih mudah dibaca.",
+      "Foto dari beberapa sudut membantu membaca posisi dinding, plafon, pintu, jendela, stop kontak, area basah, sampai jalur lewat. Ini penting supaya obrolannya tidak masih nebak-nebak.",
     details: [
       "Foto area dari dekat dan agak jauh.",
       "Ukuran panjang, lebar, tinggi, atau area pemasangan.",
@@ -32,10 +32,10 @@ export const workflowSteps = [
     number: "03",
     title: "Bahas fungsi, bahan, dan kisaran biaya",
     description:
-      "Di tahap ini mulai dipilah: mana yang wajib, mana yang hanya tambahan. Misalnya kabinet atas-bawah, jumlah laci, top table, lampu, roda booth, jenis kaca, atau material atap kanopi.",
+      "Di tahap ini mulai dipilah mana yang wajib dan mana yang tambahan. Contohnya kabinet atas-bawah, jumlah laci, top table, kaca, roda booth, rangka aluminium, atau material atap kanopi.",
     details: [
       "Bahan dipilih sesuai cara pakai dan tampilan yang diinginkan.",
-      "Detail yang rumit biasanya ikut mempengaruhi biaya.",
+      "Detail yang lebih rumit biasanya ikut mempengaruhi biaya.",
       "Estimasi awal bisa berubah kalau ukuran atau spesifikasi berubah.",
     ],
   },
@@ -43,7 +43,7 @@ export const workflowSteps = [
     number: "04",
     title: "Survey atau ukur lokasi",
     description:
-      "Kalau pekerjaan perlu ukuran presisi, kami cek lokasi dulu. Untuk area Banyumas, survey gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan.",
+      "Kalau pekerjaan butuh ukuran presisi, lokasi dicek dulu. Untuk area Banyumas, survey gratis. Untuk luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaan.",
     details: [
       "Tidak semua pekerjaan harus langsung survey.",
       "Survey tergantung jenis proyek dan kondisi lokasi.",
@@ -54,7 +54,7 @@ export const workflowSteps = [
     number: "05",
     title: "Rapikan estimasi dan arah pengerjaan",
     description:
-      "Setelah data lebih lengkap, estimasi dibuat lebih jelas. Di sini bisa dibahas ulang soal model, bahan, finishing, aksesoris, dan urutan pengerjaan sebelum produksi dimulai.",
+      "Setelah data lebih lengkap, estimasi dibaca ulang dengan lebih jelas. Di sini biasanya dibahas lagi model, bahan, finishing, aksesoris, dan urutan pengerjaan sebelum produksi dimulai.",
     details: [
       "Estimasi belum final kalau data ukuran belum lengkap.",
       "Detail pekerjaan menentukan biaya dan lama pengerjaan.",
@@ -65,7 +65,7 @@ export const workflowSteps = [
     number: "06",
     title: "Produksi di workshop",
     description:
-      "Pekerjaan dibuat di workshop BUF sesuai ukuran dan detail yang sudah disepakati. Untuk item custom, proses produksi mengikuti tingkat kesulitan dan antrian pekerjaan.",
+      "Pekerjaan dibuat di workshop BUF sesuai ukuran dan detail yang sudah disepakati. Untuk item custom, proses produksi mengikuti tingkat kesulitan, bahan yang dipilih, dan antrean kerja.",
     details: [
       "Produksi mengikuti detail yang sudah dibahas.",
       "Waktu kerja tergantung ukuran dan tingkat detail.",

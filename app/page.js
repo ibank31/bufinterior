@@ -1,18 +1,24 @@
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
 import { routes } from "@/content/routes";
 import { articles } from "@/content/articles";
 import { services, serviceHighlights } from "@/content/services";
 import { localServices } from "@/content/local-services";
 import { staticPageMetadata } from "@/content/static-pages";
-import { portfolioPreview, processSteps } from "@/content/home";
+import { homeFaqs, portfolioPreview, processSteps } from "@/content/home";
 import { buildMetadata } from "@/lib/seo";
+import { faqSchema } from "@/lib/schema";
 
 export const metadata = buildMetadata(staticPageMetadata.home);
 
 export default function HomePage() {
   const featuredArticles = articles.slice(0, 3);
+  const schema = faqSchema(homeFaqs);
+
   return (
     <main>
+      <JsonLd data={schema} />
+
       <section className="wood-grain-bg relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.55] bg-[radial-gradient(circle_at_12%_18%,rgba(138,90,60,0.18),transparent_28rem),radial-gradient(circle_at_88%_10%,rgba(8,121,173,0.11),transparent_25rem)]" />
 
@@ -178,7 +184,7 @@ export default function HomePage() {
 
           <div className="mt-5 rounded-[1.5rem] border border-stone-200 bg-white/80 p-4 shadow-soft">
             <p className="text-sm font-bold leading-6 text-muted">
-              Belum tahu harus mulai dari mana? Kirim foto ruang dan ceritakan kebutuhan Anda. Kami bantu urutkan pekerjaan yang paling perlu dikerjakan dulu.
+              Belum tahu harus mulai dari mana? Kirim foto ruang dan ceritakan kebutuhan Anda. Kami bantu arahkannya pelan-pelan: mana yang perlu dikerjakan dulu dan mana yang bisa menyusul.
             </p>
           </div>
         </div>
@@ -361,6 +367,67 @@ export default function HomePage() {
                 className="h-full max-h-[320px] min-h-[200px] w-full object-contain md:object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-charcoal px-4 py-8 text-white lg:py-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-4 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-[0.22em] text-white/42">Pertanyaan umum</p>
+              <h2 className="mt-2 max-w-3xl text-3xl font-black leading-[1.1] tracking-[-0.02em] sm:text-4xl">
+                Hal yang biasanya ditanyakan sebelum chat.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-sm font-medium leading-7 text-white/64 lg:justify-self-end">
+              Bagian ini dibuat supaya calon pelanggan tidak bingung apakah harus punya ukuran lengkap, desain final, atau hasil survey dulu sebelum menghubungi BUF.
+            </p>
+          </div>
+
+          <div className="mt-6 grid gap-3 md:grid-cols-2">
+            {homeFaqs.map((item) => (
+              <div key={item.q} className="rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-5">
+                <h3 className="text-xl font-black leading-snug tracking-[-0.02em] text-white">
+                  {item.q}
+                </h3>
+                <p className="mt-3 text-sm font-medium leading-7 text-white/62">
+                  {item.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fffaf2] px-4 py-8 lg:py-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-[0.22em] text-brand-blue">Artikel BUF</p>
+              <h2 className="mt-2 text-3xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-4xl">
+                Bacaan awal sebelum mulai konsultasi.
+              </h2>
+            </div>
+            <Link href={routes.artikel} className="text-sm font-black text-charcoal">
+              Lihat semua artikel →
+            </Link>
+          </div>
+
+          <div className="mt-6 grid gap-3 md:grid-cols-3">
+            {featuredArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`${routes.artikel}/${article.slug}`}
+                className="rounded-[1.75rem] border border-stone-200 bg-white p-5 shadow-soft transition hover:-translate-y-0.5 hover:shadow-[0_24px_70px_rgba(23,23,23,0.12)]"
+              >
+                <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">Artikel</p>
+                <h3 className="mt-4 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
+                  {article.title}
+                </h3>
+                <p className="mt-3 text-sm font-medium leading-7 text-muted">{article.excerpt}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
