@@ -22,7 +22,7 @@ export const areaPages = activeAreaSlugs.map((slug) => {
     heroDescription:
       `BUF Berkah Utami Furniture mengerjakan interior, furniture custom, kitchen set, booth usaha, akrilik, aluminium, kanopi, dan pekerjaan custom di ${area.name}. ${siteConfig.surveyPolicy}`,
     metaDescription:
-      `Jasa interior dan furniture custom di ${area.name} — kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, dan kanopi. Survey area Banyumas gratis.`,
+      `Jasa interior dan furniture custom di ${area.name} \u2014 kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, dan kanopi. Survey area Banyumas gratis.`,
     intro:
       `${area.name} jadi area utama BUF karena dekat dengan workshop di Berkoh, Purwokerto. Mulainya bisa dari foto ruang, ukuran kasar, dan bagian yang ingin dibuat.`,
     services: areaServices,
