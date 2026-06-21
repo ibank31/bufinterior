@@ -47,8 +47,17 @@ body {
 
 a { text-decoration: none; }
 
+/* Compact section padding — tighter site-wide */
 .section-pad {
-  padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
+  padding: clamp(1.25rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem);
+}
+
+.section-pad-sm {
+  padding: clamp(1rem, 3.5vw, 2.5rem) clamp(1rem, 4vw, 4rem);
+}
+
+.section-pad-lg {
+  padding: clamp(1.75rem, 4.5vw, 3.5rem) clamp(1rem, 4vw, 4rem);
 }
 
 /* BUF typography tuning */
@@ -56,7 +65,7 @@ h1,
 h2,
 h3 {
   text-wrap: balance;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 p {
@@ -122,5 +131,3 @@ p {
       rgba(138, 90, 60, 0.000) 24px
     );
 }
-
-
