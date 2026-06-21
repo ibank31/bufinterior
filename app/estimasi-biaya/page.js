@@ -1,8 +1,10 @@
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
 import { buildMetadata } from "@/lib/seo";
 import { routes } from "@/content/routes";
 import { buildWhatsappHref } from "@/lib/whatsapp";
 import { staticPageMetadata } from "@/content/static-pages";
+import { faqSchema } from "@/lib/schema";
 import {
   commonQuestions,
   estimationCards,
@@ -18,8 +20,12 @@ function whatsappHref(text) {
 }
 
 export default function EstimasiBiayaPage() {
+  const schema = faqSchema(commonQuestions);
+
   return (
     <main>
+      <JsonLd data={schema} />
+
       <section className="wood-grain-bg px-6 py-12 sm:px-8 lg:px-4 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>

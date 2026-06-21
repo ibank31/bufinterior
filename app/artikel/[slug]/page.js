@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import JsonLd from "@/components/seo/JsonLd";
 import { articles, getArticleBySlug, getRelatedArticles } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo";
 import { articleHref, routes } from "@/content/routes";
+import { articleSchema } from "@/lib/schema";
 
 export function generateStaticParams() {
   return articles.map((article) => ({
@@ -26,6 +28,8 @@ export async function generateMetadata({ params }) {
     title: `${article.title} | BUF`,
     description: article.excerpt,
     path: `/artikel/${article.slug}`,
+    image: article.heroImage,
+    type: "article",
   });
 }
 
@@ -41,6 +45,8 @@ export default async function ArticleDetailPage({ params }) {
 
   return (
     <main>
+      <JsonLd data={articleSchema(article)} />
+
       <section className="wood-grain-bg px-6 py-12 sm:px-8 lg:px-4 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
           <div>
