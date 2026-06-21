@@ -20,6 +20,12 @@ export default function sitemap() {
     priority: 0.82,
   }));
 
+  const areaRoutes = areaPages.map((area) => ({
+    url: absoluteSiteUrl(area.href),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
   const portfolioServiceRoutes = services.map((service) => ({
     url: absoluteSiteUrl(portfolioHref(service.slug)),
     changeFrequency: "monthly",
@@ -32,5 +38,5 @@ export default function sitemap() {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...localServiceRoutes, ...portfolioServiceRoutes, ...articleRoutes];
+  return [...staticRoutes, ...localServiceRoutes, ...areaRoutes, ...portfolioServiceRoutes, ...articleRoutes];
 }
