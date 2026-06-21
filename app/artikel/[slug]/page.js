@@ -6,6 +6,19 @@ import { buildMetadata } from "@/lib/seo";
 import { articleHref, routes } from "@/content/routes";
 import { articleSchema } from "@/lib/schema";
 
+function formatArticleDate(dateString) {
+  if (!dateString) {
+    return null;
+  }
+
+  return new Intl.DateTimeFormat("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "Asia/Jakarta",
+  }).format(new Date(`${dateString}T00:00:00+07:00`));
+}
+
 export function generateStaticParams() {
   return articles.map((article) => ({
     slug: article.slug,
@@ -42,6 +55,8 @@ export default async function ArticleDetailPage({ params }) {
   }
 
   const relatedArticles = getRelatedArticles(article.slug);
+  const publishedDate = formatArticleDate(article.date);
+  const modifiedDate = formatArticleDate(article.dateModified || article.date);
 
   return (
     <main>
@@ -64,6 +79,10 @@ export default async function ArticleDetailPage({ params }) {
             </h1>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8">
               {article.excerpt}
+            </p>
+            <p className="mt-5 max-w-2xl text-sm font-bold leading-7 text-muted">
+              Ditulis oleh {article.author || "Tim BUF"} • Terbit {publishedDate}
+              {modifiedDate && modifiedDate !== publishedDate ? ` • Diperbarui ${modifiedDate}` : ""}
             </p>
           </div>
 
@@ -120,7 +139,7 @@ export default async function ArticleDetailPage({ params }) {
 
           <article className="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-soft md:p-8">
             <div className="grid gap-8">
-              {article.sections.map((section) => (
+              {article.sections.map((section, index) => (
                 <section key={section.heading}>
                   <h2 className="text-3xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
                     {section.heading}
@@ -128,6 +147,33 @@ export default async function ArticleDetailPage({ params }) {
                   <p className="mt-4 text-base font-medium leading-8 text-muted">
                     {section.body}
                   </p>
+
+                  {index === 2 ? (
+                    <div className="mt-8 overflow-hidden rounded-[2rem] bg-charcoal text-white shadow-[0_24px_80px_rgba(23,23,23,0.18)] md:grid md:grid-cols-[1fr_auto] md:items-center">
+                      <div className="p-6">
+                        <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">
+                          Butuh arahan langsung?
+                        </p>
+                        <h3 className="mt-3 text-2xl font-black leading-[1.12] tracking-[-0.02em]">
+                          Pakai artikel ini sebagai pegangan awal, lalu cocokkan dengan kondisi ruang sebenarnya.
+                        </h3>
+                        <p className="mt-3 text-sm font-medium leading-7 text-white/62">
+                          Kirim foto ruang, ukuran kasar, dan contoh model kalau ada. Dari situ estimasi dan pilihan bahan bisa dibahas lebih masuk akal.
+                        </p>
+                      </div>
+                      <div className="grid gap-3 p-6 pt-0 md:min-w-[260px] md:pt-6">
+                        <Link href={article.relatedServiceHref} className="rounded-full bg-brand-blue px-5 py-3 text-center text-sm font-black text-white shadow-blue">
+                          Lihat {article.relatedServiceLabel}
+                        </Link>
+                        <Link href={routes.estimasiBiaya} className="rounded-full border border-white/12 bg-white/[0.06] px-5 py-3 text-center text-sm font-black text-white">
+                          Cek Estimasi Biaya
+                        </Link>
+                        <Link href={routes.kontak} className="rounded-full border border-white/12 bg-white/[0.06] px-5 py-3 text-center text-sm font-black text-white">
+                          Konsultasi via WhatsApp
+                        </Link>
+                      </div>
+                    </div>
+                  ) : null}
                 </section>
               ))}
             </div>
