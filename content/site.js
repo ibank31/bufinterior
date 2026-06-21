@@ -23,5 +23,5 @@ export const siteConfig = {
     "BUF — Interior Custom, Kitchen Set & Custom Furniture",
   defaultDescription:
     "BUF Berkah Utami Furniture adalah workshop interior, furniture custom, dan fabrikasi di Berkoh, Purwokerto. Mengerjakan kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, kanopi, interior rumah, interior toko, dan pekerjaan custom lainnya.",
-  ogImage: "/assets/og/buf-interior-og.webp",
+  ogImage: "/og-image-1200x630.png",
 };
