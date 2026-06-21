@@ -16,21 +16,21 @@ export default function HomePage() {
       <section className="wood-grain-bg relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.55] bg-[radial-gradient(circle_at_12%_18%,rgba(138,90,60,0.18),transparent_28rem),radial-gradient(circle_at_88%_10%,rgba(8,121,173,0.11),transparent_25rem)]" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-8 px-6 py-9 sm:px-8 sm:py-12 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-4 lg:py-16">
+        <div className="relative mx-auto grid max-w-7xl gap-6 px-6 py-6 sm:px-8 sm:py-8 lg:min-h-[calc(100vh-76px)] lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-10 lg:px-4 lg:py-12">
           <div className="max-w-3xl">
             <p className="inline-flex rounded-full border border-stone-300/70 bg-white/65 px-4 py-2 text-[10px] font-black uppercase tracking-[0.20em] text-wood shadow-soft backdrop-blur sm:text-[11px] sm:tracking-[0.22em]">
               Workshop custom di Berkoh, Purwokerto
             </p>
 
-            <h1 className="mt-6 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
+            <h1 className="mt-5 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
               Jasa pembuatan kitchen set, lemari, booth, dan interior custom yang disesuaikan dengan ukuran ruangan.
             </h1>
 
-            <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
+            <p className="mt-4 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-5">
               Berkah Utami Furniture adalah workshop interior dan furniture custom yang berlokasi di Berkoh, Purwokerto. Kami membuat kitchen set, lemari, backdrop TV, interior toko, booth usaha, akrilik, aluminium, dan kanopi.
             </p>
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-7">
               <Link href={routes.kontak} className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)] lg:py-4">
                 Konsultasi via WhatsApp
               </Link>
@@ -39,7 +39,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-7 grid max-w-xl grid-cols-3 divide-x divide-stone-300/80 rounded-[1.5rem] border border-stone-300/70 bg-white/55 p-3 shadow-soft backdrop-blur lg:mt-10 lg:p-4">
+            <div className="mt-6 grid max-w-xl grid-cols-3 divide-x divide-stone-300/80 rounded-[1.5rem] border border-stone-300/70 bg-white/55 p-3 shadow-soft backdrop-blur lg:mt-8 lg:p-4">
               <div className="px-3">
                 <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">20++</p>
                 <p className="mt-1 text-xs font-bold leading-5 text-muted">Pekerjaan selesai</p>
@@ -81,16 +81,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="wood-grain-bg relative overflow-hidden px-4 py-16 lg:py-24">
+      <section className="wood-grain-bg relative overflow-hidden px-4 py-10 lg:py-14">
         <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_6%_20%,rgba(138,90,60,0.10),transparent_22rem),radial-gradient(circle_at_88%_15%,rgba(8,121,173,0.08),transparent_20rem)]" />
         <div className="relative mx-auto max-w-7xl">
-          <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+          <div className="grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
             <div>
               <div className="flex items-center gap-3">
                 <span className="h-px w-12 bg-wood/55" />
                 <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">Yang sering dikerjakan</p>
               </div>
-              <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
+              <h2 className="mt-3 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
                 Kami ukur ruangnya dulu. Setelah itu, kami buat barangnya.
               </h2>
             </div>
@@ -99,7 +99,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {services.slice(0, 4).map((service, index) => (
               <Link
                 key={service.slug}
@@ -115,10 +115,10 @@ export default function HomePage() {
                   <span className="inline-flex rounded-full bg-[#f5efe6] px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-wood">
                     {service.category}
                   </span>
-                  <h3 className="mt-8 text-2xl font-black tracking-[-0.025em] text-charcoal">{service.shortTitle}</h3>
-                  <p className="mt-4 text-sm font-medium leading-7 text-muted">{service.description}</p>
+                  <h3 className="mt-6 text-2xl font-black tracking-[-0.025em] text-charcoal">{service.shortTitle}</h3>
+                  <p className="mt-3 text-sm font-medium leading-7 text-muted">{service.description}</p>
 
-                  <div className="mt-7 flex items-center justify-between gap-3 border-t border-stone-200 pt-4">
+                  <div className="mt-5 flex items-center justify-between gap-3 border-t border-stone-200 pt-4">
                     <span className="text-xs font-black uppercase tracking-[0.16em] text-muted">Custom</span>
                     <span className="rounded-full bg-charcoal px-4 py-2 text-xs font-black text-white transition group-hover:bg-brand-blue">
                       Detail →
@@ -131,9 +131,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#fffaf2] px-4 py-16 lg:py-24">
+      <section className="bg-[#fffaf2] px-4 py-10 lg:py-14">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 lg:grid-cols-[0.74fr_1.26fr] lg:items-end">
+          <div className="grid gap-6 lg:grid-cols-[0.74fr_1.26fr] lg:items-end">
             <div>
               <div className="flex items-center gap-3">
                 <span className="h-px w-12 bg-wood/55" />
@@ -141,7 +141,7 @@ export default function HomePage() {
                   Jasa custom area Purwokerto
                 </p>
               </div>
-              <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
+              <h2 className="mt-3 text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
                 Pilih jasa sesuai pekerjaan yang mau dibuat.
               </h2>
             </div>
@@ -150,7 +150,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {localServices.map((service, index) => (
               <Link
                 key={service.slug}
@@ -161,13 +161,13 @@ export default function HomePage() {
                 <span className="inline-flex rounded-full bg-charcoal px-3 py-1 text-[11px] font-black uppercase tracking-[0.14em] text-white">
                   Jasa {String(index + 1).padStart(2, "0")}
                 </span>
-                <h3 className="mt-6 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
+                <h3 className="mt-5 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
                   {service.title}
                 </h3>
-                <p className="mt-4 text-sm font-medium leading-7 text-muted">
+                <p className="mt-3 text-sm font-medium leading-7 text-muted">
                   {service.heroDescription}
                 </p>
-                <div className="mt-6 border-t border-stone-200 pt-4">
+                <div className="mt-5 border-t border-stone-200 pt-4">
                   <span className="inline-flex rounded-full bg-brand-blue px-4 py-2 text-xs font-black text-white shadow-blue transition group-hover:bg-charcoal">
                     {service.ctaLabel || "Lihat Detail Jasa"} →
                   </span>
@@ -176,7 +176,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white/80 p-5 shadow-soft">
+          <div className="mt-6 rounded-[1.75rem] border border-stone-200 bg-white/80 p-5 shadow-soft">
             <p className="text-sm font-bold leading-7 text-muted">
               Belum tahu harus mulai dari mana? Kirim foto ruang dan ceritakan kebutuhan Anda. Kami bantu urutkan pekerjaan yang paling perlu dikerjakan dulu.
             </p>
@@ -184,9 +184,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-charcoal px-4 py-16 text-white lg:py-24">
+      <section className="bg-charcoal px-4 py-10 text-white lg:py-14">
         <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-white/42">Portofolio</p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
@@ -198,7 +198,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
             {portfolioPreview.map((item, index) => (
               <article key={item.title} className={`group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] ${index === 0 ? "md:row-span-2" : ""}`}>
                 <div className={`${index === 0 ? "min-h-[520px]" : "min-h-[250px]"} bg-cover bg-center transition duration-500 group-hover:scale-[1.03]`} style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.58)), url('${item.image}')` }}>
@@ -215,19 +215,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#fffaf2] px-4 py-16 lg:py-24">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
+      <section className="bg-[#fffaf2] px-4 py-10 lg:py-14">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">
               Perkiraan biaya awal
             </p>
-            <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
+            <h2 className="mt-3 text-4xl font-black leading-[1.1] tracking-[-0.04em] text-charcoal sm:text-5xl">
               Punya ukuran kasar? Gunakan itu untuk membaca biaya awal.
             </h2>
-            <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted">
+            <p className="mt-4 max-w-2xl text-base font-medium leading-7 text-muted">
               Ukuran membantu kami membaca kebutuhan biaya. Kitchen set 3 meter, lemari 2 meter, dan backdrop 2,5 meter punya hitungan berbeda. Bahan, finishing, dan detail juga ikut menentukan harga.
             </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href={routes.estimasiBiaya}
                 className="rounded-full bg-charcoal px-6 py-3 text-center text-sm font-black text-white shadow-soft"
@@ -257,13 +257,13 @@ export default function HomePage() {
                 <p className="text-[11px] font-black uppercase tracking-[0.16em] text-wood">
                   Contoh hitung
                 </p>
-                <h3 className="mt-4 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
+                <h3 className="mt-3 text-xl font-black leading-snug tracking-[-0.02em] text-charcoal">
                   {label}
                 </h3>
-                <p className="mt-3 text-2xl font-black tracking-[-0.03em] text-charcoal">
+                <p className="mt-2 text-2xl font-black tracking-[-0.03em] text-charcoal">
                   {value}
                 </p>
-                <p className="mt-4 text-xs font-bold leading-6 text-muted">
+                <p className="mt-3 text-xs font-bold leading-6 text-muted">
                   Kisaran awal, bukan harga final.
                 </p>
               </Link>
@@ -272,22 +272,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="wood-grain-bg px-4 py-16 lg:py-24">
-        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
-          <div className="relative overflow-hidden rounded-[2.25rem] bg-charcoal p-7 text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] lg:p-9">
+      <section className="wood-grain-bg px-4 py-10 lg:py-14">
+        <div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
+          <div className="relative overflow-hidden rounded-[2.25rem] bg-charcoal p-6 text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] lg:p-8">
             <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_20%,rgba(8,121,173,0.55),transparent_18rem),radial-gradient(circle_at_88%_78%,rgba(138,90,60,0.55),transparent_18rem)]" />
             <div className="relative">
               <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">Cara kerja BUF</p>
-              <h2 className="mt-4 text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
+              <h2 className="mt-3 text-4xl font-black leading-[1.1] tracking-[-0.02em] sm:text-5xl">
                 Produksi berjalan setelah ukuran, fungsi, dan bahan jelas.
               </h2>
-              <p className="mt-6 text-base font-medium leading-8 text-white/68">
+              <p className="mt-4 text-base font-medium leading-8 text-white/68">
                 Kami tidak langsung produksi dari tebakan. Kami baca ukuran, fungsi, bahan, dan detail ruang lebih dulu. Setelah itu, barang dikerjakan di workshop BUF.
               </p>
 
-              <div className="mt-8 rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
+              <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-5">
                 <p className="text-[11px] font-black uppercase tracking-[0.2em] text-white/38">Prinsip kerja</p>
-                <p className="mt-3 text-2xl font-black tracking-[-0.025em]">
+                <p className="mt-2 text-2xl font-black tracking-[-0.025em]">
                   Ukuran harus jelas sebelum produksi dimulai.
                 </p>
               </div>
@@ -305,7 +305,7 @@ export default function HomePage() {
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-charcoal text-[11px] font-black tracking-[0.08em] text-white shadow-soft">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <p className="mt-5 text-xl font-black leading-snug tracking-[-0.02em]">{item}</p>
+                  <p className="mt-4 text-xl font-black leading-snug tracking-[-0.02em]">{item}</p>
                 </div>
               </div>
             ))}
@@ -313,18 +313,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#fffaf2] px-4 py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-[#fffaf2] px-4 py-10 lg:py-14">
         <div className="absolute left-0 top-0 h-full w-px bg-stone-200" />
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center gap-3">
             <span className="h-px w-12 bg-wood/55" />
             <p className="text-xs font-black uppercase tracking-[0.22em] text-brand-blue">Alur kerja</p>
           </div>
-          <h2 className="mt-4 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
+          <h2 className="mt-3 max-w-3xl text-4xl font-black leading-[1.1] tracking-[-0.02em] text-charcoal sm:text-5xl">
             Alur kerja dibuat jelas sejak awal.
           </h2>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-4">
+          <div className="mt-8 grid gap-4 md:grid-cols-4">
             {processSteps.map(([number, title, desc], index) => (
               <div key={number} className="relative rounded-[1.75rem] border border-stone-200 bg-white p-5 shadow-soft">
                 {index < processSteps.length - 1 ? (
@@ -334,23 +334,23 @@ export default function HomePage() {
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-charcoal text-sm font-black text-white shadow-soft">
                     {number}
                   </span>
-                  <h3 className="mt-6 text-xl font-black tracking-[-0.02em] text-charcoal">{title}</h3>
-                  <p className="mt-3 text-sm font-medium leading-7 text-muted">{desc}</p>
+                  <h3 className="mt-5 text-xl font-black tracking-[-0.02em] text-charcoal">{title}</h3>
+                  <p className="mt-2 text-sm font-medium leading-7 text-muted">{desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-10 overflow-hidden rounded-[2rem] bg-charcoal text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] md:grid md:grid-cols-[1fr_0.58fr]">
-            <div className="p-7 md:p-8">
+          <div className="mt-8 overflow-hidden rounded-[2rem] bg-charcoal text-white shadow-[0_28px_90px_rgba(23,23,23,0.18)] md:grid md:grid-cols-[1fr_0.58fr]">
+            <div className="p-6 md:p-7">
               <p className="text-xs font-black uppercase tracking-[0.22em] text-white/45">Mau mulai?</p>
-              <h3 className="mt-3 text-3xl font-black leading-[1.1] tracking-[-0.025em] md:text-4xl">
+              <h3 className="mt-2 text-3xl font-black leading-[1.1] tracking-[-0.025em] md:text-4xl">
                 Kirim foto ruang dan ukuran kasar dulu.
               </h3>
-              <p className="mt-4 max-w-2xl text-sm font-medium leading-7 text-white/62">
+              <p className="mt-3 max-w-2xl text-sm font-medium leading-7 text-white/62">
                 Kami baca ruangnya dulu. Setelah itu, kami arahkan pilihan bahan, bentuk, dan estimasi awal yang masuk akal.
               </p>
-              <Link href={routes.kontak} className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue">
+              <Link href={routes.kontak} className="mt-6 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue">
                 Chat BUF
               </Link>
             </div>
