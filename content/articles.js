@@ -5,7 +5,7 @@ export const articles = [
     slug: "biaya-kitchen-set-custom",
     title: "Biaya Kitchen Set Custom: Cara Membaca Kisaran Awal",
     excerpt:
-      "Panduan memahami estimasi biaya kitchen set custom, mulai dari cara hitung meter lari, level spesifikasi, contoh ukuran, sampai faktor yang membuat harga naik atau turun.",
+      "Panduan estimasi biaya kitchen set custom: cara hitung meter lari, level spesifikasi, contoh ukuran, dan faktor yang mempengaruhi harga.",
     category: "Kitchen Set",
     date: "2026-06-04",
     dateModified: "2026-06-21",
@@ -40,7 +40,7 @@ export const articles = [
       {
         heading: "Contoh estimasi kitchen set 3 meter",
         body:
-          "Sebagai gambaran, kitchen set 3 meter bisa berada di kisaran ± Rp5,4–7,5 juta untuk level Ekonomis, ± Rp7,5–10,5 juta untuk level Standar, ± Rp10,5–13,5 juta untuk Detail Custom, dan mulai ± Rp13,5 juta+ untuk level Premium. Angka ini tetap bisa berubah setelah detail ruang dan material dikonfirmasi.",
+          "Sebagai gambaran, kitchen set 3 meter bisa berada di kisaran \u00b1 Rp5,4\u20137,5 juta untuk level Ekonomis, \u00b1 Rp7,5\u201310,5 juta untuk level Standar, \u00b1 Rp10,5\u201313,5 juta untuk Detail Custom, dan mulai \u00b1 Rp13,5 juta+ untuk level Premium. Angka ini tetap bisa berubah setelah detail ruang dan material dikonfirmasi.",
       },
       {
         heading: "Kenapa ukuran sama bisa beda harga?",
@@ -258,7 +258,7 @@ export const articles = [
   },
   {
     slug: "lemari-custom-vs-lemari-jadi",
-    title: "Lemari Custom vs Lemari Jadi: Mana yang Lebih Cocok untuk Ruang Anda?",
+    title: "Lemari Custom vs Lemari Jadi: Mana yang Lebih Cocok?",
     excerpt:
       "Panduan membandingkan lemari custom dan lemari jadi dari sisi ukuran ruang, fungsi penyimpanan, tampilan, biaya, dan pemakaian jangka panjang.",
     category: "Custom Furniture",
