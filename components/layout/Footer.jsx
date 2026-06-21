@@ -22,6 +22,11 @@ const navigationLinks = [
   ["Kontak", routes.kontak],
 ];
 
+const legalLinks = [
+  ["Kebijakan Privasi", routes.kebijakanPrivasi],
+  ["Syarat & Ketentuan", routes.syaratKetentuan],
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#121212] text-white">
@@ -69,6 +74,17 @@ export default function Footer() {
             </p>
             <div className="mt-5 grid gap-3 text-sm font-medium leading-6 text-white/64">
               {navigationLinks.map(([label, href]) => (
+                <Link key={href} href={href} className="transition hover:text-white">
+                  {label}
+                </Link>
+              ))}
+            </div>
+
+            <p className="mt-6 text-xs font-black uppercase tracking-[0.2em] text-white/38">
+              Legal
+            </p>
+            <div className="mt-3 grid gap-3 text-sm font-medium leading-6 text-white/64">
+              {legalLinks.map(([label, href]) => (
                 <Link key={href} href={href} className="transition hover:text-white">
                   {label}
                 </Link>
