@@ -43,7 +43,7 @@ export default function EstimasiBiayaPage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={whatsappHref("Halo BUF, saya mau tanya estimasi interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruang dan contoh model.")}
+                href={whatsappHref("Halo BUF, saya mau tanya estimasi. Lokasi proyek: ... Jenis pekerjaan: ... Ukuran area: ...")}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_18px_45px_rgba(23,23,23,0.2)]"
@@ -327,7 +327,7 @@ export default function EstimasiBiayaPage() {
               Contoh: “Kitchen set saya sekitar 3 meter, ingin kabinet atas-bawah, warna kayu, dan kisaran dana sekitar ...” Dari situ hitungan awal bisa lebih mudah dibaca.
             </p>
             <a
-              href={whatsappHref("Halo BUF, saya mau tanya estimasi awal. Lokasi proyek: ... Ukuran kira-kira: ... Saya akan kirim foto ruang dan contoh model.")}
+              href={whatsappHref("Halo BUF, saya mau tanya estimasi. Lokasi proyek: ... Jenis pekerjaan: ... Ukuran area: ...")}
               target="_blank"
               rel="noreferrer"
               className="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 text-sm font-black text-white shadow-blue"

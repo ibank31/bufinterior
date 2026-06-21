@@ -1,27 +1,27 @@
 export const quickChats = [
   {
     label: "Kitchen Set",
-    text: "Halo BUF, saya mau tanya kitchen set. Lokasi proyek: ... Panjang dapur kira-kira: ... Saya akan kirim foto dapurnya.",
+    text: "Halo BUF, saya mau tanya kitchen set. Lokasi proyek: ... Panjang dapur: ...",
   },
   {
     label: "Backdrop TV",
-    text: "Halo BUF, saya mau tanya backdrop TV. Lokasi proyek: ... Ukuran dinding kira-kira: ... Saya akan kirim foto area TV.",
+    text: "Halo BUF, saya mau tanya backdrop TV. Lokasi proyek: ... Ukuran dinding: ...",
   },
   {
     label: "Lemari Custom",
-    text: "Halo BUF, saya mau tanya lemari custom. Lokasi proyek: ... Ukuran area kira-kira: ... Saya butuh lemari untuk: ...",
+    text: "Halo BUF, saya mau tanya lemari custom. Lokasi proyek: ... Ukuran area: ... Isi lemari: ...",
   },
   {
     label: "Booth Usaha",
-    text: "Halo BUF, saya mau tanya booth usaha. Lokasi proyek: ... Jenis usaha: ... Ukuran booth kira-kira: ...",
+    text: "Halo BUF, saya mau tanya booth usaha. Lokasi proyek: ... Jenis usaha: ... Ukuran booth: ...",
   },
   {
     label: "Interior Rumah",
-    text: "Halo BUF, saya mau tanya pengerjaan interior rumah. Lokasi proyek: ... Ruang yang ingin dikerjakan: ... Saya akan kirim foto ruangnya.",
+    text: "Halo BUF, saya mau tanya interior rumah. Lokasi proyek: ... Ruang yang dikerjakan: ...",
   },
   {
     label: "Interior Toko",
-    text: "Halo BUF, saya mau tanya interior toko atau rak display. Lokasi proyek: ... Jenis produk yang dijual: ... Saya akan kirim foto tokonya.",
+    text: "Halo BUF, saya mau tanya interior toko. Lokasi proyek: ... Jenis produk: ...",
   },
 ];
 
