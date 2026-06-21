@@ -41,8 +41,8 @@ export default function HomePage() {
 
             <div className="mt-7 grid max-w-xl grid-cols-3 divide-x divide-stone-300/80 rounded-[1.5rem] border border-stone-300/70 bg-white/55 p-3 shadow-soft backdrop-blur lg:mt-10 lg:p-4">
               <div className="px-3">
-                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">7+</p>
-                <p className="mt-1 text-xs font-bold leading-5 text-muted">Layanan interior</p>
+                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">{services.length}</p>
+                <p className="mt-1 text-xs font-bold leading-5 text-muted">Layanan custom</p>
               </div>
               <div className="px-3">
                 <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">Custom</p>
