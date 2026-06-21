@@ -85,6 +85,14 @@ export default function Footer() {
               <p>Jam: {siteConfig.operatingHours}</p>
               <p>Workshop: Berkoh, Purwokerto</p>
               <p>Area: {siteConfig.areaFocus}</p>
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex w-fit rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-xs font-black text-white transition hover:bg-white/10"
+              >
+                Buka Google Maps
+              </a>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ export const siteConfig = {
   locale: "id_ID",
   whatsappNumber: "6281215659884",
   whatsappDisplay: "0812-1565-9884",
+  googleMapsUrl: "https://maps.app.goo.gl/p4mdCRhi64oCzZyG7",
   operatingHours: "08.00 – 16.00",
   areaFocus: "Berkoh, Purwokerto, Banyumas",
   areaNote: "Workshop ada di Berkoh, Purwokerto. Pengerjaan bisa untuk area Purwokerto, Banyumas, dan sekitar. Jadwal survey atau pemasangan dibicarakan dulu lewat WhatsApp.",
