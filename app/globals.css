@@ -49,15 +49,15 @@ a { text-decoration: none; }
 
 /* Compact section padding — tighter site-wide */
 .section-pad {
-  padding: clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 4rem);
+  padding: clamp(1.25rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem);
 }
 
 .section-pad-sm {
-  padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem);
+  padding: clamp(1rem, 3.5vw, 2.5rem) clamp(1rem, 4vw, 4rem);
 }
 
 .section-pad-lg {
-  padding: clamp(3rem, 5vw, 4.5rem) clamp(1rem, 4vw, 4rem);
+  padding: clamp(1.75rem, 4.5vw, 3.5rem) clamp(1rem, 4vw, 4rem);
 }
 
 /* BUF typography tuning */
