@@ -9,7 +9,7 @@ export const estimationCards = [
       "Kitchen set sering bikin bingung karena panjangnya sama belum tentu biayanya sama. Kabinet bawah saja beda dengan kabinet atas-bawah, apalagi kalau sudah ada top table, backsplash, banyak laci, rak piring, lampu, dan aksesoris tambahan.",
     href: routes.kitchenSet,
     waText:
-      "Halo BUF, saya mau tanya estimasi kitchen set. Lokasi proyek: ... Panjang dapur kira-kira: ... Saya akan kirim foto dapur dan contoh model.",
+      "Halo BUF, saya mau tanya estimasi kitchen set. Lokasi proyek: ... Panjang dapur: ... Model: ...",
     tiers: [
       {
         name: "Ekonomis",
@@ -49,7 +49,7 @@ export const estimationCards = [
       "Lemari custom terlihat sederhana, tetapi estimasinya bisa berubah karena tinggi lemari, jumlah pintu, sekat, laci, rel, kaca, finishing, dan apakah dibuat sampai plafon.",
     href: routes.lemariCustom,
     waText:
-      "Halo BUF, saya mau tanya estimasi lemari custom. Lokasi proyek: ... Panjang lemari kira-kira: ... Saya akan kirim foto area dan rencana isi lemarinya.",
+      "Halo BUF, saya mau tanya estimasi lemari custom. Lokasi proyek: ... Panjang lemari: ... Isi lemari: ...",
     tiers: [
       {
         name: "Ekonomis",
@@ -89,7 +89,7 @@ export const estimationCards = [
       "Backdrop TV bisa ringan jika hanya panel sederhana, tetapi bisa naik jika menyatu dengan kabinet bawah, rak display, ambalan, lampu LED, panel motif, atau storage tambahan.",
     href: routes.backdropTv,
     waText:
-      "Halo BUF, saya mau tanya estimasi backdrop TV. Lokasi proyek: ... Panjang dinding kira-kira: ... Saya akan kirim foto area TV dan contoh model.",
+      "Halo BUF, saya mau tanya estimasi backdrop TV. Lokasi proyek: ... Ukuran dinding: ... Model: ...",
     tiers: [
       {
         name: "Ekonomis",

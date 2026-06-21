@@ -7,7 +7,7 @@ import { buildWhatsappHref } from "@/lib/whatsapp";
 
 function buildLocalServiceWhatsappHref(service) {
   return buildWhatsappHref(
-    `Halo BUF, saya mau tanya ${service.shortTitle}. Lokasi proyek saya di ${service.area}. Ukuran kira-kira: ... Saya akan kirim foto lokasinya.`
+    `Halo BUF, saya mau tanya ${service.shortTitle}. Lokasi proyek: ... Area: ${service.area}. Ukuran area: ...`
   );
 }
 
