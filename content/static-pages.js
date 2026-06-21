@@ -35,12 +35,12 @@ export const staticPageMetadata = {
   },
   tentangKami: {
     title: "Tentang BUF | Workshop Interior & Custom Furniture",
-    description: "Profil BUF Berkah Utami Furniture, workshop interior dan custom furniture yang melayani desain sekaligus pengerjaan.",
+    description: "Workshop interior custom BUF di Berkoh, Purwokerto. Mengerjakan kitchen set, lemari, booth, backdrop TV, akrilik, aluminium, kanopi, dan interior rumah.",
     path: routes.tentangKami,
   },
   artikel: {
     title: "Artikel Interior & Custom Furniture | BUF",
-    description: "Panduan seputar kitchen set, interior rumah, custom furniture, material, dan pengerjaan interior.",
+    description: "Panduan interior dan furniture custom BUF: kitchen set, lemari, booth usaha, estimasi biaya, material, dan tips memilih jasa di Purwokerto.",
     path: routes.artikel,
   },
 };
