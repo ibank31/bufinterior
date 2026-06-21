@@ -23,11 +23,11 @@ export default function HomePage() {
             </p>
 
             <h1 className="mt-6 text-[2.75rem] font-black leading-[1.1] tracking-[-0.045em] text-charcoal sm:text-7xl sm:leading-[1.03] lg:text-[5.45rem] lg:leading-[1] lg:leading-[0.92]">
-              Kitchen set, lemari, booth, dan interior custom yang pas dengan ukuran ruang.
+              Jasa pembuatan kitchen set, lemari, booth, dan interior custom yang disesuaikan dengan ukuran ruangan.
             </h1>
 
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-muted sm:text-lg sm:leading-8 lg:mt-7">
-              BUF adalah workshop interior dan furniture custom di Berkoh, Purwokerto. Kami membuat kitchen set, lemari, backdrop TV, interior toko, booth usaha, akrilik, aluminium, dan kanopi. Kirim foto ruang dan ukuran kasar. Kami bantu baca kebutuhan, bahan, dan estimasi awal.
+              Berkah Utami Furniture adalah workshop interior dan furniture custom yang berlokasi di Berkoh, Purwokerto. Kami membuat kitchen set, lemari, backdrop TV, interior toko, booth usaha, akrilik, aluminium, dan kanopi.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:mt-9">
@@ -41,8 +41,8 @@ export default function HomePage() {
 
             <div className="mt-7 grid max-w-xl grid-cols-3 divide-x divide-stone-300/80 rounded-[1.5rem] border border-stone-300/70 bg-white/55 p-3 shadow-soft backdrop-blur lg:mt-10 lg:p-4">
               <div className="px-3">
-                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">{services.length}</p>
-                <p className="mt-1 text-xs font-bold leading-5 text-muted">Jenis layanan</p>
+                <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">20++</p>
+                <p className="mt-1 text-xs font-bold leading-5 text-muted">Pekerjaan selesai</p>
               </div>
               <div className="px-3">
                 <p className="text-xl font-black tracking-[-0.025em] text-charcoal sm:text-2xl">Custom</p>
@@ -178,7 +178,7 @@ export default function HomePage() {
 
           <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white/80 p-5 shadow-soft">
             <p className="text-sm font-bold leading-7 text-muted">
-              Belum tahu harus mulai dari layanan mana? Kirim foto ruang dan ceritakan kebutuhan Anda. Kami bantu urutkan pekerjaan yang paling perlu dikerjakan dulu.
+              Belum tahu harus mulai dari mana? Kirim foto ruang dan ceritakan kebutuhan Anda. Kami bantu urutkan pekerjaan yang paling perlu dikerjakan dulu.
             </p>
           </div>
         </div>
