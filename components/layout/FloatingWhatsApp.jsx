@@ -1,9 +1,38 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { buildWhatsappHref } from "@/lib/whatsapp";
 
 const message =
   "Halo BUF, saya mau tanya interior atau furniture custom. Lokasi proyek: ... Ukuran kira-kira: ... Saya ingin tanya proses dan estimasinya.";
 
 export default function FloatingWhatsApp() {
+  const [hiddenInFooter, setHiddenInFooter] = useState(false);
+
+  useEffect(() => {
+    const footer = document.querySelector("footer");
+    if (!footer) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry) {
+          setHiddenInFooter(entry.isIntersecting);
+        }
+      },
+      { root: null, threshold: 0 }
+    );
+
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
+
+  if (hiddenInFooter) {
+    return null;
+  }
+
   return (
     <a
       href={buildWhatsappHref(message)}
