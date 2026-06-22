@@ -11,6 +11,11 @@ export const siteConfig = {
   areaFocus: "Workshop / lokasi proyek by konfirmasi",
   areaNote: "Lokasi proyek by konfirmasi",
   workshops: ["Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
+  geo: {
+    latitude: -7.4419,
+    longitude: 109.2486,
+  },
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Berkah+Utami+Furniture+Berkoh+Purwokerto",
   positioning:
     "Workshop interior dan custom furniture yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
   defaultTitle:
