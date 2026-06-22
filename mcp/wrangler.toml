@@ -10,5 +10,5 @@ compatibility_date = "2026-06-01"
 
 # === VARIABLES opsional (bukan rahasia, boleh di sini) ===
 [vars]
-DEFAULT_GA4_PROPERTY_ID = ""
+DEFAULT_GA4_PROPERTY_ID = "542500381"
 DEFAULT_GSC_SITE = "sc-domain:bufinterior.my.id"
