@@ -1,0 +1,14 @@
+name = "buf-google-mcp"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+
+# === SECRETS (JANGAN ditaruh di file ini / repo) ===
+# Set lewat dashboard Cloudflare (Settings > Variables and Secrets > Add > Secret)
+# atau lewat CLI:
+#   npx wrangler secret put GOOGLE_SA_KEY     <- tempel seluruh isi JSON service account
+#   npx wrangler secret put MCP_AUTH_TOKEN    <- token bearer acak (yang akan dikirim Notion)
+
+# === VARIABLES opsional (bukan rahasia, boleh di sini) ===
+[vars]
+DEFAULT_GA4_PROPERTY_ID = ""
+DEFAULT_GSC_SITE = "sc-domain:bufinterior.my.id"
