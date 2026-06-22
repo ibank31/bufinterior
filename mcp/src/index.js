@@ -1,7 +1,9 @@
 /**
  * buf-google-mcp
  * Server MCP remote (Cloudflare Workers) untuk GA4 + Google Search Console.
- * Transport: Streamable HTTP (JSON-RPC via POST). READ-ONLY.
+ * Transport: Streamable HTTP (JSON-RPC via POST).
+ *
+ * Akses: READ + WRITE/ADMIN (konfigurasi), dibatasi scope OAuth & peran service account.
  *
  * Secrets (set di Cloudflare, JANGAN ditaruh di kode/repo):
  *   GOOGLE_SA_KEY   : isi penuh file JSON service account Google
@@ -15,7 +17,8 @@
 const GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token";
 const SCOPES = [
   "https://www.googleapis.com/auth/analytics.readonly",
-  "https://www.googleapis.com/auth/webmasters.readonly",
+  "https://www.googleapis.com/auth/analytics.edit",
+  "https://www.googleapis.com/auth/webmasters",
 ].join(" ");
 const PROTOCOL_VERSION = "2025-06-18";
 
@@ -188,6 +191,58 @@ const TOOLS = [
       },
     },
   },
+  {
+    name: "gsc_submit_sitemap",
+    description: "WRITE: daftarkan/submit sebuah sitemap ke GSC. Butuh peran Full di properti.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        feedpath: { type: "string", description: "URL sitemap penuh, mis. https://bufinterior.my.id/sitemap.xml" },
+        site_url: { type: "string", description: "Opsional bila DEFAULT_GSC_SITE di-set." },
+      },
+      required: ["feedpath"],
+    },
+  },
+  {
+    name: "gsc_delete_sitemap",
+    description: "WRITE: hapus sebuah sitemap dari GSC. Butuh peran Full di properti.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        feedpath: { type: "string", description: "URL sitemap penuh yang akan dihapus." },
+        site_url: { type: "string", description: "Opsional bila DEFAULT_GSC_SITE di-set." },
+      },
+      required: ["feedpath"],
+    },
+  },
+  {
+    name: "ga4_admin_request",
+    description:
+      "WRITE/ADMIN: panggil GA4 Admin API (analyticsadmin.googleapis.com) untuk mengelola KONFIGURASI property: key events/conversions, custom dimensions/metrics, data streams, audiences, settings, links, dll. Butuh peran Editor/Administrator di property. Contoh: method 'POST', path '/v1beta/properties/123456789/keyEvents', body {eventName:'generate_lead', countingMethod:'ONCE_PER_EVENT'}. method 'GET' untuk membaca/list.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        method: { type: "string", description: "GET, POST, PATCH, atau DELETE. Default GET." },
+        path: { type: "string", description: "Path Admin API diawali /, mis. /v1beta/properties/123456789/keyEvents atau /v1beta/properties/123456789/customDimensions" },
+        body: { type: "object", description: "Body JSON untuk POST/PATCH." },
+      },
+      required: ["path"],
+    },
+  },
+  {
+    name: "google_request",
+    description:
+      "WRITE/ADMIN tingkat lanjut: panggil endpoint Google API mana pun (URL penuh) memakai kredensial service account. Dibatasi oleh scope OAuth (Analytics edit + Search Console) & peran service account. Gunakan untuk operasi yang belum ada tool khususnya.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        method: { type: "string", description: "GET, POST, PATCH, PUT, atau DELETE. Default GET." },
+        url: { type: "string", description: "URL endpoint Google API penuh (https://...)." },
+        body: { type: "object", description: "Body JSON opsional untuk POST/PATCH/PUT." },
+      },
+      required: ["url"],
+    },
+  },
 ];
 
 // ---------- handler tools ----------
@@ -246,6 +301,35 @@ async function callTool(name, args, env) {
       if (!site) throw new Error("site_url wajib (atau set DEFAULT_GSC_SITE)");
       return googleFetch(token, "https://www.googleapis.com/webmasters/v3/sites/" + encodeURIComponent(site) + "/sitemaps", { method: "GET" });
     }
+    case "gsc_submit_sitemap": {
+      const site = args.site_url || env.DEFAULT_GSC_SITE;
+      if (!site) throw new Error("site_url wajib (atau set DEFAULT_GSC_SITE)");
+      if (!args.feedpath) throw new Error("feedpath wajib (URL sitemap penuh)");
+      await googleFetch(token, "https://www.googleapis.com/webmasters/v3/sites/" + encodeURIComponent(site) + "/sitemaps/" + encodeURIComponent(args.feedpath), { method: "PUT" });
+      return { ok: true, submitted: args.feedpath };
+    }
+    case "gsc_delete_sitemap": {
+      const site = args.site_url || env.DEFAULT_GSC_SITE;
+      if (!site) throw new Error("site_url wajib (atau set DEFAULT_GSC_SITE)");
+      if (!args.feedpath) throw new Error("feedpath wajib (URL sitemap penuh)");
+      await googleFetch(token, "https://www.googleapis.com/webmasters/v3/sites/" + encodeURIComponent(site) + "/sitemaps/" + encodeURIComponent(args.feedpath), { method: "DELETE" });
+      return { ok: true, deleted: args.feedpath };
+    }
+    case "ga4_admin_request": {
+      if (!args.path) throw new Error("path wajib, mis. /v1beta/properties/123/keyEvents");
+      const method = (args.method || "GET").toUpperCase();
+      const url = "https://analyticsadmin.googleapis.com" + (args.path.charAt(0) === "/" ? args.path : "/" + args.path);
+      const init = { method };
+      if (args.body !== undefined && method !== "GET") init.body = typeof args.body === "string" ? args.body : JSON.stringify(args.body);
+      return googleFetch(token, url, init);
+    }
+    case "google_request": {
+      if (!args.url) throw new Error("url wajib");
+      const method = (args.method || "GET").toUpperCase();
+      const init = { method };
+      if (args.body !== undefined && method !== "GET") init.body = typeof args.body === "string" ? args.body : JSON.stringify(args.body);
+      return googleFetch(token, args.url, init);
+    }
     default:
       throw new Error("Tool tidak dikenal: " + name);
   }
@@ -269,7 +353,7 @@ async function handleMessage(msg, env) {
       return rpcResult(id, {
         protocolVersion: (params && params.protocolVersion) || PROTOCOL_VERSION,
         capabilities: { tools: { listChanged: false } },
-        serverInfo: { name: "buf-google-mcp", version: "1.0.0" },
+        serverInfo: { name: "buf-google-mcp", version: "1.1.0" },
       });
     case "ping":
       return rpcResult(id, {});

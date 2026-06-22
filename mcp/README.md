@@ -1,33 +1,40 @@
 # buf-google-mcp
 
-Server **MCP remote** untuk **Google Analytics 4 (GA4)** + **Google Search Console (GSC)**, berjalan di **Cloudflare Workers**. Bersifat **read-only**. Dibuat untuk disambungkan ke agent Notion (bufAgent) supaya AI bisa menarik data GA4 & GSC langsung.
+Server **MCP remote** untuk **Google Analytics 4 (GA4)** + **Google Search Console (GSC)**, berjalan di **Cloudflare Workers**. Dibuat untuk disambungkan ke agent Notion (bufAgent) supaya AI bisa menarik **dan mengubah konfigurasi** GA4 & GSC.
 
-Endpoint menerima JSON-RPC (MCP, Streamable HTTP) via `POST` di path apa pun (root `/` maupun `/mcp`).
+Endpoint menerima JSON-RPC (MCP, Streamable HTTP) via `POST` di path apa pun.
 
 ## Tools yang tersedia
 
-| Tool | Fungsi |
-|------|--------|
-| `ga4_run_report` | Laporan GA4 (dimensi+metrik, rentang tanggal, filter eventName) |
-| `ga4_realtime` | Data realtime GA4 (30 menit terakhir) |
-| `gsc_list_sites` | Daftar properti GSC yang bisa diakses |
-| `gsc_search_analytics` | Clicks/impressions/CTR/position per query, page, dll. |
-| `gsc_url_inspection` | Status indexing sebuah URL |
-| `gsc_list_sitemaps` | Daftar sitemap properti |
+| Tool | Jenis | Fungsi |
+|------|-------|--------|
+| `ga4_run_report` | read | Laporan GA4 (dimensi+metrik, rentang tanggal, filter eventName) |
+| `ga4_realtime` | read | Data realtime GA4 (30 menit terakhir) |
+| `gsc_list_sites` | read | Daftar properti GSC |
+| `gsc_search_analytics` | read | Clicks/impressions/CTR/position per query, page, dll. |
+| `gsc_url_inspection` | read | Status indexing sebuah URL |
+| `gsc_list_sitemaps` | read | Daftar sitemap properti |
+| `gsc_submit_sitemap` | **write** | Daftarkan/submit sitemap |
+| `gsc_delete_sitemap` | **write** | Hapus sitemap |
+| `ga4_admin_request` | **write/admin** | Kelola konfigurasi GA4 via Admin API (key events, custom dimensions/metrics, data streams, audiences, settings, links) |
+| `google_request` | **write/admin** | Passthrough ke endpoint Google API mana pun (dibatasi scope & peran) |
+
+> **Penting soal arti "edit":** API Google memungkinkan mengubah **konfigurasi/pengaturan** (mis. menandai key event, membuat custom dimension, submit sitemap), TAPI **tidak ada** API untuk mengubah/menghapus **data historis** GA4/GSC — itu memang tidak diizinkan Google.
 
 ---
 
 ## Bagian A — Siapkan akses Google (sekali saja)
 
-1. Buka <https://console.cloud.google.com> -> buat / pilih sebuah project.
-2. **Aktifkan 2 API** (APIs & Services > Library):
-   - **Google Analytics Data API**
+1. Buka <https://console.cloud.google.com> -> pilih sebuah project.
+2. **Aktifkan 3 API** (APIs & Services > Library):
+   - **Google Analytics Data API** (untuk laporan)
+   - **Google Analytics Admin API** (untuk edit konfigurasi GA4)
    - **Google Search Console API**
-3. Buat **Service Account** (IAM & Admin > Service Accounts > Create). Lalu buat **key** bertipe **JSON** dan unduh filenya. Catat `client_email` (bentuknya `nama@project.iam.gserviceaccount.com`).
-4. **GA4**: buka GA4 > Admin > **Property Access Management** > tambahkan `client_email` tadi sebagai **Viewer**. Catat **Property ID** (Admin > Property Settings, berupa angka).
-5. **GSC**: buka Search Console > Settings > **Users and permissions** > Add user > masukkan `client_email` (peran **Restricted/Full** cukup, karena hanya baca). Untuk *domain property*, nilai site = `sc-domain:bufinterior.my.id`.
+3. Buat **Service Account** (IAM & Admin > Service Accounts > Create). Lalu buat **key** bertipe **JSON** dan unduh. Catat `client_email`.
+4. **GA4** (agar bisa baca + edit): GA4 > Admin > **Property Access Management** > tambahkan `client_email` sebagai **Editor** (atau Administrator). Catat **Property ID** (angka).
+5. **GSC** (agar bisa baca + kelola sitemap): Search Console > Settings > **Users and permissions** > Add user > masukkan `client_email` dengan peran **Full**. Untuk *domain property*, site = `sc-domain:bufinterior.my.id`.
 
-> Service Account JSON itu RAHASIA. Hanya akan ditempel ke **Secret Cloudflare**, jangan ke chat / repo.
+> Service Account JSON itu RAHASIA. Hanya ditempel ke **Secret Cloudflare**, jangan ke chat / repo.
 
 ---
 
@@ -35,22 +42,22 @@ Endpoint menerima JSON-RPC (MCP, Streamable HTTP) via `POST` di path apa pun (ro
 
 ### Opsi 1 — Dashboard (paling mudah, bisa dari HP)
 
-1. Buka <https://dash.cloudflare.com> > **Workers & Pages** > **Create** > **Workers** > **Create Worker**.
+1. <https://dash.cloudflare.com> > **Workers & Pages** > **Create** > **Workers** > **Create Worker**.
 2. Beri nama `buf-google-mcp` > **Deploy**.
-3. Klik **Edit code**, hapus isi template, lalu **tempel seluruh isi file `mcp/src/index.js`** dari repo ini. Klik **Deploy**.
-4. Masuk ke Worker > **Settings** > **Variables and Secrets**:
-   - Tambah **Secret** `GOOGLE_SA_KEY` = (tempel seluruh isi file JSON service account).
-   - Tambah **Secret** `MCP_AUTH_TOKEN` = string acak panjang (mis. hasil generator password). **Simpan token ini.**
-   - (Opsional) Tambah **Variable** `DEFAULT_GA4_PROPERTY_ID` dan `DEFAULT_GSC_SITE`.
-5. URL Worker kamu: `https://buf-google-mcp.<subdomain-kamu>.workers.dev`.
+3. **Edit code**, hapus template, **tempel seluruh isi `mcp/src/index.js`**. **Deploy**.
+4. Worker > **Settings** > **Variables and Secrets**:
+   - Secret `GOOGLE_SA_KEY` = (seluruh isi file JSON service account).
+   - Secret `MCP_AUTH_TOKEN` = string acak panjang. **Simpan token ini.**
+   - (Opsional) Variable `DEFAULT_GA4_PROPERTY_ID` dan `DEFAULT_GSC_SITE`.
+5. URL: `https://buf-google-mcp.<subdomain-kamu>.workers.dev`.
 
 ### Opsi 2 — Wrangler (dari komputer)
 
 ```bash
 cd mcp
 npm install
-npx wrangler secret put GOOGLE_SA_KEY     # tempel isi JSON service account
-npx wrangler secret put MCP_AUTH_TOKEN     # token bearer acak
+npx wrangler secret put GOOGLE_SA_KEY
+npx wrangler secret put MCP_AUTH_TOKEN
 npx wrangler deploy
 ```
 
@@ -58,24 +65,21 @@ npx wrangler deploy
 
 ## Bagian C — Sambungkan ke bufAgent (Notion)
 
-Buka pengaturan **bufAgent** > **Connections** > tambah **MCP server**:
+Pengaturan **bufAgent** > **Connections** > tambah **MCP server**:
 - **URL**: `https://buf-google-mcp.<subdomain-kamu>.workers.dev`
-- **Authentication**: **Bearer Token** -> isi dengan nilai `MCP_AUTH_TOKEN`.
-
-Simpan. Setelah tersambung, AI bisa memanggil tools di atas.
+- **Authentication**: **Bearer Token** -> nilai `MCP_AUTH_TOKEN`.
 
 ---
 
 ## Bagian D — Tes cepat
 
-Setelah tersambung, minta AI misalnya:
 - "Tarik GA4 28 hari terakhir: sessions & totalUsers per sessionDefaultChannelGroup."
-- "Berapa event `whatsapp_click` 30 hari terakhir per pagePath?" (pakai `dimension_filter_event_name`).
-- "Query GSC: top 25 query 28 hari terakhir untuk `sc-domain:bufinterior.my.id`."
-- "Cek status indexing `https://bufinterior.my.id/`."
+- "List key events GA4" (pakai `ga4_admin_request` GET `/v1beta/properties/<id>/keyEvents`).
+- "Tandai event `generate_lead` sebagai key event" (POST keyEvents).
+- "Submit sitemap https://bufinterior.my.id/sitemap.xml ke GSC."
 
-## Catatan
+## Catatan keamanan
 
-- Semua akses **read-only**; server tidak bisa mengubah setting GA4/GSC.
+- Server ini punya akses **edit konfigurasi**; lindungi `MCP_AUTH_TOKEN` baik-baik.
+- Tidak ada API untuk mengubah data historis GA4/GSC.
 - Data GSC biasanya tertunda ~2-3 hari.
-- Jika Notion butuh transport SSE (bukan JSON biasa), beri tahu — versi ini balas JSON-RPC sinkron via POST, yang umum didukung sebagai Streamable HTTP.
