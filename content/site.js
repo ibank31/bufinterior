@@ -1,32 +1,21 @@
-const fallbackBaseUrl = "https://berkah-utami-furniture.pages.dev";
-const configuredBaseUrl = process.env.NEXT_PUBLIC_SITE_URL || fallbackBaseUrl;
-const cleanBaseUrl = configuredBaseUrl.replace(/\/+$/, "");
-const cleanDomain = cleanBaseUrl.replace(/^https?:\/\//, "");
-
 export const siteConfig = {
   name: "BUF",
   legalName: "Berkah Utami Furniture",
-  baseUrl: cleanBaseUrl,
-  domain: cleanDomain,
+  baseUrl: "https://bufinterior.my.id",
+  domain: "bufinterior.my.id",
   language: "id-ID",
   locale: "id_ID",
-  whatsappNumber: "6281215659884",
-  whatsappDisplay: "0812-1565-9884",
-  googleMapsUrl: "https://maps.app.goo.gl/p4mdCRhi64oCzZyG7",
-  geo: {
-    latitude: -7.443152,
-    longitude: 109.266957,
-  },
+  whatsappNumber: "6285772208688",
+  whatsappDisplay: "085772208688",
   operatingHours: "08.00 – 16.00",
-  areaFocus: "Berkoh, Purwokerto, Banyumas",
-  areaNote: "Workshop ada di Berkoh, Purwokerto. Pengerjaan bisa untuk area Purwokerto, Banyumas, dan sekitar. Jadwal survey atau pemasangan dibicarakan dulu lewat WhatsApp.",
-  surveyPolicy: "Untuk area Banyumas, survey lokasi gratis. Kalau di luar Banyumas, biaya survey dibicarakan dulu sesuai jarak dan jenis pekerjaannya.",
-  workshops: ["Berkoh, Purwokerto", "Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
+  areaFocus: "Workshop / lokasi proyek by konfirmasi",
+  areaNote: "Lokasi proyek by konfirmasi",
+  workshops: ["Jl. Mentri Supeno", "Jl. Sunan Kalijaga, Berkoh"],
   positioning:
-    "Workshop interior, furniture custom, dan fabrikasi di Berkoh, Purwokerto. Biasa mengerjakan kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, kanopi, dan pekerjaan custom untuk rumah atau tempat usaha.",
+    "Workshop interior dan custom furniture yang membantu desain, produksi, dan pengerjaan interior sesuai ukuran ruang, kebutuhan, dan budget pelanggan.",
   defaultTitle:
-    "BUF Purwokerto — Kitchen Set, Interior & Furniture Custom",
+    "BUF — Interior Custom, Kitchen Set & Custom Furniture",
   defaultDescription:
-    "Workshop interior dan furniture custom di Berkoh, Purwokerto. BUF mengerjakan kitchen set, lemari, backdrop TV, booth usaha, akrilik, aluminium, dan kanopi custom.",
-  ogImage: "/og-image-1200x630.png",
+    "BUF Berkah Utami Furniture melayani desain dan pengerjaan interior custom, kitchen set, backdrop TV, lemari custom, interior rumah, toko, kost, dan booth usaha. Lokasi proyek dapat dikonfirmasi terlebih dahulu.",
+  ogImage: "/assets/og/buf-interior-og.webp",
 };
