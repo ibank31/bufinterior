@@ -1,26 +1,33 @@
+import { normalizeSitePath } from "@/lib/url";
+
+// Situs di-deploy dengan trailingSlash: true. Semua route halaman dinormalisasi
+// agar berakhiran "/" supaya internal <Link> langsung menuju URL kanonik dan
+// tidak kena redirect 301/308 (hemat crawl budget).
+const route = (path) => normalizeSitePath(path);
+
 export const routes = {
   home: "/",
-  layanan: "/layanan",
-  jasa: "/jasa",
-  area: "/area",
-  kitchenSet: "/layanan/kitchen-set",
-  customFurniture: "/layanan/custom-furniture",
-  interiorRumah: "/layanan/interior-rumah",
-  interiorToko: "/layanan/interior-toko",
-  backdropTv: "/layanan/backdrop-tv",
-  lemariCustom: "/layanan/lemari-custom",
-  boothUsaha: "/layanan/booth-usaha",
-  akrilikCustom: "/layanan/akrilik-custom",
-  aluminium: "/layanan/aluminium",
-  kanopi: "/layanan/kanopi",
-  portfolio: "/portfolio",
-  kontak: "/kontak",
-  estimasiBiaya: "/estimasi-biaya",
-  caraKerja: "/cara-kerja",
-  tentangKami: "/tentang-kami",
-  artikel: "/artikel",
-  kebijakanPrivasi: "/kebijakan-privasi",
-  syaratKetentuan: "/syarat-ketentuan",
+  layanan: route("/layanan"),
+  jasa: route("/jasa"),
+  area: route("/area"),
+  kitchenSet: route("/layanan/kitchen-set"),
+  customFurniture: route("/layanan/custom-furniture"),
+  interiorRumah: route("/layanan/interior-rumah"),
+  interiorToko: route("/layanan/interior-toko"),
+  backdropTv: route("/layanan/backdrop-tv"),
+  lemariCustom: route("/layanan/lemari-custom"),
+  boothUsaha: route("/layanan/booth-usaha"),
+  akrilikCustom: route("/layanan/akrilik-custom"),
+  aluminium: route("/layanan/aluminium"),
+  kanopi: route("/layanan/kanopi"),
+  portfolio: route("/portfolio"),
+  kontak: route("/kontak"),
+  estimasiBiaya: route("/estimasi-biaya"),
+  caraKerja: route("/cara-kerja"),
+  tentangKami: route("/tentang-kami"),
+  artikel: route("/artikel"),
+  kebijakanPrivasi: route("/kebijakan-privasi"),
+  syaratKetentuan: route("/syarat-ketentuan"),
 };
 
 export const sitemapRoutes = [
@@ -48,17 +55,17 @@ export const sitemapRoutes = [
 ];
 
 export function articleHref(slug) {
-  return `${routes.artikel}/${slug}`;
+  return normalizeSitePath(`/artikel/${slug}`);
 }
 
 export function portfolioHref(serviceSlug) {
-  return `${routes.portfolio}/${serviceSlug}`;
+  return normalizeSitePath(`/portfolio/${serviceSlug}`);
 }
 
 export function localServiceHref(slug) {
-  return `${routes.jasa}/${slug}`;
+  return normalizeSitePath(`/jasa/${slug}`);
 }
 
 export function areaHref(slug) {
-  return `${routes.area}/${slug}`;
+  return normalizeSitePath(`/area/${slug}`);
 }

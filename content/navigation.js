@@ -1,4 +1,5 @@
-import { routes } from "@/content/routes";
+import { portfolioHref, routes } from "@/content/routes";
+import { normalizeSitePath } from "@/lib/url";
 import { services } from "@/content/services";
 
 export const serviceGroupOrder = [
@@ -30,13 +31,13 @@ function buildServiceGroups(mapItem, groupLabelMap = {}) {
 
 export const serviceNavigationGroups = buildServiceGroups((service) => ({
   label: service.title,
-  href: service.href,
+  href: normalizeSitePath(service.href),
 }));
 
 export const portfolioNavigationGroups = buildServiceGroups(
   (service) => ({
     label: service.shortTitle,
-    href: `${routes.portfolio}/${service.slug}`,
+    href: portfolioHref(service.slug),
   }),
   portfolioGroupLabelMap
 );
