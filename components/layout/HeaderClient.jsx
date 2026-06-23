@@ -8,10 +8,20 @@ import { mainNavigation } from "@/content/navigation";
 import { routes } from "@/content/routes";
 import { siteConfig } from "@/content/site";
 
+// Situs memakai trailingSlash: true, sementara usePathname() bisa mengembalikan
+// path tanpa trailing slash. Samakan kedua sisi sebelum dibandingkan agar
+// highlight menu tetap akurat meski href sudah berakhiran "/".
+function stripTrailingSlash(path) {
+  if (!path) return "/";
+  return path !== "/" ? path.replace(/\/+$/, "") || "/" : "/";
+}
+
 function isActive(pathname, href, exact = false) {
-  if (href === routes.home) return pathname === routes.home;
-  if (exact) return pathname === href;
-  return pathname === href || pathname.startsWith(`${href}/`);
+  const current = stripTrailingSlash(pathname || "/");
+  const target = stripTrailingSlash(href || "/");
+  if (target === "/") return current === "/";
+  if (exact) return current === target;
+  return current === target || current.startsWith(`${target}/`);
 }
 
 function navClassName(active) {
