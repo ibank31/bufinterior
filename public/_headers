@@ -1,0 +1,32 @@
+# Cache header untuk aset statis — kurangi re-crawl Googlebot & hemat crawl budget
+# Dibaca Cloudflare Pages dari root output build (out/_headers via public/_headers)
+
+# Build asset Next.js (content-hashed) — aman cache selamanya
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Folder aset/media
+/assets/*
+  Cache-Control: public, max-age=2592000
+
+# Gambar & ikon
+/*.png
+  Cache-Control: public, max-age=2592000
+/*.jpg
+  Cache-Control: public, max-age=2592000
+/*.jpeg
+  Cache-Control: public, max-age=2592000
+/*.webp
+  Cache-Control: public, max-age=2592000
+/*.gif
+  Cache-Control: public, max-age=2592000
+/*.svg
+  Cache-Control: public, max-age=2592000
+/*.ico
+  Cache-Control: public, max-age=2592000
+
+# Font
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
